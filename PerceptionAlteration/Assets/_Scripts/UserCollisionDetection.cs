@@ -10,12 +10,13 @@ public class UserCollisionDetection : MonoBehaviour {
     public Vector3 smallScale;
     public Vector3 bigScale;
 
-
     // local var for parent
     public GameObject propParent;
 
-    private bool shrinking = false;
-    private bool growing = false;
+    // determine how to scale on update
+    enum scaleMode { stopped, shrinking, growing, resetting };
+
+    private scaleMode currentScale = 0;
 
 	// Use this for initialization
 	void Start ()
@@ -25,30 +26,50 @@ public class UserCollisionDetection : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
     {
-        // shrink
-        if (shrinking)
+        // Change size of room
+        switch (currentScale)
         {
-            Debug.Log("now shrinking");
+            case scaleMode.stopped:
+                break;
 
-            // slerp between size
-            propParent.transform.localScale = Vector3.Slerp(propParent.transform.localScale, smallScale, 1.5f * Time.deltaTime);
+            // if shrinking
+            case scaleMode.shrinking:
 
-            if (propParent.transform.localScale.x <= (smallScale.x + 0.1f))
-            {
-                shrinking = false;
-                Debug.Log("Finished Shrink");
-            }
+                propParent.transform.localScale = Vector3.Slerp(propParent.transform.localScale, smallScale, 1.5f * Time.deltaTime);
 
-        }
-        else if (growing)
-        {
-            propParent.transform.localScale = Vector3.Slerp(propParent.transform.localScale, bigScale, 1.5f * Time.deltaTime);
+                if (propParent.transform.localScale.x <= (smallScale.x + 0.1f))
+                {
+                    currentScale = scaleMode.stopped;
+                    propParent.transform.localScale = smallScale;
+                }
 
-            if (propParent.transform.localScale.x >= (bigScale.x - 0.1f))
-            {
-                growing = false;
-                Debug.Log("Finished grow");
-            }
+                break;
+
+            // if growing
+            case scaleMode.growing:
+
+                propParent.transform.localScale = Vector3.Slerp(propParent.transform.localScale, bigScale, 1.5f * Time.deltaTime);
+
+                if (propParent.transform.localScale.x >= (bigScale.x - 0.1f))
+                {
+                    currentScale = scaleMode.stopped;
+                    propParent.transform.localScale = bigScale;
+                }
+
+                break;
+
+            // if resetting to middle size
+            case scaleMode.resetting:
+
+                propParent.transform.localScale = Vector3.Slerp(propParent.transform.localScale, normalScale, 1.5f * Time.deltaTime);
+
+                if (propParent.transform.localScale.x >= (normalScale.x - 0.1f) && propParent.transform.localScale.x <= (normalScale.x + 0.1f))
+                {
+                    currentScale = (int)scaleMode.stopped;
+                    propParent.transform.localScale = normalScale;
+                }
+
+                break;
         }
 	}
 
@@ -65,7 +86,7 @@ public class UserCollisionDetection : MonoBehaviour {
             // change scale of room
             if (propParent.transform.localScale.x > smallScale.x)
             {
-                shrinking = true;
+                currentScale = scaleMode.shrinking;
                // fader.Flash();
             }
 
@@ -76,15 +97,14 @@ public class UserCollisionDetection : MonoBehaviour {
 
         if (other.gameObject.CompareTag("Perception-Changer-Big"))
         {
-            // User is inside enemy
+            // User is inside large ball
             Debug.Log("Enemy touch");
 
 
             // change scale of room
             if (propParent.transform.localScale.x < bigScale.x)
             {
-                growing = true;
-                // fader.Flash();
+                currentScale = scaleMode.growing;
             }
 
             // change to red
@@ -94,12 +114,15 @@ public class UserCollisionDetection : MonoBehaviour {
 
         if (other.gameObject.CompareTag("Perception-Changer-Reset"))
         {
-            // User is inside enemy
-            Debug.Log("Enemy touch");
+            // User is inside normal ball
+            Debug.Log("normal scale touch");
 
+            // if not currently normal scale
+            if (propParent.transform.localScale.x != normalScale.x)
+            {
+                currentScale = scaleMode.resetting;
+            }
 
-            // change scale of room
-            propParent.transform.localScale = normalScale;
 
             // change to red
             other.gameObject.GetComponent<Renderer>().material.SetColor("_Color", Color.red);
@@ -111,7 +134,6 @@ public class UserCollisionDetection : MonoBehaviour {
     // Handler for user out of collision
     void OnTriggerExit(Collider other)
     {
-        //if (other.gameObject.CompareTag("Perception-Changer-Small"))
         {
             // User is back outside enemy
             Debug.Log("User free");
