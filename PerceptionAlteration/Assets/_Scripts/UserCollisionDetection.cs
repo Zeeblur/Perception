@@ -9,7 +9,8 @@ public class UserCollisionDetection : MonoBehaviour {
 
     //public SceneFader fader;
 
-    private GameObject playerObj;
+    private GameObject cameraParent;
+    private GameObject headCam;
 
     public GameObject enemies;
 
@@ -19,14 +20,17 @@ public class UserCollisionDetection : MonoBehaviour {
     public Vector3 bigScale;
 
     private Vector3 cameraAdjustment = new Vector3(0f, 2f, 0f);
+    private Vector3 cameraAdjustmentDown = new Vector3(0f, -2f, 0f);
 
     // local var for parent
     public GameObject propParent;
 
-    private GameObject table;
+    private GameObject[] table;
     private Vector3 localTablePos;
 
  //   private GameObject player;
+
+    Vector3 playerPosition;
 
 
     private scaleMode currentScale = 0;
@@ -40,9 +44,10 @@ public class UserCollisionDetection : MonoBehaviour {
 	// Use this for initialization
 	void Start ()
     {
-        playerObj = GameObject.FindGameObjectWithTag("MainCamera");
-        table = GameObject.FindWithTag("Table");
-       // localTablePos = table.transform.position;
+        cameraParent = GameObject.FindGameObjectWithTag("MainCamera");
+        headCam = GameObject.FindGameObjectWithTag("Head");
+        table = GameObject.FindGameObjectsWithTag("Table");
+        //localTablePos = table[0].transform.position;
 	}
 	
 	// Update is called once per frame
@@ -57,24 +62,19 @@ public class UserCollisionDetection : MonoBehaviour {
             // if shrinking
             case scaleMode.shrinking:
 
-                cameraAdjustment.x = playerObj.transform.localScale.x;
-                cameraAdjustment.z = playerObj.transform.localScale.z;
-                
+                // get current camera scale.
+                //cameraAdjustment.x = cameraParent.transform.localScale.x;
+                //cameraAdjustment.z = cameraParent.transform.localScale.z;
+            
+                //// slerp between adjustment and current scale.
+                //cameraParent.transform.localScale = Vector3.Slerp(cameraParent.transform.localScale, cameraAdjustment, 1.5f * Time.deltaTime); //playerObj.transform.localScale + cameraAdjustment;
 
-                
-                playerObj.transform.localScale = Vector3.Slerp(playerObj.transform.localScale, cameraAdjustment, 1.5f * Time.deltaTime); //playerObj.transform.localScale + cameraAdjustment;
+                // scale props
+                cameraParent.transform.localScale = Vector3.Slerp(cameraParent.transform.localScale, smallScale, 1.5f * Time.deltaTime);
 
-                propParent.transform.localScale = Vector3.Slerp(propParent.transform.localScale, smallScale, 1.5f * Time.deltaTime);
-                
-                //cameraAdjustment.x = enemies.transform.localScale.x;
-                //cameraAdjustment.z = enemies.transform.localScale.z;
-
-                //enemies.transform.localPosition = Vector3.Slerp(enemies.transform.localScale, cameraAdjustment, 1.5f * Time.deltaTime);
-
-                if (propParent.transform.localScale.x <= (smallScale.x + 0.05f))
+                if (cameraParent.transform.localScale.x <= (smallScale.x + 0.05f))
                 {
                     currentScale = scaleMode.stopped;
-                    propParent.transform.localScale = smallScale;
                 }
 
                 break;
@@ -82,24 +82,35 @@ public class UserCollisionDetection : MonoBehaviour {
             // if growing
             case scaleMode.growing:
 
-                //cameraAdjustment = -cameraAdjustment;
-
-                //cameraAdjustment.x = playerObj.transform.localScale.x;
-                //cameraAdjustment.z = playerObj.transform.localScale.z;
+               // cameraAdjustmentDown.y = cameraParent.transform.localScale.y;
+               // cameraAdjustmentDown.z = cameraParent.transform.localScale.z;
                 
-                //playerObj.transform.localScale = Vector3.Slerp(playerObj.transform.localScale, cameraAdjustment, 1.5f * Time.deltaTime); //playerObj.transform.localScale + cameraAdjustment;
+                //cameraParent.transform.localScale = Vector3.Slerp(cameraParent.transform.localScale, cameraAdjustmentDown, 1.5f * Time.deltaTime); //playerObj.transform.localScale + cameraAdjustment;
              
-                //cameraAdjustment.x = enemies.transform.localScale.x;
+                ////cameraAdjustment.x = enemies.transform.localScale.x;
                 //cameraAdjustment.z = enemies.transform.localScale.z;
 
                // enemies.transform.localScale = Vector3.Slerp(enemies.transform.localScale, cameraAdjustment, 1.5f * Time.deltaTime); //playerObj.transform.localScale + cameraAdjustment;
 
 
-                //// scale table
-                //table.transform.localPosition = transform.localPosition;
+                //// scale ta
+                ///table.transform.modelm
+
+                // slerp transform is player GO transform. moving parent.
+                Vector3 slerpInc = Vector3.Slerp(headCam.transform.localPosition, (playerPosition), 1.5f * Time.deltaTime);
+
+                //cameraParent.transform.localPosition = new Vector3(slerpInc.x, headCam.transform.localPosition.y, slerpInc.z);
+
+                //table.transform.localPosition = new Vector3(0f, 0f, 0f);
+                foreach(GameObject g in table)
+                {
+                    g.transform.localScale = Vector3.Slerp(g.transform.localScale, bigScale, 1.5f * Time.deltaTime);
+                }
+                //table.transform.localScale = Vector3.Slerp(table.transform.localScale, bigScale, 1.5f * Time.deltaTime);
                 //table.transform.localScale = Vector3.Slerp(table.transform.localScale, bigScale, 1.5f * Time.deltaTime);
                 //table.transform.localPosition =  new Vector3(localTablePos.x, table.transform.localPosition.y, localTablePos.z);
                 
+
 
                 propParent.transform.localScale = Vector3.Slerp(propParent.transform.localScale, bigScale, 1.5f * Time.deltaTime);
 
@@ -116,21 +127,21 @@ public class UserCollisionDetection : MonoBehaviour {
 
                 Debug.Log("Resetting switch");
 
-                playerObj.transform.localScale =  Vector3.Slerp(playerObj.transform.localScale, new Vector3(1f, 1f, 1f), 1.5f * Time.deltaTime); //new Vector3(1f, 1f, 1f);
+                //cameraParent.transform.localScale =  Vector3.Slerp(cameraParent.transform.localScale, new Vector3(1f, 1f, 1f), 1.5f * Time.deltaTime); //new Vector3(1f, 1f, 1f);
 
-                // scale table
+                //// scale table
                 //table.transform.localPosition = new Vector3(0f, 0f, 0f);
                 //table.transform.localScale = Vector3.Slerp(table.transform.localScale, normalScale, 1.5f * Time.deltaTime);
                 //table.transform.localPosition = localTablePos;
 
-                if (propParent.transform.localScale.x >= (normalScale.x - 0.1f) && propParent.transform.localScale.x <= (normalScale.x + 0.1f))
+                if (cameraParent.transform.localScale.x >= (normalScale.x - 0.05f) && cameraParent.transform.localScale.x <= (normalScale.x + 0.1f))
                 {
                     currentScale = scaleMode.stopped;
-                    propParent.transform.localScale = normalScale;
+                   // propParent.transform.localScale = normalScale;
                     return;
                 }
 
-                propParent.transform.localScale = Vector3.Slerp(propParent.transform.localScale, normalScale, 1.5f * Time.deltaTime);
+                cameraParent.transform.localScale = Vector3.Slerp(cameraParent.transform.localScale, normalScale, 1.5f * Time.deltaTime);
                 
               
 
@@ -152,7 +163,7 @@ public class UserCollisionDetection : MonoBehaviour {
             if (propParent.transform.localScale.x > smallScale.x)
             {
                 currentScale = scaleMode.shrinking;
-               // fader.Flash();
+                // fader.Flash();
             }
 
             // change to red
@@ -160,22 +171,28 @@ public class UserCollisionDetection : MonoBehaviour {
 
         }
 
-        //if (other.gameObject.CompareTag("Perception-Changer-Big"))
-        //{
-        //    // User is inside large ball
-        //    Debug.Log("Enemy touch");
+        if (other.gameObject.CompareTag("Perception-Changer-Big"))
+        {
+            // User is inside large ball
+            Debug.Log("Enemy touch");
 
 
-        //    // change scale of room
-        //    if (propParent.transform.localScale.x < bigScale.x)
-        //    {
-        //        currentScale = scaleMode.growing;
-        //    }
+            // change scale of room
+            if (propParent.transform.localScale.x < bigScale.x)
+            {
+                playerPosition = headCam.transform.localPosition;
+                currentScale = scaleMode.growing;
 
-        //    // change to red
-        //    other.gameObject.GetComponent<Renderer>().material.SetColor("_Color", Color.red);
+                // get initial player pos
 
-        //}
+                //  playerPosition.x = playerPosition.x * bigScale.x;
+                //  playerPosition.z = playerPosition.z * bigScale.z;
+            }
+
+            // change to red
+            other.gameObject.GetComponent<Renderer>().material.SetColor("_Color", Color.red);
+
+        }
 
         //if (other.gameObject.CompareTag("Perception-Changer-Reset"))
         //{
