@@ -66,39 +66,15 @@ public class UserCollisionDetection : MonoBehaviour {
                 break;
 
             // if shrinking
-            case scaleMode.shrinking:
+            case scaleMode.shrinking:        
 
-                //foreach (GameObject g in table)
-                //{
-                //    Vector3 targetPos = g.transform.position;
-                //    Vector3 camPos = headCam.transform.position;
+                cameraParent.transform.localScale = Vector3.Slerp(cameraParent.transform.localScale, bigScale, 1.5f * Time.deltaTime);
 
-                //    float scaleFactor = 6f;
-                //    Vector3 startScale = g.transform.localScale;
-                //    Vector3 endScale = g.transform.localScale * scaleFactor; // sf
-
-
-                //    Vector3 difference = targetPos - camPos;
-                //    Vector3 finalPos = (difference * scaleFactor) + camPos;
-
-                //    g.transform.localScale = endScale;
-                //    g.transform.position = finalPos;
-                //}
-               // // scale props
-               // cameraParent.transform.localScale = Vector3.Slerp(cameraParent.transform.localScale, bigScale, 1.5f * Time.deltaTime);
-
-               //// playerPosition = cameraParent.transform.localPosition;
-
-
-               // cameraParent.transform.localPosition = Vector3.Slerp(cameraParent.transform.localPosition, -playerPosition, 1.5f * Time.deltaTime);
-
-
-
-               // if (cameraParent.transform.localScale.x >= (bigScale.x + 0.05f))
-               // {
-               //     currentScale = scaleMode.stopped;
-               // }
-
+                if (cameraParent.transform.localScale.x >= (bigScale.x + 0.05f))
+                {
+                    currentScale = scaleMode.stopped;
+                }
+                
                 break;
 
             // if growing

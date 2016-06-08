@@ -48,7 +48,7 @@ public class ControllerMap : MonoBehaviour {
         triggerUp = myController.GetPressUp(triggerBtn);
         triggerPressed = myController.GetPress(triggerBtn);
 
-        if (triggerDown)
+        if (gripDown)
         {
             Debug.Log("Trigger down");
             playerScript.CurrentScale = scaleMode.resetting;
