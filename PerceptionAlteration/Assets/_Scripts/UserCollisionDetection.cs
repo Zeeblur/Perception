@@ -2,7 +2,7 @@
 using System.Collections;
 
 // determine how to scale on update
-public enum scaleMode { stopped, shrinking, growing, resetting };
+public enum scaleMode { stopped, shrinking, growing, resetting, growTest };
 
 
 public class UserCollisionDetection : MonoBehaviour {
@@ -19,7 +19,7 @@ public class UserCollisionDetection : MonoBehaviour {
     public Vector3 smallScale;
     public Vector3 bigScale;
 
-    private Vector3 cameraAdjustment = new Vector3(0f, 2f, 0f);
+    private Vector3 cameraAdjustment = new Vector3(0f, 5f, 0f);
     private Vector3 cameraAdjustmentDown = new Vector3(0f, -2f, 0f);
 
     // local var for parent
@@ -70,9 +70,9 @@ public class UserCollisionDetection : MonoBehaviour {
                 //cameraParent.transform.localScale = Vector3.Slerp(cameraParent.transform.localScale, cameraAdjustment, 1.5f * Time.deltaTime); //playerObj.transform.localScale + cameraAdjustment;
 
                 // scale props
-                cameraParent.transform.localScale = Vector3.Slerp(cameraParent.transform.localScale, smallScale, 1.5f * Time.deltaTime);
+                cameraParent.transform.localScale = Vector3.Slerp(cameraParent.transform.localScale, bigScale, 1.5f * Time.deltaTime);
 
-                if (cameraParent.transform.localScale.x <= (smallScale.x + 0.05f))
+                if (cameraParent.transform.localScale.x >= (bigScale.x + 0.05f))
                 {
                     currentScale = scaleMode.stopped;
                 }
@@ -81,6 +81,13 @@ public class UserCollisionDetection : MonoBehaviour {
 
             // if growing
             case scaleMode.growing:
+
+                cameraParent.transform.localScale = Vector3.Slerp(cameraParent.transform.localScale, smallScale, 1.5f * Time.deltaTime);
+
+                if (cameraParent.transform.localScale.x <= (smallScale.x + 0.05f))
+                {
+                    currentScale = scaleMode.stopped;
+                }
 
                // cameraAdjustmentDown.y = cameraParent.transform.localScale.y;
                // cameraAdjustmentDown.z = cameraParent.transform.localScale.z;
@@ -96,29 +103,29 @@ public class UserCollisionDetection : MonoBehaviour {
                 //// scale ta
                 ///table.transform.modelm
 
-                // slerp transform is player GO transform. moving parent.
-                Vector3 slerpInc = Vector3.Slerp(headCam.transform.localPosition, (playerPosition), 1.5f * Time.deltaTime);
+                //// slerp transform is player GO transform. moving parent.
+                //Vector3 slerpInc = Vector3.Slerp(headCam.transform.localPosition, (playerPosition), 1.5f * Time.deltaTime);
 
-                //cameraParent.transform.localPosition = new Vector3(slerpInc.x, headCam.transform.localPosition.y, slerpInc.z);
+                ////cameraParent.transform.localPosition = new Vector3(slerpInc.x, headCam.transform.localPosition.y, slerpInc.z);
 
-                //table.transform.localPosition = new Vector3(0f, 0f, 0f);
-                foreach(GameObject g in table)
-                {
-                    g.transform.localScale = Vector3.Slerp(g.transform.localScale, bigScale, 1.5f * Time.deltaTime);
-                }
-                //table.transform.localScale = Vector3.Slerp(table.transform.localScale, bigScale, 1.5f * Time.deltaTime);
-                //table.transform.localScale = Vector3.Slerp(table.transform.localScale, bigScale, 1.5f * Time.deltaTime);
-                //table.transform.localPosition =  new Vector3(localTablePos.x, table.transform.localPosition.y, localTablePos.z);
+                ////table.transform.localPosition = new Vector3(0f, 0f, 0f);
+                //foreach(GameObject g in table)
+                //{
+                //    g.transform.localScale = Vector3.Slerp(g.transform.localScale, bigScale, 1.5f * Time.deltaTime);
+                //}
+                ////table.transform.localScale = Vector3.Slerp(table.transform.localScale, bigScale, 1.5f * Time.deltaTime);
+                ////table.transform.localScale = Vector3.Slerp(table.transform.localScale, bigScale, 1.5f * Time.deltaTime);
+                ////table.transform.localPosition =  new Vector3(localTablePos.x, table.transform.localPosition.y, localTablePos.z);
                 
 
 
-                propParent.transform.localScale = Vector3.Slerp(propParent.transform.localScale, bigScale, 1.5f * Time.deltaTime);
+                //propParent.transform.localScale = Vector3.Slerp(propParent.transform.localScale, bigScale, 1.5f * Time.deltaTime);
 
-                if (propParent.transform.localScale.x >= (bigScale.x - 0.1f))
-                {
-                    currentScale = scaleMode.stopped;
-                    propParent.transform.localScale = bigScale;
-                }
+                //if (propParent.transform.localScale.x >= (bigScale.x - 0.1f))
+                //{
+                //    currentScale = scaleMode.stopped;
+                //    propParent.transform.localScale = bigScale;
+                //}
 
                 break;
 
@@ -127,23 +134,39 @@ public class UserCollisionDetection : MonoBehaviour {
 
                 Debug.Log("Resetting switch");
 
-                //cameraParent.transform.localScale =  Vector3.Slerp(cameraParent.transform.localScale, new Vector3(1f, 1f, 1f), 1.5f * Time.deltaTime); //new Vector3(1f, 1f, 1f);
+                cameraParent.transform.localScale =  Vector3.Slerp(cameraParent.transform.localScale, new Vector3(1f, 1f, 1f), 1.5f * Time.deltaTime); //new Vector3(1f, 1f, 1f);
 
                 //// scale table
                 //table.transform.localPosition = new Vector3(0f, 0f, 0f);
                 //table.transform.localScale = Vector3.Slerp(table.transform.localScale, normalScale, 1.5f * Time.deltaTime);
                 //table.transform.localPosition = localTablePos;
 
-                if (cameraParent.transform.localScale.x >= (normalScale.x - 0.05f) && cameraParent.transform.localScale.x <= (normalScale.x + 0.1f))
-                {
-                    currentScale = scaleMode.stopped;
-                   // propParent.transform.localScale = normalScale;
-                    return;
-                }
+                //if (cameraParent.transform.localScale.x >= (normalScale.x - 0.05f) && cameraParent.transform.localScale.x <= (normalScale.x + 0.1f))
+                //{
+                //    currentScale = scaleMode.stopped;
+                //   // propParent.transform.localScale = normalScale;
+                //    return;
+                //}
 
-                cameraParent.transform.localScale = Vector3.Slerp(cameraParent.transform.localScale, normalScale, 1.5f * Time.deltaTime);
+                //cameraParent.transform.localScale = Vector3.Slerp(cameraParent.transform.localScale, normalScale, 1.5f * Time.deltaTime);
                 
               
+
+                break;
+
+            case scaleMode.growTest:
+                // get current camera scale.
+                cameraAdjustment.x = cameraParent.transform.localScale.x;
+                cameraAdjustment.z = cameraParent.transform.localScale.z;
+            
+                // slerp between adjustment and current scale.
+                cameraParent.transform.localScale = Vector3.Slerp(cameraParent.transform.localScale, cameraAdjustment, 1.5f * Time.deltaTime); //playerObj.transform.localScale + cameraAdjustment;
+
+                //if (cameraParent.transform.localScale.x >= (smallScale.x + 0.05f))
+                //{
+                //    currentScale = scaleMode.stopped;
+                //}
+
 
                 break;
         }
@@ -194,22 +217,22 @@ public class UserCollisionDetection : MonoBehaviour {
 
         }
 
-        //if (other.gameObject.CompareTag("Perception-Changer-Reset"))
-        //{
-        //    // User is inside normal ball
-        //    Debug.Log("normal scale touch");
+        if (other.gameObject.CompareTag("Perception-Changer-Reset"))
+        {
+            // User is inside normal ball
+            Debug.Log("normal scale touch");
 
-        //    // if not currently normal scale
-        //    if (propParent.transform.localScale.x != normalScale.x)
-        //    {
-        //        currentScale = scaleMode.resetting;
-        //    }
+            // if not currently normal scale
+           // if (propParent.transform.localScale.x != normalScale.x)
+            {
+                currentScale = scaleMode.growTest;
+            }
 
 
-        //    // change to red
-        //    other.gameObject.GetComponent<Renderer>().material.SetColor("_Color", Color.red);
+            // change to red
+            other.gameObject.GetComponent<Renderer>().material.SetColor("_Color", Color.red);
 
-        //}
+        }
 
     }
 
