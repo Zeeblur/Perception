@@ -41,9 +41,9 @@ public class SteamVR_IK : MonoBehaviour
 		var jointPosition = joint.position;
 		var endPosition = end.position;
 
-		var startRotationLocal = start.localRotation;
-		var jointRotationLocal = joint.localRotation;
-		var endRotationLocal = end.localRotation;
+        var startRotationLocal = start.localRotation;
+        var jointRotationLocal = joint.localRotation;
+        var endRotationLocal = end.localRotation;
 
 		var startParent = start.parent;
 		var jointParent = joint.parent;
@@ -92,13 +92,13 @@ public class SteamVR_IK : MonoBehaviour
 
 		end.rotation = targetRotation; // optionally blend?
 
-		// handle blending in/out
-		if (blendPct < 1.0f)
-		{
-			start.localRotation = Quaternion.Slerp(startRotationLocal, start.localRotation, blendPct);
-			joint.localRotation = Quaternion.Slerp(jointRotationLocal, joint.localRotation, blendPct);
-			end.localRotation = Quaternion.Slerp(endRotationLocal, end.localRotation, blendPct);
-		}
+        // handle blending in/out
+        if (blendPct < 1.0f)
+        {
+            start.localRotation = Quaternion.Slerp(startRotationLocal, start.localRotation, blendPct);
+            joint.localRotation = Quaternion.Slerp(jointRotationLocal, joint.localRotation, blendPct);
+            end.localRotation = Quaternion.Slerp(endRotationLocal, end.localRotation, blendPct);
+        }
 
 		// restore scale so it doesn't blow out
 		start.localScale = startScale;
