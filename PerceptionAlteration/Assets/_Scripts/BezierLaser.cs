@@ -96,7 +96,7 @@ public class BezierLaser : MonoBehaviour
 
 	}
 
-    private float epsilon  = 0.1f;
+    private float epsilon  = 2f;
 
     private bool HitTooClose(RaycastHit newHit)
     {
