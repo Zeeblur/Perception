@@ -97,7 +97,7 @@ public class UserCollisionDetection : MonoBehaviour {
 
                 cameraParent.transform.localScale =  Vector3.Slerp(cameraParent.transform.localScale, new Vector3(1f, 1f, 1f), 1.5f * Time.deltaTime); 
 
-                if (cameraParent.transform.localScale.x >= (normalScale.x - 0.05f) && cameraParent.transform.localScale.x <= (normalScale.x + 0.1f))
+                if (cameraParent.transform.localScale.x >= (1f - 0.05f) && cameraParent.transform.localScale.x <= (1f + 0.1f))
                 {
                     currentScale = scaleMode.stopped;
                     // propParent.transform.localScale = normalScale;
