@@ -24,6 +24,12 @@ public class UserCollisionDetection : MonoBehaviour {
     Vector3 playerPosition;
     Vector3 newPos;
 
+    // teleport target
+    public GameObject teleTarget;
+
+
+    // initial capsule rotation
+    private Quaternion capsRot;
 
     private scaleMode currentScale = 0;
 
@@ -40,6 +46,10 @@ public class UserCollisionDetection : MonoBehaviour {
         headCam = GameObject.FindGameObjectWithTag("Head");
 	}
 
+    void Awake()
+    {
+        capsRot = transform.rotation;
+    }
     
 	
 	// Update is called once per frame
@@ -159,6 +169,26 @@ public class UserCollisionDetection : MonoBehaviour {
 
         }
 
+    }
+
+    Transform reference
+    {
+        get
+        {
+            var top = SteamVR_Render.Top();
+            return (top != null) ? top.origin : null;
+        }
+    }
+
+    public void Teleport()
+    {
+        //cameraParent.transform.position = ray.origin + ray.direction * (float)Vector3.Magnitude(teleTarget.transform.localPosition) - new Vector3(t.GetChild(0).localPosition.x, 0f, t.GetChild(0).localPosition.z) - headPosOnGround;
+    }
+
+    void LateUpdate()
+    {
+        // no rotation for capsule
+        transform.rotation = capsRot;
     }
 
 }

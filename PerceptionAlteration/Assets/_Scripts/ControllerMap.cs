@@ -52,7 +52,7 @@ public class ControllerMap : MonoBehaviour {
         {
             Debug.Log("Trigger down");
             playerScript.CurrentScale = scaleMode.resetting;
-            
+            playerScript.Teleport();
         }
 
 	}
