@@ -43,10 +43,10 @@ public class BezierCurve : MonoBehaviour
         return GetVelocity(t).normalized;
     }
 
-    public void SetCurveTarget(Vector3 end)//, Vector3 end)
+    public void SetCurveTarget(Vector3 end)
     {
-        points[2] = end;
-        //points[2] = end;
+        // changes target point (end is world space)
+        points[2] = transform.InverseTransformPoint(end);
     }
 
 }

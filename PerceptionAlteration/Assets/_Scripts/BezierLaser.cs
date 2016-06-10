@@ -12,11 +12,14 @@ public class BezierLaser : MonoBehaviour
     public bool lookForward;
     public Transform[] items;
 
+
+    private Transform[] sections;
     private LayerMask floorMask;
 
 
     private void Awake()
-    {      
+    {
+        sections = new Transform[frequency];
         floorMask = LayerMask.GetMask("Teleport-able");
         DrawCurve();
     }
@@ -27,32 +30,50 @@ public class BezierLaser : MonoBehaviour
         if (frequency <= 0 || items == null || items.Length == 0)
             return;
 
-        float stepSize = 1f / (frequency * items.Length);
-        for (int p = 0, f = 0; f < frequency; f++)
+        float stepSize = 1f / frequency;
+        for (int p = 0, f = 0; f < frequency; f++, p++)
         {
-            for (int i = 0; i < items.Length; i++, p++)
-            {
-                Transform item = Instantiate(items[i]) as Transform;
-                Vector3 position = curve.GetPoint(p * stepSize);
-                item.transform.localPosition = position;
-                item.transform.parent = transform;
-            }
+            Transform item = Instantiate(items[0]) as Transform;
+            Vector3 position = curve.GetPoint(p * stepSize);
+            item.transform.localPosition = position;
+            item.transform.parent = transform;
+
+            sections[p] = item;
         }
     }
 
     private void UpdateCurve()
     {
-        float stepSize = 1f / (frequency * items.Length);
-        for (int p = 0, f = 0; f < frequency; f++)
+        sections[4].gameObject.GetComponent<Renderer>().material.SetColor("_Color", Color.red);
+
+        for (int i = 0; i < sections.Length; i++)
         {
-            for (int i = 0; i < items.Length; i++, p++)
-            {
-                Vector3 position = curve.GetPoint(p * stepSize);
-                items[i].transform.localPosition = position;
-                items[i].transform.parent = transform;
-            }
+            sections[i].transform.localPosition = curve.GetPoint(i * (1f / frequency));
         }
 
+        //float newStepSize = 1f / frequency;
+        //for (int i = 0; i < sections.Length; i++)
+        //{
+        //    Debug.Log("Curve get point " + i + ": " + curve.GetPoint(i * newStepSize));
+        //    sections[i].transform.localPosition = sections[i].transform.worldToLocalMatrix * curve.GetPoint(i * newStepSize);// curve.GetPoint(i * newStepSize);
+        //    //sections[i].transform.parent = transform;
+
+        //    if (i == 2)
+        //    {
+        //        sections[i].transform.localPosition = sections[i].transform.InverseTransformPoint(curve.GetPoint(i * newStepSize));
+        //    }
+
+        //    if (i == 3)
+        //    {
+        //        sections[i].transform.localPosition = sections[i].transform.TransformPoint(curve.GetPoint(i * newStepSize));
+        //    }
+
+        //    if (i == 1)
+        //    {
+        //        sections[i].transform.localPosition = currentHit.point;
+        //    }
+
+        //}
     }
 
 	// Use this for initialization
@@ -86,11 +107,15 @@ public class BezierLaser : MonoBehaviour
             {
 
                 Debug.Log("HIT THE FLOOR!");
+                Debug.Log("Curve start: " + curve.points[0]);
+                Debug.Log("Curve end: " + curve.points[2]);
                 curve.SetCurveTarget(hit.point);
-                UpdateCurve();
+                Debug.Log("Curve start: " + curve.points[0]);
+                Debug.Log("Curve end: " + curve.points[2]);
                 spot.transform.localPosition = hit.point;
 
                 currentHit = hit;
+                UpdateCurve();
             }
         }
 
