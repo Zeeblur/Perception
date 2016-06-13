@@ -33,6 +33,10 @@ public class UserCollisionDetection : MonoBehaviour {
     // initial capsule rotation
     private Quaternion capsRot;
 
+    // rotation for upside down 
+    private float theta = Mathf.PI / 2f;
+    private bool upright = true; 
+
     private scaleMode currentScale = 0;
 
     public scaleMode CurrentScale
@@ -66,7 +70,7 @@ public class UserCollisionDetection : MonoBehaviour {
             // if shrinking
             case scaleMode.shrinking:
 
-                Debug.Log("Growing switch");
+               // Debug.Log("Growing switch");
 
                 cameraParent.transform.localScale = Vector3.Slerp(cameraParent.transform.localScale, smallScale, 1.5f * Time.deltaTime);
 
@@ -97,8 +101,6 @@ public class UserCollisionDetection : MonoBehaviour {
 
                 Debug.Log("turning");
 
-                float theta = Mathf.PI / 2f;
-
                 cameraParent.transform.localRotation = Quaternion.Slerp(cameraParent.transform.localRotation, new Quaternion(Mathf.Sin(theta), 0, 0, Mathf.Cos(theta)), 1.5f* Time.deltaTime);    
 
                 cameraParent.transform.localPosition = Vector3.Slerp(cameraParent.transform.localPosition, elevation, 1.5f* Time.deltaTime);
@@ -110,9 +112,17 @@ public class UserCollisionDetection : MonoBehaviour {
 
                 Debug.Log("Resetting switch");
 
-                cameraParent.transform.localScale =  Vector3.Slerp(cameraParent.transform.localScale, new Vector3(1f, 1f, 1f), 1.5f * Time.deltaTime); 
+                cameraParent.transform.localScale =  Vector3.Slerp(cameraParent.transform.localScale, new Vector3(1f, 1f, 1f), 1.5f * Time.deltaTime);
 
-                if (cameraParent.transform.localScale.x >= (1f - 0.05f) && cameraParent.transform.localScale.x <= (1f + 0.1f))
+                if (!upright)
+                {
+                    cameraParent.transform.localRotation = Quaternion.Slerp(cameraParent.transform.localRotation, new Quaternion(0, 0, 0, Mathf.Cos(0)), 1.5f * Time.deltaTime);
+                    cameraParent.transform.localPosition = Vector3.Slerp(cameraParent.transform.localPosition, new Vector3(0f, 0f, 0f), 1.5f * Time.deltaTime);
+                }
+
+                upright = cameraParent.transform.localPosition.y <= 0.005 ? true : false;
+
+                if (cameraParent.transform.localScale.x >= (1f - 0.05f) && cameraParent.transform.localScale.x <= (1f + 0.1f) && upright)
                 {
                     currentScale = scaleMode.stopped;
                     // propParent.transform.localScale = normalScale;
@@ -132,17 +142,7 @@ public class UserCollisionDetection : MonoBehaviour {
             // User is inside enemy
             Debug.Log("Enemy touch");
 
-
-            // change scale of room
-          //  if (propParent.transform.localScale.x > smallScale.x)
-            {
-                currentScale = scaleMode.shrinking;
-                //Debug.Log("headCam.transform.localPosition is" + headCam.transform.localPosition);
-                //playerPosition = headCam.transform.localPosition;
-                //playerPosition.x = playerPosition.x * 10f;
-                //Debug.Log("pp " + playerPosition);
-                // fader.Flash();
-            }
+            currentScale = scaleMode.shrinking;
 
             // change to red
             other.gameObject.GetComponent<Renderer>().material.SetColor("_Color", Color.red);
@@ -156,7 +156,7 @@ public class UserCollisionDetection : MonoBehaviour {
 
 
             // change scale of room
-          //  if (propParent.transform.localScale.x < bigScale.x)
+          // if (propParent.transform.localScale.x < bigScale.x)
             {
                 playerPosition = headCam.transform.localPosition;
                 currentScale = scaleMode.growing;
@@ -176,23 +176,15 @@ public class UserCollisionDetection : MonoBehaviour {
             // User is inside large ball
             Debug.Log("Enemy touch");
 
-
-            // change scale of room
-            //  if (propParent.transform.localScale.x < bigScale.x)
-            {
-
-                currentScale = scaleMode.turning;
-                elevation = new Vector3(0f, 3.2f, 0f);
-                elevation += cameraParent.transform.localPosition;
-
-
-                // newPos = new Vector3(playerPosition.x + 10f, playerPosition.y, playerPosition.z - 10f);
-            }
+            currentScale = scaleMode.turning;
+            elevation = new Vector3(0f, 3.2f, 0f);
+            elevation += cameraParent.transform.localPosition;
 
             // change to red
             other.gameObject.GetComponent<Renderer>().material.SetColor("_Color", Color.red);
 
         }
+
 
     }
 

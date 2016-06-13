@@ -56,4 +56,16 @@ public class ControllerMap : MonoBehaviour {
         }
 
 	}
+
+    // collider check 
+    void OnTriggerEnter(Collider other)
+    {
+        Debug.Log("box!");
+        if (other.gameObject.CompareTag("SoundPlayer"))
+        {
+            Debug.Log("Sound");
+            // change to red
+            other.gameObject.GetComponent<Renderer>().material.SetColor("_Color", Color.red);
+        }
+    }
 }
