@@ -120,7 +120,7 @@ public class UserCollisionDetection : MonoBehaviour {
                     cameraParent.transform.localPosition = Vector3.Slerp(cameraParent.transform.localPosition, new Vector3(0f, 0f, 0f), 1.5f * Time.deltaTime);
                 }
 
-                upright = cameraParent.transform.localPosition.y <= 0.005 ? true : false;
+                upright = cameraParent.transform.localPosition.y <= 0.0005 ? true : false;
 
                 if (cameraParent.transform.localScale.x >= (1f - 0.05f) && cameraParent.transform.localScale.x <= (1f + 0.1f) && upright)
                 {
@@ -137,6 +137,27 @@ public class UserCollisionDetection : MonoBehaviour {
     void OnTriggerEnter(Collider other)
     {
         Debug.Log("Trigger Enter");
+
+        // UPSIDE DOWN!
+        if (other.gameObject.CompareTag("Perception-Changer-Flip"))
+        {
+            // User is inside large ball
+            Debug.Log("Enemy touch");
+
+            currentScale = scaleMode.turning;
+            elevation = new Vector3(0f, 2.5f, 0f);
+            elevation += cameraParent.transform.localPosition;
+
+            // change to red
+            other.gameObject.GetComponent<Renderer>().material.SetColor("_Color", Color.red);
+
+        }
+
+        // if moving don't count trigger hit
+        if (currentScale != scaleMode.stopped)
+            return;
+
+
         if (other.gameObject.CompareTag("Perception-Changer-Small"))
         {
             // User is inside enemy
@@ -170,20 +191,7 @@ public class UserCollisionDetection : MonoBehaviour {
         }
 
 
-        // UPSIDE DOWN!
-        if (other.gameObject.CompareTag("Perception-Changer-Reset"))
-        {
-            // User is inside large ball
-            Debug.Log("Enemy touch");
 
-            currentScale = scaleMode.turning;
-            elevation = new Vector3(0f, 3.2f, 0f);
-            elevation += cameraParent.transform.localPosition;
-
-            // change to red
-            other.gameObject.GetComponent<Renderer>().material.SetColor("_Color", Color.red);
-
-        }
 
 
     }
