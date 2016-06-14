@@ -56,5 +56,10 @@ public class Controller : MonoBehaviour
             enemyScript.Spawn();
         }
 
+        if (gripDown)
+        {
+            playerScript.CurrentScale = scaleMode.resetting;
+        }
+
     }
 }
