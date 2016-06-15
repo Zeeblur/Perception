@@ -43,9 +43,10 @@ public static class Bezier
 
         // B(t) = (1-t)^3 P0 + 3(1-t)^2t P1 + 3(1-t)t^2 P2 + t^3 P3
 
-        return (oneMinusT * oneMinusT * oneMinusT * p0) +
-            (3 * (1 - t)*2 * t * p1) +
-            (3 * (1-t) * t* t * p2) +
+        return
+            (oneMinusT * oneMinusT * oneMinusT * p0) +
+            (3 * oneMinusT * oneMinusT * t * p1) +
+            (3 * oneMinusT * t* t * p2) +
             (t * t * t * p3);
     }
 
@@ -59,8 +60,9 @@ public static class Bezier
         float oneMinusT = 1f - t;
 
         // B'(t) = 3(1-t)^2(P1 -P0) + 6(1-t)t(P2 - P1) + 3t^2(P3 - P2)
-        return (3 * oneMinusT * oneMinusT * (p1 - p0)) +
-            (6f * oneMinusT * t * (p2 - p1)) +
-            (3f * t * t * (p3 - p2));
+        return
+            3f * oneMinusT * oneMinusT * (p1 - p0) +
+            6f * oneMinusT * t * (p2 - p1) +
+            3f * t * t * (p3 - p2);
     }
 }

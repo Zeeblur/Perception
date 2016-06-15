@@ -62,7 +62,10 @@ public class SplineInspector : Editor
     // Override to show button on inspector
     public override void OnInspectorGUI()
     {
+
         spline = target as Spline;
+        DrawDefaultInspector();
+
 
         // set looping true/false
         EditorGUI.BeginChangeCheck();
