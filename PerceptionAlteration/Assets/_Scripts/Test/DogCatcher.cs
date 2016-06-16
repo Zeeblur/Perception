@@ -5,6 +5,10 @@ public class DogCatcher : MonoBehaviour
 {
     public GameObject outerRing;
 
+
+    // var for ref to script
+    private GameObject spawner;
+
     private GameObject[] catcherLights;
 
     private int currentLightIndex = 0;
@@ -14,6 +18,7 @@ public class DogCatcher : MonoBehaviour
     {
         catcherLights = new GameObject[12];
         catcherLights = GameObject.FindGameObjectsWithTag("PointLight DogCatcher");
+        spawner = GameObject.FindGameObjectWithTag("Respawn");
 	}
 	
 	// Update is called once per frame
@@ -41,7 +46,9 @@ public class DogCatcher : MonoBehaviour
         lightGO.SetActive(true);
 
         // if last light start at beginning again
-        currentLightIndex = currentLightIndex == catcherLights.Length - 1 ? 0 : currentLightIndex++;
+        currentLightIndex = (currentLightIndex == catcherLights.Length - 1) ? 0 : currentLightIndex + 1;
+
+        spawner.GetComponent<EnemyGenerator>().SetDirty();
 
     }
 }

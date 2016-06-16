@@ -125,7 +125,6 @@ public class UserCollisionDetection : MonoBehaviour {
                 if (cameraParent.transform.localScale.x >= (1f - 0.05f) && cameraParent.transform.localScale.x <= (1f + 0.1f) && upright)
                 {
                     currentScale = scaleMode.stopped;
-                    // propParent.transform.localScale = normalScale;
                     return;
                 }
 
@@ -145,7 +144,7 @@ public class UserCollisionDetection : MonoBehaviour {
             Debug.Log("Enemy touch");
 
             currentScale = scaleMode.turning;
-            elevation = new Vector3(0f, 2.5f, 0f);
+            elevation = new Vector3(0f, 4.65f, 0f);
             elevation += cameraParent.transform.localPosition;
 
             // change to red

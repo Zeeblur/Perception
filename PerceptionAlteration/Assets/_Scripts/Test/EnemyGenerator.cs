@@ -13,6 +13,9 @@ public class EnemyGenerator : MonoBehaviour
     private List<GameObject> enemies;
     public Spline loopSpline;
 
+
+    private bool listDirty = false;
+
     // References to player/navmesh
     private NavMeshAgent nav;         
     
@@ -24,14 +27,25 @@ public class EnemyGenerator : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
     {
-        //if (enemies != null)
-        //{
-        //    foreach(GameObject g in enemies)
-        //    {
-        //        g.transform.localPosition += new Vector3(-0.1f, 0.0f, 0.0f);
-        //    }
-        //}
-	
+        // refresh list if needed. 
+        if (listDirty)
+        {
+            // check through each current spawned dog and delete if inactive/caught
+            foreach(GameObject dog in enemies)
+            {
+
+                // if the dog is not active delete and remove from list
+                if (!dog.activeSelf)
+                {
+                    enemies.Remove(dog);
+                    DestroyObject(dog);
+                    break;
+                }
+            }
+
+            // reset list
+            listDirty = false;
+        }
 	}
     
 
@@ -40,16 +54,15 @@ public class EnemyGenerator : MonoBehaviour
     {
         // rng god decides
         currentType = Random.Range(0, 4);
-        GameObject newDog = Instantiate(enemyPrefabs[currentType], new Vector3(0f, 0f, 0f), Quaternion.identity) as GameObject;
+        GameObject newDog = Instantiate(enemyPrefabs[currentType], transform.position, Quaternion.identity) as GameObject;
 
         // add parent
         newDog.transform.parent = this.transform;
         newDog.AddComponent<SplineWalker>();
         
-     
-
-
         // add to list
         enemies.Add(newDog);
     }
+
+    public void SetDirty() { listDirty = true; }
 }
