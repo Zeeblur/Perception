@@ -28,7 +28,7 @@ public static class Bezier
         Vector3 p2,
         float t)
     {
-        return (2f * (1 - t) * (p1 - p0)) + 2f * t * (p2 - p1);
+        return (2f * (1f - t) * (p1 - p0)) + 2f * t * (p2 - p1);
     }
 
     // cubic Bezier
@@ -45,8 +45,8 @@ public static class Bezier
 
         return
             (oneMinusT * oneMinusT * oneMinusT * p0) +
-            (3 * oneMinusT * oneMinusT * t * p1) +
-            (3 * oneMinusT * t* t * p2) +
+            (3f * oneMinusT * oneMinusT * t * p1) +
+            (3f * oneMinusT * t* t * p2) +
             (t * t * t * p3);
     }
 

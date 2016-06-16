@@ -62,6 +62,11 @@ public class Spline : MonoBehaviour
                     points[1] += delta;
                     points[index - 1] += delta;
                 }
+                else
+                {
+                    points[index - 1] += delta;
+                    points[index + 1] += delta;
+                }
 
             }
             else // Not looping
@@ -124,25 +129,20 @@ public class Spline : MonoBehaviour
     }
 
     // rate of change of curve = velocity = first derivative
-    public Vector3 GetVelocity(float t)
-    {
-        // find correct curve
-        int i;
-        if (t >= 1f)
-        {
-            t = 1f;
-            i = points.Length - 4;
-        }
-        else
-        {
-            t = Mathf.Clamp01(t) * CurveCount;
-            i = (int)t;
-            t -= i;
-            i *= 3;
-        }
-
-        return transform.TransformPoint(Bezier.GetFirstDerivative(points[i], points[1 + 1], points[i + 2], points[i + 3], t)) - transform.position;
-    }
+  	public Vector3 GetVelocity (float t) {
+		int i;
+		if (t >= 1f) {
+			t = 1f;
+			i = points.Length - 4;
+		}
+		else {
+			t = Mathf.Clamp01(t) * CurveCount;
+			i = (int)t;
+			t -= i;
+			i *= 3;
+		}
+		return transform.TransformPoint(Bezier.GetFirstDerivative(points[i], points[i + 1], points[i + 2], points[i + 3], t)) - transform.position;
+	}
 
     public Vector3 GetDirection (float t)
     {
@@ -153,15 +153,15 @@ public class Spline : MonoBehaviour
     {
         // reset points
         points = new Vector3[] {
-            new Vector3(-1f, 0f, 0f),
-            new Vector3(-2f, 0f, 0f),
-            new Vector3(-3f, 0f, 0f),
-            new Vector3(-4f, 0f, 0f),
+            new Vector3(1f, 0f, 0f),
+            new Vector3(2f, 0f, 0f),
+            new Vector3(3f, 0f, 0f),
+            new Vector3(4f, 0f, 0f),
         };
 
         modes = new BezierControlPointMode[] {
-            BezierControlPointMode.Free,
-            BezierControlPointMode.Free
+            BezierControlPointMode.Mirrored,
+            BezierControlPointMode.Mirrored
         };
     }
 
