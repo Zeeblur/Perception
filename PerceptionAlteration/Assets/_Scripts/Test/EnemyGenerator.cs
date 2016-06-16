@@ -11,6 +11,7 @@ public class EnemyGenerator : MonoBehaviour
     public GameObject[] enemyPrefabs;
 
     private List<GameObject> enemies;
+    public Spline loopSpline;
 
     // References to player/navmesh
     private NavMeshAgent nav;         
@@ -23,13 +24,13 @@ public class EnemyGenerator : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
     {
-        if (enemies != null)
-        {
-            foreach(GameObject g in enemies)
-            {
-                g.transform.localPosition += new Vector3(-0.1f, 0.0f, 0.0f);
-            }
-        }
+        //if (enemies != null)
+        //{
+        //    foreach(GameObject g in enemies)
+        //    {
+        //        g.transform.localPosition += new Vector3(-0.1f, 0.0f, 0.0f);
+        //    }
+        //}
 	
 	}
     
@@ -43,6 +44,10 @@ public class EnemyGenerator : MonoBehaviour
 
         // add parent
         newDog.transform.parent = this.transform;
+        newDog.AddComponent<SplineWalker>();
+        
+     
+
 
         // add to list
         enemies.Add(newDog);

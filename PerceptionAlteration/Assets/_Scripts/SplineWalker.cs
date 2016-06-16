@@ -15,6 +15,17 @@ public class SplineWalker : MonoBehaviour
 
     private bool goingForward = true;
 
+    private void Awake()
+    {
+        // default
+        splineTarget = GameObject.FindGameObjectWithTag("Loop").GetComponent<Spline>();
+        lookForward = true;
+        mode = SplineWalkerMode.Loop;
+        duration = 10f;
+        Debug.Log("Hi");
+    }
+
+
     private void Update()
     {
         if (goingForward)
