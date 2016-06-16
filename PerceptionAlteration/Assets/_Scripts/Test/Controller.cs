@@ -8,6 +8,7 @@ public class Controller : MonoBehaviour
     private SteamVR_TrackedObject trackedObj;
     private GameObject enemyContainer;
     private EnemyGenerator enemyScript;
+    public GameObject dogCatcher;
 
     private Valve.VR.EVRButtonId gripBtn = Valve.VR.EVRButtonId.k_EButton_Grip;
     public bool gripDown = false;
@@ -18,6 +19,10 @@ public class Controller : MonoBehaviour
     public bool triggerDown = false;
     public bool triggerUp = false;
     public bool triggerPressed = false;
+
+    private Valve.VR.EVRButtonId touchPad = Valve.VR.EVRButtonId.k_EButton_SteamVR_Touchpad;
+    public bool touchDown = false;
+    private bool showCatcher = false; // show or hide Catcher
 
     private SteamVR_Controller.Device myController { get { return SteamVR_Controller.Input((int)trackedObj.index); } }
 
@@ -50,6 +55,8 @@ public class Controller : MonoBehaviour
         triggerUp = myController.GetPressUp(triggerBtn);
         triggerPressed = myController.GetPress(triggerBtn);
 
+        touchDown = myController.GetTouchDown(touchPad);
+
         if (triggerDown)
         {
             // send ball out of room
@@ -61,5 +68,15 @@ public class Controller : MonoBehaviour
             playerScript.CurrentScale = scaleMode.resetting;
         }
 
+        if (touchDown)
+        {
+            Debug.Log("TouchDown");
+
+            // toggle catcher
+            showCatcher = showCatcher == true ? false : true;
+
+            dogCatcher.SetActive(showCatcher);
+        }
+        
     }
 }
