@@ -105,6 +105,12 @@ public class UserCollisionDetection : MonoBehaviour {
 
                 cameraParent.transform.localPosition = Vector3.Slerp(cameraParent.transform.localPosition, elevation, 1.5f* Time.deltaTime);
 
+                if (cameraParent.transform.localPosition.y >= elevation.y - 0.005 && cameraParent.transform.localRotation.w <= 0 + 0.005)
+                {
+                    currentScale = scaleMode.stopped;
+                    upright = false;
+                }
+
                 break;
 
             // if resetting to middle size
