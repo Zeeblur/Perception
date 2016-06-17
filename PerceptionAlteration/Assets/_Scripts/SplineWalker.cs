@@ -38,7 +38,6 @@ public class SplineWalker : MonoBehaviour
                 if (shoot)
                 {
                     shoot = false;
-                    progress -= 0f;
                     duration = 10f;
                 }
 
@@ -56,7 +55,6 @@ public class SplineWalker : MonoBehaviour
                         break;
 
                 }
-              //  -1.600769 -1.038768 0.5232809
             }
         }
         else
