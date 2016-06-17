@@ -2,7 +2,7 @@
 using System.Collections;
 
 // determine how to scale on update
-public enum scaleMode { stopped, shrinking, growing, resetting, growTest, turning };
+public enum scaleMode { stopped, shrinking, growing, resetting, shrinkingSmaller, turning };
 
 
 public class UserCollisionDetection : MonoBehaviour {
@@ -16,6 +16,13 @@ public class UserCollisionDetection : MonoBehaviour {
     public Vector3 normalScale;
     public Vector3 smallScale;
     public Vector3 bigScale;
+    public Vector3 smallestScale;
+
+    // speed of slerp
+    public float speed;
+
+    // for inequalities
+    private float epsilon = 0.005f;
 
     // local var for parent
     public GameObject propParent;
@@ -67,14 +74,27 @@ public class UserCollisionDetection : MonoBehaviour {
             case scaleMode.stopped:
                 break;
 
+            // smallllllest
+            case scaleMode.shrinkingSmaller:
+
+                cameraParent.transform.localScale = Vector3.Slerp(cameraParent.transform.localScale, smallestScale, speed * Time.deltaTime);
+
+                if (cameraParent.transform.localScale.x <= (smallestScale.x + epsilon))
+                {
+                    currentScale = scaleMode.stopped;
+                }
+
+
+                break;
+
             // if shrinking
             case scaleMode.shrinking:
 
                // Debug.Log("Growing switch");
 
-                cameraParent.transform.localScale = Vector3.Slerp(cameraParent.transform.localScale, smallScale, 1.5f * Time.deltaTime);
+                cameraParent.transform.localScale = Vector3.Slerp(cameraParent.transform.localScale, smallScale, speed * Time.deltaTime);
 
-                if (cameraParent.transform.localScale.x <= (smallScale.x + 0.005f))
+                if (cameraParent.transform.localScale.x <= (smallScale.x + epsilon))
                 {
                     currentScale = scaleMode.stopped;
                 }
@@ -86,10 +106,10 @@ public class UserCollisionDetection : MonoBehaviour {
             case scaleMode.growing:
 
                 Debug.Log("Shrinking switch");
-                
-                cameraParent.transform.localScale = Vector3.Slerp(cameraParent.transform.localScale, bigScale, 1.5f * Time.deltaTime);
 
-                if (cameraParent.transform.localScale.x >= (bigScale.x + 0.005f))
+                cameraParent.transform.localScale = Vector3.Slerp(cameraParent.transform.localScale, bigScale, speed * Time.deltaTime);
+
+                if (cameraParent.transform.localScale.x >= (bigScale.x + epsilon))
                 {
                     currentScale = scaleMode.stopped;
                 }
@@ -101,11 +121,11 @@ public class UserCollisionDetection : MonoBehaviour {
 
                 Debug.Log("turning");
 
-                cameraParent.transform.localRotation = Quaternion.Slerp(cameraParent.transform.localRotation, new Quaternion(Mathf.Sin(theta), 0, 0, Mathf.Cos(theta)), 1.5f* Time.deltaTime);    
+                cameraParent.transform.localRotation = Quaternion.Slerp(cameraParent.transform.localRotation, new Quaternion(Mathf.Sin(theta), 0, 0, Mathf.Cos(theta)), speed * Time.deltaTime);
 
-                cameraParent.transform.localPosition = Vector3.Slerp(cameraParent.transform.localPosition, elevation, 1.5f* Time.deltaTime);
+                cameraParent.transform.localPosition = Vector3.Slerp(cameraParent.transform.localPosition, elevation, speed * Time.deltaTime);
 
-                if (cameraParent.transform.localPosition.y >= elevation.y - 0.005 && cameraParent.transform.localRotation.w <= 0 + 0.005)
+                if (cameraParent.transform.localPosition.y >= elevation.y - epsilon && cameraParent.transform.localRotation.w <= epsilon)
                 {
                     currentScale = scaleMode.stopped;
                     upright = false;
@@ -118,17 +138,17 @@ public class UserCollisionDetection : MonoBehaviour {
 
                 Debug.Log("Resetting switch");
 
-                cameraParent.transform.localScale =  Vector3.Slerp(cameraParent.transform.localScale, new Vector3(1f, 1f, 1f), 1.5f * Time.deltaTime);
+                cameraParent.transform.localScale =  Vector3.Slerp(cameraParent.transform.localScale, new Vector3(1f, 1f, 1f), speed * Time.deltaTime);
 
                 if (!upright)
                 {
-                    cameraParent.transform.localRotation = Quaternion.Slerp(cameraParent.transform.localRotation, new Quaternion(0, 0, 0, Mathf.Cos(0)), 1.5f * Time.deltaTime);
-                    cameraParent.transform.localPosition = Vector3.Slerp(cameraParent.transform.localPosition, new Vector3(0f, 0f, 0f), 1.5f * Time.deltaTime);
+                    cameraParent.transform.localRotation = Quaternion.Slerp(cameraParent.transform.localRotation, new Quaternion(0, 0, 0, Mathf.Cos(0)), speed * Time.deltaTime);
+                    cameraParent.transform.localPosition = Vector3.Slerp(cameraParent.transform.localPosition, new Vector3(0f, 0f, 0f), speed * Time.deltaTime);
                 }
 
-                upright = cameraParent.transform.localPosition.y <= 0.0005 ? true : false;
+                upright = cameraParent.transform.localPosition.y <= epsilon ? true : false;
 
-                if (cameraParent.transform.localScale.x >= (1f - 0.05f) && cameraParent.transform.localScale.x <= (1f + 0.1f) && upright)
+                if (cameraParent.transform.localScale.x >= (1f - epsilon) && cameraParent.transform.localScale.x <= (1f + epsilon) && upright)
                 {
                     currentScale = scaleMode.stopped;
                     return;
@@ -169,6 +189,18 @@ public class UserCollisionDetection : MonoBehaviour {
             Debug.Log("Enemy touch");
 
             currentScale = scaleMode.shrinking;
+
+            // change to red
+            other.gameObject.GetComponent<Renderer>().material.SetColor("_Color", Color.red);
+
+        }
+
+        if (other.gameObject.CompareTag("Perception-Changer-Smallest"))
+        {
+            // User is inside enemy
+            Debug.Log("Enemy touch");
+
+            currentScale = scaleMode.shrinkingSmaller;
 
             // change to red
             other.gameObject.GetComponent<Renderer>().material.SetColor("_Color", Color.red);
