@@ -2,40 +2,23 @@
 using System.Collections;
 
 public class SoundController : MonoBehaviour
-{
-
-    private AudioReverbFilter reverb;
-    private AudioLowPassFilter LPF;
-    private AudioHighPassFilter HPF;
-
-    public float initialRoomSize;
-    public float maxRoomSize;
-
-    public float initialLPF;
-    public float lowestLPF;
-
-    public float initialHPF;
-    public float highestHPF;
-    
-
+{    
     // script to find user state
     private GameObject player;
     private UserCollisionDetection playerScript;
 
-    public float speed;
+    public float speed = 1.5f;
     private float ep = 0.5f;
 
     private scaleMode soundMode;
+
+    public float sizeValue = 50f;
 
     private void Start()
     {
         // get script
         player = GameObject.FindGameObjectWithTag("Player");
-        playerScript = player.GetComponent<UserCollisionDetection>();
-
-        reverb = GetComponent<AudioReverbFilter>();
-        LPF = GetComponent<AudioLowPassFilter>();
-        HPF = GetComponent<AudioHighPassFilter>();
+        playerScript = player.GetComponent<UserCollisionDetection>();   
     }
 
     private void Update()
@@ -66,39 +49,23 @@ public class SoundController : MonoBehaviour
 
     private void Shrink()
     {
-        reverb.room = Mathf.Lerp(reverb.room, maxRoomSize, speed * Time.deltaTime);
-
-        LPF.cutoffFrequency = Mathf.Lerp(LPF.cutoffFrequency, lowestLPF, speed * Time.deltaTime);
-
-        if (reverb.room >= maxRoomSize - ep)
-        {
-            Debug.Log("shinking sound stopped");
-            soundMode = scaleMode.stopped;
-        }
     }
 
 
     private void Reset()
     {
-        LPF.cutoffFrequency = Mathf.Lerp(LPF.cutoffFrequency, initialLPF, speed * Time.deltaTime);
-        reverb.room = Mathf.Lerp(reverb.room, initialRoomSize, speed * Time.deltaTime);
-        HPF.cutoffFrequency = Mathf.Lerp(HPF.cutoffFrequency, initialHPF, speed * Time.deltaTime);
-
-        if (reverb.room <= initialRoomSize + ep)
-        {
-            Debug.Log("restting stopped");
-            soundMode = scaleMode.stopped;
-        }
     }
 
     private void Grow()
     {
-        HPF.cutoffFrequency = Mathf.Lerp(HPF.cutoffFrequency, highestHPF, speed * Time.deltaTime);
+      //  AkSoundEngine.PostEvent("Play_Ambient", gameObject);
+        sizeValue -=  (speed * Time.deltaTime);
+        AkSoundEngine.SetRTPCValue("Excitement", sizeValue, gameObject);
+        float value = 0f;
+        int rtcpType = 0;
+       // GetRTPCValue(string in_pszRtpcName, UnityEngine.GameObject in_gameObjectID, uint in_playingID, out float out_rValue, ref int io_rValueType) {
+        AkSoundEngine.GetRTPCValue("Excitement", gameObject, 1, out value, ref rtcpType);
+        Debug.Log("Chnage sound " + value + " " + sizeValue);
 
-        if (HPF.cutoffFrequency >= highestHPF - ep)
-        {
-            Debug.Log("growing stopped");
-            soundMode = scaleMode.stopped;
-        }
     }
 }

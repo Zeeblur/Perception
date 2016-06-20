@@ -11,17 +11,40 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
+		<SoundBank Id="825837115" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Walkway</ObjectPath>
+			<ShortName>Walkway</ShortName>
+			<Path>Walkway.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2122995345" Name="OpenDoor" ObjectPath="\Events\Default Work Unit\OpenDoor"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="685524853" Language="SFX">
+					<ShortName>48 Processed Air Release #2_ Shorter Than Fx 47.[Note_ This Effect Has A Lot Of Out Of Phase Signal In It.].wav</ShortName>
+					<Path>SFX\48 Processed Air Release #2_ Shorter Than Fx 47.[Note_ This Effect Has A Lot Of Out Of Phase Signal In It.]_9E69E797.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
 		<SoundBank Id="932097696" Language="SFX">
 			<ObjectPath>\SoundBanks\Default Work Unit\DogRoom</ObjectPath>
 			<ShortName>DogRoom</ShortName>
 			<Path>DogRoom.bnk</Path>
 			<IncludedEvents>
 				<Event Id="829215693" Name="HatchOpen" ObjectPath="\Events\Default Work Unit\HatchOpen"/>
+				<Event Id="1562304622" Name="Play_Ambient" ObjectPath="\Events\Default Work Unit\Play_Ambient" MaxAttenuation="100.000000"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
+				<File Id="57858495" Language="SFX">
+					<ShortName>98 Synth Submarine Interior; Reverberant, Very Low Frequency Rumble.wav</ShortName>
+					<Path>SFX\98 Synth Submarine Interior; Reverberant, Very Low Frequency Rumble_4B8CC0C5.wem</Path>
+				</File>
 				<File Id="572459570" Language="SFX">
 					<ShortName>33 Synth Door Opens With A Squeak; Reverberant.wav</ShortName>
 					<Path>SFX\33 Synth Door Opens With A Squeak; Reverberant_9E69E797.wem</Path>
+				</File>
+				<File Id="1030613146" Language="SFX">
+					<ShortName>96 Synth Spaceship Interior #1_ Reverberant, Low Frequency Rumble.wav</ShortName>
+					<Path>SFX\96 Synth Spaceship Interior #1_ Reverberant, Low Frequency Rumble_4B8CC0C5.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
