@@ -24,7 +24,6 @@ public class SoundController : MonoBehaviour
 
     public float speed;
     private float ep = 0.5f;
-    private bool shrinking = false;
 
     private scaleMode soundMode;
 

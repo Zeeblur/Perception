@@ -239,10 +239,6 @@ public class UserCollisionDetection : MonoBehaviour {
         {
             // User is back outside enemy
             Debug.Log("User free");
-
-            // change to green
-            other.gameObject.GetComponent<Renderer>().material.SetColor("_Color", Color.green);
-
         }
 
     }
