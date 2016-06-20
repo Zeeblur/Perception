@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{B1C364FC-F9B2-4F2D-A111-5A6E130102DA}" SchemaVersion="72">
+	<SoundBanks>
+		<WorkUnit Name="Default Work Unit" ID="{B1C364FC-F9B2-4F2D-A111-5A6E130102DA}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="DogRoom" ID="{94F7E711-4EAD-43E4-A179-9A88D1508FFD}">
+					<ObjectInclusionList>
+						<ObjectRef Name="33 Synth Door Opens With A Squeak; Reverberant" ID="{7943AF66-9E51-4629-8F5C-09396B410188}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}" Filter="7" Origin="Manual"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundBanks>
+</WwiseDocument>

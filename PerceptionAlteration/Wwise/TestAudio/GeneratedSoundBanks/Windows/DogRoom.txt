@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	829215693	HatchOpen			\Default Work Unit\HatchOpen	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	572459570	33 Synth Door Opens With A Squeak; Reverberant	C:\Users\40182161.NAPIER-MAIL\Documents\Perception\PerceptionAlteration\Wwise\TestAudio\.cache\Windows\SFX\33 Synth Door Opens With A Squeak; Reverberant_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\33 Synth Door Opens With A Squeak; Reverberant		846784
+

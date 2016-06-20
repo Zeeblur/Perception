@@ -13,6 +13,8 @@ public class EnemyGenerator : MonoBehaviour
     private List<GameObject> enemies;
     public Spline loopSpline;
 
+    // var for hatch
+    private HatchMovement hatch;
 
     private bool listDirty = false;
 
@@ -22,6 +24,7 @@ public class EnemyGenerator : MonoBehaviour
     void Start ()
     {
         enemies = new List<GameObject>();
+        hatch = GameObject.FindGameObjectWithTag("Hatch").GetComponent<HatchMovement>();
     }
 	
 	// Update is called once per frame
@@ -52,6 +55,8 @@ public class EnemyGenerator : MonoBehaviour
     // spawn random enemy
     public void Spawn()
     {
+        hatch.OpenHatch();
+
         // rng god decides
         currentType = Random.Range(0, 4);
         GameObject newDog = Instantiate(enemyPrefabs[currentType], transform.position, Quaternion.identity) as GameObject;

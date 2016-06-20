@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{AC7B16BF-1A24-41AC-9731-F3FF21E92BBD}" SchemaVersion="72">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{AC7B16BF-1A24-41AC-9731-F3FF21E92BBD}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="HatchOpen" ID="{7E67E3BB-6C2A-4BD4-B04A-FD71DF322694}">
+					<ChildrenList>
+						<Action Name="Play" ID="{54D2AF6E-B7A0-4A30-86FA-520BC6E59CFC}" ShortID="410669634" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{1F7EB3D6-2D9D-4D5D-AFB1-E70037354B79}" Global="false">
+									<ObjectRef Name="33 Synth Door Opens With A Squeak; Reverberant" ID="{7943AF66-9E51-4629-8F5C-09396B410188}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

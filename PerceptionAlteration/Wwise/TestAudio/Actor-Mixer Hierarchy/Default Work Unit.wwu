@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}" SchemaVersion="72">
+	<AudioObjects>
+		<WorkUnit Name="Default Work Unit" ID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}" PersistMode="Standalone">
+			<ChildrenList>
+				<Sound Name="11 Machine Hum With Very Low Frequency" ID="{973C45FB-E5A4-4DDC-8E37-26AEBF2251AE}" ShortID="470238779" Type="SoundFX">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="11 Machine Hum With Very Low Frequency" ID="{3C12EB05-AEF5-49E3-A548-C4801C462999}" ShortID="826620250">
+							<Language>SFX</Language>
+							<AudioFile>11 Machine Hum With Very Low Frequency.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="11 Machine Hum With Very Low Frequency" ID="{3C12EB05-AEF5-49E3-A548-C4801C462999}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="12 Industrial Plant Ambience, Low Frequency, Steady" ID="{26E613E2-DE96-419B-B085-0884D327EBDB}" ShortID="57157278" Type="SoundFX">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="12 Industrial Plant Ambience, Low Frequency, Steady" ID="{9AE2D58C-F404-4C6C-9227-119CFF5A28C6}" ShortID="850269780">
+							<Language>SFX</Language>
+							<AudioFile>12 Industrial Plant Ambience, Low Frequency, Steady.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="12 Industrial Plant Ambience, Low Frequency, Steady" ID="{9AE2D58C-F404-4C6C-9227-119CFF5A28C6}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="33 Synth Door Opens With A Squeak; Reverberant" ID="{7943AF66-9E51-4629-8F5C-09396B410188}" ShortID="243093833" Type="SoundFX">
+					<PropertyList>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{8F285F00-F500-4780-B778-928330148C35}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="150"/>
+											<Property Name="Min" Type="Real64" Value="-150"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="33 Synth Door Opens With A Squeak; Reverberant" ID="{640D43B0-A895-49EA-A866-5153A826947A}" ShortID="572459570">
+							<Language>SFX</Language>
+							<AudioFile>33 Synth Door Opens With A Squeak; Reverberant.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="33 Synth Door Opens With A Squeak; Reverberant" ID="{640D43B0-A895-49EA-A866-5153A826947A}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="96 Synth Spaceship Interior #1_ Reverberant, Low Frequency Rumble" ID="{41C6573C-6B23-43EC-942B-994D196C3EA9}" ShortID="469477928" Type="SoundFX">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="96 Synth Spaceship Interior #1_ Reverberant, Low Frequency Rumble" ID="{4DC9EBFC-EFBE-4D4C-9323-94B8D8BB4DD0}" ShortID="1030613146">
+							<Language>SFX</Language>
+							<AudioFile>96 Synth Spaceship Interior #1_ Reverberant, Low Frequency Rumble.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="96 Synth Spaceship Interior #1_ Reverberant, Low Frequency Rumble" ID="{4DC9EBFC-EFBE-4D4C-9323-94B8D8BB4DD0}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="98 Synth Submarine Interior; Reverberant, Very Low Frequency Rumble" ID="{047BE564-7ECA-462A-A054-579A9487AC7C}" ShortID="934672946" Type="SoundFX">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="98 Synth Submarine Interior; Reverberant, Very Low Frequency Rumble" ID="{B540E60B-7757-4878-BBE4-CFA87B8C0618}" ShortID="57858495">
+							<Language>SFX</Language>
+							<AudioFile>98 Synth Submarine Interior; Reverberant, Very Low Frequency Rumble.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="98 Synth Submarine Interior; Reverberant, Very Low Frequency Rumble" ID="{B540E60B-7757-4878-BBE4-CFA87B8C0618}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>
