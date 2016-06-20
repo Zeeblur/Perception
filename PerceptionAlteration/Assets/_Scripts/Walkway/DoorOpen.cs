@@ -61,6 +61,7 @@ public class DoorOpen : MonoBehaviour
         {
             open = true;
             close = false;
+            AkSoundEngine.PostEvent("OpenHatch", this.gameObject);
         }
     }
 
