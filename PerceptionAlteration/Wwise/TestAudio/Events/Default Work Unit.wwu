@@ -14,6 +14,28 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="OpenDoor" ID="{171D57EA-76ED-4ADC-A525-2EADE21EF2CF}">
+					<ChildrenList>
+						<Action Name="Play" ID="{63548060-CF14-41D0-BFB4-73BBA5F1B145}" ShortID="675170532" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{3FFE9649-F15E-41C4-8513-00DEBDD70763}" Global="false">
+									<ObjectRef Name="48 Processed Air Release #2_ Shorter Than Fx 47_[Note_ This Effect Has A Lot Of Out Of Phase Signal In It_]" ID="{C40A5B5D-2823-4195-BE68-FD5E0B246F36}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Ambient" ID="{D2FEE14C-A0D1-4718-B806-141F02F62A07}">
+					<ChildrenList>
+						<Action Name="Play" ID="{4E3DCB5C-59EF-4D63-89C7-69F0F07CB22F}" ShortID="642657390" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{A8F08133-2745-4F35-A25E-D389C83330E9}" Global="false">
+									<ObjectRef Name="Ambient" ID="{C3C718AB-700A-46E6-98DE-8EF3D561CA6C}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

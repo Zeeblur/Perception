@@ -57,7 +57,11 @@ public class UserCollisionDetection : MonoBehaviour {
     {
         cameraParent = GameObject.FindGameObjectWithTag("MainCamera");
         headCam = GameObject.FindGameObjectWithTag("Head");
-	}
+
+        // start play of ambient
+        AkSoundEngine.PostEvent("Play_Ambient", this.gameObject);
+
+    }
 
     void Awake()
     {
