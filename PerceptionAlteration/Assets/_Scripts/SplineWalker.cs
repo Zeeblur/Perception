@@ -83,12 +83,11 @@ public class SplineWalker : MonoBehaviour
             Move(splineTarget);
         }
 
-        //if (Time.time >= soundTimer)
-        //{
-
-        //    AkSoundEngine.PostEvent("Play_Dog_0", this.gameObject);
-        //    soundTimer = Time.time + timeInterval;
-        //}
+        if (Time.time >= soundTimer)
+        {
+            AkSoundEngine.PostEvent("Play_Dog_0", this.gameObject);
+            soundTimer = Time.time + timeInterval;
+        }
     }
 
     private void Move(Spline chosenSpline)
