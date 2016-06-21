@@ -36,6 +36,20 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_Dog_0" ID="{9452F6C1-9599-4A1C-858F-D19D2836C88B}">
+					<ChildrenList>
+						<Action Name="Play" ID="{4B1AF9BD-D082-4E04-B862-B231AA543555}" ShortID="448818495" Type="Play" Scope="One" Global="false">
+							<PropertyList>
+								<Property Name="FadeCurve" Type="int16" Value="1"/>
+							</PropertyList>
+							<ElementList>
+								<Element ID="{F74D6B28-C17D-4F5B-8C8C-550118BC45DE}" Global="false">
+									<ObjectRef Name="C" ID="{5CC3452A-A0D3-4374-B0AB-A3F0DAADFB00}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

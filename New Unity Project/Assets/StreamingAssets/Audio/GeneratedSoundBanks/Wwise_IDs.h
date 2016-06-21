@@ -16,6 +16,7 @@ namespace AK
         static const AkUniqueID HATCHOPEN = 829215693U;
         static const AkUniqueID OPENDOOR = 2122995345U;
         static const AkUniqueID PLAY_AMBIENT = 1562304622U;
+        static const AkUniqueID PLAY_DOG_0 = 2935214689U;
     } // namespace EVENTS
 
     namespace STATES
@@ -37,7 +38,7 @@ namespace AK
 
     namespace GAME_PARAMETERS
     {
-        static const AkUniqueID EXCITEMENT = 1777373219U;
+        static const AkUniqueID ELEVATION = 2141048674U;
         static const AkUniqueID SS_AIR_FEAR = 1351367891U;
         static const AkUniqueID SS_AIR_FREEFALL = 3002758120U;
         static const AkUniqueID SS_AIR_FURY = 1029930033U;

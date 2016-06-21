@@ -1,9 +1,10 @@
 Event	ID	Name			Wwise Object Path	Notes
 	829215693	HatchOpen			\Default Work Unit\HatchOpen	
 	1562304622	Play_Ambient			\Default Work Unit\Play_Ambient	
+	2935214689	Play_Dog_0			\Default Work Unit\Play_Dog_0	
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
-	1777373219	Excitement			\Default Work Unit\Excitement	
+	2141048674	Elevation			\Default Work Unit\Elevation	
 
 Effect plug-ins	ID	Name	Type				Notes
 	253339441	Wwise Time Stretch (Custom)	Wwise Time Stretch			
@@ -11,6 +12,7 @@ Effect plug-ins	ID	Name	Type				Notes
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	57858495	98 Synth Submarine Interior; Reverberant, Very Low Frequency Rumble	C:\Users\40182161.NAPIER-MAIL\Documents\Perception\PerceptionAlteration\Wwise\TestAudio\.cache\Windows\SFX\98 Synth Submarine Interior; Reverberant, Very Low Frequency Rumble_4B8CC0C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambient\98 Synth Submarine Interior; Reverberant, Very Low Frequency Rumble		7608784
+	188780765	C	C:\Users\40182161.NAPIER-MAIL\Documents\Perception\PerceptionAlteration\Wwise\TestAudio\.cache\Windows\SFX\C_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dogs\C		50368
 	572459570	33 Synth Door Opens With A Squeak; Reverberant	C:\Users\40182161.NAPIER-MAIL\Documents\Perception\PerceptionAlteration\Wwise\TestAudio\.cache\Windows\SFX\33 Synth Door Opens With A Squeak; Reverberant_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\33 Synth Door Opens With A Squeak; Reverberant		846784
 	1030613146	96 Synth Spaceship Interior #1_ Reverberant, Low Frequency Rumble	C:\Users\40182161.NAPIER-MAIL\Documents\Perception\PerceptionAlteration\Wwise\TestAudio\.cache\Windows\SFX\96 Synth Spaceship Interior #1_ Reverberant, Low Frequency Rumble_4B8CC0C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambient\96 Synth Spaceship Interior #1_ Reverberant, Low Frequency Rumble		8102704
 

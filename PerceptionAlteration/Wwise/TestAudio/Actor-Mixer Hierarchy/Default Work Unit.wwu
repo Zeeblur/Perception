@@ -56,6 +56,7 @@
 								</ModifierInfo>
 							</ModifierList>
 						</Property>
+						<Property Name="PositioningType" Type="int16" Value="1"/>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -267,7 +268,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="LayerCrossFadeControlInput">
-									<ObjectRef Name="Excitement" ID="{E697E70F-71B3-44EA-9311-295D91309BC8}" WorkUnitID="{0AEBADB4-CF30-41C8-B323-F726CF4DA516}"/>
+									<ObjectRef Name="Elevation" ID="{E697E70F-71B3-44EA-9311-295D91309BC8}" WorkUnitID="{0AEBADB4-CF30-41C8-B323-F726CF4DA516}"/>
 								</Reference>
 							</ReferenceList>
 							<BlendTrackAssocList>
@@ -276,14 +277,14 @@
 									<CrossfadingInfo>
 										<LeftEdgePos>0</LeftEdgePos>
 										<LeftFadingMode>Automatic</LeftFadingMode>
-										<RightEdgePos>71.0727969348659</RightEdgePos>
+										<RightEdgePos>41.1877394636015</RightEdgePos>
 										<RightFadingMode>Automatic</RightFadingMode>
 									</CrossfadingInfo>
 								</BlendTrackAssoc>
 								<BlendTrackAssoc>
 									<ItemRef Name="98 Synth Submarine Interior; Reverberant, Very Low Frequency Rumble" ID="{047BE564-7ECA-462A-A054-579A9487AC7C}"/>
 									<CrossfadingInfo>
-										<LeftEdgePos>29.6934865900383</LeftEdgePos>
+										<LeftEdgePos>56.8965517241379</LeftEdgePos>
 										<LeftFadingMode>Automatic</LeftFadingMode>
 										<RightEdgePos>100</RightEdgePos>
 										<RightFadingMode>Automatic</RightFadingMode>
@@ -293,6 +294,107 @@
 						</BlendTrack>
 					</BlendTrackList>
 				</BlendContainer>
+				<Folder Name="Dogs" ID="{B21B6D19-4C12-4F57-8AFF-253CD0316934}" ShortID="638993452">
+					<ChildrenList>
+						<Sound Name="C" ID="{5CC3452A-A0D3-4374-B0AB-A3F0DAADFB00}" ShortID="172508490" Type="SoundFX">
+							<PropertyList>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>51</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{417E61DB-1D4B-4886-825F-5B9C4B78561B}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="20"/>
+													<Property Name="Min" Type="Real64" Value="-20"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="PositioningType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="C" ID="{8F975FE5-06B5-408A-A7DA-9F14C18C4447}" ShortID="188780765">
+									<Language>SFX</Language>
+									<AudioFile>C.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="C" ID="{8F975FE5-06B5-408A-A7DA-9F14C18C4447}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="E" ID="{1F0C68EF-2423-4D85-9E5B-C943E330D158}" ShortID="748603129" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="E" ID="{913E6687-CB5A-4CB4-81A5-42C5BE493251}" ShortID="959773194">
+									<Language>SFX</Language>
+									<AudioFile>E.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="E" ID="{913E6687-CB5A-4CB4-81A5-42C5BE493251}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="High C" ID="{684530FB-E6DB-4907-A0FB-786F3115B1EF}" ShortID="71771605" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="High C" ID="{46FFA4B1-E1BD-4C88-97A1-51ECA07EBB08}" ShortID="276410113">
+									<Language>SFX</Language>
+									<AudioFile>High C.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="High C" ID="{46FFA4B1-E1BD-4C88-97A1-51ECA07EBB08}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Low G" ID="{A3FA5EDB-3796-4616-B696-4CC7CED0F847}" ShortID="191959295" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Low G" ID="{16652219-1C83-4537-9A15-034407F1F90F}" ShortID="28150437">
+									<Language>SFX</Language>
+									<AudioFile>Low G.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Low G" ID="{16652219-1C83-4537-9A15-034407F1F90F}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>
