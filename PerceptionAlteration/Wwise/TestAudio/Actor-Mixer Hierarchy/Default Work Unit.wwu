@@ -277,14 +277,14 @@
 									<CrossfadingInfo>
 										<LeftEdgePos>0</LeftEdgePos>
 										<LeftFadingMode>Automatic</LeftFadingMode>
-										<RightEdgePos>41.1877394636015</RightEdgePos>
+										<RightEdgePos>68.3908045977011</RightEdgePos>
 										<RightFadingMode>Automatic</RightFadingMode>
 									</CrossfadingInfo>
 								</BlendTrackAssoc>
 								<BlendTrackAssoc>
 									<ItemRef Name="98 Synth Submarine Interior; Reverberant, Very Low Frequency Rumble" ID="{047BE564-7ECA-462A-A054-579A9487AC7C}"/>
 									<CrossfadingInfo>
-										<LeftEdgePos>56.8965517241379</LeftEdgePos>
+										<LeftEdgePos>31.2260536398467</LeftEdgePos>
 										<LeftFadingMode>Automatic</LeftFadingMode>
 										<RightEdgePos>100</RightEdgePos>
 										<RightFadingMode>Automatic</RightFadingMode>
