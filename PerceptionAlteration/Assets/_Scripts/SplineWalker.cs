@@ -17,6 +17,10 @@ public class SplineWalker : MonoBehaviour
     private bool goingForward = true;
     private bool shoot = true;
 
+    // 3 seconds
+    private float timeInterval = 3f;
+    private float soundTimer = 0f;
+
     private void Awake()
     {
         // default
@@ -25,6 +29,8 @@ public class SplineWalker : MonoBehaviour
         lookForward = true;
         mode = SplineWalkerMode.Loop;
         duration = 2f;
+
+        soundTimer = Time.time + timeInterval;
     }
 
 
@@ -39,6 +45,7 @@ public class SplineWalker : MonoBehaviour
                 {
                     shoot = false;
                     duration = 10f;
+                    AkSoundEngine.PostEvent("Play_Dog_0", this.gameObject);
                 }
 
                 switch(mode)
@@ -76,7 +83,12 @@ public class SplineWalker : MonoBehaviour
             Move(splineTarget);
         }
 
+        //if (Time.time >= soundTimer)
+        //{
 
+        //    AkSoundEngine.PostEvent("Play_Dog_0", this.gameObject);
+        //    soundTimer = Time.time + timeInterval;
+        //}
     }
 
     private void Move(Spline chosenSpline)
