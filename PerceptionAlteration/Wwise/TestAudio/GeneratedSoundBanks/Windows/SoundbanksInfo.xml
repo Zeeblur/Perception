@@ -32,7 +32,6 @@
 			<IncludedEvents>
 				<Event Id="829215693" Name="HatchOpen" ObjectPath="\Events\Default Work Unit\HatchOpen"/>
 				<Event Id="1562304622" Name="Play_Ambient" ObjectPath="\Events\Default Work Unit\Play_Ambient" MaxAttenuation="100.000000"/>
-				<Event Id="2935214689" Name="Play_Dog_0" ObjectPath="\Events\Default Work Unit\Play_Dog_0"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="57858495" Language="SFX">
