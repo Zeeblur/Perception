@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{E5E5A188-6752-4CFE-80D8-E956C7989134}" SchemaVersion="72">
 	<Effects>
-		<WorkUnit Name="Default Work Unit" ID="{E5E5A188-6752-4CFE-80D8-E956C7989134}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{E5E5A188-6752-4CFE-80D8-E956C7989134}" PersistMode="Standalone">
+			<ChildrenList>
+				<Effect Name="New_VisiSonics_RealSpace3D" ID="{3466F0B0-DF96-4F40-8069-BBB5042E2C1E}" PluginName="VisiSonics RealSpace3D" CompanyID="0" PluginID="146" PluginType="6"/>
+			</ChildrenList>
+		</WorkUnit>
 	</Effects>
 </WwiseDocument>
