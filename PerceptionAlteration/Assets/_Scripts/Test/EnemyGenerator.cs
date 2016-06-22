@@ -64,6 +64,7 @@ public class EnemyGenerator : MonoBehaviour
         // add parent
         newDog.transform.parent = this.transform;
         newDog.AddComponent<SplineWalker>();
+        newDog.GetComponent<SplineWalker>().ChooseDog(currentType);
         
         // add to list
         enemies.Add(newDog);

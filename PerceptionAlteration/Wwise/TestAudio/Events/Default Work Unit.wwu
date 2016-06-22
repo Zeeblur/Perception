@@ -36,7 +36,7 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_Dog_0" ID="{9452F6C1-9599-4A1C-858F-D19D2836C88B}">
+				<Event Name="Play_Dog_3" ID="{9452F6C1-9599-4A1C-858F-D19D2836C88B}">
 					<ChildrenList>
 						<Action Name="Play" ID="{4B1AF9BD-D082-4E04-B862-B231AA543555}" ShortID="448818495" Type="Play" Scope="One" Global="false">
 							<PropertyList>
@@ -44,7 +44,40 @@
 							</PropertyList>
 							<ElementList>
 								<Element ID="{F74D6B28-C17D-4F5B-8C8C-550118BC45DE}" Global="false">
-									<ObjectRef Name="C" ID="{5CC3452A-A0D3-4374-B0AB-A3F0DAADFB00}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}"/>
+									<ObjectRef Name="C" ID="{22B1310F-DBCC-46FF-8526-7AC2405FB8F4}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Dog_1" ID="{F8D4BB57-55EB-4E2D-AE50-196438F7DB9C}">
+					<ChildrenList>
+						<Action Name="Play" ID="{3B90103C-2820-4ABE-B2CA-38165F902171}" ShortID="52279657" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{61465CFF-A6B7-4048-B4EB-8B4B79A50A06}" Global="false">
+									<ObjectRef Name="E" ID="{1F0C68EF-2423-4D85-9E5B-C943E330D158}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Dog_0" ID="{1ACE85DC-E1EC-4FC8-8445-47C5F290D1B4}">
+					<ChildrenList>
+						<Action Name="Play" ID="{D0A47CC9-B10E-430A-BE34-A2849E153087}" ShortID="151338446" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{0FBC47EC-BD13-43D8-A69E-936B468C032F}" Global="false">
+									<ObjectRef Name="High C" ID="{684530FB-E6DB-4907-A0FB-786F3115B1EF}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Dog_2" ID="{7540225F-FE7A-4C2A-B1C1-FDE8F9A4BFDA}">
+					<ChildrenList>
+						<Action Name="Play" ID="{34EC0468-F752-4A4E-AADE-AD1061C285E5}" ShortID="714988237" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{FDB8BA15-B92C-4AFA-BD35-C2BA8DFB1D18}" Global="false">
+									<ObjectRef Name="Low G" ID="{A3FA5EDB-3796-4616-B696-4CC7CED0F847}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}"/>
 								</Element>
 							</ElementList>
 						</Action>

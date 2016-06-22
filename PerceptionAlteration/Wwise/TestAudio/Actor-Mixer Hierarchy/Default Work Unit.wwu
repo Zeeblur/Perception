@@ -262,6 +262,9 @@
 				<Folder Name="Dogs" ID="{B21B6D19-4C12-4F57-8AFF-253CD0316934}" ShortID="638993452">
 					<ChildrenList>
 						<Sound Name="E" ID="{1F0C68EF-2423-4D85-9E5B-C943E330D158}" ShortID="748603129" Type="SoundFX">
+							<PropertyList>
+								<Property Name="PositioningType" Type="int16" Value="1"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
@@ -281,6 +284,9 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="High C" ID="{684530FB-E6DB-4907-A0FB-786F3115B1EF}" ShortID="71771605" Type="SoundFX">
+							<PropertyList>
+								<Property Name="PositioningType" Type="int16" Value="1"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
@@ -300,6 +306,9 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="Low G" ID="{A3FA5EDB-3796-4616-B696-4CC7CED0F847}" ShortID="191959295" Type="SoundFX">
+							<PropertyList>
+								<Property Name="PositioningType" Type="int16" Value="1"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
@@ -333,6 +342,7 @@
 										</ModifierInfo>
 									</ModifierList>
 								</Property>
+								<Property Name="PositioningType" Type="int16" Value="1"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
