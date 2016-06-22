@@ -7,7 +7,7 @@ public class Controller : MonoBehaviour
     private UserCollisionDetection playerScript;
     private SteamVR_TrackedObject trackedObj;
     private GameObject enemyContainer;
-    private EnemyGenerator enemyScript;
+    private PlinthSpawner enemyScript;
     public GameObject dogCatcher;
 
     private Valve.VR.EVRButtonId gripBtn = Valve.VR.EVRButtonId.k_EButton_Grip;
@@ -33,7 +33,7 @@ public class Controller : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player");
         playerScript = player.GetComponent<UserCollisionDetection>();
         enemyContainer = GameObject.FindGameObjectWithTag("Respawn");
-        enemyScript = enemyContainer.GetComponent<EnemyGenerator>();
+        enemyScript = enemyContainer.GetComponent<PlinthSpawner>();
     }
 
     // Update is called once per frame
