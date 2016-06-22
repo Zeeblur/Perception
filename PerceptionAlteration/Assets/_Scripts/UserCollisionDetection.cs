@@ -11,6 +11,7 @@ public class UserCollisionDetection : MonoBehaviour {
 
     private GameObject cameraParent;
     private GameObject headCam;
+    private GameObject ceiling;
 
     // scale factor
     public Vector3 normalScale;
@@ -57,6 +58,8 @@ public class UserCollisionDetection : MonoBehaviour {
     {
         cameraParent = GameObject.FindGameObjectWithTag("MainCamera");
         headCam = GameObject.FindGameObjectWithTag("Head");
+
+        ceiling = GameObject.FindGameObjectWithTag("Ceiling");
 
         // start play of ambient
         AkSoundEngine.PostEvent("Play_Ambient", this.gameObject);
@@ -174,9 +177,12 @@ public class UserCollisionDetection : MonoBehaviour {
             Debug.Log("Enemy touch");
 
             currentScale = scaleMode.turning;
-            elevation = new Vector3(0f, 4.65f, 0f);
-            elevation += cameraParent.transform.localPosition;
 
+            float difference = ceiling.transform.position.y;
+
+            elevation = new Vector3(0f, difference, 0f);
+
+            Debug.Log("Elevation " + elevation);
             // change to red
             other.gameObject.GetComponent<Renderer>().material.SetColor("_Color", Color.red);
 

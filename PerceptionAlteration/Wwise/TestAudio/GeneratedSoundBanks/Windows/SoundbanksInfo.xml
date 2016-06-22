@@ -32,8 +32,16 @@
 			<IncludedEvents>
 				<Event Id="829215693" Name="HatchOpen" ObjectPath="\Events\Default Work Unit\HatchOpen"/>
 				<Event Id="1562304622" Name="Play_Ambient" ObjectPath="\Events\Default Work Unit\Play_Ambient" MaxAttenuation="100.000000"/>
+				<Event Id="2935214689" Name="Play_Dog_0" ObjectPath="\Events\Default Work Unit\Play_Dog_0"/>
+				<Event Id="2935214688" Name="Play_Dog_1" ObjectPath="\Events\Default Work Unit\Play_Dog_1"/>
+				<Event Id="2935214691" Name="Play_Dog_2" ObjectPath="\Events\Default Work Unit\Play_Dog_2"/>
+				<Event Id="2935214690" Name="Play_Dog_3" ObjectPath="\Events\Default Work Unit\Play_Dog_3"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
+				<File Id="28150437" Language="SFX">
+					<ShortName>Low G.wav</ShortName>
+					<Path>SFX\Low G_9E69E797.wem</Path>
+				</File>
 				<File Id="57858495" Language="SFX">
 					<ShortName>98 Synth Submarine Interior; Reverberant, Very Low Frequency Rumble.wav</ShortName>
 					<Path>SFX\98 Synth Submarine Interior; Reverberant, Very Low Frequency Rumble_4B8CC0C5.wem</Path>
@@ -42,9 +50,17 @@
 					<ShortName>C.wav</ShortName>
 					<Path>SFX\C_9E69E797.wem</Path>
 				</File>
+				<File Id="276410113" Language="SFX">
+					<ShortName>High C.wav</ShortName>
+					<Path>SFX\High C_9E69E797.wem</Path>
+				</File>
 				<File Id="572459570" Language="SFX">
 					<ShortName>33 Synth Door Opens With A Squeak; Reverberant.wav</ShortName>
 					<Path>SFX\33 Synth Door Opens With A Squeak; Reverberant_9E69E797.wem</Path>
+				</File>
+				<File Id="959773194" Language="SFX">
+					<ShortName>E.wav</ShortName>
+					<Path>SFX\E_9E69E797.wem</Path>
 				</File>
 				<File Id="1030613146" Language="SFX">
 					<ShortName>96 Synth Spaceship Interior #1_ Reverberant, Low Frequency Rumble.wav</ShortName>
