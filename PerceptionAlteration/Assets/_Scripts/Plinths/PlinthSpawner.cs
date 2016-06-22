@@ -53,6 +53,10 @@ public class PlinthSpawner : MonoBehaviour
     // spawn random enemy
     public void Spawn()
     {
+        // no doggo for more than 3
+        if (currentType > 3)
+            return;
+
         hatch.OpenHatch();
 
         GameObject newDog = Instantiate(enemyPrefabs[currentType], transform.position, Quaternion.identity) as GameObject;
@@ -64,6 +68,7 @@ public class PlinthSpawner : MonoBehaviour
 
         // add to list
         enemies.Add(newDog);
+
         currentType++;
     }
 
