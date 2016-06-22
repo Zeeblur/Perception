@@ -73,9 +73,12 @@ public class Controller : MonoBehaviour
             Debug.Log("TouchDown");
 
             // toggle catcher
-            showCatcher = showCatcher == true ? false : true;
+            if (dogCatcher)
+            {
+                showCatcher = showCatcher == true ? false : true;
 
-            dogCatcher.SetActive(showCatcher);
+                dogCatcher.SetActive(showCatcher);
+            }
         }
         
     }
