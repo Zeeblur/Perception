@@ -1,18 +1,15 @@
 ﻿using UnityEngine;
 using System.Collections;
-public enum SplineWalkerMode { Once, Loop, PingPong }
 
-public class SplineWalker : MonoBehaviour
+public class SplineWalkerPlinth : MonoBehaviour
 {
-    public Spline splineTarget;
-    public Spline shootSpline;
+    public GameObject[] splineGO;
+    public Spline[] splines;
 
     public float duration;
     private float progress;
 
     public bool lookForward;
-
-    public SplineWalkerMode mode;
 
     private bool goingForward = true;
     private bool shoot = true;
@@ -22,19 +19,27 @@ public class SplineWalker : MonoBehaviour
     private float soundTimer = 0f;
 
     private string chosenDog = "Play_Dog_0";
+    private int splineNum = 0;
 
     public void ChooseDog(int num)
     {
         chosenDog = "Play_Dog_" + num;
+        splineNum = num;
     }
 
     private void Awake()
     {
         // default
-        shootSpline = GameObject.FindGameObjectWithTag("Shoot").GetComponent<Spline>();
-        splineTarget = GameObject.FindGameObjectWithTag("Loop").GetComponent<Spline>();
+        splineGO = GameObject.FindGameObjectsWithTag("Shoot");
+
+        splines = new Spline[splineGO.Length];
+
+        for (int i = 0; i < splineGO.Length; i++)
+        {
+            splines[i] = splineGO[i].GetComponent<Spline>();
+        }
+
         lookForward = true;
-        mode = SplineWalkerMode.Loop;
         duration = 2f;
 
         soundTimer = Time.time + timeInterval;
@@ -54,20 +59,8 @@ public class SplineWalker : MonoBehaviour
                     duration = 10f;
                 }
 
-                switch(mode)
-                {
-                    case SplineWalkerMode.Once:
-                        progress = 1f;
-                        break;
-                    case SplineWalkerMode.Loop:
-                        progress -= 1f;
-                        break;
-                    case SplineWalkerMode.PingPong:
-                        progress = 2f - progress;
-                        goingForward = false;
-                        break;
-
-                }
+                // stop moving after reached end
+                progress = 1f;
             }
         }
         else
@@ -79,16 +72,9 @@ public class SplineWalker : MonoBehaviour
                 goingForward = true;
             }
         }
-
-        // choose spline 
-        if (shoot)
-        {
-            Move(shootSpline);
-        }
-        else
-        {
-            Move(splineTarget);
-        }
+        
+        // tell which spline to move dog along
+        Move(splines[splineNum]);
 
         if (Time.time >= soundTimer)
         {
