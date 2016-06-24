@@ -7,8 +7,10 @@
 					<ChildrenList>
 						<Bus Name="RealSpace" ID="{FB4F5732-6797-4DEC-A425-1427FA425E7F}">
 							<ReferenceList>
-								<Reference Name="Mixer" PluginName="VisiSonics RealSpace3D" CompanyID="0" PluginID="146" PluginType="6">
-									<ObjectRef Name="New_VisiSonics_RealSpace3D" ID="{3466F0B0-DF96-4F40-8069-BBB5042E2C1E}" WorkUnitID="{E5E5A188-6752-4CFE-80D8-E956C7989134}"/>
+								<Reference Name="Mixer">
+									<Custom CreatedFrom="{3466F0B0-DF96-4F40-8069-BBB5042E2C1E}">
+										<Effect Name="New_VisiSonics_RealSpace3D (Custom)" ID="{BEC77B8E-C000-4C39-9029-6EAF860B4453}" ShortID="345286848" PluginName="VisiSonics RealSpace3D" CompanyID="0" PluginID="146" PluginType="6"/>
+									</Custom>
 								</Reference>
 							</ReferenceList>
 						</Bus>
