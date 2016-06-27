@@ -42,6 +42,7 @@ namespace AK
     namespace GAME_PARAMETERS
     {
         static const AkUniqueID ELEVATION = 2141048674U;
+        static const AkUniqueID ROOM_SIZE = 2021037140U;
         static const AkUniqueID SS_AIR_FEAR = 1351367891U;
         static const AkUniqueID SS_AIR_FREEFALL = 3002758120U;
         static const AkUniqueID SS_AIR_FURY = 1029930033U;

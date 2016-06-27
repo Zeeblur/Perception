@@ -66,7 +66,7 @@ public class SoundController : MonoBehaviour
     {
       //  AkSoundEngine.PostEvent("Play_Ambient", gameObject);
         sizeValue -=  (speed * Time.deltaTime);
-        AkSoundEngine.SetRTPCValue("Elevation", sizeValue, this.gameObject);
+        AkSoundEngine.SetRTPCValue("Elevation", sizeValue);
         float value = 0f;
         int rtcpType = 0;
        // GetRTPCValue(string in_pszRtpcName, UnityEngine.GameObject in_gameObjectID, uint in_playingID, out float out_rValue, ref int io_rValueType) {
