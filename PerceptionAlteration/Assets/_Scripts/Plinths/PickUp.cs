@@ -3,13 +3,13 @@ using System.Collections;
 
 public class PickUp : MonoBehaviour
 {
-    public Rigidbody attachingPoint;
-
     private SteamVR_TrackedObject trackObj;
     private bool joint = false;
 
     private bool insideObj;
     private GameObject pickedObj;
+
+    private Changer playerScript;
 
 
 	// Use this for initialization
@@ -17,8 +17,9 @@ public class PickUp : MonoBehaviour
     {
         // must have tracked object to get controller index as device index are decided at runtime
         trackObj = GetComponent<SteamVR_TrackedObject>();
-    //    attachingPoint = GetComponent<Rigidbody>();
-	}
+        playerScript = GameObject.FindGameObjectWithTag("Player").GetComponent<Changer>();
+
+    }
 	
 	// Fixed as using Rigidbody
 	void FixedUpdate ()
@@ -50,7 +51,10 @@ public class PickUp : MonoBehaviour
 
             rigidbody.maxAngularVelocity = rigidbody.angularVelocity.magnitude;
         }
-        
+
+        if (controller.GetTouchDown(SteamVR_Controller.ButtonMask.Grip))
+            playerScript.Reset();
+      
     }
 
     void OnTriggerStay(Collider other)
@@ -73,7 +77,7 @@ public class PickUp : MonoBehaviour
     }
 
     // set whether object is held or not
-    private void SetPicked(bool holding)
+    public void SetPicked(bool holding)
     {
         Transform parent;
 
