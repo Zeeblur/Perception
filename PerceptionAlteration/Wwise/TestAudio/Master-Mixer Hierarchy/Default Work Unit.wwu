@@ -5,15 +5,7 @@
 			<ChildrenList>
 				<Bus Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}">
 					<ChildrenList>
-						<Bus Name="RealSpace" ID="{FB4F5732-6797-4DEC-A425-1427FA425E7F}">
-							<ReferenceList>
-								<Reference Name="Mixer">
-									<Custom CreatedFrom="{3466F0B0-DF96-4F40-8069-BBB5042E2C1E}">
-										<Effect Name="New_VisiSonics_RealSpace3D (Custom)" ID="{BEC77B8E-C000-4C39-9029-6EAF860B4453}" ShortID="345286848" PluginName="VisiSonics RealSpace3D" CompanyID="0" PluginID="146" PluginType="6"/>
-									</Custom>
-								</Reference>
-							</ReferenceList>
-						</Bus>
+						<AuxBus Name="Verb" ID="{37E486C9-9136-49F7-982C-B9AC74BAB40D}"/>
 					</ChildrenList>
 				</Bus>
 				<Bus Name="Master Secondary Bus" ID="{D2E0BC7E-7B3F-4FFE-A670-FAE02761B631}"/>

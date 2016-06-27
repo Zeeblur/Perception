@@ -6,7 +6,7 @@ public class PickUp : MonoBehaviour
     public Rigidbody attachingPoint;
 
     private SteamVR_TrackedObject trackObj;
-    private FixedJoint joint;
+    private bool joint = false;
 
     private bool insideObj;
     private GameObject pickedObj;
@@ -17,7 +17,7 @@ public class PickUp : MonoBehaviour
     {
         // must have tracked object to get controller index as device index are decided at runtime
         trackObj = GetComponent<SteamVR_TrackedObject>();
-        attachingPoint = GetComponent<Rigidbody>();
+    //    attachingPoint = GetComponent<Rigidbody>();
 	}
 	
 	// Fixed as using Rigidbody
@@ -26,16 +26,14 @@ public class PickUp : MonoBehaviour
         // get reference to current controller
         var controller = SteamVR_Controller.Input((int)trackObj.index);
 
+        // check to see pick-up
         if (!joint && insideObj && controller.GetTouchDown(SteamVR_Controller.ButtonMask.Trigger))
-        {
-            Debug.Log("Pick-up");
-            pickedObj.transform.localPosition = attachingPoint.transform.localPosition;
-
-            joint = pickedObj.AddComponent<FixedJoint>();
-            joint.connectedBody = attachingPoint;
-        }
-
-	}
+            SetPicked(true);
+       
+        if (joint && controller.GetTouchUp(SteamVR_Controller.ButtonMask.Trigger))
+            SetPicked(false);
+        
+    }
 
     void OnTriggerStay(Collider other)
     {
@@ -54,5 +52,19 @@ public class PickUp : MonoBehaviour
             insideObj = false;
             pickedObj = null;
         }
+    }
+
+    // set whether object is held or not
+    private void SetPicked(bool holding)
+    {
+        Transform parent;
+
+        parent = holding ? this.gameObject.transform : null;
+
+        pickedObj.transform.SetParent(parent);
+
+        pickedObj.GetComponent<Rigidbody>().useGravity = !holding;
+        pickedObj.GetComponent<Rigidbody>().isKinematic = holding;
+        joint = holding;
     }
 }
