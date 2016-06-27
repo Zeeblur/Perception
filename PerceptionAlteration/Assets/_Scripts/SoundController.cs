@@ -18,11 +18,17 @@ public class SoundController : MonoBehaviour
     {
         // get script
         player = GameObject.FindGameObjectWithTag("Player");
-        playerScript = player.GetComponent<UserCollisionDetection>();   
+        playerScript = player.GetComponent<UserCollisionDetection>();
+
+
+        // start play of ambient
+        AkSoundEngine.PostEvent("Play_Ambient", this.gameObject);
     }
 
     private void Update()
     {
+
+    
         // reset current sound mode
         if (soundMode == scaleMode.stopped && playerScript.CurrentScale != scaleMode.stopped)
         {
@@ -60,11 +66,11 @@ public class SoundController : MonoBehaviour
     {
       //  AkSoundEngine.PostEvent("Play_Ambient", gameObject);
         sizeValue -=  (speed * Time.deltaTime);
-        AkSoundEngine.SetRTPCValue("Elevation", sizeValue, gameObject);
+        AkSoundEngine.SetRTPCValue("Elevation", sizeValue, this.gameObject);
         float value = 0f;
         int rtcpType = 0;
        // GetRTPCValue(string in_pszRtpcName, UnityEngine.GameObject in_gameObjectID, uint in_playingID, out float out_rValue, ref int io_rValueType) {
-        AkSoundEngine.GetRTPCValue("Elevation", gameObject, 1, out value, ref rtcpType);
+        AkSoundEngine.GetRTPCValue("Elevation", this.gameObject, 1, out value, ref rtcpType);
         Debug.Log("Chnage sound " + value + " " + sizeValue);
 
     }

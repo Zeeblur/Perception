@@ -19,10 +19,15 @@ public class PlinthSpawner : MonoBehaviour
     // References to player/navmesh
     private NavMeshAgent nav;
 
+    private float timerInt = 10;
+    private float timer = 0;
+
     void Start()
     {
         enemies = new List<GameObject>();
         hatch = GameObject.FindGameObjectWithTag("Hatch").GetComponent<HatchMovement>();
+
+        timer = Time.time + timerInt;
     }
 
     // Update is called once per frame
@@ -46,6 +51,13 @@ public class PlinthSpawner : MonoBehaviour
 
             // reset list
             listDirty = false;
+        }
+
+        // spawn Timer
+        if (Time.time >= timer)
+        {
+            Spawn();
+            timer = Time.time + timerInt;
         }
     }
 

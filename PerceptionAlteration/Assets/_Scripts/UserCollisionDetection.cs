@@ -60,10 +60,6 @@ public class UserCollisionDetection : MonoBehaviour {
         headCam = GameObject.FindGameObjectWithTag("Head");
 
         ceiling = GameObject.FindGameObjectWithTag("Ceiling");
-
-        // start play of ambient
-        AkSoundEngine.PostEvent("Play_Ambient", this.gameObject);
-
     }
 
     void Awake()
@@ -75,6 +71,7 @@ public class UserCollisionDetection : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
     {
+
         // Change size of room
         switch (currentScale)
         {
@@ -236,11 +233,6 @@ public class UserCollisionDetection : MonoBehaviour {
             other.gameObject.GetComponent<Renderer>().material.SetColor("_Color", Color.red);
 
         }
-
-
-
-
-
     }
 
     // Handler for user out of collision

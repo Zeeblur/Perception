@@ -65,8 +65,12 @@ namespace AK
     {
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
         static const AkUniqueID MASTER_SECONDARY_BUS = 805203703U;
-        static const AkUniqueID REALSPACE = 2968855917U;
     } // namespace BUSSES
+
+    namespace AUX_BUSSES
+    {
+        static const AkUniqueID VERB = 3657263530U;
+    } // namespace AUX_BUSSES
 
 }// namespace AK
 
