@@ -5,7 +5,7 @@ public class SoundController : MonoBehaviour
 {    
     // script to find user state
     private GameObject player;
-    private UserCollisionDetection playerScript;
+    private Changer playerScript;
 
     public float speed = 1.5f;
     private float ep = 0.5f;
@@ -18,7 +18,7 @@ public class SoundController : MonoBehaviour
     {
         // get script
         player = GameObject.FindGameObjectWithTag("Player");
-        playerScript = player.GetComponent<UserCollisionDetection>();
+        playerScript = player.GetComponent<Changer>();
 
 
         // start play of ambient
