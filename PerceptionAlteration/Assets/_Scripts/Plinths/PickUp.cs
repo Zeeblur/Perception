@@ -29,9 +29,27 @@ public class PickUp : MonoBehaviour
         // check to see pick-up
         if (!joint && insideObj && controller.GetTouchDown(SteamVR_Controller.ButtonMask.Trigger))
             SetPicked(true);
-       
+
         if (joint && controller.GetTouchUp(SteamVR_Controller.ButtonMask.Trigger))
+        {
             SetPicked(false);
+
+            // Allow for throwing
+            var rigidbody = pickedObj.GetComponent<Rigidbody>();
+            var origin = trackObj.origin ? trackObj.origin : trackObj.transform.parent;
+            if (origin != null)
+            {
+                rigidbody.velocity = origin.TransformVector(controller.velocity);
+                rigidbody.angularVelocity = origin.TransformVector(controller.angularVelocity);
+            }
+            else
+            {
+                rigidbody.velocity = controller.velocity;
+                rigidbody.angularVelocity = controller.angularVelocity;
+            }
+
+            rigidbody.maxAngularVelocity = rigidbody.angularVelocity.magnitude;
+        }
         
     }
 
