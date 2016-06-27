@@ -15,3 +15,6 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 Auxiliary Bus	ID	Name			Wwise Object Path	Notes
 	3657263530	Verb			\Default Work Unit\Master Audio Bus\Verb	
 
+Effect plug-ins	ID	Name	Type				Notes
+	2265839006	Not_A_Yellow_Submarine	Wwise RoomVerb			
+

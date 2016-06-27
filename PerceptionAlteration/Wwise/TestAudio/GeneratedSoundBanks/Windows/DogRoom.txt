@@ -7,6 +7,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	2935214691	Play_Dog_2			\Default Work Unit\Play_Dog_2	
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
+	2021037140	Room_Size			\Default Work Unit\Room_Size	
 	2141048674	Elevation			\Default Work Unit\Elevation	
 
 Effect plug-ins	ID	Name	Type				Notes

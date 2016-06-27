@@ -4,6 +4,7 @@
 		<WorkUnit Name="Default Work Unit" ID="{0AEBADB4-CF30-41C8-B323-F726CF4DA516}" PersistMode="Standalone">
 			<ChildrenList>
 				<GameParameter Name="Elevation" ID="{E697E70F-71B3-44EA-9311-295D91309BC8}"/>
+				<GameParameter Name="Room_Size" ID="{63220FFC-CA39-403C-802C-37B2252C1E71}"/>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>

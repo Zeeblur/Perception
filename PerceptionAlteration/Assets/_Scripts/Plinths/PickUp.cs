@@ -11,6 +11,7 @@ public class PickUp : MonoBehaviour
 
     private Changer playerScript;
 
+    private float verb = 0;
 
 	// Use this for initialization
 	void Start ()
@@ -55,6 +56,27 @@ public class PickUp : MonoBehaviour
         if (controller.GetTouchDown(SteamVR_Controller.ButtonMask.Grip))
             playerScript.Reset();
       
+    }
+
+    void Update()
+    {
+        // get reference to current controller
+        var controller = SteamVR_Controller.Input((int)trackObj.index); 
+
+        if (controller.GetTouchDown(SteamVR_Controller.ButtonMask.Touchpad))
+        {
+            verb += (1000f * Time.deltaTime);
+            AkSoundEngine.SetRTPCValue("Room_Size", verb);// AkSoundEngine.AK_INVALID_GAME_OBJECT);
+        }
+
+
+        if (controller.GetTouchDown(SteamVR_Controller.ButtonMask.Trigger))
+        {
+            verb -= (1000f * Time.deltaTime);
+            AkSoundEngine.SetRTPCValue("Room_Size", verb);// AkSoundEngine.AK_INVALID_GAME_OBJECT);
+        }
+
+
     }
 
     void OnTriggerStay(Collider other)
