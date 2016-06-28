@@ -3,86 +3,7 @@
 	<AudioObjects>
 		<WorkUnit Name="Default Work Unit" ID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}" PersistMode="Standalone">
 			<ChildrenList>
-				<Sound Name="11 Machine Hum With Very Low Frequency" ID="{973C45FB-E5A4-4DDC-8E37-26AEBF2251AE}" ShortID="470238779" Type="SoundFX">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="11 Machine Hum With Very Low Frequency" ID="{3C12EB05-AEF5-49E3-A548-C4801C462999}" ShortID="826620250">
-							<Language>SFX</Language>
-							<AudioFile>11 Machine Hum With Very Low Frequency.wav</AudioFile>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="11 Machine Hum With Very Low Frequency" ID="{3C12EB05-AEF5-49E3-A548-C4801C462999}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
-				<Sound Name="12 Industrial Plant Ambience, Low Frequency, Steady" ID="{26E613E2-DE96-419B-B085-0884D327EBDB}" ShortID="57157278" Type="SoundFX">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="12 Industrial Plant Ambience, Low Frequency, Steady" ID="{9AE2D58C-F404-4C6C-9227-119CFF5A28C6}" ShortID="850269780">
-							<Language>SFX</Language>
-							<AudioFile>12 Industrial Plant Ambience, Low Frequency, Steady.wav</AudioFile>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="12 Industrial Plant Ambience, Low Frequency, Steady" ID="{9AE2D58C-F404-4C6C-9227-119CFF5A28C6}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
-				<Sound Name="22-15 German U-Boat, Electric Motors, Constant Run Submerged" ID="{7C1212A2-85BF-43D7-81DC-B62CB71F90BB}" ShortID="322853755" Type="SoundFX">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="22-15 German U-Boat, Electric Motors, Constant Run Submerged" ID="{0586CB81-3F9A-4F9A-AD8E-80D7D3D11BF3}" ShortID="177209559">
-							<Language>SFX</Language>
-							<AudioFile>22-15 German U-Boat, Electric Motors, Constant Run Submerged.wav</AudioFile>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="22-15 German U-Boat, Electric Motors, Constant Run Submerged" ID="{0586CB81-3F9A-4F9A-AD8E-80D7D3D11BF3}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
-				<Sound Name="48 Processed Air Release #2_ Shorter Than Fx 47_[Note_ This Effect Has A Lot Of Out Of Phase Signal In It_]" ID="{C40A5B5D-2823-4195-BE68-FD5E0B246F36}" ShortID="166336855" Type="SoundFX">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="48 Processed Air Release #2_ Shorter Than Fx 47_[Note_ This Effect Has A Lot Of Out Of Phase Signal In It_]" ID="{5A69964D-7297-4D64-B165-01A27F9CC88A}" ShortID="685524853">
-							<Language>SFX</Language>
-							<AudioFile>48 Processed Air Release #2_ Shorter Than Fx 47.[Note_ This Effect Has A Lot Of Out Of Phase Signal In It.].wav</AudioFile>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="48 Processed Air Release #2_ Shorter Than Fx 47_[Note_ This Effect Has A Lot Of Out Of Phase Signal In It_]" ID="{5A69964D-7297-4D64-B165-01A27F9CC88A}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
 				<BlendContainer Name="Ambient" ID="{C3C718AB-700A-46E6-98DE-8EF3D561CA6C}" ShortID="611708382">
-					<PropertyList>
-						<Property Name="PositioningType" Type="int16" Value="1"/>
-					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Attenuation">
 							<Custom>
@@ -182,18 +103,12 @@
 								<ActiveSource Name="96 Synth Spaceship Interior #1_ Reverberant, Low Frequency Rumble" ID="{4DC9EBFC-EFBE-4D4C-9323-94B8D8BB4DD0}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
-						<Sound Name="98 Synth Submarine Interior; Reverberant, Very Low Frequency Rumble" ID="{047BE564-7ECA-462A-A054-579A9487AC7C}" ShortID="934672946" Type="SoundFX">
+						<Sound Name="22-15 German U-Boat, Electric Motors, Constant Run Submerged" ID="{7C1212A2-85BF-43D7-81DC-B62CB71F90BB}" ShortID="322853755" Type="SoundFX">
 							<PropertyList>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-								<Property Name="OverrideEffect" Type="bool" Value="True"/>
-								<Property Name="Pitch" Type="int32">
-									<ValueList>
-										<Value>-630</Value>
-									</ValueList>
-								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-6</Value>
+										<Value>-9</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -201,33 +116,50 @@
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
 								</Reference>
-								<Reference Name="Effect0">
-									<Custom>
-										<Effect Name="Wwise Time Stretch (Custom)" ID="{6E12A28C-8597-4283-A0BB-A0504510B362}" ShortID="253339441" PluginName="Wwise Time Stretch" CompanyID="0" PluginID="130" PluginType="3">
-											<PropertyList>
-												<Property Name="TimeStretch" Type="Real32" Value="157"/>
-												<Property Name="WindowSize" Type="int32" Value="2304"/>
-											</PropertyList>
-										</Effect>
-									</Custom>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="22-15 German U-Boat, Electric Motors, Constant Run Submerged" ID="{0586CB81-3F9A-4F9A-AD8E-80D7D3D11BF3}" ShortID="177209559">
+									<Language>SFX</Language>
+									<AudioFile>22-15 German U-Boat, Electric Motors, Constant Run Submerged.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="22-15 German U-Boat, Electric Motors, Constant Run Submerged" ID="{0586CB81-3F9A-4F9A-AD8E-80D7D3D11BF3}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="11 Machine Hum With Very Low Frequency" ID="{973C45FB-E5A4-4DDC-8E37-26AEBF2251AE}" ShortID="470238779" Type="SoundFX">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-8</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
 								</Reference>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="98 Synth Submarine Interior; Reverberant, Very Low Frequency Rumble" ID="{B540E60B-7757-4878-BBE4-CFA87B8C0618}" ShortID="57858495">
+								<AudioFileSource Name="11 Machine Hum With Very Low Frequency" ID="{3C12EB05-AEF5-49E3-A548-C4801C462999}" ShortID="826620250">
 									<Language>SFX</Language>
-									<AudioFile>98 Synth Submarine Interior; Reverberant, Very Low Frequency Rumble.wav</AudioFile>
+									<AudioFile>11 Machine Hum With Very Low Frequency.wav</AudioFile>
 								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
-								<ActiveSource Name="98 Synth Submarine Interior; Reverberant, Very Low Frequency Rumble" ID="{B540E60B-7757-4878-BBE4-CFA87B8C0618}" Platform="Linked"/>
+								<ActiveSource Name="11 Machine Hum With Very Low Frequency" ID="{3C12EB05-AEF5-49E3-A548-C4801C462999}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>
 					<BlendTrackList>
-						<BlendTrack Name="MainAmbient" ID="{A4EDEBB2-2FBE-4042-B908-94F5D0286835}" ShortID="955693172">
+						<BlendTrack Name="MainAmb" ID="{6317C293-6048-4AB6-996B-F50E6E9C8139}" ShortID="240546172">
 							<PropertyList>
 								<Property Name="EnableCrossFading" Type="bool" Value="True"/>
 							</PropertyList>
@@ -238,18 +170,28 @@
 							</ReferenceList>
 							<BlendTrackAssocList>
 								<BlendTrackAssoc>
-									<ItemRef Name="96 Synth Spaceship Interior #1_ Reverberant, Low Frequency Rumble" ID="{41C6573C-6B23-43EC-942B-994D196C3EA9}"/>
+									<ItemRef Name="11 Machine Hum With Very Low Frequency" ID="{973C45FB-E5A4-4DDC-8E37-26AEBF2251AE}"/>
 									<CrossfadingInfo>
 										<LeftEdgePos>0</LeftEdgePos>
 										<LeftFadingMode>Automatic</LeftFadingMode>
-										<RightEdgePos>21.2091762052168</RightEdgePos>
+										<RightEdgePos>41.0931174089069</RightEdgePos>
 										<RightFadingMode>Automatic</RightFadingMode>
 									</CrossfadingInfo>
 								</BlendTrackAssoc>
 								<BlendTrackAssoc>
-									<ItemRef Name="98 Synth Submarine Interior; Reverberant, Very Low Frequency Rumble" ID="{047BE564-7ECA-462A-A054-579A9487AC7C}"/>
+									<ItemRef Name="96 Synth Spaceship Interior #1_ Reverberant, Low Frequency Rumble" ID="{41C6573C-6B23-43EC-942B-994D196C3EA9}"/>
 									<CrossfadingInfo>
-										<LeftEdgePos>71.7270974811828</LeftEdgePos>
+										<LeftEdgePos>14.9802570850202</LeftEdgePos>
+										<LeftFadingMode>Automatic</LeftFadingMode>
+										<LeftFadingSegmentShape>InvertedSCurve</LeftFadingSegmentShape>
+										<RightEdgePos>99.9995</RightEdgePos>
+										<RightFadingMode>Automatic</RightFadingMode>
+									</CrossfadingInfo>
+								</BlendTrackAssoc>
+								<BlendTrackAssoc>
+									<ItemRef Name="22-15 German U-Boat, Electric Motors, Constant Run Submerged" ID="{7C1212A2-85BF-43D7-81DC-B62CB71F90BB}"/>
+									<CrossfadingInfo>
+										<LeftEdgePos>54.9795070850202</LeftEdgePos>
 										<LeftFadingMode>Automatic</LeftFadingMode>
 										<RightEdgePos>100</RightEdgePos>
 										<RightFadingMode>Automatic</RightFadingMode>
@@ -264,6 +206,7 @@
 						<Sound Name="E" ID="{1F0C68EF-2423-4D85-9E5B-C943E330D158}" ShortID="748603129" Type="SoundFX">
 							<PropertyList>
 								<Property Name="PositioningType" Type="int16" Value="1"/>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 								<Property Name="UserAuxSendVolume0" Type="Real64">
 									<ValueList>
 										<Value>3</Value>
@@ -303,9 +246,6 @@
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
 								</Reference>
-								<Reference Name="UserAuxSend0">
-									<ObjectRef Name="Verb" ID="{37E486C9-9136-49F7-982C-B9AC74BAB40D}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
-								</Reference>
 							</ReferenceList>
 							<ChildrenList>
 								<AudioFileSource Name="E" ID="{913E6687-CB5A-4CB4-81A5-42C5BE493251}" ShortID="959773194">
@@ -320,6 +260,7 @@
 						<Sound Name="High C" ID="{684530FB-E6DB-4907-A0FB-786F3115B1EF}" ShortID="71771605" Type="SoundFX">
 							<PropertyList>
 								<Property Name="PositioningType" Type="int16" Value="1"/>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 								<Property Name="UserAuxSendVolume0" Type="Real64">
 									<ValueList>
 										<Value>3</Value>
@@ -359,9 +300,6 @@
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
 								</Reference>
-								<Reference Name="UserAuxSend0">
-									<ObjectRef Name="Verb" ID="{37E486C9-9136-49F7-982C-B9AC74BAB40D}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
-								</Reference>
 							</ReferenceList>
 							<ChildrenList>
 								<AudioFileSource Name="High C" ID="{46FFA4B1-E1BD-4C88-97A1-51ECA07EBB08}" ShortID="276410113">
@@ -376,6 +314,7 @@
 						<Sound Name="Low G" ID="{A3FA5EDB-3796-4616-B696-4CC7CED0F847}" ShortID="191959295" Type="SoundFX">
 							<PropertyList>
 								<Property Name="PositioningType" Type="int16" Value="1"/>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 								<Property Name="UserAuxSendVolume0" Type="Real64">
 									<ValueList>
 										<Value>3</Value>
@@ -414,9 +353,6 @@
 								</Reference>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
-								</Reference>
-								<Reference Name="UserAuxSend0">
-									<ObjectRef Name="Verb" ID="{37E486C9-9136-49F7-982C-B9AC74BAB40D}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -485,17 +421,11 @@
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
 								</Reference>
-								<Reference Name="UserAuxSend0">
-									<ObjectRef Name="Verb" ID="{37E486C9-9136-49F7-982C-B9AC74BAB40D}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
-								</Reference>
 							</ReferenceList>
 							<ChildrenList>
 								<AudioFileSource Name="C" ID="{43D43EBB-C800-4294-8C88-3EC463690EFE}" ShortID="310237286">
 									<Language>SFX</Language>
 									<AudioFile>C.wav</AudioFile>
-									<ConvertedFileIDList>
-										<File ID="188780765"/>
-									</ConvertedFileIDList>
 								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
@@ -576,6 +506,139 @@
 						<ActiveSource Name="External_Ambience_STEREO" ID="{482FA053-C4D7-454D-AC4E-A95A9247CA34}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
+				<Folder Name="Place" ID="{2EE2C40B-6085-47BC-B1E3-897B140DC7D0}" ShortID="308598602">
+					<ChildrenList>
+						<Sound Name="12 Industrial Plant Ambience, Low Frequency, Steady" ID="{26E613E2-DE96-419B-B085-0884D327EBDB}" ShortID="57157278" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="12 Industrial Plant Ambience, Low Frequency, Steady" ID="{9AE2D58C-F404-4C6C-9227-119CFF5A28C6}" ShortID="850269780">
+									<Language>SFX</Language>
+									<AudioFile>12 Industrial Plant Ambience, Low Frequency, Steady.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="12 Industrial Plant Ambience, Low Frequency, Steady" ID="{9AE2D58C-F404-4C6C-9227-119CFF5A28C6}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="48 Processed Air Release #2_ Shorter Than Fx 47_[Note_ This Effect Has A Lot Of Out Of Phase Signal In It_]" ID="{C40A5B5D-2823-4195-BE68-FD5E0B246F36}" ShortID="166336855" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="48 Processed Air Release #2_ Shorter Than Fx 47_[Note_ This Effect Has A Lot Of Out Of Phase Signal In It_]" ID="{5A69964D-7297-4D64-B165-01A27F9CC88A}" ShortID="685524853">
+									<Language>SFX</Language>
+									<AudioFile>48 Processed Air Release #2_ Shorter Than Fx 47.[Note_ This Effect Has A Lot Of Out Of Phase Signal In It.].wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="48 Processed Air Release #2_ Shorter Than Fx 47_[Note_ This Effect Has A Lot Of Out Of Phase Signal In It_]" ID="{5A69964D-7297-4D64-B165-01A27F9CC88A}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="98 Synth Submarine Interior; Reverberant, Very Low Frequency Rumble" ID="{047BE564-7ECA-462A-A054-579A9487AC7C}" ShortID="934672946" Type="SoundFX">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="OverrideEffect" Type="bool" Value="True"/>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>-630</Value>
+									</ValueList>
+								</Property>
+								<Property Name="PositioningType" Type="int16" Value="1"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<Custom>
+										<Attenuation Name="Attenuation (Custom)" ID="{C2C6FAD5-2492-4744-ABA4-1C754C7EE6DA}" ShortID="753228428">
+											<CurveUsageInfoList>
+												<VolumeDryUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+														<Curve Name="VolumeDry" ID="{8D919136-B23B-4441-BE17-6F922FD92481}">
+															<PropertyList>
+																<Property Name="Flags" Type="int32" Value="3"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>0</XPos>
+																	<YPos>0</YPos>
+																	<Flags>5</Flags>
+																</Point>
+																<Point>
+																	<XPos>100</XPos>
+																	<YPos>-200</YPos>
+																	<Flags>37</Flags>
+																</Point>
+															</PointList>
+														</Curve>
+													</CurveUsageInfo>
+												</VolumeDryUsage>
+												<VolumeWetGameUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+												</VolumeWetGameUsage>
+												<VolumeWetUserUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+												</VolumeWetUserUsage>
+												<LowPassFilterUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</LowPassFilterUsage>
+												<HighPassFilterUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</HighPassFilterUsage>
+												<SpreadUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</SpreadUsage>
+												<FocusUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</FocusUsage>
+											</CurveUsageInfoList>
+										</Attenuation>
+									</Custom>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
+								</Reference>
+								<Reference Name="Effect0">
+									<Custom>
+										<Effect Name="Wwise Time Stretch (Custom)" ID="{6E12A28C-8597-4283-A0BB-A0504510B362}" ShortID="253339441" PluginName="Wwise Time Stretch" CompanyID="0" PluginID="130" PluginType="3">
+											<PropertyList>
+												<Property Name="TimeStretch" Type="Real32" Value="157"/>
+												<Property Name="WindowSize" Type="int32" Value="2304"/>
+											</PropertyList>
+										</Effect>
+									</Custom>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="98 Synth Submarine Interior; Reverberant, Very Low Frequency Rumble" ID="{B540E60B-7757-4878-BBE4-CFA87B8C0618}" ShortID="57858495">
+									<Language>SFX</Language>
+									<AudioFile>98 Synth Submarine Interior; Reverberant, Very Low Frequency Rumble.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="98 Synth Submarine Interior; Reverberant, Very Low Frequency Rumble" ID="{B540E60B-7757-4878-BBE4-CFA87B8C0618}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

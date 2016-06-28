@@ -12,7 +12,13 @@ public class SoundController : MonoBehaviour
 
     private scaleMode soundMode;
 
-    public float sizeValue = 50f;
+    public float normalValue = 50f;
+    public float flipValue;
+    public float smallestValue;
+    public float smallValue;
+    public float bigValue;
+
+    private float currentVal = 50f;
 
     private void Start()
     {
@@ -27,51 +33,72 @@ public class SoundController : MonoBehaviour
 
     private void Update()
     {
-
-    
+            
         // reset current sound mode
-        if (soundMode == scaleMode.stopped && playerScript.CurrentScale != scaleMode.stopped)
+       // if (soundMode == scaleMode.stopped && playerScript.CurrentScale != scaleMode.stopped)
         {
             soundMode = playerScript.CurrentScale;
         }
 
+        float lerpTarget = currentVal;
+
         switch (soundMode)
         {
             case scaleMode.shrinking:
-                Debug.Log("STart shrinking");
-                Shrink();
+                Debug.Log("shrink");
+                lerpTarget = smallValue;
                 break;
             
             case scaleMode.resetting:
-                Reset();
+                Debug.Log("reset");
+                lerpTarget = normalValue;
                 break;
 
             case scaleMode.growing:
-                Grow();
+                // Grow();
+                Debug.Log("Grow");
+                lerpTarget = bigValue;
+                break;
+
+            case scaleMode.shrinkingSmaller:
+                Debug.Log("shrinkest");
+                lerpTarget = smallestValue;
+                break;
+
+            case scaleMode.turning:
+                Debug.Log("flip");
+                lerpTarget = flipValue;
                 break;
         }
+
+        currentVal = Mathf.Lerp(currentVal, lerpTarget, speed * Time.deltaTime);
+        AkSoundEngine.SetRTPCValue("Elevation", currentVal);
+        Debug.Log("curr " + currentVal);
+
 
     }
 
     private void Shrink()
     {
+        currentVal = Mathf.Lerp(currentVal, smallValue, speed * Time.deltaTime);
+        AkSoundEngine.SetRTPCValue("Elevation", currentVal);
     }
 
+    private void ShrinkSmallest()
+    {
+        currentVal = Mathf.Lerp(currentVal, smallValue, speed * Time.deltaTime);
+        AkSoundEngine.SetRTPCValue("Elevation", currentVal);
+    }
 
     private void Reset()
     {
+        currentVal = Mathf.Lerp(currentVal, normalValue, speed * Time.deltaTime);
+        AkSoundEngine.SetRTPCValue("Elevation", currentVal);
     }
 
     private void Grow()
     {
-      //  AkSoundEngine.PostEvent("Play_Ambient", gameObject);
-        sizeValue -=  (speed * Time.deltaTime);
-        AkSoundEngine.SetRTPCValue("Elevation", sizeValue);
-        float value = 0f;
-        int rtcpType = 0;
-       // GetRTPCValue(string in_pszRtpcName, UnityEngine.GameObject in_gameObjectID, uint in_playingID, out float out_rValue, ref int io_rValueType) {
-        AkSoundEngine.GetRTPCValue("Elevation", this.gameObject, 1, out value, ref rtcpType);
-        Debug.Log("Chnage sound " + value + " " + sizeValue);
-
+        currentVal = Mathf.Lerp(currentVal, bigValue, speed * Time.deltaTime);
+        AkSoundEngine.SetRTPCValue("Elevation", currentVal);
     }
 }
