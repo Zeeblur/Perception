@@ -11,15 +11,15 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 	2141048674	Elevation			\Default Work Unit\Elevation	
 
 Effect plug-ins	ID	Name	Type				Notes
-	253339441	Wwise Time Stretch (Custom)	Wwise Time Stretch			
 	774432364	Wwise Time Stretch (Custom)	Wwise Time Stretch			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	28150437	Low G	C:\Users\40182161.NAPIER-MAIL\Documents\Perception\PerceptionAlteration\Wwise\TestAudio\.cache\Windows\SFX\Low G_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dogs\Low G		25216
-	57858495	98 Synth Submarine Interior; Reverberant, Very Low Frequency Rumble	C:\Users\40182161.NAPIER-MAIL\Documents\Perception\PerceptionAlteration\Wwise\TestAudio\.cache\Windows\SFX\98 Synth Submarine Interior; Reverberant, Very Low Frequency Rumble_4B8CC0C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambient\98 Synth Submarine Interior; Reverberant, Very Low Frequency Rumble		7608784
-	188780765	C	C:\Users\40182161.NAPIER-MAIL\Documents\Perception\PerceptionAlteration\Wwise\TestAudio\.cache\Windows\SFX\C_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dogs\C		50368
+	177209559	22-15 German U-Boat, Electric Motors, Constant Run Submerged	C:\Users\40182161.NAPIER-MAIL\Documents\Perception\PerceptionAlteration\Wwise\TestAudio\.cache\Windows\SFX\22-15 German U-Boat, Electric Motors, Constant Run Submerged_4B8CC0C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambient\22-15 German U-Boat, Electric Motors, Constant Run Submerged		27205648
 	276410113	High C	C:\Users\40182161.NAPIER-MAIL\Documents\Perception\PerceptionAlteration\Wwise\TestAudio\.cache\Windows\SFX\High C_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dogs\High C		25216
+	310237286	C	C:\Users\40182161.NAPIER-MAIL\Documents\Perception\PerceptionAlteration\Wwise\TestAudio\.cache\Windows\SFX\C_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dogs\C		50368
 	572459570	33 Synth Door Opens With A Squeak; Reverberant	C:\Users\40182161.NAPIER-MAIL\Documents\Perception\PerceptionAlteration\Wwise\TestAudio\.cache\Windows\SFX\33 Synth Door Opens With A Squeak; Reverberant_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\New Actor-Mixer\33 Synth Door Opens With A Squeak; Reverberant		846784
+	826620250	11 Machine Hum With Very Low Frequency	C:\Users\40182161.NAPIER-MAIL\Documents\Perception\PerceptionAlteration\Wwise\TestAudio\.cache\Windows\SFX\11 Machine Hum With Very Low Frequency_4B8CC0C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambient\11 Machine Hum With Very Low Frequency		3669184
 	959773194	E	C:\Users\40182161.NAPIER-MAIL\Documents\Perception\PerceptionAlteration\Wwise\TestAudio\.cache\Windows\SFX\E_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dogs\E		25216
 	1030613146	96 Synth Spaceship Interior #1_ Reverberant, Low Frequency Rumble	C:\Users\40182161.NAPIER-MAIL\Documents\Perception\PerceptionAlteration\Wwise\TestAudio\.cache\Windows\SFX\96 Synth Spaceship Interior #1_ Reverberant, Low Frequency Rumble_4B8CC0C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambient\96 Synth Spaceship Interior #1_ Reverberant, Low Frequency Rumble		8102704
 
