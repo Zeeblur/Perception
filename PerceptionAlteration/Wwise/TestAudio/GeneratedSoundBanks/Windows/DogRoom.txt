@@ -5,6 +5,10 @@ Event	ID	Name			Wwise Object Path	Notes
 	2935214689	Play_Dog_0			\Default Work Unit\Play_Dog_0	
 	2935214690	Play_Dog_3			\Default Work Unit\Play_Dog_3	
 	2935214691	Play_Dog_2			\Default Work Unit\Play_Dog_2	
+	3409875848	Play_Zoe_1			\Default Work Unit\Play_Zoe_1	
+	3409875849	Play_Zoe_0			\Default Work Unit\Play_Zoe_0	
+	3409875850	Play_Zoe_3			\Default Work Unit\Play_Zoe_3	
+	3409875851	Play_Zoe_2			\Default Work Unit\Play_Zoe_2	
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	2021037140	Room_Size			\Default Work Unit\Room_Size	
@@ -15,11 +19,35 @@ Effect plug-ins	ID	Name	Type				Notes
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	28150437	Low G	C:\Users\40182161.NAPIER-MAIL\Documents\Perception\PerceptionAlteration\Wwise\TestAudio\.cache\Windows\SFX\Low G_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dogs\Low G		25216
+	101216041	low pant	C:\Users\40182161.NAPIER-MAIL\Documents\Perception\PerceptionAlteration\Wwise\TestAudio\.cache\Windows\SFX\low pant_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\TestDogs\Staffy\Staffy\low pant		2772502
+	154722851	Lab whine	C:\Users\40182161.NAPIER-MAIL\Documents\Perception\PerceptionAlteration\Wwise\TestAudio\.cache\Windows\SFX\Lab whine_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\TestDogs\Lab\Lab\Lab whine		1690764
 	177209559	22-15 German U-Boat, Electric Motors, Constant Run Submerged	C:\Users\40182161.NAPIER-MAIL\Documents\Perception\PerceptionAlteration\Wwise\TestAudio\.cache\Windows\SFX\22-15 German U-Boat, Electric Motors, Constant Run Submerged_4B8CC0C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambient\22-15 German U-Boat, Electric Motors, Constant Run Submerged		27205648
+	241724619	chi noises	C:\Users\40182161.NAPIER-MAIL\Documents\Perception\PerceptionAlteration\Wwise\TestAudio\.cache\Windows\SFX\chi noises_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\TestDogs\Chihuahua\Chihuahua\chi noises		3504040
 	276410113	High C	C:\Users\40182161.NAPIER-MAIL\Documents\Perception\PerceptionAlteration\Wwise\TestAudio\.cache\Windows\SFX\High C_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dogs\High C		25216
+	298279218	pug slurp	C:\Users\40182161.NAPIER-MAIL\Documents\Perception\PerceptionAlteration\Wwise\TestAudio\.cache\Windows\SFX\pug slurp_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\TestDogs\Pugs\Pugs\pug slurp		1907306
 	310237286	C	C:\Users\40182161.NAPIER-MAIL\Documents\Perception\PerceptionAlteration\Wwise\TestAudio\.cache\Windows\SFX\C_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dogs\C		50368
+	360328778	excited chi	C:\Users\40182161.NAPIER-MAIL\Documents\Perception\PerceptionAlteration\Wwise\TestAudio\.cache\Windows\SFX\excited chi_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\TestDogs\Chihuahua\Chihuahua\excited chi		775944
+	453549031	staffy yowl talk	C:\Users\40182161.NAPIER-MAIL\Documents\Perception\PerceptionAlteration\Wwise\TestAudio\.cache\Windows\SFX\staffy yowl talk_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\TestDogs\Staffy\Staffy\staffy yowl talk		1830352
 	572459570	33 Synth Door Opens With A Squeak; Reverberant	C:\Users\40182161.NAPIER-MAIL\Documents\Perception\PerceptionAlteration\Wwise\TestAudio\.cache\Windows\SFX\33 Synth Door Opens With A Squeak; Reverberant_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\New Actor-Mixer\33 Synth Door Opens With A Squeak; Reverberant		846784
+	574145965	Pug noise-pant	C:\Users\40182161.NAPIER-MAIL\Documents\Perception\PerceptionAlteration\Wwise\TestAudio\.cache\Windows\SFX\Pug noise-pant_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\TestDogs\Pugs\Pugs\Pug noise-pant		1112536
+	633952765	chihuahua growls	C:\Users\40182161.NAPIER-MAIL\Documents\Perception\PerceptionAlteration\Wwise\TestAudio\.cache\Windows\SFX\chihuahua growls_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\TestDogs\Chihuahua\Chihuahua\chihuahua growls		1240908
+	634801061	Soft Pant - Staffy	C:\Users\40182161.NAPIER-MAIL\Documents\Perception\PerceptionAlteration\Wwise\TestAudio\.cache\Windows\SFX\Soft Pant - Staffy_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\TestDogs\Staffy\Staffy\Soft Pant - Staffy		2989668
+	635614607	Pug Pant	C:\Users\40182161.NAPIER-MAIL\Documents\Perception\PerceptionAlteration\Wwise\TestAudio\.cache\Windows\SFX\Pug Pant_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\TestDogs\Pugs\Pugs\Pug Pant		1820466
+	682104896	pug yelps	C:\Users\40182161.NAPIER-MAIL\Documents\Perception\PerceptionAlteration\Wwise\TestAudio\.cache\Windows\SFX\pug yelps_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\TestDogs\Pugs\Pugs\pug yelps		1215090
+	720604913	pug noises	C:\Users\40182161.NAPIER-MAIL\Documents\Perception\PerceptionAlteration\Wwise\TestAudio\.cache\Windows\SFX\pug noises_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\TestDogs\Pugs\Pugs\pug noises		3019620
+	721914941	Lab Pant	C:\Users\40182161.NAPIER-MAIL\Documents\Perception\PerceptionAlteration\Wwise\TestAudio\.cache\Windows\SFX\Lab Pant_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\TestDogs\Lab\Lab\Lab Pant		2061210
+	731035700	Sniff	C:\Users\40182161.NAPIER-MAIL\Documents\Perception\PerceptionAlteration\Wwise\TestAudio\.cache\Windows\SFX\Sniff_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\TestDogs\Lab\Lab\Sniff		1681468
+	765436780	chi growl noise	C:\Users\40182161.NAPIER-MAIL\Documents\Perception\PerceptionAlteration\Wwise\TestAudio\.cache\Windows\SFX\chi growl noise_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\TestDogs\Chihuahua\Chihuahua\chi growl noise		2472392
+	794281102	Staffy noises	C:\Users\40182161.NAPIER-MAIL\Documents\Perception\PerceptionAlteration\Wwise\TestAudio\.cache\Windows\SFX\Staffy noises_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\TestDogs\Staffy\Staffy\Staffy noises		3221182
+	796259554	chi pant	C:\Users\40182161.NAPIER-MAIL\Documents\Perception\PerceptionAlteration\Wwise\TestAudio\.cache\Windows\SFX\chi pant_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\TestDogs\Chihuahua\Chihuahua\chi pant		1895960
+	798765743	chi slurp	C:\Users\40182161.NAPIER-MAIL\Documents\Perception\PerceptionAlteration\Wwise\TestAudio\.cache\Windows\SFX\chi slurp_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\TestDogs\Chihuahua\Chihuahua\chi slurp		1993250
+	804162808	staffy growl	C:\Users\40182161.NAPIER-MAIL\Documents\Perception\PerceptionAlteration\Wwise\TestAudio\.cache\Windows\SFX\staffy growl_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\TestDogs\Staffy\Staffy\staffy growl		1272952
 	826620250	11 Machine Hum With Very Low Frequency	C:\Users\40182161.NAPIER-MAIL\Documents\Perception\PerceptionAlteration\Wwise\TestAudio\.cache\Windows\SFX\11 Machine Hum With Very Low Frequency_4B8CC0C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambient\11 Machine Hum With Very Low Frequency		3669184
+	950782934	slurrrrp	C:\Users\40182161.NAPIER-MAIL\Documents\Perception\PerceptionAlteration\Wwise\TestAudio\.cache\Windows\SFX\slurrrrp_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\TestDogs\Lab\Lab\slurrrrp		1840264
+	951905503	Pug pant1	C:\Users\40182161.NAPIER-MAIL\Documents\Perception\PerceptionAlteration\Wwise\TestAudio\.cache\Windows\SFX\Pug pant1_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\TestDogs\Pugs\Pugs\Pug pant1		985558
 	959773194	E	C:\Users\40182161.NAPIER-MAIL\Documents\Perception\PerceptionAlteration\Wwise\TestAudio\.cache\Windows\SFX\E_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dogs\E		25216
+	979462710	wooooof staffy	C:\Users\40182161.NAPIER-MAIL\Documents\Perception\PerceptionAlteration\Wwise\TestAudio\.cache\Windows\SFX\wooooof staffy_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\TestDogs\Staffy\Staffy\wooooof staffy		2735196
 	1030613146	96 Synth Spaceship Interior #1_ Reverberant, Low Frequency Rumble	C:\Users\40182161.NAPIER-MAIL\Documents\Perception\PerceptionAlteration\Wwise\TestAudio\.cache\Windows\SFX\96 Synth Spaceship Interior #1_ Reverberant, Low Frequency Rumble_4B8CC0C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambient\96 Synth Spaceship Interior #1_ Reverberant, Low Frequency Rumble		8102704
+	1037580832	Lab pant22	C:\Users\40182161.NAPIER-MAIL\Documents\Perception\PerceptionAlteration\Wwise\TestAudio\.cache\Windows\SFX\Lab pant22_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\TestDogs\Lab\Lab\Lab pant22		1303204
+	1038500437	pug whine	C:\Users\40182161.NAPIER-MAIL\Documents\Perception\PerceptionAlteration\Wwise\TestAudio\.cache\Windows\SFX\pug whine_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\TestDogs\Pugs\Pugs\pug whine		2892688
 

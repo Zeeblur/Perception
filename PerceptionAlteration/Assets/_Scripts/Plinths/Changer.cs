@@ -63,6 +63,10 @@ public class Changer : MonoBehaviour
 
                 cameraParent.transform.localScale = Vector3.Slerp(cameraParent.transform.localScale, smallestScale, speed * Time.deltaTime);
 
+                
+
+                cameraParent.transform.localPosition = Vector3.Slerp(cameraParent.transform.localPosition, smallestScale, speed * Time.deltaTime);
+
                 if (cameraParent.transform.localScale.x <= (smallestScale.x + epsilon))
                 {
                     currentScale = scaleMode.stopped;
@@ -178,6 +182,7 @@ public class Changer : MonoBehaviour
 
         currentScale = scaleMode.shrinkingSmaller;
 
+        playerPosition =  headCam.transform.localPosition;
     }
 
     public void Reset()
