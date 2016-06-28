@@ -83,6 +83,50 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_Zoe_1" ID="{4134798E-97A8-4801-9158-7F4593FE6AE4}">
+					<ChildrenList>
+						<Action Name="Play" ID="{588E3761-06EF-4F3F-9413-4EAF284C370B}" ShortID="690974768" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{946427F9-D946-4F8F-9A04-B980E0686F79}" Global="false">
+									<ObjectRef Name="Pugs" ID="{40BDAAF7-141F-47F9-B86E-488A74BC4C5B}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Zoe_0" ID="{01705E0B-50BF-4BA0-8F52-B0B4C76E3AD7}">
+					<ChildrenList>
+						<Action Name="Play" ID="{E397F192-C5E8-4D83-A731-92CBCCCC91CE}" ShortID="112318061" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{A2BB9011-AADD-4087-8890-2B3CDE0EF5DB}" Global="false">
+									<ObjectRef Name="Chihuahua" ID="{AC6741AC-0922-4463-B0F5-7C85F2C66167}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Zoe_3" ID="{CD06F2CE-F2F5-4A6B-B6E3-6134EFD7988A}">
+					<ChildrenList>
+						<Action Name="Play" ID="{B73E20D6-95DD-44F2-B506-CEDEAB7F9D9A}" ShortID="157314464" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{59E6ACED-597F-4A9C-9EFB-900FECB5AAEC}" Global="false">
+									<ObjectRef Name="Lab" ID="{51B4DDD2-2771-4687-9410-5DEA08DF743A}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Zoe_2" ID="{418A5108-1E74-45CD-BF4F-AF42CBED5D02}">
+					<ChildrenList>
+						<Action Name="Play" ID="{D3C960F9-0BB3-4AC0-8EC4-84F200FFEEFC}" ShortID="655221774" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{E2FF96CD-C278-4036-AFEE-BCBB1A1848BF}" Global="false">
+									<ObjectRef Name="Staffy" ID="{8F531DF9-6F6D-468A-897E-19BEA193A4FD}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

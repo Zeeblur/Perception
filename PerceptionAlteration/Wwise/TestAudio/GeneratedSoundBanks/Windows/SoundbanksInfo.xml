@@ -36,39 +36,139 @@
 				<Event Id="2935214688" Name="Play_Dog_1" ObjectPath="\Events\Default Work Unit\Play_Dog_1"/>
 				<Event Id="2935214691" Name="Play_Dog_2" ObjectPath="\Events\Default Work Unit\Play_Dog_2"/>
 				<Event Id="2935214690" Name="Play_Dog_3" ObjectPath="\Events\Default Work Unit\Play_Dog_3"/>
+				<Event Id="3409875849" Name="Play_Zoe_0" ObjectPath="\Events\Default Work Unit\Play_Zoe_0" MaxAttenuation="10.000000"/>
+				<Event Id="3409875848" Name="Play_Zoe_1" ObjectPath="\Events\Default Work Unit\Play_Zoe_1" MaxAttenuation="10.000000"/>
+				<Event Id="3409875851" Name="Play_Zoe_2" ObjectPath="\Events\Default Work Unit\Play_Zoe_2" MaxAttenuation="10.000000"/>
+				<Event Id="3409875850" Name="Play_Zoe_3" ObjectPath="\Events\Default Work Unit\Play_Zoe_3" MaxAttenuation="10.000000"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="28150437" Language="SFX">
 					<ShortName>Low G.wav</ShortName>
 					<Path>SFX\Low G_9E69E797.wem</Path>
 				</File>
+				<File Id="101216041" Language="SFX">
+					<ShortName>low pant.wav</ShortName>
+					<Path>SFX\low pant_9E69E797.wem</Path>
+				</File>
+				<File Id="154722851" Language="SFX">
+					<ShortName>Lab whine.wav</ShortName>
+					<Path>SFX\Lab whine_9E69E797.wem</Path>
+				</File>
 				<File Id="177209559" Language="SFX">
 					<ShortName>22-15 German U-Boat, Electric Motors, Constant Run Submerged.wav</ShortName>
 					<Path>SFX\22-15 German U-Boat, Electric Motors, Constant Run Submerged_4B8CC0C5.wem</Path>
+				</File>
+				<File Id="241724619" Language="SFX">
+					<ShortName>chi noises.wav</ShortName>
+					<Path>SFX\chi noises_9E69E797.wem</Path>
 				</File>
 				<File Id="276410113" Language="SFX">
 					<ShortName>High C.wav</ShortName>
 					<Path>SFX\High C_9E69E797.wem</Path>
 				</File>
+				<File Id="298279218" Language="SFX">
+					<ShortName>pug slurp.wav</ShortName>
+					<Path>SFX\pug slurp_9E69E797.wem</Path>
+				</File>
 				<File Id="310237286" Language="SFX">
 					<ShortName>C.wav</ShortName>
 					<Path>SFX\C_9E69E797.wem</Path>
+				</File>
+				<File Id="360328778" Language="SFX">
+					<ShortName>excited chi.wav</ShortName>
+					<Path>SFX\excited chi_9E69E797.wem</Path>
+				</File>
+				<File Id="453549031" Language="SFX">
+					<ShortName>staffy yowl talk.wav</ShortName>
+					<Path>SFX\staffy yowl talk_9E69E797.wem</Path>
 				</File>
 				<File Id="572459570" Language="SFX">
 					<ShortName>33 Synth Door Opens With A Squeak; Reverberant.wav</ShortName>
 					<Path>SFX\33 Synth Door Opens With A Squeak; Reverberant_9E69E797.wem</Path>
 				</File>
+				<File Id="574145965" Language="SFX">
+					<ShortName>Pug noise-pant.wav</ShortName>
+					<Path>SFX\Pug noise-pant_9E69E797.wem</Path>
+				</File>
+				<File Id="633952765" Language="SFX">
+					<ShortName>chihuahua growls.wav</ShortName>
+					<Path>SFX\chihuahua growls_9E69E797.wem</Path>
+				</File>
+				<File Id="634801061" Language="SFX">
+					<ShortName>Soft Pant - Staffy.wav</ShortName>
+					<Path>SFX\Soft Pant - Staffy_9E69E797.wem</Path>
+				</File>
+				<File Id="635614607" Language="SFX">
+					<ShortName>Pug Pant.wav</ShortName>
+					<Path>SFX\Pug Pant_9E69E797.wem</Path>
+				</File>
+				<File Id="682104896" Language="SFX">
+					<ShortName>pug yelps.wav</ShortName>
+					<Path>SFX\pug yelps_9E69E797.wem</Path>
+				</File>
+				<File Id="720604913" Language="SFX">
+					<ShortName>pug noises.wav</ShortName>
+					<Path>SFX\pug noises_9E69E797.wem</Path>
+				</File>
+				<File Id="721914941" Language="SFX">
+					<ShortName>Lab Pant.wav</ShortName>
+					<Path>SFX\Lab Pant_9E69E797.wem</Path>
+				</File>
+				<File Id="731035700" Language="SFX">
+					<ShortName>Sniff.wav</ShortName>
+					<Path>SFX\Sniff_9E69E797.wem</Path>
+				</File>
+				<File Id="765436780" Language="SFX">
+					<ShortName>chi growl noise.wav</ShortName>
+					<Path>SFX\chi growl noise_9E69E797.wem</Path>
+				</File>
+				<File Id="794281102" Language="SFX">
+					<ShortName>Staffy noises.wav</ShortName>
+					<Path>SFX\Staffy noises_9E69E797.wem</Path>
+				</File>
+				<File Id="796259554" Language="SFX">
+					<ShortName>chi pant.wav</ShortName>
+					<Path>SFX\chi pant_9E69E797.wem</Path>
+				</File>
+				<File Id="798765743" Language="SFX">
+					<ShortName>chi slurp.wav</ShortName>
+					<Path>SFX\chi slurp_9E69E797.wem</Path>
+				</File>
+				<File Id="804162808" Language="SFX">
+					<ShortName>staffy growl.wav</ShortName>
+					<Path>SFX\staffy growl_9E69E797.wem</Path>
+				</File>
 				<File Id="826620250" Language="SFX">
 					<ShortName>11 Machine Hum With Very Low Frequency.wav</ShortName>
 					<Path>SFX\11 Machine Hum With Very Low Frequency_4B8CC0C5.wem</Path>
+				</File>
+				<File Id="950782934" Language="SFX">
+					<ShortName>slurrrrp.wav</ShortName>
+					<Path>SFX\slurrrrp_9E69E797.wem</Path>
+				</File>
+				<File Id="951905503" Language="SFX">
+					<ShortName>Pug pant1.wav</ShortName>
+					<Path>SFX\Pug pant1_9E69E797.wem</Path>
 				</File>
 				<File Id="959773194" Language="SFX">
 					<ShortName>E.wav</ShortName>
 					<Path>SFX\E_9E69E797.wem</Path>
 				</File>
+				<File Id="979462710" Language="SFX">
+					<ShortName>wooooof staffy.wav</ShortName>
+					<Path>SFX\wooooof staffy_9E69E797.wem</Path>
+				</File>
 				<File Id="1030613146" Language="SFX">
 					<ShortName>96 Synth Spaceship Interior #1_ Reverberant, Low Frequency Rumble.wav</ShortName>
 					<Path>SFX\96 Synth Spaceship Interior #1_ Reverberant, Low Frequency Rumble_4B8CC0C5.wem</Path>
+				</File>
+				<File Id="1037580832" Language="SFX">
+					<ShortName>Lab pant22.wav</ShortName>
+					<Path>SFX\Lab pant22_9E69E797.wem</Path>
+				</File>
+				<File Id="1038500437" Language="SFX">
+					<ShortName>pug whine.wav</ShortName>
+					<Path>SFX\pug whine_9E69E797.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>

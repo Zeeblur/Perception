@@ -23,7 +23,7 @@ public class SplineWalkerPlinth : MonoBehaviour
 
     public void ChooseDog(int num)
     {
-        chosenDog = "Play_Dog_" + num;
+        chosenDog = "Play_Zoe_" + num;
         splineNum = num;
     }
 
@@ -45,6 +45,12 @@ public class SplineWalkerPlinth : MonoBehaviour
         soundTimer = Time.time + timeInterval;
     }
 
+    private void Start()
+    {
+        //if (splineNum ==0)
+            AkSoundEngine.PostEvent(chosenDog, this.gameObject);
+    }
+
 
     private void Update()
     {
@@ -61,6 +67,7 @@ public class SplineWalkerPlinth : MonoBehaviour
 
                 // stop moving after reached end
                 progress = 1f;
+                
             }
         }
         else
@@ -76,12 +83,12 @@ public class SplineWalkerPlinth : MonoBehaviour
         // tell which spline to move dog along
         Move(splines[splineNum]);
 
-        if (Time.time >= soundTimer)
-        {
-            // timer for sound play
-            AkSoundEngine.PostEvent(chosenDog, this.gameObject);
-            soundTimer = Time.time + timeInterval;
-        }
+        //if (Time.time >= soundTimer)
+        //{
+        //    // timer for sound play
+        //    AkSoundEngine.PostEvent(chosenDog, this.gameObject);
+        //    soundTimer = Time.time + timeInterval;
+        //}
     }
 
     private void Move(Spline chosenSpline)

@@ -35,10 +35,7 @@ public class SoundController : MonoBehaviour
     {
             
         // reset current sound mode
-       // if (soundMode == scaleMode.stopped && playerScript.CurrentScale != scaleMode.stopped)
-        {
-            soundMode = playerScript.CurrentScale;
-        }
+        soundMode = playerScript.CurrentScale;
 
         float lerpTarget = currentVal;
 
@@ -73,32 +70,7 @@ public class SoundController : MonoBehaviour
 
         currentVal = Mathf.Lerp(currentVal, lerpTarget, speed * Time.deltaTime);
         AkSoundEngine.SetRTPCValue("Elevation", currentVal);
-        Debug.Log("curr " + currentVal);
+        //Debug.Log("curr " + currentVal);
 
-
-    }
-
-    private void Shrink()
-    {
-        currentVal = Mathf.Lerp(currentVal, smallValue, speed * Time.deltaTime);
-        AkSoundEngine.SetRTPCValue("Elevation", currentVal);
-    }
-
-    private void ShrinkSmallest()
-    {
-        currentVal = Mathf.Lerp(currentVal, smallValue, speed * Time.deltaTime);
-        AkSoundEngine.SetRTPCValue("Elevation", currentVal);
-    }
-
-    private void Reset()
-    {
-        currentVal = Mathf.Lerp(currentVal, normalValue, speed * Time.deltaTime);
-        AkSoundEngine.SetRTPCValue("Elevation", currentVal);
-    }
-
-    private void Grow()
-    {
-        currentVal = Mathf.Lerp(currentVal, bigValue, speed * Time.deltaTime);
-        AkSoundEngine.SetRTPCValue("Elevation", currentVal);
     }
 }
