@@ -23,9 +23,13 @@ public class Changer : MonoBehaviour
 
     // TODO: need to still see about translation when scaling.
     Vector3 playerPosition;
-    Vector3 newPos;
+
+    // initial capsule rotation
+    private Quaternion capsRot;
 
     private Vector3 elevation;
+
+    private Vector3 origin = new Vector3(0f, 0f, 0f);
 
     // rotation for upside down 
     private float theta = Mathf.PI / 2f;
@@ -46,6 +50,11 @@ public class Changer : MonoBehaviour
         headCam = GameObject.FindGameObjectWithTag("Head");
 
         ceiling = GameObject.FindGameObjectWithTag("Ceiling");
+    }
+
+    void Awake()
+    {
+        capsRot = transform.rotation;
     }
 
     // Update is called once per frame
@@ -97,7 +106,12 @@ public class Changer : MonoBehaviour
 
                 cameraParent.transform.localScale = Vector3.Slerp(cameraParent.transform.localScale, bigScale, speed * Time.deltaTime);
 
-                if (cameraParent.transform.localScale.x >= (bigScale.x + epsilon))
+                //float newY = Mathf.Lerp(cameraParent.transform.localScale.y, bigScale.y, speed * Time.deltaTime);
+                //cameraParent.transform.localScale = new Vector3(cameraParent.transform.localScale.x, newY, cameraParent.transform.localScale.z);
+
+                //cameraParent.transform.localPosition = Vector3.Slerp(cameraParent.transform.localPosition, playerPosition, speed * Time.deltaTime);
+
+                if (cameraParent.transform.localScale.y >= (bigScale.y + epsilon))
                 {
                     currentScale = scaleMode.stopped;
                 }
@@ -128,10 +142,12 @@ public class Changer : MonoBehaviour
 
                 cameraParent.transform.localScale = Vector3.Slerp(cameraParent.transform.localScale, new Vector3(1f, 1f, 1f), speed * Time.deltaTime);
 
+                cameraParent.transform.localPosition = Vector3.Slerp(cameraParent.transform.localPosition, origin, speed * Time.deltaTime);
+
                 if (!upright)
                 {
                     cameraParent.transform.localRotation = Quaternion.Slerp(cameraParent.transform.localRotation, new Quaternion(0, 0, 0, Mathf.Cos(0)), speed * Time.deltaTime);
-                    cameraParent.transform.localPosition = Vector3.Slerp(cameraParent.transform.localPosition, new Vector3(0f, 0f, 0f), speed * Time.deltaTime);
+                    cameraParent.transform.localPosition = Vector3.Slerp(cameraParent.transform.localPosition, origin, speed * Time.deltaTime);
                 }
 
                 upright = cameraParent.transform.localPosition.y <= epsilon ? true : false;
@@ -164,8 +180,19 @@ public class Changer : MonoBehaviour
         // User is inside large ball
         Debug.Log("Large touch");
 
-        playerPosition = headCam.transform.localPosition;
+        //Vector3 newPlayerPos = origin;
+        //newPlayerPos.x = headCam.transform.localPosition.x;
+        //newPlayerPos.z = headCam.transform.localPosition.z;
+
+        //newPlayerPos *= bigScale.x;
+
+        //playerPosition = -newPlayerPos;
+
+        //playerPosition = 
+
         currentScale = scaleMode.growing;
+
+        
     }
 
     public void Shrink()
@@ -188,5 +215,11 @@ public class Changer : MonoBehaviour
     public void Reset()
     {     
         currentScale = scaleMode.resetting;
+    }
+
+    void LateUpdate()
+    {
+        // no rotation for capsule
+        transform.rotation = capsRot;
     }
 }

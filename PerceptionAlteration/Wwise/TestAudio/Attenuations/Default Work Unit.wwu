@@ -22,13 +22,13 @@
 									<PointList>
 										<Point>
 											<XPos>0</XPos>
-											<YPos>-0</YPos>
+											<YPos>0</YPos>
 											<Flags>5</Flags>
 											<SegmentShape>Log3</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>1.999</XPos>
-											<YPos>-17.57641</YPos>
+											<XPos>2.03075</XPos>
+											<YPos>-20.72856</YPos>
 											<Flags>0</Flags>
 											<SegmentShape>Exp3</SegmentShape>
 										</Point>
