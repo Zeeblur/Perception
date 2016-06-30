@@ -30,6 +30,9 @@ public class Changer : MonoBehaviour
     private Quaternion capsRot;
     private Vector3 capsPos;
 
+    private Vector3 headTrans;
+    public Vector3 offset = new Vector3(0f, -0.25f, 0f);
+
     private Vector3 elevation;
 
     private Vector3 origin = new Vector3(0f, 0f, 0f);
@@ -55,12 +58,9 @@ public class Changer : MonoBehaviour
         ceiling = GameObject.FindGameObjectWithTag("Ceiling");
 
         tiltShiftEff = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<TiltShift>();
-    }
 
-    void Awake()
-    {
-        capsRot = transform.rotation;
-        capsPos = transform.position;
+        // initial head position
+        headTrans = headCam.transform.position;
     }
 
     // Update is called once per frame
@@ -227,10 +227,12 @@ public class Changer : MonoBehaviour
         currentScale = scaleMode.resetting;
     }
 
+ 
+
     void LateUpdate()
     {
         // no rotation for capsule
-        transform.rotation = capsRot;
-        //transform.position = capsPos;
+        headTrans = headCam.transform.position;
+        transform.position = headTrans + offset;
     }
 }
