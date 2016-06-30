@@ -1,11 +1,16 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityStandardAssets.ImageEffects;
 
 public class Changer : MonoBehaviour
 {
     private GameObject cameraParent;
     private GameObject headCam;
     private GameObject ceiling;
+    private TiltShift tiltShiftEff;
+
+    public float maxTiltBlurArea = 10.0f;
+    public float maxBlurSize = 15.0f;
 
     // scale factor
     public Vector3 smallScale;
@@ -18,14 +23,12 @@ public class Changer : MonoBehaviour
     // for inequalities
     private float epsilon = 0.005f;
 
-    // local var for parent
-    public GameObject propParent;
-
     // TODO: need to still see about translation when scaling.
     Vector3 playerPosition;
 
     // initial capsule rotation
     private Quaternion capsRot;
+    private Vector3 capsPos;
 
     private Vector3 elevation;
 
@@ -46,15 +49,18 @@ public class Changer : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        cameraParent = GameObject.FindGameObjectWithTag("MainCamera");
+        cameraParent = GameObject.FindGameObjectWithTag("PlayerParent");
         headCam = GameObject.FindGameObjectWithTag("Head");
 
         ceiling = GameObject.FindGameObjectWithTag("Ceiling");
+
+        tiltShiftEff = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<TiltShift>();
     }
 
     void Awake()
     {
         capsRot = transform.rotation;
+        capsPos = transform.position;
     }
 
     // Update is called once per frame
@@ -106,10 +112,8 @@ public class Changer : MonoBehaviour
 
                 cameraParent.transform.localScale = Vector3.Slerp(cameraParent.transform.localScale, bigScale, speed * Time.deltaTime);
 
-                //float newY = Mathf.Lerp(cameraParent.transform.localScale.y, bigScale.y, speed * Time.deltaTime);
-                //cameraParent.transform.localScale = new Vector3(cameraParent.transform.localScale.x, newY, cameraParent.transform.localScale.z);
-
-                //cameraParent.transform.localPosition = Vector3.Slerp(cameraParent.transform.localPosition, playerPosition, speed * Time.deltaTime);
+                tiltShiftEff.blurArea = Mathf.Lerp(tiltShiftEff.blurArea, maxTiltBlurArea, speed * Time.deltaTime);
+                tiltShiftEff.maxBlurSize = Mathf.Lerp(tiltShiftEff.maxBlurSize, maxBlurSize, speed * Time.deltaTime);
 
                 if (cameraParent.transform.localScale.y >= (bigScale.y + epsilon))
                 {
@@ -152,9 +156,13 @@ public class Changer : MonoBehaviour
 
                 upright = cameraParent.transform.localPosition.y <= epsilon ? true : false;
 
+                tiltShiftEff.blurArea = Mathf.Lerp(tiltShiftEff.blurArea, 0f, speed * Time.deltaTime);
+                tiltShiftEff.maxBlurSize = Mathf.Lerp(tiltShiftEff.maxBlurSize, 0f, speed * Time.deltaTime);
+
                 if (cameraParent.transform.localScale.x >= (1f - epsilon) && cameraParent.transform.localScale.x <= (1f + epsilon) && upright)
                 {
                     currentScale = scaleMode.stopped;
+                    tiltShiftEff.enabled = false;
                     return;
                 }
 
@@ -190,6 +198,8 @@ public class Changer : MonoBehaviour
 
         //playerPosition = 
 
+        tiltShiftEff.enabled = true;
+
         currentScale = scaleMode.growing;
 
         
@@ -221,5 +231,6 @@ public class Changer : MonoBehaviour
     {
         // no rotation for capsule
         transform.rotation = capsRot;
+        //transform.position = capsPos;
     }
 }
