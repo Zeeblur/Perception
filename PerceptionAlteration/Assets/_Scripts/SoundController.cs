@@ -28,7 +28,7 @@ public class SoundController : MonoBehaviour
 
 
         // start play of ambient
-        AkSoundEngine.PostEvent("Play_Ambient", this.gameObject);
+        //AkSoundEngine.PostEvent("Play_Ambient", this.gameObject);
     }
 
     private void Update()
@@ -69,7 +69,7 @@ public class SoundController : MonoBehaviour
         }
 
         currentVal = Mathf.Lerp(currentVal, lerpTarget, speed * Time.deltaTime);
-        AkSoundEngine.SetRTPCValue("Elevation", currentVal);
+     //   AkSoundEngine.SetRTPCValue("Elevation", currentVal);
         //Debug.Log("curr " + currentVal);
 
     }

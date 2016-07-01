@@ -66,14 +66,14 @@ public class PickUp : MonoBehaviour
         if (controller.GetTouchDown(SteamVR_Controller.ButtonMask.Touchpad))
         {
             verb += (1000f * Time.deltaTime);
-            AkSoundEngine.SetRTPCValue("Room_Size", verb);// AkSoundEngine.AK_INVALID_GAME_OBJECT);
+          //  AkSoundEngine.SetRTPCValue("Room_Size", verb);// AkSoundEngine.AK_INVALID_GAME_OBJECT);
         }
 
 
         if (controller.GetTouchDown(SteamVR_Controller.ButtonMask.Trigger))
         {
             verb -= (1000f * Time.deltaTime);
-            AkSoundEngine.SetRTPCValue("Room_Size", verb);// AkSoundEngine.AK_INVALID_GAME_OBJECT);
+        //    AkSoundEngine.SetRTPCValue("Room_Size", verb);// AkSoundEngine.AK_INVALID_GAME_OBJECT);
         }
 
         if (controller.GetTouchDown(SteamVR_Controller.ButtonMask.ApplicationMenu))
