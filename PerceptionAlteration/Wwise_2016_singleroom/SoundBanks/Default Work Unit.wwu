@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{5509E0CD-0D52-4B8C-AD5E-0376E47E879C}" SchemaVersion="72">
+	<SoundBanks>
+		<WorkUnit Name="Default Work Unit" ID="{5509E0CD-0D52-4B8C-AD5E-0376E47E879C}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="das_bank" ID="{E187A735-5172-4167-B9EC-8C3D2A38997E}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Stop_pure_tone_440_hz" ID="{D6E2C99B-A7F2-41A9-A8D7-B60B56EFB0A4}" WorkUnitID="{1563D88B-C927-408B-AC60-EFAF8588801E}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Stop_CoolRide_Shortened_Mono" ID="{0C10BCF4-E4F7-4917-885A-28B39C30B764}" WorkUnitID="{1563D88B-C927-408B-AC60-EFAF8588801E}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_CoolRide_Shortened_Mono" ID="{AE49F53B-54FE-49B2-8308-06AC0FCB8647}" WorkUnitID="{1563D88B-C927-408B-AC60-EFAF8588801E}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_bond00" ID="{FB4A47F6-B67C-4B35-846C-3212A2C169AB}" WorkUnitID="{1563D88B-C927-408B-AC60-EFAF8588801E}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Stop_bond00" ID="{7D0E0660-0618-4C66-9D39-0EA750D19E85}" WorkUnitID="{1563D88B-C927-408B-AC60-EFAF8588801E}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="RealSpace3D Bus" ID="{D5BFDF90-A3DD-4D71-AF7F-C024D3040959}" WorkUnitID="{A2E3D95C-8568-4570-BC6C-4DE828EE8D08}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Stop" ID="{8A628266-E92B-4F47-B8E6-70E77FD129B9}" WorkUnitID="{1563D88B-C927-408B-AC60-EFAF8588801E}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_pure_tone_440_hz" ID="{EDC9F2C6-3605-4FC9-A4D2-1AF086FD4705}" WorkUnitID="{1563D88B-C927-408B-AC60-EFAF8588801E}" Filter="7" Origin="Manual"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundBanks>
+</WwiseDocument>

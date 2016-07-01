@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{2384E875-DBEF-4C51-B437-DE975E9AABB9}" SchemaVersion="72">
+	<AudioObjects>
+		<WorkUnit Name="Default Work Unit" ID="{2384E875-DBEF-4C51-B437-DE975E9AABB9}" PersistMode="Standalone">
+			<ChildrenList>
+				<ActorMixer Name="Spatialized Assets" ID="{DCA6A36C-B884-477E-AD9F-FD81ADE321C3}" ShortID="319158607">
+					<PropertyList>
+						<Property Name="PositioningType" Type="int16" Value="1"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EF61D9CB-C828-4779-9053-B25B8AE56D76}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="RealSpace3D Bus" ID="{D5BFDF90-A3DD-4D71-AF7F-C024D3040959}" WorkUnitID="{A2E3D95C-8568-4570-BC6C-4DE828EE8D08}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="pure_tone_440_hz" ID="{359EABF9-3192-4956-A3AF-E706ABEBD485}" ShortID="466751406" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EF61D9CB-C828-4779-9053-B25B8AE56D76}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A2E3D95C-8568-4570-BC6C-4DE828EE8D08}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="pure_tone_440_hz" ID="{1FA7F4F9-72B5-4BB1-9FB9-25F640E1CB20}" ShortID="279951296">
+									<Language>SFX</Language>
+									<AudioFile>pure_tone_440_hz.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="pure_tone_440_hz" ID="{1FA7F4F9-72B5-4BB1-9FB9-25F640E1CB20}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="bond00" ID="{2218357B-04DF-4070-A70B-8B0B6F1DBB99}" ShortID="183740070" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EF61D9CB-C828-4779-9053-B25B8AE56D76}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A2E3D95C-8568-4570-BC6C-4DE828EE8D08}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="bond00" ID="{36E0CCDF-872B-4ED3-9326-5FB3B602C50D}" ShortID="445264244">
+									<Language>SFX</Language>
+									<AudioFile>bond00.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="bond00" ID="{36E0CCDF-872B-4ED3-9326-5FB3B602C50D}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="CoolRide-Shortened-Mono" ID="{D9891CA2-A160-494C-A7CA-4962FDAC70B1}" ShortID="137504782" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EF61D9CB-C828-4779-9053-B25B8AE56D76}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A2E3D95C-8568-4570-BC6C-4DE828EE8D08}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="CoolRide-Shortened-Mono" ID="{9D10AA14-4F22-46FB-841F-E8CD8736C3C4}" ShortID="88459635">
+									<Language>SFX</Language>
+									<AudioFile>CoolRide-Shortened-Mono.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="CoolRide-Shortened-Mono" ID="{9D10AA14-4F22-46FB-841F-E8CD8736C3C4}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</ActorMixer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>
