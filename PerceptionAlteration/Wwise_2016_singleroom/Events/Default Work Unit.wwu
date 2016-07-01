@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{1563D88B-C927-408B-AC60-EFAF8588801E}" SchemaVersion="72">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{1563D88B-C927-408B-AC60-EFAF8588801E}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Play_bond00" ID="{FB4A47F6-B67C-4B35-846C-3212A2C169AB}">
+					<ChildrenList>
+						<Action Name="Play" ID="{728A2703-973E-45C2-A241-1E628D44139C}" ShortID="1039793280" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{DC5F82A1-6125-414C-8065-A99C0BCAA833}" Global="false">
+									<ObjectRef Name="bond00" ID="{2218357B-04DF-4070-A70B-8B0B6F1DBB99}" WorkUnitID="{2384E875-DBEF-4C51-B437-DE975E9AABB9}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_CoolRide_Shortened_Mono" ID="{AE49F53B-54FE-49B2-8308-06AC0FCB8647}">
+					<ChildrenList>
+						<Action Name="Play" ID="{926E4C91-18B5-452F-8017-1D65F3B5C851}" ShortID="58716544" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{C19372F6-2815-4F9B-81F6-7F096B3F8C24}" Global="false">
+									<ObjectRef Name="CoolRide-Shortened-Mono" ID="{D9891CA2-A160-494C-A7CA-4962FDAC70B1}" WorkUnitID="{2384E875-DBEF-4C51-B437-DE975E9AABB9}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_pure_tone_440_hz" ID="{EDC9F2C6-3605-4FC9-A4D2-1AF086FD4705}">
+					<ChildrenList>
+						<Action Name="Play" ID="{14E30A9B-1203-4A59-88C3-A7A74C723B86}" ShortID="604459299" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{0B132132-2EA3-4B4A-BC41-ABCA885089B4}" Global="false">
+									<ObjectRef Name="pure_tone_440_hz" ID="{359EABF9-3192-4956-A3AF-E706ABEBD485}" WorkUnitID="{2384E875-DBEF-4C51-B437-DE975E9AABB9}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop" ID="{8A628266-E92B-4F47-B8E6-70E77FD129B9}">
+					<ChildrenList>
+						<Action Name="Stop" ID="{1FCF25CE-D7E4-416B-B091-1AA5D73A0ED2}" ShortID="682769002" Type="Stop" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{26AFCABD-4FB5-4A60-947C-DC08F92AEF1A}" Global="false">
+									<ObjectRef Name="bond00" ID="{2218357B-04DF-4070-A70B-8B0B6F1DBB99}" WorkUnitID="{2384E875-DBEF-4C51-B437-DE975E9AABB9}"/>
+								</Element>
+							</ElementList>
+						</Action>
+						<Action Name="Stop" ID="{BBE126E4-F5E9-44F1-A6B7-1BB162F24833}" ShortID="116981705" Type="Stop" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{1A5D55B1-8312-4C57-A28D-29E4A33B6EC6}" Global="false">
+									<ObjectRef Name="CoolRide-Shortened-Mono" ID="{D9891CA2-A160-494C-A7CA-4962FDAC70B1}" WorkUnitID="{2384E875-DBEF-4C51-B437-DE975E9AABB9}"/>
+								</Element>
+							</ElementList>
+						</Action>
+						<Action Name="Stop" ID="{EAE381FA-058D-4F98-B290-76FBC657FAED}" ShortID="927901885" Type="Stop" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{9D23641B-8DAA-4235-8A27-C446F6A06CC2}" Global="false">
+									<ObjectRef Name="pure_tone_440_hz" ID="{359EABF9-3192-4956-A3AF-E706ABEBD485}" WorkUnitID="{2384E875-DBEF-4C51-B437-DE975E9AABB9}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_bond00" ID="{7D0E0660-0618-4C66-9D39-0EA750D19E85}">
+					<ChildrenList>
+						<Action Name="Stop" ID="{B4154F0B-8BBC-4E33-A8E3-11ECFFF7B223}" ShortID="365548573" Type="Stop" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{DB33DB78-7F2B-469C-8C06-86DA3325A132}" Global="false">
+									<ObjectRef Name="bond00" ID="{2218357B-04DF-4070-A70B-8B0B6F1DBB99}" WorkUnitID="{2384E875-DBEF-4C51-B437-DE975E9AABB9}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_CoolRide_Shortened_Mono" ID="{0C10BCF4-E4F7-4917-885A-28B39C30B764}">
+					<ChildrenList>
+						<Action Name="Stop" ID="{18EED45E-2A90-4DE9-B68A-AC3CAC157B8F}" ShortID="1010033399" Type="Stop" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{28DE3C7F-24EF-4EB6-83CC-5968BEA4F701}" Global="false">
+									<ObjectRef Name="CoolRide-Shortened-Mono" ID="{D9891CA2-A160-494C-A7CA-4962FDAC70B1}" WorkUnitID="{2384E875-DBEF-4C51-B437-DE975E9AABB9}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_pure_tone_440_hz" ID="{D6E2C99B-A7F2-41A9-A8D7-B60B56EFB0A4}">
+					<ChildrenList>
+						<Action Name="Stop" ID="{159630C8-C84F-410E-BB3A-FD88D9E7AC71}" ShortID="444129590" Type="Stop" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{522FC7A8-BCB8-4E3A-9B5B-347A8B4975FA}" Global="false">
+									<ObjectRef Name="pure_tone_440_hz" ID="{359EABF9-3192-4956-A3AF-E706ABEBD485}" WorkUnitID="{2384E875-DBEF-4C51-B437-DE975E9AABB9}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

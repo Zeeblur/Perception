@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="11" SoundbankVersion="118">
+	<RootPaths>
+		<ProjectRoot>C:\Users\40182161.NAPIER-MAIL\Documents\Perception\PerceptionAlteration\Wwise_2016_singleroom\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\40182161.NAPIER-MAIL\Documents\Perception\PerceptionAlteration\Wwise_2016_singleroom\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\40182161.NAPIER-MAIL\Documents\Perception\PerceptionAlteration\Wwise_2016_singleroom\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>C:\Users\40182161.NAPIER-MAIL\Documents\Perception\PerceptionAlteration\Wwise_2016_singleroom\GeneratedSoundBanks\Windows\</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+			<ExcludedMemoryFiles>
+				<File Id="41583953" Language="SFX">
+					<ShortName>BACCH_filters_stereo_back.bin</ShortName>
+					<Path>Plugins\VisiSonics RealSpace3D\BACCH_filters_stereo_back_1523A08D.wem</Path>
+				</File>
+				<File Id="290453539" Language="SFX">
+					<ShortName>hrtf-andre-r1.icb</ShortName>
+					<Path>Plugins\VisiSonics RealSpace3D\hrtf-andre-r1_1523A08D.wem</Path>
+				</File>
+				<File Id="342409903" Language="SFX">
+					<ShortName>hrtf-cp048-r2.icb</ShortName>
+					<Path>Plugins\VisiSonics RealSpace3D\hrtf-cp048-r2_1523A08D.wem</Path>
+				</File>
+				<File Id="392784365" Language="SFX">
+					<ShortName>BACCH_filters_stereo_front.bin</ShortName>
+					<Path>Plugins\VisiSonics RealSpace3D\BACCH_filters_stereo_front_1523A08D.wem</Path>
+				</File>
+				<File Id="550561896" Language="SFX">
+					<ShortName>lic_key.txt</ShortName>
+					<Path>Plugins\VisiSonics RealSpace3D\lic_key_1523A08D.wem</Path>
+				</File>
+				<File Id="709772898" Language="SFX">
+					<ShortName>hrtf-custom-r1.icb</ShortName>
+					<Path>Plugins\VisiSonics RealSpace3D\hrtf-custom-r1_1523A08D.wem</Path>
+				</File>
+				<File Id="904099789" Language="SFX">
+					<ShortName>hrtf-virgn-r1.icb</ShortName>
+					<Path>Plugins\VisiSonics RealSpace3D\hrtf-virgn-r1_1523A08D.wem</Path>
+				</File>
+				<File Id="964654408" Language="SFX">
+					<ShortName>hrtf-cp021-r2.icb</ShortName>
+					<Path>Plugins\VisiSonics RealSpace3D\hrtf-cp021-r2_1523A08D.wem</Path>
+				</File>
+				<File Id="1063551604" Language="SFX">
+					<ShortName>hrtf-cp165-r2.icb</ShortName>
+					<Path>Plugins\VisiSonics RealSpace3D\hrtf-cp165-r2_1523A08D.wem</Path>
+				</File>
+			</ExcludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="3630454348" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\das_bank</ObjectPath>
+			<ShortName>das_bank</ShortName>
+			<Path>das_bank.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2592786057" Name="Play_bond00" ObjectPath="\Events\Default Work Unit\Play_bond00"/>
+				<Event Id="3906038252" Name="Play_CoolRide_Shortened_Mono" ObjectPath="\Events\Default Work Unit\Play_CoolRide_Shortened_Mono"/>
+				<Event Id="2660078259" Name="Play_pure_tone_440_hz" ObjectPath="\Events\Default Work Unit\Play_pure_tone_440_hz"/>
+				<Event Id="788884573" Name="Stop" ObjectPath="\Events\Default Work Unit\Stop" MaxAttenuation="0.000000"/>
+				<Event Id="1200586315" Name="Stop_bond00" ObjectPath="\Events\Default Work Unit\Stop_bond00" MaxAttenuation="0.000000"/>
+				<Event Id="2990552898" Name="Stop_CoolRide_Shortened_Mono" ObjectPath="\Events\Default Work Unit\Stop_CoolRide_Shortened_Mono" MaxAttenuation="0.000000"/>
+				<Event Id="3909173181" Name="Stop_pure_tone_440_hz" ObjectPath="\Events\Default Work Unit\Stop_pure_tone_440_hz" MaxAttenuation="0.000000"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="41583953" Language="SFX">
+					<ShortName>BACCH_filters_stereo_back.bin</ShortName>
+					<Path>Plugins\VisiSonics RealSpace3D\BACCH_filters_stereo_back_1523A08D.wem</Path>
+				</File>
+				<File Id="88459635" Language="SFX">
+					<ShortName>CoolRide-Shortened-Mono.wav</ShortName>
+					<Path>SFX\CoolRide-Shortened-Mono_9E69E797.wem</Path>
+				</File>
+				<File Id="279951296" Language="SFX">
+					<ShortName>pure_tone_440_hz.wav</ShortName>
+					<Path>SFX\pure_tone_440_hz_9E69E797.wem</Path>
+				</File>
+				<File Id="290453539" Language="SFX">
+					<ShortName>hrtf-andre-r1.icb</ShortName>
+					<Path>Plugins\VisiSonics RealSpace3D\hrtf-andre-r1_1523A08D.wem</Path>
+				</File>
+				<File Id="342409903" Language="SFX">
+					<ShortName>hrtf-cp048-r2.icb</ShortName>
+					<Path>Plugins\VisiSonics RealSpace3D\hrtf-cp048-r2_1523A08D.wem</Path>
+				</File>
+				<File Id="392784365" Language="SFX">
+					<ShortName>BACCH_filters_stereo_front.bin</ShortName>
+					<Path>Plugins\VisiSonics RealSpace3D\BACCH_filters_stereo_front_1523A08D.wem</Path>
+				</File>
+				<File Id="445264244" Language="SFX">
+					<ShortName>bond00.wav</ShortName>
+					<Path>SFX\bond00_9E69E797.wem</Path>
+				</File>
+				<File Id="550561896" Language="SFX">
+					<ShortName>lic_key.txt</ShortName>
+					<Path>Plugins\VisiSonics RealSpace3D\lic_key_1523A08D.wem</Path>
+				</File>
+				<File Id="709772898" Language="SFX">
+					<ShortName>hrtf-custom-r1.icb</ShortName>
+					<Path>Plugins\VisiSonics RealSpace3D\hrtf-custom-r1_1523A08D.wem</Path>
+				</File>
+				<File Id="904099789" Language="SFX">
+					<ShortName>hrtf-virgn-r1.icb</ShortName>
+					<Path>Plugins\VisiSonics RealSpace3D\hrtf-virgn-r1_1523A08D.wem</Path>
+				</File>
+				<File Id="964654408" Language="SFX">
+					<ShortName>hrtf-cp021-r2.icb</ShortName>
+					<Path>Plugins\VisiSonics RealSpace3D\hrtf-cp021-r2_1523A08D.wem</Path>
+				</File>
+				<File Id="1063551604" Language="SFX">
+					<ShortName>hrtf-cp165-r2.icb</ShortName>
+					<Path>Plugins\VisiSonics RealSpace3D\hrtf-cp165-r2_1523A08D.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>
