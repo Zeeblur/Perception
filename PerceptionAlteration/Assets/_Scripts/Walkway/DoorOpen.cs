@@ -63,7 +63,7 @@ public class DoorOpen : MonoBehaviour
             close = false;
 
             // openDoor sound
-            AkSoundEngine.PostEvent("OpenDoor", this.gameObject);
+     //       AkSoundEngine.PostEvent("OpenDoor", this.gameObject);
         }
     }
 
