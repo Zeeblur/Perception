@@ -5,6 +5,7 @@
 			<ChildrenList>
 				<SoundBank Name="DogRoom" ID="{94F7E711-4EAD-43E4-A179-9A88D1508FFD}">
 					<ObjectInclusionList>
+						<ObjectRef Name="3D" ID="{9EAD83FF-6C17-424A-9D4F-17E4F4DC67E2}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Chihuahua" ID="{AC6741AC-0922-4463-B0F5-7C85F2C66167}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Low G" ID="{A3FA5EDB-3796-4616-B696-4CC7CED0F847}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="33 Synth Door Opens With A Squeak; Reverberant" ID="{7943AF66-9E51-4629-8F5C-09396B410188}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}" Filter="7" Origin="Manual"/>
