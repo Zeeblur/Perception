@@ -11,15 +11,15 @@ public class SplineWalkerPlinth : MonoBehaviour
 
     public bool lookForward;
 
-    private bool goingForward = true;
-    private bool shoot = true;
-
     // 3 seconds
     private float timeInterval = 3f;
     private float soundTimer = 0f;
 
     private string chosenDog = "Play_Dog_0";
     private int splineNum = 0;
+
+    public float angle = 180f;
+    private Vector3 zAxis = new Vector3(0f, 0f, 1f);
 
     public void ChooseDog(int num)
     {
@@ -47,48 +47,19 @@ public class SplineWalkerPlinth : MonoBehaviour
 
     private void Start()
     {
-        //if (splineNum ==0)
-            AkSoundEngine.PostEvent(chosenDog, this.gameObject);
+        AkSoundEngine.PostEvent(chosenDog, this.gameObject);
     }
 
 
     private void Update()
     {
-        if (goingForward)
-        {
-            progress += Time.deltaTime / duration;
-            if (progress > 1f)
-            {
-                if (shoot)
-                {
-                    shoot = false;
-                    duration = 10f;
-                }
+        if (progress > 1)
+            return;
 
-                // stop moving after reached end
-                progress = 1f;
-                
-            }
-        }
-        else
-        {
-            progress -= Time.deltaTime / duration;
-            if (progress < 0f)
-            {
-                progress = -progress;
-                goingForward = true;
-            }
-        }
-        
+        progress += Time.deltaTime / duration;
+  
         // tell which spline to move dog along
         Move(splines[splineNum]);
-
-        //if (Time.time >= soundTimer)
-        //{
-        //    // timer for sound play
-        //    AkSoundEngine.PostEvent(chosenDog, this.gameObject);
-        //    soundTimer = Time.time + timeInterval;
-        //}
     }
 
     private void Move(Spline chosenSpline)
@@ -98,6 +69,12 @@ public class SplineWalkerPlinth : MonoBehaviour
         if (lookForward)
         {
             transform.LookAt(position + chosenSpline.GetDirection(progress));
+
+            // ensure flip dog is upside down
+            if (this.tag == "Perception-Changer-Flip")
+            {
+                transform.Rotate(zAxis, angle);
+            }
         }
     }
 

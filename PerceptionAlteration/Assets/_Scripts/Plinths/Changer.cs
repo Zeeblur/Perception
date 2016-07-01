@@ -228,11 +228,28 @@ public class Changer : MonoBehaviour
     }
 
  
+    public void PrintLook()
+    {
+        Vector3 look = headCam.GetComponent<Camera>().transform.forward;
+        Debug.Log("LookAt " + look);
+    }
 
     void LateUpdate()
     {
+        Vector3 lookAt = headCam.transform.forward;
+
+        float multiplier = 0f;
+
+        if (offset.y < 0)
+            multiplier = 0.2f * offset.y;
+
+        offset.x = (-lookAt.x / 5f) - multiplier;
+        offset.z = (-lookAt.z / 5f) - multiplier;
+
+
         // no rotation for capsule
         headTrans = headCam.transform.position;
         transform.position = headTrans + offset;
     }
+
 }
