@@ -76,6 +76,8 @@ public class PickUp : MonoBehaviour
             AkSoundEngine.SetRTPCValue("Room_Size", verb);// AkSoundEngine.AK_INVALID_GAME_OBJECT);
         }
 
+        if (controller.GetTouchDown(SteamVR_Controller.ButtonMask.ApplicationMenu))
+            playerScript.PrintLook();
 
     }
 
