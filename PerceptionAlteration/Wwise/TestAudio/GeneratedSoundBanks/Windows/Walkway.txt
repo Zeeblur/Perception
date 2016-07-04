@@ -1,6 +1,0 @@
-Event	ID	Name			Wwise Object Path	Notes
-	2122995345	OpenDoor			\Default Work Unit\OpenDoor	
-
-In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	685524853	48 Processed Air Release #2_ Shorter Than Fx 47_[Note_ This Effect Has A Lot Of Out Of Phase Signal In It_]	C:\Users\40182161.NAPIER-MAIL\Documents\Perception\PerceptionAlteration\Wwise\TestAudio\.cache\Windows\SFX\48 Processed Air Release #2_ Shorter Than Fx 47.[Note_ This Effect Has A Lot Of Out Of Phase Signal In It.]_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Place\48 Processed Air Release #2_ Shorter Than Fx 47_[Note_ This Effect Has A Lot Of Out Of Phase Signal In It_]		882064
-
