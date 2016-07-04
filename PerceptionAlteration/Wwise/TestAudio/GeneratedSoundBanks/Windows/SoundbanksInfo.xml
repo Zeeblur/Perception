@@ -54,13 +54,29 @@
 					<ShortName>Lab whine.wav</ShortName>
 					<Path>SFX\Lab whine_9E69E797.wem</Path>
 				</File>
+				<File Id="168836846" Language="SFX">
+					<ShortName>hrtf-andre-r1.icb</ShortName>
+					<Path>Plugins\VisiSonics RealSpace3D\hrtf-andre-r1_1523A08D.wem</Path>
+				</File>
+				<File Id="168875136" Language="SFX">
+					<ShortName>BACCH_filters_stereo_back.bin</ShortName>
+					<Path>Plugins\VisiSonics RealSpace3D\BACCH_filters_stereo_back_1523A08D.wem</Path>
+				</File>
 				<File Id="177209559" Language="SFX">
 					<ShortName>22-15 German U-Boat, Electric Motors, Constant Run Submerged.wav</ShortName>
 					<Path>SFX\22-15 German U-Boat, Electric Motors, Constant Run Submerged_4B8CC0C5.wem</Path>
 				</File>
+				<File Id="196380829" Language="SFX">
+					<ShortName>lic_key.txt</ShortName>
+					<Path>Plugins\VisiSonics RealSpace3D\lic_key_1523A08D.wem</Path>
+				</File>
 				<File Id="241724619" Language="SFX">
 					<ShortName>chi noises.wav</ShortName>
 					<Path>SFX\chi noises_9E69E797.wem</Path>
+				</File>
+				<File Id="256326696" Language="SFX">
+					<ShortName>hrtf-custom-r1.icb</ShortName>
+					<Path>Plugins\VisiSonics RealSpace3D\hrtf-custom-r1_1523A08D.wem</Path>
 				</File>
 				<File Id="276410113" Language="SFX">
 					<ShortName>High C.wav</ShortName>
@@ -90,6 +106,10 @@
 					<ShortName>Pug noise-pant.wav</ShortName>
 					<Path>SFX\Pug noise-pant_9E69E797.wem</Path>
 				</File>
+				<File Id="600669129" Language="SFX">
+					<ShortName>hrtf-cp165-r2.icb</ShortName>
+					<Path>Plugins\VisiSonics RealSpace3D\hrtf-cp165-r2_1523A08D.wem</Path>
+				</File>
 				<File Id="633952765" Language="SFX">
 					<ShortName>chihuahua growls.wav</ShortName>
 					<Path>SFX\chihuahua growls_9E69E797.wem</Path>
@@ -118,6 +138,10 @@
 					<ShortName>Sniff.wav</ShortName>
 					<Path>SFX\Sniff_9E69E797.wem</Path>
 				</File>
+				<File Id="738089407" Language="SFX">
+					<ShortName>hrtf-cp048-r2.icb</ShortName>
+					<Path>Plugins\VisiSonics RealSpace3D\hrtf-cp048-r2_1523A08D.wem</Path>
+				</File>
 				<File Id="765436780" Language="SFX">
 					<ShortName>chi growl noise.wav</ShortName>
 					<Path>SFX\chi growl noise_9E69E797.wem</Path>
@@ -125,6 +149,10 @@
 				<File Id="794281102" Language="SFX">
 					<ShortName>Staffy noises.wav</ShortName>
 					<Path>SFX\Staffy noises_9E69E797.wem</Path>
+				</File>
+				<File Id="795947654" Language="SFX">
+					<ShortName>BACCH_filters_stereo_front.bin</ShortName>
+					<Path>Plugins\VisiSonics RealSpace3D\BACCH_filters_stereo_front_1523A08D.wem</Path>
 				</File>
 				<File Id="796259554" Language="SFX">
 					<ShortName>chi pant.wav</ShortName>
@@ -142,6 +170,10 @@
 					<ShortName>11 Machine Hum With Very Low Frequency.wav</ShortName>
 					<Path>SFX\11 Machine Hum With Very Low Frequency_4B8CC0C5.wem</Path>
 				</File>
+				<File Id="896531392" Language="SFX">
+					<ShortName>hrtf-virgn-r1.icb</ShortName>
+					<Path>Plugins\VisiSonics RealSpace3D\hrtf-virgn-r1_1523A08D.wem</Path>
+				</File>
 				<File Id="950782934" Language="SFX">
 					<ShortName>slurrrrp.wav</ShortName>
 					<Path>SFX\slurrrrp_9E69E797.wem</Path>
@@ -149,6 +181,10 @@
 				<File Id="951905503" Language="SFX">
 					<ShortName>Pug pant1.wav</ShortName>
 					<Path>SFX\Pug pant1_9E69E797.wem</Path>
+				</File>
+				<File Id="956548883" Language="SFX">
+					<ShortName>hrtf-cp021-r2.icb</ShortName>
+					<Path>Plugins\VisiSonics RealSpace3D\hrtf-cp021-r2_1523A08D.wem</Path>
 				</File>
 				<File Id="959773194" Language="SFX">
 					<ShortName>E.wav</ShortName>
@@ -176,6 +212,44 @@
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
+			<ExcludedMemoryFiles>
+				<File Id="168836846" Language="SFX">
+					<ShortName>hrtf-andre-r1.icb</ShortName>
+					<Path>Plugins\VisiSonics RealSpace3D\hrtf-andre-r1_1523A08D.wem</Path>
+				</File>
+				<File Id="168875136" Language="SFX">
+					<ShortName>BACCH_filters_stereo_back.bin</ShortName>
+					<Path>Plugins\VisiSonics RealSpace3D\BACCH_filters_stereo_back_1523A08D.wem</Path>
+				</File>
+				<File Id="196380829" Language="SFX">
+					<ShortName>lic_key.txt</ShortName>
+					<Path>Plugins\VisiSonics RealSpace3D\lic_key_1523A08D.wem</Path>
+				</File>
+				<File Id="256326696" Language="SFX">
+					<ShortName>hrtf-custom-r1.icb</ShortName>
+					<Path>Plugins\VisiSonics RealSpace3D\hrtf-custom-r1_1523A08D.wem</Path>
+				</File>
+				<File Id="600669129" Language="SFX">
+					<ShortName>hrtf-cp165-r2.icb</ShortName>
+					<Path>Plugins\VisiSonics RealSpace3D\hrtf-cp165-r2_1523A08D.wem</Path>
+				</File>
+				<File Id="738089407" Language="SFX">
+					<ShortName>hrtf-cp048-r2.icb</ShortName>
+					<Path>Plugins\VisiSonics RealSpace3D\hrtf-cp048-r2_1523A08D.wem</Path>
+				</File>
+				<File Id="795947654" Language="SFX">
+					<ShortName>BACCH_filters_stereo_front.bin</ShortName>
+					<Path>Plugins\VisiSonics RealSpace3D\BACCH_filters_stereo_front_1523A08D.wem</Path>
+				</File>
+				<File Id="896531392" Language="SFX">
+					<ShortName>hrtf-virgn-r1.icb</ShortName>
+					<Path>Plugins\VisiSonics RealSpace3D\hrtf-virgn-r1_1523A08D.wem</Path>
+				</File>
+				<File Id="956548883" Language="SFX">
+					<ShortName>hrtf-cp021-r2.icb</ShortName>
+					<Path>Plugins\VisiSonics RealSpace3D\hrtf-cp021-r2_1523A08D.wem</Path>
+				</File>
+			</ExcludedMemoryFiles>
 		</SoundBank>
 	</SoundBanks>
 </SoundBanksInfo>

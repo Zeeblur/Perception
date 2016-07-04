@@ -9,6 +9,7 @@ State	ID	Name	State Group			Notes
 	4284352190	Large	MainSizeStates			
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
+	511093792	3D			\Default Work Unit\Master Audio Bus\3D	
 	805203703	Master Secondary Bus			\Default Work Unit\Master Secondary Bus	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
 
@@ -17,4 +18,5 @@ Auxiliary Bus	ID	Name			Wwise Object Path	Notes
 
 Effect plug-ins	ID	Name	Type				Notes
 	2265839006	Not_A_Yellow_Submarine	Wwise RoomVerb			
+	3769601346	New_VisiSonics_RealSpace3D	VisiSonics RealSpace3D			
 

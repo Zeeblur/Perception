@@ -3,5 +3,6 @@
 	<Plugins>
 		<Plugin Name="Wwise RoomVerb" ID="7733251" DLL="AkRoomVerb"/>
 		<Plugin Name="Wwise Time Stretch" ID="8519683" DLL="AkTimeStretch"/>
+		<Plugin Name="VisiSonics RealSpace3D" ID="9568262" DLL="RealSpace3D_x64_2016"/>
 	</Plugins>
 </PluginInfo>

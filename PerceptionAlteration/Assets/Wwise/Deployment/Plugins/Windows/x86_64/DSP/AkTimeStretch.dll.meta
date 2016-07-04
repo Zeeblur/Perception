@@ -1,7 +1,7 @@
 fileFormatVersion: 2
 guid: ed5003d8263e91144be9a9e73a6cef03
-timeCreated: 1464678491
-licenseType: Free
+timeCreated: 1467624189
+licenseType: Pro
 PluginImporter:
   serializedVersion: 1
   iconMap: {}
@@ -14,7 +14,41 @@ PluginImporter:
     Editor:
       enabled: 0
       settings:
+        CPU: X86_64
         DefaultValueInitialized: true
+        OS: Windows
+    Linux:
+      enabled: 0
+      settings:
+        CPU: None
+    Linux64:
+      enabled: 0
+      settings:
+        CPU: None
+    LinuxUniversal:
+      enabled: 0
+      settings:
+        CPU: None
+    OSXIntel:
+      enabled: 0
+      settings:
+        CPU: None
+    OSXIntel64:
+      enabled: 0
+      settings:
+        CPU: None
+    OSXUniversal:
+      enabled: 0
+      settings:
+        CPU: None
+    Win:
+      enabled: 0
+      settings:
+        CPU: None
+    Win64:
+      enabled: 0
+      settings:
+        CPU: AnyCPU
   userData: 
   assetBundleName: 
   assetBundleVariant: 

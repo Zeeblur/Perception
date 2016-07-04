@@ -47,7 +47,7 @@ public class SplineWalkerPlinth : MonoBehaviour
 
     private void Start()
     {
-      //  AkSoundEngine.PostEvent(chosenDog, this.gameObject);
+       // AkSoundEngine.PostEvent(chosenDog, this.gameObject);
     }
 
 
