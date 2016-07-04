@@ -41,6 +41,8 @@ public class Changer : MonoBehaviour
     private float theta = Mathf.PI / 2f;
     private bool upright = true;
 
+    private PlinthPhys plinthScript;
+
     private scaleMode currentScale = 0;
 
     public scaleMode CurrentScale
@@ -61,6 +63,8 @@ public class Changer : MonoBehaviour
 
         // initial head position
         headTrans = headCam.transform.position;
+
+        plinthScript = GameObject.FindGameObjectWithTag("PlinthParent").GetComponent<PlinthPhys>();
     }
 
     // Update is called once per frame
@@ -188,21 +192,11 @@ public class Changer : MonoBehaviour
         // User is inside large ball
         Debug.Log("Large touch");
 
-        //Vector3 newPlayerPos = origin;
-        //newPlayerPos.x = headCam.transform.localPosition.x;
-        //newPlayerPos.z = headCam.transform.localPosition.z;
-
-        //newPlayerPos *= bigScale.x;
-
-        //playerPosition = -newPlayerPos;
-
-        //playerPosition = 
-
         tiltShiftEff.enabled = true;
 
         currentScale = scaleMode.growing;
 
-        
+        plinthScript.SetState((int)scaleMode.growing);
     }
 
     public void Shrink()
@@ -210,6 +204,7 @@ public class Changer : MonoBehaviour
         Debug.Log("Small touch");
 
         currentScale = scaleMode.shrinking;
+        plinthScript.SetState((int)scaleMode.shrinking);
     }
 
     public void ShrinkSmaller()
@@ -220,11 +215,13 @@ public class Changer : MonoBehaviour
         currentScale = scaleMode.shrinkingSmaller;
 
         playerPosition =  headCam.transform.localPosition;
+        plinthScript.SetState((int)scaleMode.shrinkingSmaller);
     }
 
     public void Reset()
     {     
         currentScale = scaleMode.resetting;
+        plinthScript.SetState((int)scaleMode.resetting);
     }
 
  
@@ -237,15 +234,18 @@ public class Changer : MonoBehaviour
     void LateUpdate()
     {
         Vector3 lookAt = headCam.transform.forward;
+        Vector3 up = headCam.transform.up;
 
-        float multiplier = 0f;
-
-        if (offset.y < 0)
-            multiplier = 0.2f * offset.y;
-
-        offset.x = (-lookAt.x / 5f) - multiplier;
-        offset.z = (-lookAt.z / 5f) - multiplier;
-
+        if (lookAt.y < -0.3f)
+        {
+            offset.x = (-up.x / 5f);
+            offset.z = (-up.z / 5f);
+        }
+        else
+        {
+            offset.x = (-lookAt.x / 5f);
+            offset.z = (-lookAt.z / 5f);
+        }
 
         // no rotation for capsule
         headTrans = headCam.transform.position;
