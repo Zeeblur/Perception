@@ -443,7 +443,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
+							<ObjectRef Name="RealSpace3D Bus" ID="{D6660470-B59B-45C8-9FA9-794761B4B9E4}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
 						</Reference>
 						<Reference Name="UserAuxSend0">
 							<ObjectRef Name="Verb" ID="{37E486C9-9136-49F7-982C-B9AC74BAB40D}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
@@ -485,6 +485,549 @@
 								<ActiveSource Name="33 Synth Door Opens With A Squeak; Reverberant" ID="{640D43B0-A895-49EA-A866-5153A826947A}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<RandomSequenceContainer Name="Pugs" ID="{40BDAAF7-141F-47F9-B86E-488A74BC4C5B}" ShortID="791734868">
+							<PropertyList>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="PositioningType" Type="int16" Value="1"/>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="DogAttenuation" ID="{C350DE6D-B361-4C7F-8521-AB24E9089C22}" WorkUnitID="{75595244-2FB5-4229-9726-2C0FC36FBDDC}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Pug noise-pant" ID="{11FC09A1-3DC8-4EFF-9241-B56B3BC380C3}" ShortID="708906640" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Pug noise-pant" ID="{14D33115-39BB-4B61-BB16-FAF04B2767CE}" ShortID="574145965">
+											<Language>SFX</Language>
+											<AudioFile>Pug noise-pant.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Pug noise-pant" ID="{14D33115-39BB-4B61-BB16-FAF04B2767CE}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="pug noises" ID="{86D2B758-FF9B-4AC3-AAC9-6B23823050D9}" ShortID="529003284" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="pug noises" ID="{7E97CA5D-F71D-4062-A337-4F7FD753445F}" ShortID="720604913">
+											<Language>SFX</Language>
+											<AudioFile>pug noises.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="pug noises" ID="{7E97CA5D-F71D-4062-A337-4F7FD753445F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Pug Pant" ID="{A7B7F2F5-726D-405E-B8CC-D67FBBD98427}" ShortID="738756271" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Pug Pant" ID="{C00BC177-DE2E-43C0-8612-282C851A6F2F}" ShortID="635614607">
+											<Language>SFX</Language>
+											<AudioFile>Pug Pant.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Pug Pant" ID="{C00BC177-DE2E-43C0-8612-282C851A6F2F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Pug pant1" ID="{1415CEC5-547B-48BD-AFD5-8E9A0FA02F85}" ShortID="740916899" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Pug pant1" ID="{792A0954-966C-4AB1-93B7-3D81C5BE74DF}" ShortID="951905503">
+											<Language>SFX</Language>
+											<AudioFile>Pug pant1.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Pug pant1" ID="{792A0954-966C-4AB1-93B7-3D81C5BE74DF}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="pug slurp" ID="{8DB34A24-9C06-4154-9C75-85A680D091B1}" ShortID="1041935299" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="pug slurp" ID="{52FDF306-F879-4E8B-A7AF-56824C5007E0}" ShortID="298279218">
+											<Language>SFX</Language>
+											<AudioFile>pug slurp.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="pug slurp" ID="{52FDF306-F879-4E8B-A7AF-56824C5007E0}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="pug whine" ID="{18D203D4-9DF8-4AA2-BB40-A664F727BFFD}" ShortID="400554905" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="pug whine" ID="{7901B71E-192B-4F8E-A085-554451455396}" ShortID="1038500437">
+											<Language>SFX</Language>
+											<AudioFile>pug whine.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="pug whine" ID="{7901B71E-192B-4F8E-A085-554451455396}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="pug yelps" ID="{E19FFECC-FA49-4D69-BCDC-97A4B183189B}" ShortID="559817585" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="pug yelps" ID="{77A39D0D-F3B2-40AA-B96A-BCE7C8E92578}" ShortID="682104896">
+											<Language>SFX</Language>
+											<AudioFile>pug yelps.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="pug yelps" ID="{77A39D0D-F3B2-40AA-B96A-BCE7C8E92578}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Chihuahua" ID="{AC6741AC-0922-4463-B0F5-7C85F2C66167}" ShortID="210648396">
+							<PropertyList>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="PositioningType" Type="int16" Value="1"/>
+								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="DogAttenuation" ID="{C350DE6D-B361-4C7F-8521-AB24E9089C22}" WorkUnitID="{75595244-2FB5-4229-9726-2C0FC36FBDDC}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="chi growl noise" ID="{B61C438F-C7D0-4E0D-BC99-6EF299C4FDB8}" ShortID="637552926" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="chi growl noise" ID="{05435791-C7BF-4207-8C7D-393AC320EECD}" ShortID="765436780">
+											<Language>SFX</Language>
+											<AudioFile>chi growl noise.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="chi growl noise" ID="{05435791-C7BF-4207-8C7D-393AC320EECD}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="chi noises" ID="{9AE17078-250D-484A-9733-024954E6968F}" ShortID="712568653" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="chi noises" ID="{2E68503B-860A-48B8-9361-41078D87D813}" ShortID="241724619">
+											<Language>SFX</Language>
+											<AudioFile>chi noises.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="chi noises" ID="{2E68503B-860A-48B8-9361-41078D87D813}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="chi pant" ID="{C0891AD3-BFC6-4F36-9613-8E3BA7A2DB2C}" ShortID="708954214" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="chi pant" ID="{0F0C52E5-35E4-4056-9B69-EB89770907C4}" ShortID="796259554">
+											<Language>SFX</Language>
+											<AudioFile>chi pant.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="chi pant" ID="{0F0C52E5-35E4-4056-9B69-EB89770907C4}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="chi slurp" ID="{A4FCF6FB-9480-4BE5-893E-B39C3154BD2D}" ShortID="728461739" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="chi slurp" ID="{9A6869FF-135D-48C3-A559-2AAAA93B4C1E}" ShortID="798765743">
+											<Language>SFX</Language>
+											<AudioFile>chi slurp.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="chi slurp" ID="{9A6869FF-135D-48C3-A559-2AAAA93B4C1E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="chihuahua growls" ID="{BA86675B-5EE4-4180-8D28-2C7A1DDB53DE}" ShortID="655809201" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="chihuahua growls" ID="{83FF12C2-9723-4E8B-985A-FEF7AA8F2AF4}" ShortID="633952765">
+											<Language>SFX</Language>
+											<AudioFile>chihuahua growls.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="chihuahua growls" ID="{83FF12C2-9723-4E8B-985A-FEF7AA8F2AF4}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="excited chi" ID="{E5E905FE-BF6E-4B28-A11D-EF505963B876}" ShortID="985069207" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="excited chi" ID="{B92C4649-B9A8-4436-8908-28B68A8A3BBA}" ShortID="360328778">
+											<Language>SFX</Language>
+											<AudioFile>excited chi.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="excited chi" ID="{B92C4649-B9A8-4436-8908-28B68A8A3BBA}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Lab" ID="{51B4DDD2-2771-4687-9410-5DEA08DF743A}" ShortID="44887756">
+							<PropertyList>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="PositioningType" Type="int16" Value="1"/>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="DogAttenuation" ID="{C350DE6D-B361-4C7F-8521-AB24E9089C22}" WorkUnitID="{75595244-2FB5-4229-9726-2C0FC36FBDDC}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Lab whine" ID="{DF930C04-AD82-41C3-BE72-F82DD27DC266}" ShortID="968264636" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Lab whine" ID="{F56F6C83-5724-4CFF-ABE0-B110FAA58675}" ShortID="154722851">
+											<Language>SFX</Language>
+											<AudioFile>Lab whine.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Lab whine" ID="{F56F6C83-5724-4CFF-ABE0-B110FAA58675}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Lab pant22" ID="{E8CA8C85-99A1-4439-BF61-B1C797701F74}" ShortID="167505686" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Lab pant22" ID="{6094C732-430C-4E44-B550-FAD6F393F78A}" ShortID="1037580832">
+											<Language>SFX</Language>
+											<AudioFile>Lab pant22.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Lab pant22" ID="{6094C732-430C-4E44-B550-FAD6F393F78A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Lab Pant" ID="{7FF7B227-52F7-43EB-B8F6-565446CE3E83}" ShortID="320410542" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Lab Pant" ID="{E35FB671-9CF5-46CA-A704-31832BEBF431}" ShortID="721914941">
+											<Language>SFX</Language>
+											<AudioFile>Lab Pant.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Lab Pant" ID="{E35FB671-9CF5-46CA-A704-31832BEBF431}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="slurrrrp" ID="{AFE8A50D-9F32-4052-A9DF-F630110A800F}" ShortID="778881703" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="slurrrrp" ID="{8BAC19DA-C43C-47F9-BEA6-F18CB16629ED}" ShortID="950782934">
+											<Language>SFX</Language>
+											<AudioFile>slurrrrp.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="slurrrrp" ID="{8BAC19DA-C43C-47F9-BEA6-F18CB16629ED}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Sniff" ID="{880D464D-1CF5-4D88-947C-AD6E53327E24}" ShortID="911912004" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Sniff" ID="{3D1A24B3-3403-43AD-BC49-7663C78E9358}" ShortID="731035700">
+											<Language>SFX</Language>
+											<AudioFile>Sniff.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Sniff" ID="{3D1A24B3-3403-43AD-BC49-7663C78E9358}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Staffy" ID="{8F531DF9-6F6D-468A-897E-19BEA193A4FD}" ShortID="523728373">
+							<PropertyList>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="PositioningType" Type="int16" Value="1"/>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="DogAttenuation" ID="{C350DE6D-B361-4C7F-8521-AB24E9089C22}" WorkUnitID="{75595244-2FB5-4229-9726-2C0FC36FBDDC}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="low pant" ID="{005471F1-1C55-465A-8A8E-BB6CB388FB07}" ShortID="217121484" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="low pant" ID="{88CDA20C-64D1-4E20-A8A4-2B176E6A6477}" ShortID="101216041">
+											<Language>SFX</Language>
+											<AudioFile>low pant.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="low pant" ID="{88CDA20C-64D1-4E20-A8A4-2B176E6A6477}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Soft Pant - Staffy" ID="{6FC717A5-6ABF-45EB-B5D8-7868D8E345C8}" ShortID="884984156" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Soft Pant - Staffy" ID="{431D0987-B12A-450F-948E-1ABA3069C296}" ShortID="634801061">
+											<Language>SFX</Language>
+											<AudioFile>Soft Pant - Staffy.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Soft Pant - Staffy" ID="{431D0987-B12A-450F-948E-1ABA3069C296}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="staffy growl" ID="{54735B15-2C4B-466E-BCF7-D0E87396A17F}" ShortID="548939375" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="staffy growl" ID="{48EEB870-A5C0-4D96-93A1-9F39EA70F94E}" ShortID="804162808">
+											<Language>SFX</Language>
+											<AudioFile>staffy growl.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="staffy growl" ID="{48EEB870-A5C0-4D96-93A1-9F39EA70F94E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Staffy noises" ID="{9FD2F84D-A1C8-414D-9468-5CFDA0D5D4EF}" ShortID="931950061" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Staffy noises" ID="{56CF094A-E22B-4F18-853A-2B62805147E3}" ShortID="794281102">
+											<Language>SFX</Language>
+											<AudioFile>Staffy noises.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Staffy noises" ID="{56CF094A-E22B-4F18-853A-2B62805147E3}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="staffy yowl talk" ID="{FC3A8F14-7DA5-43EC-9FC1-EF69446FB9F5}" ShortID="302765595" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="staffy yowl talk" ID="{2CA4ECEB-440E-4264-9173-20E1AB142122}" ShortID="453549031">
+											<Language>SFX</Language>
+											<AudioFile>staffy yowl talk.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="staffy yowl talk" ID="{2CA4ECEB-440E-4264-9173-20E1AB142122}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="wooooof staffy" ID="{B4FD9126-F098-414A-B18C-BF138F853559}" ShortID="180424712" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="wooooof staffy" ID="{9F3B8676-0CD2-4CA9-BA7C-04515FC546EA}" ShortID="979462710">
+											<Language>SFX</Language>
+											<AudioFile>wooooof staffy.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="wooooof staffy" ID="{9F3B8676-0CD2-4CA9-BA7C-04515FC546EA}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
 					</ChildrenList>
 				</ActorMixer>
 				<Sound Name="External_Ambience_STEREO" ID="{C24D182B-0529-4253-AA31-26FB485D0622}" ShortID="675475388" Type="SoundFX">
@@ -641,565 +1184,10 @@
 				</Folder>
 				<Folder Name="TestDogs" ID="{A6006958-B2A8-4E9D-9F6C-CF269348D0DD}" ShortID="793569696">
 					<ChildrenList>
-						<Folder Name="Pugs" ID="{A2BDB26D-E9C5-4884-9995-0ED6DFDFD8D3}" ShortID="207062168">
-							<ChildrenList>
-								<RandomSequenceContainer Name="Pugs" ID="{40BDAAF7-141F-47F9-B86E-488A74BC4C5B}" ShortID="791734868">
-									<PropertyList>
-										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
-										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
-										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
-										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
-										<Property Name="PositioningType" Type="int16" Value="1"/>
-										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Attenuation">
-											<ObjectRef Name="DogAttenuation" ID="{C350DE6D-B361-4C7F-8521-AB24E9089C22}" WorkUnitID="{75595244-2FB5-4229-9726-2C0FC36FBDDC}"/>
-										</Reference>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<Sound Name="Pug noise-pant" ID="{11FC09A1-3DC8-4EFF-9241-B56B3BC380C3}" ShortID="708906640" Type="SoundFX">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Pug noise-pant" ID="{14D33115-39BB-4B61-BB16-FAF04B2767CE}" ShortID="574145965">
-													<Language>SFX</Language>
-													<AudioFile>Pug noise-pant.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Pug noise-pant" ID="{14D33115-39BB-4B61-BB16-FAF04B2767CE}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="pug noises" ID="{86D2B758-FF9B-4AC3-AAC9-6B23823050D9}" ShortID="529003284" Type="SoundFX">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="pug noises" ID="{7E97CA5D-F71D-4062-A337-4F7FD753445F}" ShortID="720604913">
-													<Language>SFX</Language>
-													<AudioFile>pug noises.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="pug noises" ID="{7E97CA5D-F71D-4062-A337-4F7FD753445F}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="Pug Pant" ID="{A7B7F2F5-726D-405E-B8CC-D67FBBD98427}" ShortID="738756271" Type="SoundFX">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Pug Pant" ID="{C00BC177-DE2E-43C0-8612-282C851A6F2F}" ShortID="635614607">
-													<Language>SFX</Language>
-													<AudioFile>Pug Pant.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Pug Pant" ID="{C00BC177-DE2E-43C0-8612-282C851A6F2F}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="Pug pant1" ID="{1415CEC5-547B-48BD-AFD5-8E9A0FA02F85}" ShortID="740916899" Type="SoundFX">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Pug pant1" ID="{792A0954-966C-4AB1-93B7-3D81C5BE74DF}" ShortID="951905503">
-													<Language>SFX</Language>
-													<AudioFile>Pug pant1.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Pug pant1" ID="{792A0954-966C-4AB1-93B7-3D81C5BE74DF}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="pug slurp" ID="{8DB34A24-9C06-4154-9C75-85A680D091B1}" ShortID="1041935299" Type="SoundFX">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="pug slurp" ID="{52FDF306-F879-4E8B-A7AF-56824C5007E0}" ShortID="298279218">
-													<Language>SFX</Language>
-													<AudioFile>pug slurp.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="pug slurp" ID="{52FDF306-F879-4E8B-A7AF-56824C5007E0}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="pug whine" ID="{18D203D4-9DF8-4AA2-BB40-A664F727BFFD}" ShortID="400554905" Type="SoundFX">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="pug whine" ID="{7901B71E-192B-4F8E-A085-554451455396}" ShortID="1038500437">
-													<Language>SFX</Language>
-													<AudioFile>pug whine.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="pug whine" ID="{7901B71E-192B-4F8E-A085-554451455396}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="pug yelps" ID="{E19FFECC-FA49-4D69-BCDC-97A4B183189B}" ShortID="559817585" Type="SoundFX">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="pug yelps" ID="{77A39D0D-F3B2-40AA-B96A-BCE7C8E92578}" ShortID="682104896">
-													<Language>SFX</Language>
-													<AudioFile>pug yelps.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="pug yelps" ID="{77A39D0D-F3B2-40AA-B96A-BCE7C8E92578}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-									</ChildrenList>
-								</RandomSequenceContainer>
-							</ChildrenList>
-						</Folder>
-						<Folder Name="Chihuahua" ID="{8FD9385F-66AC-4E86-9A5B-FBE4CC942ADD}" ShortID="122353095">
-							<ChildrenList>
-								<RandomSequenceContainer Name="Chihuahua" ID="{AC6741AC-0922-4463-B0F5-7C85F2C66167}" ShortID="210648396">
-									<PropertyList>
-										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
-										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
-										<Property Name="PositioningType" Type="int16" Value="1"/>
-										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
-										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Attenuation">
-											<ObjectRef Name="DogAttenuation" ID="{C350DE6D-B361-4C7F-8521-AB24E9089C22}" WorkUnitID="{75595244-2FB5-4229-9726-2C0FC36FBDDC}"/>
-										</Reference>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<Sound Name="chi growl noise" ID="{B61C438F-C7D0-4E0D-BC99-6EF299C4FDB8}" ShortID="637552926" Type="SoundFX">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="chi growl noise" ID="{05435791-C7BF-4207-8C7D-393AC320EECD}" ShortID="765436780">
-													<Language>SFX</Language>
-													<AudioFile>chi growl noise.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="chi growl noise" ID="{05435791-C7BF-4207-8C7D-393AC320EECD}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="chi noises" ID="{9AE17078-250D-484A-9733-024954E6968F}" ShortID="712568653" Type="SoundFX">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="chi noises" ID="{2E68503B-860A-48B8-9361-41078D87D813}" ShortID="241724619">
-													<Language>SFX</Language>
-													<AudioFile>chi noises.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="chi noises" ID="{2E68503B-860A-48B8-9361-41078D87D813}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="chi pant" ID="{C0891AD3-BFC6-4F36-9613-8E3BA7A2DB2C}" ShortID="708954214" Type="SoundFX">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="chi pant" ID="{0F0C52E5-35E4-4056-9B69-EB89770907C4}" ShortID="796259554">
-													<Language>SFX</Language>
-													<AudioFile>chi pant.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="chi pant" ID="{0F0C52E5-35E4-4056-9B69-EB89770907C4}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="chi slurp" ID="{A4FCF6FB-9480-4BE5-893E-B39C3154BD2D}" ShortID="728461739" Type="SoundFX">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="chi slurp" ID="{9A6869FF-135D-48C3-A559-2AAAA93B4C1E}" ShortID="798765743">
-													<Language>SFX</Language>
-													<AudioFile>chi slurp.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="chi slurp" ID="{9A6869FF-135D-48C3-A559-2AAAA93B4C1E}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="chihuahua growls" ID="{BA86675B-5EE4-4180-8D28-2C7A1DDB53DE}" ShortID="655809201" Type="SoundFX">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="chihuahua growls" ID="{83FF12C2-9723-4E8B-985A-FEF7AA8F2AF4}" ShortID="633952765">
-													<Language>SFX</Language>
-													<AudioFile>chihuahua growls.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="chihuahua growls" ID="{83FF12C2-9723-4E8B-985A-FEF7AA8F2AF4}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="excited chi" ID="{E5E905FE-BF6E-4B28-A11D-EF505963B876}" ShortID="985069207" Type="SoundFX">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="excited chi" ID="{B92C4649-B9A8-4436-8908-28B68A8A3BBA}" ShortID="360328778">
-													<Language>SFX</Language>
-													<AudioFile>excited chi.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="excited chi" ID="{B92C4649-B9A8-4436-8908-28B68A8A3BBA}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-									</ChildrenList>
-								</RandomSequenceContainer>
-							</ChildrenList>
-						</Folder>
-						<Folder Name="Lab" ID="{16CFF7D0-5E3E-46CF-A4B6-1293D67B8B5D}" ShortID="467444456">
-							<ChildrenList>
-								<RandomSequenceContainer Name="Lab" ID="{51B4DDD2-2771-4687-9410-5DEA08DF743A}" ShortID="44887756">
-									<PropertyList>
-										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
-										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
-										<Property Name="PositioningType" Type="int16" Value="1"/>
-										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Attenuation">
-											<ObjectRef Name="DogAttenuation" ID="{C350DE6D-B361-4C7F-8521-AB24E9089C22}" WorkUnitID="{75595244-2FB5-4229-9726-2C0FC36FBDDC}"/>
-										</Reference>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<Sound Name="Lab whine" ID="{DF930C04-AD82-41C3-BE72-F82DD27DC266}" ShortID="968264636" Type="SoundFX">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Lab whine" ID="{F56F6C83-5724-4CFF-ABE0-B110FAA58675}" ShortID="154722851">
-													<Language>SFX</Language>
-													<AudioFile>Lab whine.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Lab whine" ID="{F56F6C83-5724-4CFF-ABE0-B110FAA58675}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="Lab pant22" ID="{E8CA8C85-99A1-4439-BF61-B1C797701F74}" ShortID="167505686" Type="SoundFX">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Lab pant22" ID="{6094C732-430C-4E44-B550-FAD6F393F78A}" ShortID="1037580832">
-													<Language>SFX</Language>
-													<AudioFile>Lab pant22.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Lab pant22" ID="{6094C732-430C-4E44-B550-FAD6F393F78A}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="Lab Pant" ID="{7FF7B227-52F7-43EB-B8F6-565446CE3E83}" ShortID="320410542" Type="SoundFX">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Lab Pant" ID="{E35FB671-9CF5-46CA-A704-31832BEBF431}" ShortID="721914941">
-													<Language>SFX</Language>
-													<AudioFile>Lab Pant.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Lab Pant" ID="{E35FB671-9CF5-46CA-A704-31832BEBF431}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="slurrrrp" ID="{AFE8A50D-9F32-4052-A9DF-F630110A800F}" ShortID="778881703" Type="SoundFX">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="slurrrrp" ID="{8BAC19DA-C43C-47F9-BEA6-F18CB16629ED}" ShortID="950782934">
-													<Language>SFX</Language>
-													<AudioFile>slurrrrp.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="slurrrrp" ID="{8BAC19DA-C43C-47F9-BEA6-F18CB16629ED}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="Sniff" ID="{880D464D-1CF5-4D88-947C-AD6E53327E24}" ShortID="911912004" Type="SoundFX">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Sniff" ID="{3D1A24B3-3403-43AD-BC49-7663C78E9358}" ShortID="731035700">
-													<Language>SFX</Language>
-													<AudioFile>Sniff.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Sniff" ID="{3D1A24B3-3403-43AD-BC49-7663C78E9358}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-									</ChildrenList>
-								</RandomSequenceContainer>
-							</ChildrenList>
-						</Folder>
-						<Folder Name="Staffy" ID="{8161CD03-C7B4-40A7-8D11-A96AFEDAC283}" ShortID="582726885">
-							<ChildrenList>
-								<RandomSequenceContainer Name="Staffy" ID="{8F531DF9-6F6D-468A-897E-19BEA193A4FD}" ShortID="523728373">
-									<PropertyList>
-										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
-										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
-										<Property Name="PositioningType" Type="int16" Value="1"/>
-										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Attenuation">
-											<ObjectRef Name="DogAttenuation" ID="{C350DE6D-B361-4C7F-8521-AB24E9089C22}" WorkUnitID="{75595244-2FB5-4229-9726-2C0FC36FBDDC}"/>
-										</Reference>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<Sound Name="low pant" ID="{005471F1-1C55-465A-8A8E-BB6CB388FB07}" ShortID="217121484" Type="SoundFX">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="low pant" ID="{88CDA20C-64D1-4E20-A8A4-2B176E6A6477}" ShortID="101216041">
-													<Language>SFX</Language>
-													<AudioFile>low pant.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="low pant" ID="{88CDA20C-64D1-4E20-A8A4-2B176E6A6477}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="Soft Pant - Staffy" ID="{6FC717A5-6ABF-45EB-B5D8-7868D8E345C8}" ShortID="884984156" Type="SoundFX">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Soft Pant - Staffy" ID="{431D0987-B12A-450F-948E-1ABA3069C296}" ShortID="634801061">
-													<Language>SFX</Language>
-													<AudioFile>Soft Pant - Staffy.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Soft Pant - Staffy" ID="{431D0987-B12A-450F-948E-1ABA3069C296}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="staffy growl" ID="{54735B15-2C4B-466E-BCF7-D0E87396A17F}" ShortID="548939375" Type="SoundFX">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="staffy growl" ID="{48EEB870-A5C0-4D96-93A1-9F39EA70F94E}" ShortID="804162808">
-													<Language>SFX</Language>
-													<AudioFile>staffy growl.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="staffy growl" ID="{48EEB870-A5C0-4D96-93A1-9F39EA70F94E}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="Staffy noises" ID="{9FD2F84D-A1C8-414D-9468-5CFDA0D5D4EF}" ShortID="931950061" Type="SoundFX">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Staffy noises" ID="{56CF094A-E22B-4F18-853A-2B62805147E3}" ShortID="794281102">
-													<Language>SFX</Language>
-													<AudioFile>Staffy noises.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Staffy noises" ID="{56CF094A-E22B-4F18-853A-2B62805147E3}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="staffy yowl talk" ID="{FC3A8F14-7DA5-43EC-9FC1-EF69446FB9F5}" ShortID="302765595" Type="SoundFX">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="staffy yowl talk" ID="{2CA4ECEB-440E-4264-9173-20E1AB142122}" ShortID="453549031">
-													<Language>SFX</Language>
-													<AudioFile>staffy yowl talk.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="staffy yowl talk" ID="{2CA4ECEB-440E-4264-9173-20E1AB142122}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="wooooof staffy" ID="{B4FD9126-F098-414A-B18C-BF138F853559}" ShortID="180424712" Type="SoundFX">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="wooooof staffy" ID="{9F3B8676-0CD2-4CA9-BA7C-04515FC546EA}" ShortID="979462710">
-													<Language>SFX</Language>
-													<AudioFile>wooooof staffy.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="wooooof staffy" ID="{9F3B8676-0CD2-4CA9-BA7C-04515FC546EA}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-									</ChildrenList>
-								</RandomSequenceContainer>
-							</ChildrenList>
-						</Folder>
+						<Folder Name="Pugs" ID="{A2BDB26D-E9C5-4884-9995-0ED6DFDFD8D3}" ShortID="207062168"/>
+						<Folder Name="Chihuahua" ID="{8FD9385F-66AC-4E86-9A5B-FBE4CC942ADD}" ShortID="122353095"/>
+						<Folder Name="Lab" ID="{16CFF7D0-5E3E-46CF-A4B6-1293D67B8B5D}" ShortID="467444456"/>
+						<Folder Name="Staffy" ID="{8161CD03-C7B4-40A7-8D11-A96AFEDAC283}" ShortID="582726885"/>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

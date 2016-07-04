@@ -17,6 +17,6 @@ public class HatchMovement : MonoBehaviour {
     {
         // play sound
         Debug.Log("Sound");
-      //  AkSoundEngine.PostEvent("HatchOpen", this.gameObject);
+        AkSoundEngine.PostEvent("HatchOpen", this.gameObject);
     }
 }

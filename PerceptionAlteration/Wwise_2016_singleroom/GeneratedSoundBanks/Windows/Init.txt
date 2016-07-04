@@ -1,8 +1,0 @@
-Audio Bus	ID	Name			Wwise Object Path	Notes
-	805203703	Master Secondary Bus			\Default Work Unit\Master Secondary Bus	
-	2936121442	RealSpace3D Bus			\Default Work Unit\Master Audio Bus\RealSpace3D Bus	
-	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
-
-Effect plug-ins	ID	Name	Type				Notes
-	3769601346	New_VisiSonics_RealSpace3D	VisiSonics RealSpace3D			
-

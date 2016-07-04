@@ -12,6 +12,16 @@
 								</Reference>
 							</ReferenceList>
 						</AuxBus>
+						<Bus Name="RealSpace3D Bus" ID="{D6660470-B59B-45C8-9FA9-794761B4B9E4}">
+							<PropertyList>
+								<Property Name="EnablePositioning" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Mixer" PluginName="VisiSonics RealSpace3D" CompanyID="0" PluginID="146" PluginType="6">
+									<ObjectRef Name="New_VisiSonics_RealSpace3D" ID="{3466F0B0-DF96-4F40-8069-BBB5042E2C1E}" WorkUnitID="{E5E5A188-6752-4CFE-80D8-E956C7989134}"/>
+								</Reference>
+							</ReferenceList>
+						</Bus>
 					</ChildrenList>
 				</Bus>
 				<Bus Name="Master Secondary Bus" ID="{D2E0BC7E-7B3F-4FFE-A670-FAE02761B631}"/>
