@@ -59,6 +59,8 @@ public class Changer : MonoBehaviour
         set { currentScale = value; }
     }
 
+    private Vector3 largeTest;
+
     // Use this for initialization
     void Start()
     {
@@ -77,6 +79,7 @@ public class Changer : MonoBehaviour
         // set y-axis offset for body
         normalOffset = offset.y;
 
+        largeTest = offset * 3;
         largeOffsetTarget = offset.y * 3;
         smallOffsetTarget = offset.y * smallScale.y;
         smallestOffsetTarget = offset.y * smallestScale.y;
@@ -136,7 +139,10 @@ public class Changer : MonoBehaviour
 
                 cameraParent.transform.localScale = Vector3.Slerp(cameraParent.transform.localScale, bigScale, speed * Time.deltaTime);
 
-                offset.y = Mathf.Lerp(offset.y, largeOffsetTarget, speed * Time.deltaTime);
+                //offset.y = Mathf.Lerp(offset.y, largeOffsetTarget, speed * Time.deltaTime);
+
+                offset = Vector3.Slerp(offset, largeTest, speed * Time.deltaTime);
+
 
                 tiltShiftEff.blurArea = Mathf.Lerp(tiltShiftEff.blurArea, maxTiltBlurArea, speed * Time.deltaTime);
                 tiltShiftEff.maxBlurSize = Mathf.Lerp(tiltShiftEff.maxBlurSize, maxBlurSize, speed * Time.deltaTime);
