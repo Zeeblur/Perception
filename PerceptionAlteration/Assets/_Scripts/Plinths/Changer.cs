@@ -26,12 +26,20 @@ public class Changer : MonoBehaviour
     // TODO: need to still see about translation when scaling.
     Vector3 playerPosition;
 
-    // initial capsule rotation
-    private Quaternion capsRot;
-    private Vector3 capsPos;
+    // vars for arm rotation
+    private Quaternion armsRot;
+    private GameObject armsParent;
 
     private Vector3 headTrans;
-    public Vector3 offset = new Vector3(0f, -0.25f, 0f);
+    public Vector3 offset = new Vector3(0f, -0.27f, 0f);
+
+    // shadow dims
+    private float largeOffsetTarget;
+    private float smallOffsetTarget;
+    private float normalOffset;
+    private float smallestOffsetTarget;
+
+    public float offsetScale = 5f;
 
     private Vector3 elevation;
 
@@ -65,6 +73,16 @@ public class Changer : MonoBehaviour
         headTrans = headCam.transform.position;
 
         plinthScript = GameObject.FindGameObjectWithTag("PlinthParent").GetComponent<PlinthPhys>();
+
+        // set y-axis offset for body
+        normalOffset = offset.y;
+
+        largeOffsetTarget = offset.y * 3;
+        smallOffsetTarget = offset.y * smallScale.y;
+        smallestOffsetTarget = offset.y * smallestScale.y;
+
+        armsParent = GameObject.FindGameObjectWithTag("ArmParent");
+
     }
 
     // Update is called once per frame
@@ -82,7 +100,7 @@ public class Changer : MonoBehaviour
 
                 cameraParent.transform.localScale = Vector3.Slerp(cameraParent.transform.localScale, smallestScale, speed * Time.deltaTime);
 
-                
+                offset.y = Mathf.Lerp(offset.y, smallestOffsetTarget, speed * Time.deltaTime);
 
                 cameraParent.transform.localPosition = Vector3.Slerp(cameraParent.transform.localPosition, smallestScale, speed * Time.deltaTime);
 
@@ -101,6 +119,8 @@ public class Changer : MonoBehaviour
 
                 cameraParent.transform.localScale = Vector3.Slerp(cameraParent.transform.localScale, smallScale, speed * Time.deltaTime);
 
+                offset.y = Mathf.Lerp(offset.y, smallOffsetTarget, speed * Time.deltaTime);
+
                 if (cameraParent.transform.localScale.x <= (smallScale.x + epsilon))
                 {
                     currentScale = scaleMode.stopped;
@@ -115,6 +135,8 @@ public class Changer : MonoBehaviour
                 Debug.Log("Shrinking switch");
 
                 cameraParent.transform.localScale = Vector3.Slerp(cameraParent.transform.localScale, bigScale, speed * Time.deltaTime);
+
+                offset.y = Mathf.Lerp(offset.y, largeOffsetTarget, speed * Time.deltaTime);
 
                 tiltShiftEff.blurArea = Mathf.Lerp(tiltShiftEff.blurArea, maxTiltBlurArea, speed * Time.deltaTime);
                 tiltShiftEff.maxBlurSize = Mathf.Lerp(tiltShiftEff.maxBlurSize, maxBlurSize, speed * Time.deltaTime);
@@ -162,6 +184,8 @@ public class Changer : MonoBehaviour
 
                 tiltShiftEff.blurArea = Mathf.Lerp(tiltShiftEff.blurArea, 0f, speed * Time.deltaTime);
                 tiltShiftEff.maxBlurSize = Mathf.Lerp(tiltShiftEff.maxBlurSize, 0f, speed * Time.deltaTime);
+
+                offset.y = Mathf.Lerp(offset.y, normalOffset, speed * Time.deltaTime);
 
                 if (cameraParent.transform.localScale.x >= (1f - epsilon) && cameraParent.transform.localScale.x <= (1f + epsilon) && upright)
                 {
@@ -224,7 +248,7 @@ public class Changer : MonoBehaviour
         plinthScript.SetState((int)scaleMode.resetting);
     }
 
- 
+
     public void PrintLook()
     {
         Vector3 look = headCam.GetComponent<Camera>().transform.forward;
@@ -235,21 +259,16 @@ public class Changer : MonoBehaviour
     {
         Vector3 lookAt = headCam.transform.forward;
         Vector3 up = headCam.transform.up;
+        
+        offset.x = (-up.x / offsetScale);
+        offset.z = (-up.z / offsetScale);
 
-        if (lookAt.y < -0.3f)
-        {
-            offset.x = (-up.x / 5f);
-            offset.z = (-up.z / 5f);
-        }
-        else
-        {
-            offset.x = (-lookAt.x / 5f);
-            offset.z = (-lookAt.z / 5f);
-        }
-
-        // no rotation for capsule
         headTrans = headCam.transform.position;
         transform.position = headTrans + offset;
+
+        armsRot = new Quaternion(0, Mathf.Sin(-up.z), 0, Mathf.Cos(-up.z));
+
+        armsParent.transform.localRotation = armsRot;
     }
 
 }
