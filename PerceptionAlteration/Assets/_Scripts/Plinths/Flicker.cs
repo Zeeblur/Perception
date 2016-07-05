@@ -4,22 +4,60 @@ using System.Collections;
 public class Flicker : MonoBehaviour {
 
     private Light spot;
-    public float speed;
 
-	// Use this for initialization
-	void Awake ()
+    private bool flicker = false;
+
+    private float timer = 0;
+    private float timerInt = 5;
+
+    private float flashTime = 0;
+    private float flashTimeInt = 2;
+
+    // Use this for initialization
+    void Awake ()
     {
         spot = GetComponent<Light>();
     }
-	
-	// Update is called once per frame
-	void Update ()
-    {
-        Invoke("Toggle", speed*Time.deltaTime);
-	}
 
-    void Toggle()
+    void Start ()
     {
-        spot.enabled = spot.enabled ? false : true;
+        timer = Time.time + timerInt;
+        flashTime = Time.time + flashTimeInt;
     }
+
+    // Update is called once per frame
+    void Update ()
+    {
+        // start flickering (main timer)
+        if (!flicker && Time.time >= timer)
+        {
+            // reset timers about to flicker.
+            flashTimeInt = Random.Range(0.5f, 2f);
+
+            flicker = true;
+            timer = Time.time + timerInt;
+            flashTime = Time.time + flashTimeInt;
+        }
+
+        if (flicker)
+        {
+            spot.intensity = Random.Range(0f, 4f);
+
+            // flashTimer
+            if (Time.time >= flashTime)
+            {
+                timerInt = Random.Range(3f, 10f);
+
+                flicker = false;
+                timer = Time.time + timerInt;
+                flashTime = Time.time + flashTimeInt;
+            }
+        }
+        else
+        {
+            // reset
+            spot.intensity = 2.2f;
+        }
+        
+	}
 }
