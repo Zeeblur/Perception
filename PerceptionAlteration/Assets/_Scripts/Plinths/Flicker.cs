@@ -41,7 +41,7 @@ public class Flicker : MonoBehaviour {
 
         if (flicker)
         {
-            spot.intensity = Random.Range(0f, 4f);
+            spot.intensity = Random.Range(spot.intensity-1, spot.intensity+0.5f);
 
             // flashTimer
             if (Time.time >= flashTime)

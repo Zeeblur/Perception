@@ -64,6 +64,7 @@ public class Changer : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        
         cameraParent = GameObject.FindGameObjectWithTag("PlayerParent");
         headCam = GameObject.FindGameObjectWithTag("Head");
 
@@ -214,7 +215,7 @@ public class Changer : MonoBehaviour
         elevation = new Vector3(0f, ceiling.transform.position.y, 0f);
 
         Debug.Log("Elevation " + elevation);
-
+        Time.timeScale = 1f;
     }
 
     public void Grow()
@@ -227,6 +228,7 @@ public class Changer : MonoBehaviour
         currentScale = scaleMode.growing;
 
         plinthScript.SetState((int)scaleMode.growing);
+        Time.timeScale = 1f;
     }
 
     public void Shrink()
@@ -235,6 +237,7 @@ public class Changer : MonoBehaviour
 
         currentScale = scaleMode.shrinking;
         plinthScript.SetState((int)scaleMode.shrinking);
+        Time.timeScale = 0.75f;
     }
 
     public void ShrinkSmaller()
@@ -246,12 +249,14 @@ public class Changer : MonoBehaviour
 
         playerPosition =  headCam.transform.localPosition;
         plinthScript.SetState((int)scaleMode.shrinkingSmaller);
+        Time.timeScale = 0.5f;
     }
 
     public void Reset()
     {     
         currentScale = scaleMode.resetting;
         plinthScript.SetState((int)scaleMode.resetting);
+        Time.timeScale = 1f;
     }
 
 

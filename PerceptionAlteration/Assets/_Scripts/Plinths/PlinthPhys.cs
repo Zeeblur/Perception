@@ -11,11 +11,18 @@ public class PlinthPhys : MonoBehaviour
     public float[] masses;
     private float currentMass = 1f;
 
+    public float newTime = 1f;
+
     // Use this for initialization
     void Start ()
     {
         plinthBodies = gameObject.GetComponentsInChildren<Rigidbody>();
-	}
+        
+        foreach (Rigidbody rb in plinthBodies)
+        {
+            rb.centerOfMass = new Vector3(0, -0.3f, 0);
+        }
+    }
 
 	// Update is called once per frame
 	void Update ()
@@ -30,6 +37,7 @@ public class PlinthPhys : MonoBehaviour
         }
 
         dirty = false;
+
     }
 
     public void SetState(int choice)
