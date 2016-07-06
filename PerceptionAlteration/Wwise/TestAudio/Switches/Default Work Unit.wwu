@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{E4753052-913F-44B3-AAF9-568091578689}" SchemaVersion="72">
 	<Switches>
-		<WorkUnit Name="Default Work Unit" ID="{E4753052-913F-44B3-AAF9-568091578689}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{E4753052-913F-44B3-AAF9-568091578689}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchGroup Name="DistanceDog" ID="{A58494D7-B841-4652-BFAE-AD932DA92E8D}">
+					<PropertyList>
+						<Property Name="UseGameParameter" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Switch Name="Far" ID="{B54B2733-1F3C-42E1-A0DC-B8852654CFDB}"/>
+						<Switch Name="Near" ID="{388A7E6F-8FAA-4481-A3DA-B84669CD40E5}"/>
+						<Switch Name="VNear" ID="{1C312DB8-6182-4528-AC42-2FB18EAD5157}"/>
+					</ChildrenList>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
 	</Switches>
 </WwiseDocument>

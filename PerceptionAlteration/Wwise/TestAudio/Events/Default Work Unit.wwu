@@ -36,92 +36,12 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_Dog_3" ID="{9452F6C1-9599-4A1C-858F-D19D2836C88B}">
+				<Event Name="Pug" ID="{E47D36D1-422B-4D49-AC2F-94B03B7D0DB4}">
 					<ChildrenList>
-						<Action Name="Play" ID="{4B1AF9BD-D082-4E04-B862-B231AA543555}" ShortID="448818495" Type="Play" Scope="One" Global="false">
-							<PropertyList>
-								<Property Name="FadeCurve" Type="int16" Value="1"/>
-							</PropertyList>
+						<Action Name="Play" ID="{4BC7FD96-28EA-4F16-B32B-457B777CAFAF}" ShortID="801535970" Type="Play" Scope="One" Global="false">
 							<ElementList>
-								<Element ID="{F74D6B28-C17D-4F5B-8C8C-550118BC45DE}" Global="false">
-									<ObjectRef Name="C" ID="{22B1310F-DBCC-46FF-8526-7AC2405FB8F4}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}"/>
-								</Element>
-							</ElementList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_Dog_1" ID="{F8D4BB57-55EB-4E2D-AE50-196438F7DB9C}">
-					<ChildrenList>
-						<Action Name="Play" ID="{3B90103C-2820-4ABE-B2CA-38165F902171}" ShortID="52279657" Type="Play" Scope="One" Global="false">
-							<ElementList>
-								<Element ID="{61465CFF-A6B7-4048-B4EB-8B4B79A50A06}" Global="false">
-									<ObjectRef Name="E" ID="{1F0C68EF-2423-4D85-9E5B-C943E330D158}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}"/>
-								</Element>
-							</ElementList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_Dog_0" ID="{1ACE85DC-E1EC-4FC8-8445-47C5F290D1B4}">
-					<ChildrenList>
-						<Action Name="Play" ID="{D0A47CC9-B10E-430A-BE34-A2849E153087}" ShortID="151338446" Type="Play" Scope="One" Global="false">
-							<ElementList>
-								<Element ID="{0FBC47EC-BD13-43D8-A69E-936B468C032F}" Global="false">
-									<ObjectRef Name="High C" ID="{684530FB-E6DB-4907-A0FB-786F3115B1EF}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}"/>
-								</Element>
-							</ElementList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_Dog_2" ID="{7540225F-FE7A-4C2A-B1C1-FDE8F9A4BFDA}">
-					<ChildrenList>
-						<Action Name="Play" ID="{34EC0468-F752-4A4E-AADE-AD1061C285E5}" ShortID="714988237" Type="Play" Scope="One" Global="false">
-							<ElementList>
-								<Element ID="{FDB8BA15-B92C-4AFA-BD35-C2BA8DFB1D18}" Global="false">
-									<ObjectRef Name="Low G" ID="{A3FA5EDB-3796-4616-B696-4CC7CED0F847}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}"/>
-								</Element>
-							</ElementList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_Zoe_1" ID="{4134798E-97A8-4801-9158-7F4593FE6AE4}">
-					<ChildrenList>
-						<Action Name="Play" ID="{588E3761-06EF-4F3F-9413-4EAF284C370B}" ShortID="690974768" Type="Play" Scope="One" Global="false">
-							<ElementList>
-								<Element ID="{946427F9-D946-4F8F-9A04-B980E0686F79}" Global="false">
-									<ObjectRef Name="Pugs" ID="{40BDAAF7-141F-47F9-B86E-488A74BC4C5B}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}"/>
-								</Element>
-							</ElementList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_Zoe_0" ID="{01705E0B-50BF-4BA0-8F52-B0B4C76E3AD7}">
-					<ChildrenList>
-						<Action Name="Play" ID="{E397F192-C5E8-4D83-A731-92CBCCCC91CE}" ShortID="112318061" Type="Play" Scope="One" Global="false">
-							<ElementList>
-								<Element ID="{A2BB9011-AADD-4087-8890-2B3CDE0EF5DB}" Global="false">
-									<ObjectRef Name="Chihuahua" ID="{AC6741AC-0922-4463-B0F5-7C85F2C66167}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}"/>
-								</Element>
-							</ElementList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_Zoe_3" ID="{CD06F2CE-F2F5-4A6B-B6E3-6134EFD7988A}">
-					<ChildrenList>
-						<Action Name="Play" ID="{B73E20D6-95DD-44F2-B506-CEDEAB7F9D9A}" ShortID="157314464" Type="Play" Scope="One" Global="false">
-							<ElementList>
-								<Element ID="{59E6ACED-597F-4A9C-9EFB-900FECB5AAEC}" Global="false">
-									<ObjectRef Name="Lab" ID="{51B4DDD2-2771-4687-9410-5DEA08DF743A}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}"/>
-								</Element>
-							</ElementList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_Zoe_2" ID="{418A5108-1E74-45CD-BF4F-AF42CBED5D02}">
-					<ChildrenList>
-						<Action Name="Play" ID="{D3C960F9-0BB3-4AC0-8EC4-84F200FFEEFC}" ShortID="655221774" Type="Play" Scope="One" Global="false">
-							<ElementList>
-								<Element ID="{E2FF96CD-C278-4036-AFEE-BCBB1A1848BF}" Global="false">
-									<ObjectRef Name="Staffy" ID="{8F531DF9-6F6D-468A-897E-19BEA193A4FD}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}"/>
+								<Element ID="{94F7FF6D-E9B0-4304-8CB3-8DE424FADBED}" Global="false">
+									<ObjectRef Name="Pug Switch" ID="{6707A54C-52CD-4B35-8F36-55BDFCA1CAAE}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}"/>
 								</Element>
 							</ElementList>
 						</Action>

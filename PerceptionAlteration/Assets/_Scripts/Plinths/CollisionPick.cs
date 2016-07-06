@@ -26,13 +26,16 @@ public class CollisionPick : MonoBehaviour
         if (other.CompareTag("Perception-Changer-Small"))
         { 
             playerScript.Shrink();
-             transform.parent.GetComponent<PickUp>().SetPicked(false);
+            transform.parent.GetComponent<PickUp>().SetPicked(false);
+
         }
 
         if (other.CompareTag("Perception-Changer-Smallest"))
         {
             playerScript.ShrinkSmaller();
             transform.parent.GetComponent<PickUp>().SetPicked(false);
+
+            AkSoundEngine.SetSwitch("DistanceDog", "VNear", other.gameObject);
         }
 
         if (other.CompareTag("Perception-Changer-Flip"))

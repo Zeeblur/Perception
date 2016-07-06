@@ -47,9 +47,10 @@ public class SplineWalkerPlinth : MonoBehaviour
 
     private void Start()
     {
-            AkSoundEngine.PostEvent(chosenDog, this.gameObject);
+        // Testing just one dog
+        if(splineNum == 0)
+            AkSoundEngine.PostEvent("Pug", this.gameObject);
     }
-
 
     private void Update()
     {
@@ -78,4 +79,8 @@ public class SplineWalkerPlinth : MonoBehaviour
         }
     }
 
+    public void Switch()
+    {
+        AkSoundEngine.SetSwitch("DistanceDog", "VNear", gameObject);
+    }
 }
