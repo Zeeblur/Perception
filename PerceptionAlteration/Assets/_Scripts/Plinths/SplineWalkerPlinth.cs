@@ -3,6 +3,13 @@ using System.Collections;
 
 public class SplineWalkerPlinth : MonoBehaviour
 {
+    // CC dog noises
+    // https://www.freesound.org/people/smokum/sounds/89213/
+    // https://www.freesound.org/people/nielstii/sounds/346320/
+    // https://www.freesound.org/people/felix.blume/sounds/199261/
+    // https://www.freesound.org/people/Robinhood76/sounds/327813/
+
+
     public GameObject[] splineGO;
     public Spline[] splines;
 
@@ -21,14 +28,18 @@ public class SplineWalkerPlinth : MonoBehaviour
     public float angle = 180f;
     private Vector3 zAxis = new Vector3(0f, 0f, 1f);
 
+    private GameObject player;
+
     public void ChooseDog(int num)
     {
-        chosenDog = "Play_Zoe_" + num;
+        chosenDog = "Play_Dog_" + num;
         splineNum = num;
     }
 
     private void Awake()
     {
+        player = GameObject.FindGameObjectWithTag("Player");
+
         // default
         splineGO = GameObject.FindGameObjectsWithTag("Shoot");
 
@@ -47,9 +58,7 @@ public class SplineWalkerPlinth : MonoBehaviour
 
     private void Start()
     {
-        // Testing just one dog
-        if(splineNum == 0)
-            AkSoundEngine.PostEvent("Pug", this.gameObject);
+        AkSoundEngine.PostEvent(chosenDog, this.gameObject);
     }
 
     private void Update()
@@ -61,6 +70,7 @@ public class SplineWalkerPlinth : MonoBehaviour
   
         // tell which spline to move dog along
         Move(splines[splineNum]);
+
     }
 
     private void Move(Spline chosenSpline)
@@ -79,8 +89,32 @@ public class SplineWalkerPlinth : MonoBehaviour
         }
     }
 
-    public void Switch()
+    private void CheckSwitch()
     {
-        AkSoundEngine.SetSwitch("DistanceDog", "VNear", gameObject);
+
+        // find distance squared (no need for expensive sqrt) of world position
+        Vector3 play = player.transform.position;
+        Vector3 dog = this.transform.position;
+
+        float distance = ((play.x - dog.x) * (play.x - dog.x) +
+            (play.y - dog.y) * (play.y - dog.y) +
+            (play.z - dog.z) * (play.z - dog.z));
+
+
+        if (distance <= 2f)
+        {
+            AkSoundEngine.SetSwitch("DistanceDog", "VNear", gameObject);
+            Debug.Log("VNEAR");
+        }
+        else if (distance >= 2f && distance <= 5f)
+        {
+            AkSoundEngine.SetSwitch("DistanceDog", "Near", gameObject);
+            Debug.Log("near");
+        }
+        else if (distance >= 5f)
+        { 
+            AkSoundEngine.SetSwitch("DistanceDog", "Far", gameObject);
+            Debug.Log("far");
+        }
     }
 }

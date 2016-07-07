@@ -5,10 +5,21 @@
 			<ChildrenList>
 				<SoundBank Name="DogRoom" ID="{94F7E711-4EAD-43E4-A179-9A88D1508FFD}">
 					<ObjectInclusionList>
+						<ObjectRef Name="New Actor-Mixer" ID="{EC852A19-C59F-4075-8F0F-BF81D4792A19}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Dog_1" ID="{A9BA6D70-69CC-4268-98F4-D48BDAE2B68D}" WorkUnitID="{AC7B16BF-1A24-41AC-9731-F3FF21E92BBD}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="245588__hifijohn__abstract-background-music" ID="{F9C53EF2-3B6F-4379-BF81-ED35888355D6}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="199261__felix-blume__a-dog-barking-close-recording" ID="{4BAA8A51-5B21-4381-BC71-76354E308ECA}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Dog_3" ID="{9711F422-587D-44A4-A03F-0B7F84F0B043}" WorkUnitID="{AC7B16BF-1A24-41AC-9731-F3FF21E92BBD}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="RealSpace3D Bus" ID="{D6660470-B59B-45C8-9FA9-794761B4B9E4}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="33 Synth Door Opens With A Squeak; Reverberant" ID="{7943AF66-9E51-4629-8F5C-09396B410188}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Dog_0" ID="{C08A4D87-179B-46CA-9C03-202DA35D0147}" WorkUnitID="{AC7B16BF-1A24-41AC-9731-F3FF21E92BBD}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Ambient" ID="{C3C718AB-700A-46E6-98DE-8EF3D561CA6C}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="327813__robinhood76__06071-ratter-dogs-barking-looping (1)" ID="{172FDD28-4AE1-494C-B00C-8D2FE8A94591}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Pug Switch" ID="{6707A54C-52CD-4B35-8F36-55BDFCA1CAAE}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Dog_2" ID="{8072A785-CA9C-4B41-8B40-DB781AD65A13}" WorkUnitID="{AC7B16BF-1A24-41AC-9731-F3FF21E92BBD}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="346320__nielstii__dog-barking" ID="{127843F2-1AEE-4D4F-986B-944A4D65A609}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="PlayMusic" ID="{4A6ABA14-7CD3-4EB7-BCF5-8854795030C3}" WorkUnitID="{AC7B16BF-1A24-41AC-9731-F3FF21E92BBD}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="okum__dog-5" ID="{9C1244B6-D58F-4F09-8AE7-3A40F2E7A9A5}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}" Filter="7" Origin="Manual"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

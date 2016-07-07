@@ -27,8 +27,8 @@ public class RS3DGameBlob : MonoBehaviour {
     }
 
     // Update is called once per frame
-    void Update () {
-
+    void Update ()
+    {
     }
 
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -249,5 +249,13 @@ public class RS3DGameBlob : MonoBehaviour {
         }
         Marshal.FreeHGlobal(ptr);
 
+    }
+
+    // update rooms
+    public void UpdateSize()
+    {
+        setRoomsToFindableRS3DRooms();
+        setOccludersToFindableRS3DOccluders();
+        sendData();
     }
 }

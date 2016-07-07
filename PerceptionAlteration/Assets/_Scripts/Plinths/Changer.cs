@@ -45,6 +45,10 @@ public class Changer : MonoBehaviour
 
     private Vector3 origin = new Vector3(0f, 0f, 0f);
 
+
+    private Transform soundRoom;
+    private RS3DGameBlob spatializer;
+
     // rotation for upside down 
     private float theta = Mathf.PI / 2f;
     private bool upright = true;
@@ -64,7 +68,10 @@ public class Changer : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        
+        // test sound
+        AkSoundEngine.PostEvent("PlayMusic", GameObject.FindGameObjectWithTag("Props"));
+
+
         cameraParent = GameObject.FindGameObjectWithTag("PlayerParent");
         headCam = GameObject.FindGameObjectWithTag("Head");
 
@@ -86,6 +93,10 @@ public class Changer : MonoBehaviour
         smallestOffsetTarget = offset.y * smallestScale.y;
 
         armsParent = GameObject.FindGameObjectWithTag("ArmParent");
+
+
+        soundRoom = GameObject.FindGameObjectWithTag("Room").transform;
+        spatializer = GameObject.FindGameObjectWithTag("Ear").GetComponent<RS3DGameBlob>();
 
     }
 
@@ -229,6 +240,9 @@ public class Changer : MonoBehaviour
 
         plinthScript.SetState((int)scaleMode.growing);
         Time.timeScale = 1f;
+
+        
+
     }
 
     public void Shrink()
@@ -250,6 +264,10 @@ public class Changer : MonoBehaviour
         playerPosition =  headCam.transform.localPosition;
         plinthScript.SetState((int)scaleMode.shrinkingSmaller);
         Time.timeScale = 0.5f;
+
+        soundRoom.localScale = new Vector3(1f,1f,1f);
+        spatializer.UpdateSize();
+
     }
 
     public void Reset()

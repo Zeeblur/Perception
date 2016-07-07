@@ -203,14 +203,323 @@
 				</BlendContainer>
 				<ActorMixer Name="New Actor-Mixer" ID="{EC852A19-C59F-4075-8F0F-BF81D4792A19}" ShortID="360056942">
 					<PropertyList>
+						<Property Name="BypassEffect1" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+							<RTPCList>
+								<RTPC Name="" ID="{B1B88501-E333-4D28-A5FE-F5BE1DD13DDE}" ShortID="411115248">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="Room_Size" ID="{63220FFC-CA39-403C-802C-37B2252C1E71}" WorkUnitID="{0AEBADB4-CF30-41C8-B323-F726CF4DA516}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{ADD609C7-D6C3-43BE-9E54-309041D34D8E}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="65537"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>1</YPos>
+												<Flags>5</Flags>
+											</Point>
+											<Point>
+												<XPos>73.34385</XPos>
+												<YPos>0</YPos>
+												<Flags>0</Flags>
+											</Point>
+											<Point>
+												<XPos>100</XPos>
+												<YPos>0</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
 						<Property Name="PositioningType" Type="int16" Value="1"/>
 					</PropertyList>
 					<ReferenceList>
+						<Reference Name="AttachableMixerInput">
+							<Custom>
+								<Effect Name="VisiSonics RealSpace3D (Attached)" ID="{E678FA18-8490-4A31-9656-1A7E4AAA63C5}" ShortID="376399422" PluginName="AttachableMixerInput" CompanyID="0" PluginID="501" PluginType="3">
+									<PropertyList>
+										<Property Name="Room Reflection Coeff Back" Type="Real32" Value="4">
+											<RTPCList>
+												<RTPC Name="" ID="{61B59049-A997-481D-A0DD-9C9F2707D8E6}" ShortID="359639443">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="Room_Size" ID="{63220FFC-CA39-403C-802C-37B2252C1E71}" WorkUnitID="{0AEBADB4-CF30-41C8-B323-F726CF4DA516}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{CFDC17D3-ACA2-45B6-8B96-DB2130C2E16A}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="1"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>49.86034</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>100</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+										<Property Name="Room Reflection Coeff Ceiling" Type="Real32" Value="4">
+											<RTPCList>
+												<RTPC Name="" ID="{B1942919-D6FF-44BD-B5F4-1C2A26C75285}" ShortID="1067512444">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="Room_Size" ID="{63220FFC-CA39-403C-802C-37B2252C1E71}" WorkUnitID="{0AEBADB4-CF30-41C8-B323-F726CF4DA516}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{89140531-2C62-4AA6-912A-B532C1359204}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="1"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>50.97765</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>100</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+										<Property Name="Room Reflection Coeff Floor" Type="Real32" Value="4">
+											<RTPCList>
+												<RTPC Name="" ID="{7C724499-5EEF-4086-A993-AF290EA0C76F}" ShortID="222225881">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="Room_Size" ID="{63220FFC-CA39-403C-802C-37B2252C1E71}" WorkUnitID="{0AEBADB4-CF30-41C8-B323-F726CF4DA516}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{00A57AEF-436E-4268-8C29-3C2127780F23}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="1"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>50.97765</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>100</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+										<Property Name="Room Reflection Coeff Front" Type="Real32" Value="5">
+											<RTPCList>
+												<RTPC Name="" ID="{BE7E2C5D-BBC2-406F-91FE-DF755BDEB4C1}" ShortID="610097137">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="Room_Size" ID="{63220FFC-CA39-403C-802C-37B2252C1E71}" WorkUnitID="{0AEBADB4-CF30-41C8-B323-F726CF4DA516}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{A380FF91-B17B-4B70-8E0D-9C605561FE75}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="1"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>50.97765</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>100</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+										<Property Name="Room Reflection Coeff Left" Type="Real32" Value="4">
+											<RTPCList>
+												<RTPC Name="" ID="{7A7706AD-AED1-4A90-A1FA-0CEAD99DE46C}" ShortID="260212635">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="Room_Size" ID="{63220FFC-CA39-403C-802C-37B2252C1E71}" WorkUnitID="{0AEBADB4-CF30-41C8-B323-F726CF4DA516}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{ADA7B4BF-F124-4CAB-B500-EF44765DC34B}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="1"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>49.30168</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>100</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+										<Property Name="Room Reflection Coeff Right" Type="Real32" Value="4">
+											<RTPCList>
+												<RTPC Name="" ID="{481C7D2E-6140-4838-A21D-6958116B23EA}" ShortID="105168162">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="Room_Size" ID="{63220FFC-CA39-403C-802C-37B2252C1E71}" WorkUnitID="{0AEBADB4-CF30-41C8-B323-F726CF4DA516}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{4712063B-4578-4956-A8EA-47B85673A349}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="1"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>50.41899</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>100</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+										<Property Name="Room Size X" Type="Real32">
+											<RTPCList>
+												<RTPC Name="" ID="{ECD2C54E-4C14-4877-A021-0770D7E5CBCD}" ShortID="273626802">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="Room_Size" ID="{63220FFC-CA39-403C-802C-37B2252C1E71}" WorkUnitID="{0AEBADB4-CF30-41C8-B323-F726CF4DA516}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{051F75CF-2586-4B94-B164-0BD16CC2BDAF}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="1"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>1</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>30.05236</XPos>
+																<YPos>10.27926</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>50</XPos>
+																<YPos>19.3743</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>24.94413</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+										<Property Name="Room Size Y" Type="Real32">
+											<RTPCList>
+												<RTPC Name="" ID="{C00DE922-B7A0-42A9-9E64-7ECE26C1CFAE}" ShortID="92917143">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="Room_Size" ID="{63220FFC-CA39-403C-802C-37B2252C1E71}" WorkUnitID="{0AEBADB4-CF30-41C8-B323-F726CF4DA516}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{D0E4E2E2-5703-4219-9DDB-7AFD2E39720D}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="1"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>10</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>31.06704</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+										<Property Name="Room Size Z" Type="Real32">
+											<RTPCList>
+												<RTPC Name="" ID="{1EA9FF93-7ABD-4004-B090-7132BD264806}" ShortID="704629121">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="Room_Size" ID="{63220FFC-CA39-403C-802C-37B2252C1E71}" WorkUnitID="{0AEBADB4-CF30-41C8-B323-F726CF4DA516}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{5082FFA6-E5C7-42ED-B474-BE4B1762493E}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="1"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>10</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>17.70391</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+									</PropertyList>
+								</Effect>
+							</Custom>
+						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
 						</Reference>
 						<Reference Name="Effect0" PluginName="Wwise Peak Limiter" CompanyID="0" PluginID="110" PluginType="3">
 							<ObjectRef Name="Brick_Wall_Minus_1dB_Peak_Slow_Release" ID="{9FB8DC2B-7F1C-4E4E-8FA5-50872652D2DD}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+						</Reference>
+						<Reference Name="Effect1" CompanyID="4095" PluginID="65535" PluginType="15">
+							<ObjectRef Name="Fear_no_Evil" ID="{A1F17D99-0801-4F32-B74E-ADB2D9ACC556}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
 						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="RealSpace3D Bus" ID="{D6660470-B59B-45C8-9FA9-794761B4B9E4}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
@@ -704,7 +1013,160 @@
 								</GroupingList>
 							</GroupingInfo>
 						</SwitchContainer>
+						<Sound Name="okum__dog-5" ID="{9C1244B6-D58F-4F09-8AE7-3A40F2E7A9A5}" ShortID="964513142" Type="SoundFX">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="89213__smokum__dog-5" ID="{0688B69F-6058-424B-9719-9F02F69E5D1E}" ShortID="89050518">
+									<Language>SFX</Language>
+									<AudioFile>89213__smokum__dog-5.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="89213__smokum__dog-5" ID="{0688B69F-6058-424B-9719-9F02F69E5D1E}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="346320__nielstii__dog-barking" ID="{127843F2-1AEE-4D4F-986B-944A4D65A609}" ShortID="348404554" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="346320__nielstii__dog-barking" ID="{BD8A1000-3F94-488A-98C5-9C516005CE07}" ShortID="283985057">
+									<Language>SFX</Language>
+									<AudioFile>346320__nielstii__dog-barking.wav</AudioFile>
+									<ConvertedFileIDList>
+										<File ID="624343162"/>
+									</ConvertedFileIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="MainSizeStates" ID="{34CDB31D-41B7-4581-9CF0-80CE16BFE03B}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+							</StateInfo>
+							<ActiveSourceList>
+								<ActiveSource Name="346320__nielstii__dog-barking" ID="{BD8A1000-3F94-488A-98C5-9C516005CE07}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="199261__felix-blume__a-dog-barking-close-recording" ID="{4BAA8A51-5B21-4381-BC71-76354E308ECA}" ShortID="774204694" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="199261__felix-blume__a-dog-barking-close-recording" ID="{AEC28361-08A3-434E-BFC6-0596441B163D}" ShortID="482108226">
+									<Language>SFX</Language>
+									<AudioFile>199261__felix-blume__a-dog-barking-close-recording.wav</AudioFile>
+									<ConvertedFileIDList>
+										<File ID="836214214"/>
+									</ConvertedFileIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="199261__felix-blume__a-dog-barking-close-recording" ID="{AEC28361-08A3-434E-BFC6-0596441B163D}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="327813__robinhood76__06071-ratter-dogs-barking-looping (1)" ID="{172FDD28-4AE1-494C-B00C-8D2FE8A94591}" ShortID="488980292" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="327813__robinhood76__06071-ratter-dogs-barking-looping (1)" ID="{9A8B0574-6305-4316-9F00-3B2BD1CAA877}" ShortID="816212112">
+									<Language>SFX</Language>
+									<AudioFile>327813__robinhood76__06071-ratter-dogs-barking-looping (1).wav</AudioFile>
+									<ConvertedFileIDList>
+										<File ID="1040297828"/>
+									</ConvertedFileIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="327813__robinhood76__06071-ratter-dogs-barking-looping (1)" ID="{9A8B0574-6305-4316-9F00-3B2BD1CAA877}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="245588__hifijohn__abstract-background-music" ID="{F9C53EF2-3B6F-4379-BF81-ED35888355D6}" ShortID="282602596" Type="SoundFX">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-13</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="245588__hifijohn__abstract-background-music" ID="{04D0456F-FCD2-44E7-A141-7D11BED4B948}" ShortID="729289645">
+									<Language>SFX</Language>
+									<AudioFile>245588__hifijohn__abstract-background-music.wav</AudioFile>
+									<ConvertedFileIDList>
+										<File ID="916400007"/>
+									</ConvertedFileIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="245588__hifijohn__abstract-background-music" ID="{04D0456F-FCD2-44E7-A141-7D11BED4B948}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="273205__shadydave__cloudy-day-loop" ID="{8EE92596-B11C-4D2A-9805-01B201F785DC}" ShortID="667109112" Type="SoundFX">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="273205__shadydave__cloudy-day-loop" ID="{D5500A63-8E58-45B2-8346-B8313B859327}" ShortID="542943281">
+									<Language>SFX</Language>
+									<AudioFile>273205__shadydave__cloudy-day-loop.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="273205__shadydave__cloudy-day-loop" ID="{D5500A63-8E58-45B2-8346-B8313B859327}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
+					<StateInfo>
+						<StateGroupList>
+							<StateGroupInfo>
+								<StateGroupRef Name="MainSizeStates" ID="{34CDB31D-41B7-4581-9CF0-80CE16BFE03B}"/>
+							</StateGroupInfo>
+						</StateGroupList>
+					</StateInfo>
 				</ActorMixer>
 				<Sound Name="External_Ambience_STEREO" ID="{C24D182B-0529-4253-AA31-26FB485D0622}" ShortID="675475388" Type="SoundFX">
 					<ReferenceList>
@@ -856,14 +1318,6 @@
 								<ActiveSource Name="98 Synth Submarine Interior; Reverberant, Very Low Frequency Rumble" ID="{B540E60B-7757-4878-BBE4-CFA87B8C0618}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
-					</ChildrenList>
-				</Folder>
-				<Folder Name="TestDogs" ID="{A6006958-B2A8-4E9D-9F6C-CF269348D0DD}" ShortID="793569696">
-					<ChildrenList>
-						<Folder Name="Pugs" ID="{A2BDB26D-E9C5-4884-9995-0ED6DFDFD8D3}" ShortID="207062168"/>
-						<Folder Name="Chihuahua" ID="{8FD9385F-66AC-4E86-9A5B-FBE4CC942ADD}" ShortID="122353095"/>
-						<Folder Name="Lab" ID="{16CFF7D0-5E3E-46CF-A4B6-1293D67B8B5D}" ShortID="467444456"/>
-						<Folder Name="Staffy" ID="{8161CD03-C7B4-40A7-8D11-A96AFEDAC283}" ShortID="582726885"/>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Pug Sounds" ID="{15322650-3B62-4658-8A21-E083FC4D76DB}" ShortID="580062791">
@@ -1018,6 +1472,105 @@
 							</ChildrenList>
 							<ActiveSourceList>
 								<ActiveSource Name="pug whine ix-EQ37B_01-06" ID="{EB9FEF06-8DA1-4A02-94FB-653CE34B1322}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="CCDogs" ID="{D163A887-8DF3-496E-9537-44248448C9E9}" ShortID="127366240">
+					<ChildrenList>
+						<Sound Name="199261__felix-blume__a-dog-barking-close-recording" ID="{CABD337A-346A-4A87-BDF1-3E6925F88E7E}" ShortID="464105340" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="199261__felix-blume__a-dog-barking-close-recording" ID="{F464075E-DA14-43CB-B375-CD03E0ED3601}" ShortID="836214214">
+									<Language>SFX</Language>
+									<AudioFile>199261__felix-blume__a-dog-barking-close-recording.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="199261__felix-blume__a-dog-barking-close-recording" ID="{F464075E-DA14-43CB-B375-CD03E0ED3601}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="327813__robinhood76__06071-ratter-dogs-barking-looping (1)" ID="{15A44BFD-E333-4B01-9730-69D7E99DB853}" ShortID="262354074" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="327813__robinhood76__06071-ratter-dogs-barking-looping (1)" ID="{90DCB4C7-FCD6-4A02-B39E-D3C45AB4236F}" ShortID="1040297828">
+									<Language>SFX</Language>
+									<AudioFile>327813__robinhood76__06071-ratter-dogs-barking-looping (1).wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="327813__robinhood76__06071-ratter-dogs-barking-looping (1)" ID="{90DCB4C7-FCD6-4A02-B39E-D3C45AB4236F}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="346320__nielstii__dog-barking" ID="{000CCBE1-A3A1-4F1F-B08C-232CE78C34B4}" ShortID="253422864" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="346320__nielstii__dog-barking" ID="{86C98977-D002-4EE7-8411-627014F5AC64}" ShortID="624343162">
+									<Language>SFX</Language>
+									<AudioFile>346320__nielstii__dog-barking.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="346320__nielstii__dog-barking" ID="{86C98977-D002-4EE7-8411-627014F5AC64}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="89213__smokum__dog-5" ID="{DA86478B-EBAB-448C-9CF2-71C98BE66824}" ShortID="1060210540" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="89213__smokum__dog-5" ID="{6A4D8F59-0450-4CCC-AD9C-C12316BA14AE}" ShortID="416289413">
+									<Language>SFX</Language>
+									<AudioFile>89213__smokum__dog-5.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="89213__smokum__dog-5" ID="{6A4D8F59-0450-4CCC-AD9C-C12316BA14AE}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="245588__hifijohn__abstract-background-music" ID="{3F1667A5-1012-477C-ADBC-8EBE6A79F830}" ShortID="214940346" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="245588__hifijohn__abstract-background-music" ID="{C05F085A-1947-4C41-95FF-C23517928800}" ShortID="916400007">
+									<Language>SFX</Language>
+									<AudioFile>245588__hifijohn__abstract-background-music.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="245588__hifijohn__abstract-background-music" ID="{C05F085A-1947-4C41-95FF-C23517928800}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>

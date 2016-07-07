@@ -3,7 +3,7 @@
 	<UserProjectSettingsInfo>
 		<UserProjectSettings Name="" ID="{C816FC3D-24B9-4253-8BC8-6436E0E3931A}">
 			<PropertyList>
-				<Property Name="AudioFilesImporter\Path" Type="string" Value="E:\newbork"/>
+				<Property Name="AudioFilesImporter\Path" Type="string" Value="C:\Users\40182161.NAPIER-MAIL\Downloads"/>
 				<Property Name="ExternalSourcesInputPath" Type="string">
 					<ValueList>
 						<Value Platform="Windows"></Value>
@@ -52,7 +52,7 @@
 				<Property Name="ProjectExplorer\x64_Expanded_19_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_1_1" Type="string" Value="2KQUFaYdKkGhfnXKDCFJ87yEweuhakBOrqSFntyl6/B+vODSP3v+T6Zw+uAnYbYx"/>
 				<Property Name="ProjectExplorer\x64_Expanded_20_1" Type="string" Value=""/>
-				<Property Name="ProjectExplorer\x64_Expanded_2_1" Type="string" Value="GSqF7J/FdUCPD7+B1HkqGQPNYYG0x6dAjRGpav7awoNQJjIVYjtYRooh4IP8TXbb0PfPFj5ez0akthKT1nuLXW2yvaLF6YRImZUO1t/f2NNfONmPrGaGTppb++TMlCrdWGkApqiynU6fbM8mk0jQ3TjK9wJjjDVPilsKVBF+YBo="/>
+				<Property Name="ProjectExplorer\x64_Expanded_2_1" Type="string" Value="GSqF7J/FdUCPD7+B1HkqGVAmMhViO1hGiiHgg/xNdts4yvcCY4w1T4pbClQRfmAa"/>
 				<Property Name="ProjectExplorer\x64_Expanded_3_1" Type="string" Value="vxZ7rCQarEGXMfP/IekrvQ=="/>
 				<Property Name="ProjectExplorer\x64_Expanded_4_1" Type="string" Value="UjB15D+Rs0Sq+VaAkVeGideUhKVBuFJGv66tky2pLo0="/>
 				<Property Name="ProjectExplorer\x64_Expanded_5_1" Type="string" Value="yT8gQvukDUumZZLqEmAywg=="/>
@@ -63,7 +63,7 @@
 				<Property Name="RTPC\GameParameterSimValue\{1329EBEF-A193-472E-A38C-64668B494879}" Type="Real64" Value="50"/>
 				<Property Name="RTPC\GameParameterSimValue\{2F2DFE37-4F9E-4D94-83D8-53CCA39781AD}" Type="Real64" Value="75"/>
 				<Property Name="RTPC\GameParameterSimValue\{536FA72C-8C7E-4C8B-AE03-EF34FDADC314}" Type="Real64" Value="6"/>
-				<Property Name="RTPC\GameParameterSimValue\{63220FFC-CA39-403C-802C-37B2252C1E71}" Type="Real64" Value="42"/>
+				<Property Name="RTPC\GameParameterSimValue\{63220FFC-CA39-403C-802C-37B2252C1E71}" Type="Real64" Value="57.9057591623037"/>
 				<Property Name="RTPC\GameParameterSimValue\{A2AE79DC-CA3A-46BA-9652-9986C322A87B}" Type="Real64" Value="50"/>
 				<Property Name="RTPC\GameParameterSimValue\{A34890AB-B9D5-4526-A64D-5290C43EF2DC}" Type="Real64" Value="50"/>
 				<Property Name="RTPC\GameParameterSimValue\{E3B7811A-7B2F-490F-B44F-5FE51B468041}" Type="Real64" Value="75"/>

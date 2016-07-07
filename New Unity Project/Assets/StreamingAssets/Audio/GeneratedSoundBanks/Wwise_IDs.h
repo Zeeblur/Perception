@@ -16,6 +16,11 @@ namespace AK
         static const AkUniqueID HATCHOPEN = 829215693U;
         static const AkUniqueID OPENDOOR = 2122995345U;
         static const AkUniqueID PLAY_AMBIENT = 1562304622U;
+        static const AkUniqueID PLAY_DOG_0 = 2935214689U;
+        static const AkUniqueID PLAY_DOG_1 = 2935214688U;
+        static const AkUniqueID PLAY_DOG_2 = 2935214691U;
+        static const AkUniqueID PLAY_DOG_3 = 2935214690U;
+        static const AkUniqueID PLAYMUSIC = 417627684U;
         static const AkUniqueID PUG = 913787327U;
     } // namespace EVENTS
 
