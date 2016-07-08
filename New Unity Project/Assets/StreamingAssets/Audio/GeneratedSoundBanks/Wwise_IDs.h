@@ -20,6 +20,9 @@ namespace AK
         static const AkUniqueID PLAY_DOG_1 = 2935214688U;
         static const AkUniqueID PLAY_DOG_2 = 2935214691U;
         static const AkUniqueID PLAY_DOG_3 = 2935214690U;
+        static const AkUniqueID PLAY_FLICKER = 1742085842U;
+        static const AkUniqueID PLAY_FLICKERLONG = 2446439680U;
+        static const AkUniqueID PLAY_LIGHTHUM = 444602164U;
         static const AkUniqueID PLAYMUSIC = 417627684U;
         static const AkUniqueID PUG = 913787327U;
     } // namespace EVENTS

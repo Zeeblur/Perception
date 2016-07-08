@@ -1014,9 +1014,6 @@
 							</GroupingInfo>
 						</SwitchContainer>
 						<Sound Name="okum__dog-5" ID="{9C1244B6-D58F-4F09-8AE7-3A40F2E7A9A5}" ShortID="964513142" Type="SoundFX">
-							<PropertyList>
-								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
@@ -1029,6 +1026,9 @@
 								<AudioFileSource Name="89213__smokum__dog-5" ID="{0688B69F-6058-424B-9719-9F02F69E5D1E}" ShortID="89050518">
 									<Language>SFX</Language>
 									<AudioFile>89213__smokum__dog-5.wav</AudioFile>
+									<ConvertedFileIDList>
+										<File ID="416289413"/>
+									</ConvertedFileIDList>
 								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
@@ -1159,6 +1159,104 @@
 								<ActiveSource Name="273205__shadydave__cloudy-day-loop" ID="{D5500A63-8E58-45B2-8346-B8313B859327}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<Sound Name="Lighthum" ID="{0E05CEF6-5F61-4C1A-BDDE-DC3FD8FD0020}" ShortID="881484269" Type="SoundFX">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-15</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Lighthum" ID="{F7B4C1B2-6688-46B2-9961-AF6B5F218720}" ShortID="1046545907">
+									<Language>SFX</Language>
+									<AudioFile>Lighthum.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Lighthum" ID="{F7B4C1B2-6688-46B2-9961-AF6B5F218720}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="flicker" ID="{75C3B508-9ADB-419C-8863-7AB0F464483E}" ShortID="881956294" Type="SoundFX">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="flicker" ID="{7CEDA587-8183-4EE7-B766-3BE9C8DC8C7D}" ShortID="146396634">
+									<Language>SFX</Language>
+									<AudioFile>flicker.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="flicker" ID="{7CEDA587-8183-4EE7-B766-3BE9C8DC8C7D}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="flickerLong" ID="{EFEAA9C7-1F5B-4A5B-9BF0-A9311EDAEEBB}" ShortID="616125909" Type="SoundFX">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-9</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="flickerLong" ID="{D15396BF-88DC-4C14-A86E-63C068846EFA}" ShortID="921481690">
+									<Language>SFX</Language>
+									<AudioFile>flickerLong.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="flickerLong" ID="{D15396BF-88DC-4C14-A86E-63C068846EFA}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="External_Ambience_STEREO" ID="{C24D182B-0529-4253-AA31-26FB485D0622}" ShortID="675475388" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="External_Ambience_STEREO" ID="{482FA053-C4D7-454D-AC4E-A95A9247CA34}" ShortID="246221276">
+									<Language>SFX</Language>
+									<AudioFile>External_Ambience_STEREO.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="External_Ambience_STEREO" ID="{482FA053-C4D7-454D-AC4E-A95A9247CA34}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 					<StateInfo>
 						<StateGroupList>
@@ -1168,25 +1266,6 @@
 						</StateGroupList>
 					</StateInfo>
 				</ActorMixer>
-				<Sound Name="External_Ambience_STEREO" ID="{C24D182B-0529-4253-AA31-26FB485D0622}" ShortID="675475388" Type="SoundFX">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="External_Ambience_STEREO" ID="{482FA053-C4D7-454D-AC4E-A95A9247CA34}" ShortID="246221276">
-							<Language>SFX</Language>
-							<AudioFile>External_Ambience_STEREO.wav</AudioFile>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="External_Ambience_STEREO" ID="{482FA053-C4D7-454D-AC4E-A95A9247CA34}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
 				<Folder Name="Place" ID="{2EE2C40B-6085-47BC-B1E3-897B140DC7D0}" ShortID="308598602">
 					<ChildrenList>
 						<Sound Name="12 Industrial Plant Ambience, Low Frequency, Steady" ID="{26E613E2-DE96-419B-B085-0884D327EBDB}" ShortID="57157278" Type="SoundFX">

@@ -26,6 +26,8 @@ public class Flicker : MonoBehaviour {
     {
         timer = Time.time + timerInt;
         flashTime = Time.time + flashTimeInt;
+
+        AkSoundEngine.PostEvent("Play_Lighthum", this.gameObject);
     }
 
     // Update is called once per frame
@@ -40,6 +42,12 @@ public class Flicker : MonoBehaviour {
             flicker = true;
             timer = Time.time + timerInt;
             flashTime = Time.time + flashTimeInt;
+
+            if (flashTimeInt >= 1)
+                AkSoundEngine.PostEvent("Play_flickerLong", this.gameObject);
+            else
+                AkSoundEngine.PostEvent("Play_flicker", this.gameObject);
+
         }
 
         if (flicker)

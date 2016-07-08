@@ -69,8 +69,8 @@ public class Changer : MonoBehaviour
     void Start()
     {
         // test sound
-       // AkSoundEngine.PostEvent("PlayMusic", GameObject.FindGameObjectWithTag("Props"));
-
+        // AkSoundEngine.PostEvent("PlayMusic", GameObject.FindGameObjectWithTag("Props"));
+        AkSoundEngine.PostEvent("Play_Ambient", this.gameObject);
 
         cameraParent = GameObject.FindGameObjectWithTag("PlayerParent");
         headCam = GameObject.FindGameObjectWithTag("Head");
@@ -97,13 +97,12 @@ public class Changer : MonoBehaviour
 
         soundRoom = GameObject.FindGameObjectWithTag("Room").transform;
         spatializer = GameObject.FindGameObjectWithTag("Ear").GetComponent<RS3DGameBlob>();
-
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-
         // Change size of room
         switch (currentScale)
         {
@@ -297,7 +296,15 @@ public class Changer : MonoBehaviour
 
         armsRot = new Quaternion(0, Mathf.Sin(-up.z), 0, Mathf.Cos(-up.z));
 
-        armsParent.transform.localRotation = armsRot;
+        //armsParent.transform.localRotation = armsRot;
+
+        //update shadow
+        Vector3 shadowSize = this.transform.localScale;
+        shadowSize.y = headCam.transform.position.y;
+
+        this.transform.localScale = shadowSize;
+        transform.position = new Vector3(transform.position.x, headTrans.y/2, transform.position.z);
+
     }
 
 }
