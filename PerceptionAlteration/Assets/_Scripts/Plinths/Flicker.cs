@@ -3,6 +3,9 @@ using System.Collections;
 
 public class Flicker : MonoBehaviour {
 
+    // sound
+    // https://freesound.org/people/mmaruska/sounds/232447/
+
     private Light spot;
 
     private bool flicker = false;

@@ -69,7 +69,7 @@ public class Changer : MonoBehaviour
     void Start()
     {
         // test sound
-        AkSoundEngine.PostEvent("PlayMusic", GameObject.FindGameObjectWithTag("Props"));
+       // AkSoundEngine.PostEvent("PlayMusic", GameObject.FindGameObjectWithTag("Props"));
 
 
         cameraParent = GameObject.FindGameObjectWithTag("PlayerParent");
@@ -265,7 +265,7 @@ public class Changer : MonoBehaviour
         plinthScript.SetState((int)scaleMode.shrinkingSmaller);
         Time.timeScale = 0.5f;
 
-        soundRoom.localScale = new Vector3(1f,1f,1f);
+        soundRoom.localScale = new Vector3(30f,30f,30f);
         spatializer.UpdateSize();
 
     }

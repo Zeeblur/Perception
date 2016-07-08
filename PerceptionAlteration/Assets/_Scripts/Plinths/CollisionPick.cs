@@ -19,14 +19,16 @@ public class CollisionPick : MonoBehaviour
         {
             playerScript.Grow();
             transform.parent.GetComponent<PickUp>().SetPicked(false);
+            AkSoundEngine.PostEvent("Play_Dog_" + (int)EnemyType.large, other.gameObject);
 
-       //     body.mass = 0.1f;
+            //     body.mass = 0.1f;
         }
 
         if (other.CompareTag("Perception-Changer-Small"))
         { 
             playerScript.Shrink();
             transform.parent.GetComponent<PickUp>().SetPicked(false);
+            AkSoundEngine.PostEvent("Play_Dog_" + (int)EnemyType.small, other.gameObject);
 
         }
 
@@ -35,13 +37,14 @@ public class CollisionPick : MonoBehaviour
             playerScript.ShrinkSmaller();
             transform.parent.GetComponent<PickUp>().SetPicked(false);
 
-            AkSoundEngine.SetSwitch("DistanceDog", "VNear", other.gameObject);
+            AkSoundEngine.PostEvent("Play_Dog_" + (int)EnemyType.smallest, other.gameObject);
         }
 
         if (other.CompareTag("Perception-Changer-Flip"))
         {
             playerScript.Flip();
             transform.parent.GetComponent<PickUp>().SetPicked(false);
+            AkSoundEngine.PostEvent("Play_Dog_" + (int)EnemyType.upside, other.gameObject);
         }
     }
 }

@@ -1,10 +1,12 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
 
+// enemy classification
+public enum EnemyType { smallest, small, large, upside };
+
 public class PlinthSpawner : MonoBehaviour
 {
-    // enemy classification
-    private enum EnemyType { smallest, small, large, upside };
+
     private int currentType = 0; // default 0
 
     public GameObject[] enemyPrefabs;
