@@ -7,6 +7,6 @@ public class RotatingCube : MonoBehaviour
 
     void Update ()
     {
-        transform.Rotate(new Vector3(0, 1, 0), speed);
+        transform.Rotate(new Vector3(0, 1, 0), speed * Time.deltaTime);
     }
 }

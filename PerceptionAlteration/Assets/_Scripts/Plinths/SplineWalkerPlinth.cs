@@ -91,15 +91,7 @@ public class SplineWalkerPlinth : MonoBehaviour
 
     private void CheckSwitch()
     {
-
-        // find distance squared (no need for expensive sqrt) of world position
-        Vector3 play = player.transform.position;
-        Vector3 dog = this.transform.position;
-
-        float distance = ((play.x - dog.x) * (play.x - dog.x) +
-            (play.y - dog.y) * (play.y - dog.y) +
-            (play.z - dog.z) * (play.z - dog.z));
-
+        float distance = DistanceBetween(player.transform.position, this.transform.position);
 
         if (distance <= 2f)
         {
@@ -116,5 +108,17 @@ public class SplineWalkerPlinth : MonoBehaviour
             AkSoundEngine.SetSwitch("DistanceDog", "Far", gameObject);
             Debug.Log("far");
         }
+    }
+
+    private float DistanceBetween(Vector3 pointA, Vector3 pointB)
+    {
+
+        // find distance squared (no need for expensive sqrt) of world position
+        float distance = ((pointA.x - pointB.x) * (pointA.x - pointB.x) +
+            (pointA.y - pointB.y) * (pointA.y - pointB.y) +
+            (pointA.z - pointB.z) * (pointA.z - pointB.z));
+
+
+        return distance;
     }
 }

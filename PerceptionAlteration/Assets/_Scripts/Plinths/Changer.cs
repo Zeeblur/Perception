@@ -69,7 +69,7 @@ public class Changer : MonoBehaviour
     void Start()
     {
         // test sound
-        // AkSoundEngine.PostEvent("PlayMusic", GameObject.FindGameObjectWithTag("Props"));
+        AkSoundEngine.PostEvent("PlayMusic", GameObject.FindGameObjectWithTag("Props"));
         AkSoundEngine.PostEvent("Play_Ambient", this.gameObject);
 
         cameraParent = GameObject.FindGameObjectWithTag("PlayerParent");
@@ -240,7 +240,8 @@ public class Changer : MonoBehaviour
         plinthScript.SetState((int)scaleMode.growing);
         Time.timeScale = 1f;
 
-        
+        soundRoom.localScale = new Vector3(1f, 1f, 1f);
+        spatializer.UpdateSize();
 
     }
 
@@ -264,7 +265,7 @@ public class Changer : MonoBehaviour
         plinthScript.SetState((int)scaleMode.shrinkingSmaller);
         Time.timeScale = 0.5f;
 
-        soundRoom.localScale = new Vector3(30f,30f,30f);
+        soundRoom.localScale = new Vector3(7f, 5f, 4f);
         spatializer.UpdateSize();
 
     }
@@ -274,6 +275,10 @@ public class Changer : MonoBehaviour
         currentScale = scaleMode.resetting;
         plinthScript.SetState((int)scaleMode.resetting);
         Time.timeScale = 1f;
+
+
+        soundRoom.localScale = new Vector3(60f, 60f, 60f);
+        spatializer.UpdateSize();
     }
 
 

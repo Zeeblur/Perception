@@ -1,43 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ValidationCache Version="1" SchemaVersion="72">
-	<ValidationCacheItem File="C:\Users\40182161.NAPIER-MAIL\Documents\Perception\PerceptionAlteration\Wwise\TestAudio\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1715550964" DateHigh="30529637"/>
-	<ValidationCacheItem File="C:\Users\40182161.NAPIER-MAIL\Documents\Perception\PerceptionAlteration\Wwise\TestAudio\Actor-Mixer Hierarchy\Factory Crankcase REV.wwu" DateLow="2227666782" DateHigh="30528974"/>
-	<ValidationCacheItem File="C:\Users\40182161.NAPIER-MAIL\Documents\Perception\PerceptionAlteration\Wwise\TestAudio\Actor-Mixer Hierarchy\Factory SoundSeed Air Objects.wwu" DateLow="2227666782" DateHigh="30528974"/>
-	<ValidationCacheItem File="C:\Users\40182161.NAPIER-MAIL\Documents\Perception\PerceptionAlteration\Wwise\TestAudio\Actor-Mixer Hierarchy\Factory Synth One.wwu" DateLow="2227823579" DateHigh="30528974"/>
-	<ValidationCacheItem File="C:\Users\40182161.NAPIER-MAIL\Documents\Perception\PerceptionAlteration\Wwise\TestAudio\Attenuations\Default Work Unit.wwu" DateLow="2227823579" DateHigh="30528974"/>
-	<ValidationCacheItem File="C:\Users\40182161.NAPIER-MAIL\Documents\Perception\PerceptionAlteration\Wwise\TestAudio\Audio Devices\Default Work Unit.wwu" DateLow="2227823579" DateHigh="30528974"/>
-	<ValidationCacheItem File="C:\Users\40182161.NAPIER-MAIL\Documents\Perception\PerceptionAlteration\Wwise\TestAudio\Control Surface Sessions\Default Work Unit.wwu" DateLow="2227823579" DateHigh="30528974"/>
-	<ValidationCacheItem File="C:\Users\40182161.NAPIER-MAIL\Documents\Perception\PerceptionAlteration\Wwise\TestAudio\Conversion Settings\Default Work Unit.wwu" DateLow="2227980376" DateHigh="30528974"/>
-	<ValidationCacheItem File="C:\Users\40182161.NAPIER-MAIL\Documents\Perception\PerceptionAlteration\Wwise\TestAudio\Conversion Settings\Factory Conversion Settings.wwu" DateLow="2227980376" DateHigh="30528974"/>
-	<ValidationCacheItem File="C:\Users\40182161.NAPIER-MAIL\Documents\Perception\PerceptionAlteration\Wwise\TestAudio\Dynamic Dialogue\Default Work Unit.wwu" DateLow="2227980376" DateHigh="30528974"/>
-	<ValidationCacheItem File="C:\Users\40182161.NAPIER-MAIL\Documents\Perception\PerceptionAlteration\Wwise\TestAudio\Effects\Default Work Unit.wwu" DateLow="2227980376" DateHigh="30528974"/>
-	<ValidationCacheItem File="C:\Users\40182161.NAPIER-MAIL\Documents\Perception\PerceptionAlteration\Wwise\TestAudio\Effects\Factory Altiverb - Outdoor and More.wwu" DateLow="2228137173" DateHigh="30528974"/>
-	<ValidationCacheItem File="C:\Users\40182161.NAPIER-MAIL\Documents\Perception\PerceptionAlteration\Wwise\TestAudio\Effects\Factory Auro Headphone.wwu" DateLow="2228137173" DateHigh="30528974"/>
-	<ValidationCacheItem File="C:\Users\40182161.NAPIER-MAIL\Documents\Perception\PerceptionAlteration\Wwise\TestAudio\Effects\Factory Convolution Reverb Effects.wwu" DateLow="2228137173" DateHigh="30528974"/>
-	<ValidationCacheItem File="C:\Users\40182161.NAPIER-MAIL\Documents\Perception\PerceptionAlteration\Wwise\TestAudio\Effects\Factory Effects.wwu" DateLow="1431142988" DateHigh="30529630"/>
-	<ValidationCacheItem File="C:\Users\40182161.NAPIER-MAIL\Documents\Perception\PerceptionAlteration\Wwise\TestAudio\Effects\Factory iZotope Box Modeler.wwu" DateLow="2228293970" DateHigh="30528974"/>
-	<ValidationCacheItem File="C:\Users\40182161.NAPIER-MAIL\Documents\Perception\PerceptionAlteration\Wwise\TestAudio\Effects\Factory iZotope Delay.wwu" DateLow="2228293970" DateHigh="30528974"/>
-	<ValidationCacheItem File="C:\Users\40182161.NAPIER-MAIL\Documents\Perception\PerceptionAlteration\Wwise\TestAudio\Effects\Factory iZotope Dynamics.wwu" DateLow="2228293970" DateHigh="30528974"/>
-	<ValidationCacheItem File="C:\Users\40182161.NAPIER-MAIL\Documents\Perception\PerceptionAlteration\Wwise\TestAudio\Effects\Factory iZotope Filters.wwu" DateLow="2228450767" DateHigh="30528974"/>
-	<ValidationCacheItem File="C:\Users\40182161.NAPIER-MAIL\Documents\Perception\PerceptionAlteration\Wwise\TestAudio\Effects\Factory iZotope Hybrid Reverb Effects.wwu" DateLow="2228450767" DateHigh="30528974"/>
-	<ValidationCacheItem File="C:\Users\40182161.NAPIER-MAIL\Documents\Perception\PerceptionAlteration\Wwise\TestAudio\Effects\Factory iZotope Multiband Distortion.wwu" DateLow="2228450767" DateHigh="30528974"/>
-	<ValidationCacheItem File="C:\Users\40182161.NAPIER-MAIL\Documents\Perception\PerceptionAlteration\Wwise\TestAudio\Effects\Factory iZotope Singleband Distortion.wwu" DateLow="2228450767" DateHigh="30528974"/>
-	<ValidationCacheItem File="C:\Users\40182161.NAPIER-MAIL\Documents\Perception\PerceptionAlteration\Wwise\TestAudio\Effects\Factory McDSP Effects.wwu" DateLow="2228293970" DateHigh="30528974"/>
-	<ValidationCacheItem File="C:\Users\40182161.NAPIER-MAIL\Documents\Perception\PerceptionAlteration\Wwise\TestAudio\Events\Default Work Unit.wwu" DateLow="4250539468" DateHigh="30529625"/>
-	<ValidationCacheItem File="C:\Users\40182161.NAPIER-MAIL\Documents\Perception\PerceptionAlteration\Wwise\TestAudio\Game Parameters\Default Work Unit.wwu" DateLow="2228607564" DateHigh="30528974"/>
-	<ValidationCacheItem File="C:\Users\40182161.NAPIER-MAIL\Documents\Perception\PerceptionAlteration\Wwise\TestAudio\Game Parameters\Factory SoundSeed Air Game Syncs.wwu" DateLow="2228607564" DateHigh="30528974"/>
-	<ValidationCacheItem File="C:\Users\40182161.NAPIER-MAIL\Documents\Perception\PerceptionAlteration\Wwise\TestAudio\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="2236618298" DateHigh="30528974"/>
-	<ValidationCacheItem File="C:\Users\40182161.NAPIER-MAIL\Documents\Perception\PerceptionAlteration\Wwise\TestAudio\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="3616612232" DateHigh="30529010"/>
-	<ValidationCacheItem File="C:\Users\40182161.NAPIER-MAIL\Documents\Perception\PerceptionAlteration\Wwise\TestAudio\Mixing Sessions\Default Work Unit.wwu" DateLow="2236775095" DateHigh="30528974"/>
-	<ValidationCacheItem File="C:\Users\40182161.NAPIER-MAIL\Documents\Perception\PerceptionAlteration\Wwise\TestAudio\Modulators\Default Work Unit.wwu" DateLow="2236775095" DateHigh="30528974"/>
-	<ValidationCacheItem File="C:\Users\40182161.NAPIER-MAIL\Documents\Perception\PerceptionAlteration\Wwise\TestAudio\Presets\Default Work Unit.wwu" DateLow="2283220210" DateHigh="30528974"/>
-	<ValidationCacheItem File="C:\Users\40182161.NAPIER-MAIL\Documents\Perception\PerceptionAlteration\Wwise\TestAudio\Queries\Default Work Unit.wwu" DateLow="2283220210" DateHigh="30528974"/>
-	<ValidationCacheItem File="C:\Users\40182161.NAPIER-MAIL\Documents\Perception\PerceptionAlteration\Wwise\TestAudio\Queries\Factory Queries.wwu" DateLow="2283377007" DateHigh="30528974"/>
-	<ValidationCacheItem File="C:\Users\40182161.NAPIER-MAIL\Documents\Perception\PerceptionAlteration\Wwise\TestAudio\SoundBanks\Default Work Unit.wwu" DateLow="4250629468" DateHigh="30529625"/>
-	<ValidationCacheItem File="C:\Users\40182161.NAPIER-MAIL\Documents\Perception\PerceptionAlteration\Wwise\TestAudio\Soundcaster Sessions\Default Work Unit.wwu" DateLow="2283377007" DateHigh="30528974"/>
-	<ValidationCacheItem File="C:\Users\40182161.NAPIER-MAIL\Documents\Perception\PerceptionAlteration\Wwise\TestAudio\States\Default Work Unit.wwu" DateLow="329797192" DateHigh="30529434"/>
-	<ValidationCacheItem File="C:\Users\40182161.NAPIER-MAIL\Documents\Perception\PerceptionAlteration\Wwise\TestAudio\Switches\Default Work Unit.wwu" DateLow="2064610656" DateHigh="30529434"/>
-	<ValidationCacheItem File="C:\Users\40182161.NAPIER-MAIL\Documents\Perception\PerceptionAlteration\Wwise\TestAudio\TestAudio.40182161.wsettings" DateLow="3052791726" DateHigh="30529798"/>
-	<ValidationCacheItem File="C:\Users\40182161.NAPIER-MAIL\Documents\Perception\PerceptionAlteration\Wwise\TestAudio\TestAudio.wproj" DateLow="2283533804" DateHigh="30528974"/>
-	<ValidationCacheItem File="C:\Users\40182161.NAPIER-MAIL\Documents\Perception\PerceptionAlteration\Wwise\TestAudio\Triggers\Default Work Unit.wwu" DateLow="2283690601" DateHigh="30528974"/>
+	<ValidationCacheItem File="C:\Users\40182161.NAPIER-MAIL\Documents\Perception\PerceptionAlteration\Wwise\TestAudio\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="4284125321" DateHigh="30530384"/>
+	<ValidationCacheItem File="C:\Users\40182161.NAPIER-MAIL\Documents\Perception\PerceptionAlteration\Wwise\TestAudio\Actor-Mixer Hierarchy\Factory Crankcase REV.wwu" DateLow="4284175626" DateHigh="30530384"/>
+	<ValidationCacheItem File="C:\Users\40182161.NAPIER-MAIL\Documents\Perception\PerceptionAlteration\Wwise\TestAudio\Actor-Mixer Hierarchy\Factory SoundSeed Air Objects.wwu" DateLow="4284235992" DateHigh="30530384"/>
+	<ValidationCacheItem File="C:\Users\40182161.NAPIER-MAIL\Documents\Perception\PerceptionAlteration\Wwise\TestAudio\Actor-Mixer Hierarchy\Factory Synth One.wwu" DateLow="4284316480" DateHigh="30530384"/>
+	<ValidationCacheItem File="C:\Users\40182161.NAPIER-MAIL\Documents\Perception\PerceptionAlteration\Wwise\TestAudio\Attenuations\Default Work Unit.wwu" DateLow="4284386907" DateHigh="30530384"/>
+	<ValidationCacheItem File="C:\Users\40182161.NAPIER-MAIL\Documents\Perception\PerceptionAlteration\Wwise\TestAudio\Audio Devices\Default Work Unit.wwu" DateLow="4284417090" DateHigh="30530384"/>
+	<ValidationCacheItem File="C:\Users\40182161.NAPIER-MAIL\Documents\Perception\PerceptionAlteration\Wwise\TestAudio\Control Surface Sessions\Default Work Unit.wwu" DateLow="4284447273" DateHigh="30530384"/>
+	<ValidationCacheItem File="C:\Users\40182161.NAPIER-MAIL\Documents\Perception\PerceptionAlteration\Wwise\TestAudio\Conversion Settings\Default Work Unit.wwu" DateLow="4284477456" DateHigh="30530384"/>
+	<ValidationCacheItem File="C:\Users\40182161.NAPIER-MAIL\Documents\Perception\PerceptionAlteration\Wwise\TestAudio\Conversion Settings\Factory Conversion Settings.wwu" DateLow="4284507639" DateHigh="30530384"/>
+	<ValidationCacheItem File="C:\Users\40182161.NAPIER-MAIL\Documents\Perception\PerceptionAlteration\Wwise\TestAudio\Dynamic Dialogue\Default Work Unit.wwu" DateLow="4284537822" DateHigh="30530384"/>
+	<ValidationCacheItem File="C:\Users\40182161.NAPIER-MAIL\Documents\Perception\PerceptionAlteration\Wwise\TestAudio\Effects\Default Work Unit.wwu" DateLow="4284568005" DateHigh="30530384"/>
+	<ValidationCacheItem File="C:\Users\40182161.NAPIER-MAIL\Documents\Perception\PerceptionAlteration\Wwise\TestAudio\Effects\Factory Altiverb - Outdoor and More.wwu" DateLow="4284598188" DateHigh="30530384"/>
+	<ValidationCacheItem File="C:\Users\40182161.NAPIER-MAIL\Documents\Perception\PerceptionAlteration\Wwise\TestAudio\Effects\Factory Auro Headphone.wwu" DateLow="4284648493" DateHigh="30530384"/>
+	<ValidationCacheItem File="C:\Users\40182161.NAPIER-MAIL\Documents\Perception\PerceptionAlteration\Wwise\TestAudio\Effects\Factory Convolution Reverb Effects.wwu" DateLow="4284678676" DateHigh="30530384"/>
+	<ValidationCacheItem File="C:\Users\40182161.NAPIER-MAIL\Documents\Perception\PerceptionAlteration\Wwise\TestAudio\Effects\Factory Effects.wwu" DateLow="4284728981" DateHigh="30530384"/>
+	<ValidationCacheItem File="C:\Users\40182161.NAPIER-MAIL\Documents\Perception\PerceptionAlteration\Wwise\TestAudio\Effects\Factory iZotope Box Modeler.wwu" DateLow="4284819530" DateHigh="30530384"/>
+	<ValidationCacheItem File="C:\Users\40182161.NAPIER-MAIL\Documents\Perception\PerceptionAlteration\Wwise\TestAudio\Effects\Factory iZotope Delay.wwu" DateLow="4284849713" DateHigh="30530384"/>
+	<ValidationCacheItem File="C:\Users\40182161.NAPIER-MAIL\Documents\Perception\PerceptionAlteration\Wwise\TestAudio\Effects\Factory iZotope Dynamics.wwu" DateLow="4284879896" DateHigh="30530384"/>
+	<ValidationCacheItem File="C:\Users\40182161.NAPIER-MAIL\Documents\Perception\PerceptionAlteration\Wwise\TestAudio\Effects\Factory iZotope Filters.wwu" DateLow="4284910079" DateHigh="30530384"/>
+	<ValidationCacheItem File="C:\Users\40182161.NAPIER-MAIL\Documents\Perception\PerceptionAlteration\Wwise\TestAudio\Effects\Factory iZotope Hybrid Reverb Effects.wwu" DateLow="4284940262" DateHigh="30530384"/>
+	<ValidationCacheItem File="C:\Users\40182161.NAPIER-MAIL\Documents\Perception\PerceptionAlteration\Wwise\TestAudio\Effects\Factory iZotope Multiband Distortion.wwu" DateLow="4284980506" DateHigh="30530384"/>
+	<ValidationCacheItem File="C:\Users\40182161.NAPIER-MAIL\Documents\Perception\PerceptionAlteration\Wwise\TestAudio\Effects\Factory iZotope Singleband Distortion.wwu" DateLow="4285010689" DateHigh="30530384"/>
+	<ValidationCacheItem File="C:\Users\40182161.NAPIER-MAIL\Documents\Perception\PerceptionAlteration\Wwise\TestAudio\Effects\Factory McDSP Effects.wwu" DateLow="4284779286" DateHigh="30530384"/>
+	<ValidationCacheItem File="C:\Users\40182161.NAPIER-MAIL\Documents\Perception\PerceptionAlteration\Wwise\TestAudio\Events\Default Work Unit.wwu" DateLow="4285040872" DateHigh="30530384"/>
+	<ValidationCacheItem File="C:\Users\40182161.NAPIER-MAIL\Documents\Perception\PerceptionAlteration\Wwise\TestAudio\Game Parameters\Default Work Unit.wwu" DateLow="4285081116" DateHigh="30530384"/>
+	<ValidationCacheItem File="C:\Users\40182161.NAPIER-MAIL\Documents\Perception\PerceptionAlteration\Wwise\TestAudio\Game Parameters\Factory SoundSeed Air Game Syncs.wwu" DateLow="4285101238" DateHigh="30530384"/>
+	<ValidationCacheItem File="C:\Users\40182161.NAPIER-MAIL\Documents\Perception\PerceptionAlteration\Wwise\TestAudio\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="4285161604" DateHigh="30530384"/>
+	<ValidationCacheItem File="C:\Users\40182161.NAPIER-MAIL\Documents\Perception\PerceptionAlteration\Wwise\TestAudio\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="4285191787" DateHigh="30530384"/>
+	<ValidationCacheItem File="C:\Users\40182161.NAPIER-MAIL\Documents\Perception\PerceptionAlteration\Wwise\TestAudio\Mixing Sessions\Default Work Unit.wwu" DateLow="4285211909" DateHigh="30530384"/>
+	<ValidationCacheItem File="C:\Users\40182161.NAPIER-MAIL\Documents\Perception\PerceptionAlteration\Wwise\TestAudio\Modulators\Default Work Unit.wwu" DateLow="4285242092" DateHigh="30530384"/>
+	<ValidationCacheItem File="C:\Users\40182161.NAPIER-MAIL\Documents\Perception\PerceptionAlteration\Wwise\TestAudio\Presets\Default Work Unit.wwu" DateLow="35126734" DateHigh="30530385"/>
+	<ValidationCacheItem File="C:\Users\40182161.NAPIER-MAIL\Documents\Perception\PerceptionAlteration\Wwise\TestAudio\Queries\Default Work Unit.wwu" DateLow="35156917" DateHigh="30530385"/>
+	<ValidationCacheItem File="C:\Users\40182161.NAPIER-MAIL\Documents\Perception\PerceptionAlteration\Wwise\TestAudio\Queries\Factory Queries.wwu" DateLow="35187100" DateHigh="30530385"/>
+	<ValidationCacheItem File="C:\Users\40182161.NAPIER-MAIL\Documents\Perception\PerceptionAlteration\Wwise\TestAudio\SoundBanks\Default Work Unit.wwu" DateLow="35237405" DateHigh="30530385"/>
+	<ValidationCacheItem File="C:\Users\40182161.NAPIER-MAIL\Documents\Perception\PerceptionAlteration\Wwise\TestAudio\Soundcaster Sessions\Default Work Unit.wwu" DateLow="35277649" DateHigh="30530385"/>
+	<ValidationCacheItem File="C:\Users\40182161.NAPIER-MAIL\Documents\Perception\PerceptionAlteration\Wwise\TestAudio\States\Default Work Unit.wwu" DateLow="35307832" DateHigh="30530385"/>
+	<ValidationCacheItem File="C:\Users\40182161.NAPIER-MAIL\Documents\Perception\PerceptionAlteration\Wwise\TestAudio\Switches\Default Work Unit.wwu" DateLow="35338015" DateHigh="30530385"/>
+	<ValidationCacheItem File="C:\Users\40182161.NAPIER-MAIL\Documents\Perception\PerceptionAlteration\Wwise\TestAudio\TestAudio.40182161.wsettings" DateLow="3737608986" DateHigh="30530446"/>
+	<ValidationCacheItem File="C:\Users\40182161.NAPIER-MAIL\Documents\Perception\PerceptionAlteration\Wwise\TestAudio\TestAudio.wproj" DateLow="35448686" DateHigh="30530385"/>
+	<ValidationCacheItem File="C:\Users\40182161.NAPIER-MAIL\Documents\Perception\PerceptionAlteration\Wwise\TestAudio\Triggers\Default Work Unit.wwu" DateLow="35488930" DateHigh="30530385"/>
 </ValidationCache>

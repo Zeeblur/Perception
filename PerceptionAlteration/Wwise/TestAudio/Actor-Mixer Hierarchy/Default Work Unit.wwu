@@ -246,6 +246,7 @@
 							<Custom>
 								<Effect Name="VisiSonics RealSpace3D (Attached)" ID="{E678FA18-8490-4A31-9656-1A7E4AAA63C5}" ShortID="376399422" PluginName="AttachableMixerInput" CompanyID="0" PluginID="501" PluginType="3">
 									<PropertyList>
+										<Property Name="Fast Spatialization" Type="bool" Value="True"/>
 										<Property Name="Room Reflection Coeff Back" Type="Real32" Value="4">
 											<RTPCList>
 												<RTPC Name="" ID="{61B59049-A997-481D-A0DD-9C9F2707D8E6}" ShortID="359639443">
