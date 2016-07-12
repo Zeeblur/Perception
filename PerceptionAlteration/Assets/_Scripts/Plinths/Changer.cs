@@ -240,7 +240,7 @@ public class Changer : MonoBehaviour
         plinthScript.SetState((int)scaleMode.growing);
         Time.timeScale = 1f;
 
-        soundRoom.localScale = new Vector3(1f, 1f, 1f);
+        soundRoom.localScale = new Vector3(7f, 5f, 3f);
         spatializer.UpdateSize();
 
     }

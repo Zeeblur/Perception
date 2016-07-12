@@ -30,7 +30,7 @@ public class PlayerCollision : MonoBehaviour
     {
         if (other.CompareTag("DogZone"))
         {
-            Debug.Log("Awayfro,mToDOg");
+            Debug.Log("AwayfromDog");
             StopDog(int.Parse(other.gameObject.name));
         }
     }
