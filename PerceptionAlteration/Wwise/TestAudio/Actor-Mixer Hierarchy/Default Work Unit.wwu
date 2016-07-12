@@ -207,31 +207,33 @@
 							<ValueList>
 								<Value>True</Value>
 							</ValueList>
+						</Property>
+						<Property Name="Lowpass" Type="int16">
 							<RTPCList>
-								<RTPC Name="" ID="{B1B88501-E333-4D28-A5FE-F5BE1DD13DDE}" ShortID="411115248">
+								<RTPC Name="" ID="{55B0E9ED-2FBE-4C5F-BE54-EE264C69F6B2}" ShortID="654823163">
 									<ReferenceList>
 										<Reference Name="ControlInput">
-											<ObjectRef Name="Room_Size" ID="{63220FFC-CA39-403C-802C-37B2252C1E71}" WorkUnitID="{0AEBADB4-CF30-41C8-B323-F726CF4DA516}"/>
+											<ObjectRef Name="Elevation" ID="{E697E70F-71B3-44EA-9311-295D91309BC8}" WorkUnitID="{0AEBADB4-CF30-41C8-B323-F726CF4DA516}"/>
 										</Reference>
 									</ReferenceList>
-									<Curve Name="" ID="{ADD609C7-D6C3-43BE-9E54-309041D34D8E}">
+									<Curve Name="" ID="{24D3C2B8-C1E1-4630-BD34-91FF19BF1CFD}">
 										<PropertyList>
 											<Property Name="Flags" Type="int32" Value="65537"/>
 										</PropertyList>
 										<PointList>
 											<Point>
 												<XPos>0</XPos>
-												<YPos>1</YPos>
+												<YPos>100</YPos>
 												<Flags>5</Flags>
 											</Point>
 											<Point>
-												<XPos>73.34385</XPos>
-												<YPos>0</YPos>
+												<XPos>28.90052</XPos>
+												<YPos>36</YPos>
 												<Flags>0</Flags>
 											</Point>
 											<Point>
 												<XPos>100</XPos>
-												<YPos>0</YPos>
+												<YPos>-100</YPos>
 												<Flags>37</Flags>
 											</Point>
 										</PointList>
@@ -246,275 +248,57 @@
 							<Custom>
 								<Effect Name="VisiSonics RealSpace3D (Attached)" ID="{E678FA18-8490-4A31-9656-1A7E4AAA63C5}" ShortID="376399422" PluginName="AttachableMixerInput" CompanyID="0" PluginID="501" PluginType="3">
 									<PropertyList>
-										<Property Name="Fast Spatialization" Type="bool" Value="True"/>
-										<Property Name="Room Reflection Coeff Back" Type="Real32" Value="4">
-											<RTPCList>
-												<RTPC Name="" ID="{61B59049-A997-481D-A0DD-9C9F2707D8E6}" ShortID="359639443">
-													<ReferenceList>
-														<Reference Name="ControlInput">
-															<ObjectRef Name="Room_Size" ID="{63220FFC-CA39-403C-802C-37B2252C1E71}" WorkUnitID="{0AEBADB4-CF30-41C8-B323-F726CF4DA516}"/>
-														</Reference>
-													</ReferenceList>
-													<Curve Name="" ID="{CFDC17D3-ACA2-45B6-8B96-DB2130C2E16A}">
-														<PropertyList>
-															<Property Name="Flags" Type="int32" Value="1"/>
-														</PropertyList>
-														<PointList>
-															<Point>
-																<XPos>0</XPos>
-																<YPos>49.86034</YPos>
-																<Flags>5</Flags>
-															</Point>
-															<Point>
-																<XPos>100</XPos>
-																<YPos>100</YPos>
-																<Flags>37</Flags>
-															</Point>
-														</PointList>
-													</Curve>
-												</RTPC>
-											</RTPCList>
-										</Property>
-										<Property Name="Room Reflection Coeff Ceiling" Type="Real32" Value="4">
-											<RTPCList>
-												<RTPC Name="" ID="{B1942919-D6FF-44BD-B5F4-1C2A26C75285}" ShortID="1067512444">
-													<ReferenceList>
-														<Reference Name="ControlInput">
-															<ObjectRef Name="Room_Size" ID="{63220FFC-CA39-403C-802C-37B2252C1E71}" WorkUnitID="{0AEBADB4-CF30-41C8-B323-F726CF4DA516}"/>
-														</Reference>
-													</ReferenceList>
-													<Curve Name="" ID="{89140531-2C62-4AA6-912A-B532C1359204}">
-														<PropertyList>
-															<Property Name="Flags" Type="int32" Value="1"/>
-														</PropertyList>
-														<PointList>
-															<Point>
-																<XPos>0</XPos>
-																<YPos>50.97765</YPos>
-																<Flags>5</Flags>
-															</Point>
-															<Point>
-																<XPos>100</XPos>
-																<YPos>100</YPos>
-																<Flags>37</Flags>
-															</Point>
-														</PointList>
-													</Curve>
-												</RTPC>
-											</RTPCList>
-										</Property>
-										<Property Name="Room Reflection Coeff Floor" Type="Real32" Value="4">
-											<RTPCList>
-												<RTPC Name="" ID="{7C724499-5EEF-4086-A993-AF290EA0C76F}" ShortID="222225881">
-													<ReferenceList>
-														<Reference Name="ControlInput">
-															<ObjectRef Name="Room_Size" ID="{63220FFC-CA39-403C-802C-37B2252C1E71}" WorkUnitID="{0AEBADB4-CF30-41C8-B323-F726CF4DA516}"/>
-														</Reference>
-													</ReferenceList>
-													<Curve Name="" ID="{00A57AEF-436E-4268-8C29-3C2127780F23}">
-														<PropertyList>
-															<Property Name="Flags" Type="int32" Value="1"/>
-														</PropertyList>
-														<PointList>
-															<Point>
-																<XPos>0</XPos>
-																<YPos>50.97765</YPos>
-																<Flags>5</Flags>
-															</Point>
-															<Point>
-																<XPos>100</XPos>
-																<YPos>100</YPos>
-																<Flags>37</Flags>
-															</Point>
-														</PointList>
-													</Curve>
-												</RTPC>
-											</RTPCList>
-										</Property>
-										<Property Name="Room Reflection Coeff Front" Type="Real32" Value="5">
-											<RTPCList>
-												<RTPC Name="" ID="{BE7E2C5D-BBC2-406F-91FE-DF755BDEB4C1}" ShortID="610097137">
-													<ReferenceList>
-														<Reference Name="ControlInput">
-															<ObjectRef Name="Room_Size" ID="{63220FFC-CA39-403C-802C-37B2252C1E71}" WorkUnitID="{0AEBADB4-CF30-41C8-B323-F726CF4DA516}"/>
-														</Reference>
-													</ReferenceList>
-													<Curve Name="" ID="{A380FF91-B17B-4B70-8E0D-9C605561FE75}">
-														<PropertyList>
-															<Property Name="Flags" Type="int32" Value="1"/>
-														</PropertyList>
-														<PointList>
-															<Point>
-																<XPos>0</XPos>
-																<YPos>50.97765</YPos>
-																<Flags>5</Flags>
-															</Point>
-															<Point>
-																<XPos>100</XPos>
-																<YPos>100</YPos>
-																<Flags>37</Flags>
-															</Point>
-														</PointList>
-													</Curve>
-												</RTPC>
-											</RTPCList>
-										</Property>
-										<Property Name="Room Reflection Coeff Left" Type="Real32" Value="4">
-											<RTPCList>
-												<RTPC Name="" ID="{7A7706AD-AED1-4A90-A1FA-0CEAD99DE46C}" ShortID="260212635">
-													<ReferenceList>
-														<Reference Name="ControlInput">
-															<ObjectRef Name="Room_Size" ID="{63220FFC-CA39-403C-802C-37B2252C1E71}" WorkUnitID="{0AEBADB4-CF30-41C8-B323-F726CF4DA516}"/>
-														</Reference>
-													</ReferenceList>
-													<Curve Name="" ID="{ADA7B4BF-F124-4CAB-B500-EF44765DC34B}">
-														<PropertyList>
-															<Property Name="Flags" Type="int32" Value="1"/>
-														</PropertyList>
-														<PointList>
-															<Point>
-																<XPos>0</XPos>
-																<YPos>49.30168</YPos>
-																<Flags>5</Flags>
-															</Point>
-															<Point>
-																<XPos>100</XPos>
-																<YPos>100</YPos>
-																<Flags>37</Flags>
-															</Point>
-														</PointList>
-													</Curve>
-												</RTPC>
-											</RTPCList>
-										</Property>
-										<Property Name="Room Reflection Coeff Right" Type="Real32" Value="4">
-											<RTPCList>
-												<RTPC Name="" ID="{481C7D2E-6140-4838-A21D-6958116B23EA}" ShortID="105168162">
-													<ReferenceList>
-														<Reference Name="ControlInput">
-															<ObjectRef Name="Room_Size" ID="{63220FFC-CA39-403C-802C-37B2252C1E71}" WorkUnitID="{0AEBADB4-CF30-41C8-B323-F726CF4DA516}"/>
-														</Reference>
-													</ReferenceList>
-													<Curve Name="" ID="{4712063B-4578-4956-A8EA-47B85673A349}">
-														<PropertyList>
-															<Property Name="Flags" Type="int32" Value="1"/>
-														</PropertyList>
-														<PointList>
-															<Point>
-																<XPos>0</XPos>
-																<YPos>50.41899</YPos>
-																<Flags>5</Flags>
-															</Point>
-															<Point>
-																<XPos>100</XPos>
-																<YPos>100</YPos>
-																<Flags>37</Flags>
-															</Point>
-														</PointList>
-													</Curve>
-												</RTPC>
-											</RTPCList>
-										</Property>
-										<Property Name="Room Size X" Type="Real32">
-											<RTPCList>
-												<RTPC Name="" ID="{ECD2C54E-4C14-4877-A021-0770D7E5CBCD}" ShortID="273626802">
-													<ReferenceList>
-														<Reference Name="ControlInput">
-															<ObjectRef Name="Room_Size" ID="{63220FFC-CA39-403C-802C-37B2252C1E71}" WorkUnitID="{0AEBADB4-CF30-41C8-B323-F726CF4DA516}"/>
-														</Reference>
-													</ReferenceList>
-													<Curve Name="" ID="{051F75CF-2586-4B94-B164-0BD16CC2BDAF}">
-														<PropertyList>
-															<Property Name="Flags" Type="int32" Value="1"/>
-														</PropertyList>
-														<PointList>
-															<Point>
-																<XPos>0</XPos>
-																<YPos>1</YPos>
-																<Flags>5</Flags>
-															</Point>
-															<Point>
-																<XPos>30.05236</XPos>
-																<YPos>10.27926</YPos>
-																<Flags>0</Flags>
-															</Point>
-															<Point>
-																<XPos>50</XPos>
-																<YPos>19.3743</YPos>
-																<Flags>0</Flags>
-															</Point>
-															<Point>
-																<XPos>100</XPos>
-																<YPos>24.94413</YPos>
-																<Flags>37</Flags>
-															</Point>
-														</PointList>
-													</Curve>
-												</RTPC>
-											</RTPCList>
-										</Property>
-										<Property Name="Room Size Y" Type="Real32">
-											<RTPCList>
-												<RTPC Name="" ID="{C00DE922-B7A0-42A9-9E64-7ECE26C1CFAE}" ShortID="92917143">
-													<ReferenceList>
-														<Reference Name="ControlInput">
-															<ObjectRef Name="Room_Size" ID="{63220FFC-CA39-403C-802C-37B2252C1E71}" WorkUnitID="{0AEBADB4-CF30-41C8-B323-F726CF4DA516}"/>
-														</Reference>
-													</ReferenceList>
-													<Curve Name="" ID="{D0E4E2E2-5703-4219-9DDB-7AFD2E39720D}">
-														<PropertyList>
-															<Property Name="Flags" Type="int32" Value="1"/>
-														</PropertyList>
-														<PointList>
-															<Point>
-																<XPos>0</XPos>
-																<YPos>10</YPos>
-																<Flags>5</Flags>
-															</Point>
-															<Point>
-																<XPos>100</XPos>
-																<YPos>31.06704</YPos>
-																<Flags>37</Flags>
-															</Point>
-														</PointList>
-													</Curve>
-												</RTPC>
-											</RTPCList>
-										</Property>
-										<Property Name="Room Size Z" Type="Real32">
-											<RTPCList>
-												<RTPC Name="" ID="{1EA9FF93-7ABD-4004-B090-7132BD264806}" ShortID="704629121">
-													<ReferenceList>
-														<Reference Name="ControlInput">
-															<ObjectRef Name="Room_Size" ID="{63220FFC-CA39-403C-802C-37B2252C1E71}" WorkUnitID="{0AEBADB4-CF30-41C8-B323-F726CF4DA516}"/>
-														</Reference>
-													</ReferenceList>
-													<Curve Name="" ID="{5082FFA6-E5C7-42ED-B474-BE4B1762493E}">
-														<PropertyList>
-															<Property Name="Flags" Type="int32" Value="1"/>
-														</PropertyList>
-														<PointList>
-															<Point>
-																<XPos>0</XPos>
-																<YPos>10</YPos>
-																<Flags>5</Flags>
-															</Point>
-															<Point>
-																<XPos>100</XPos>
-																<YPos>17.70391</YPos>
-																<Flags>37</Flags>
-															</Point>
-														</PointList>
-													</Curve>
-												</RTPC>
-											</RTPCList>
-										</Property>
+										<Property Name="Early Reflection Order" Type="Real32" Value="4"/>
+										<Property Name="Room Reflection Coeff Back" Type="Real32" Value="100"/>
+										<Property Name="Room Reflection Coeff Ceiling" Type="Real32" Value="100"/>
+										<Property Name="Room Reflection Coeff Floor" Type="Real32" Value="100"/>
+										<Property Name="Room Reflection Coeff Front" Type="Real32" Value="100"/>
+										<Property Name="Room Reflection Coeff Left" Type="Real32" Value="99"/>
+										<Property Name="Room Reflection Coeff Right" Type="Real32" Value="100"/>
+										<Property Name="Room Size X" Type="Real32" Value="110"/>
+										<Property Name="Room Size Y" Type="Real32" Value="117"/>
+										<Property Name="Room Size Z" Type="Real32" Value="121"/>
 									</PropertyList>
 								</Effect>
 							</Custom>
 						</Reference>
 						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
+							<Custom CreatedFrom="{6D1B890C-9826-4384-BF07-C15223E9FB56}">
+								<Conversion Name="Default Conversion Settings (Custom)" ID="{7C3D29C1-AFBF-47A2-8F82-51E164CA89AF}">
+									<PropertyList>
+										<Property Name="Channels" Type="int32">
+											<ValueList>
+												<Value Platform="Windows">4</Value>
+											</ValueList>
+										</Property>
+										<Property Name="LRMix" Type="Real64">
+											<ValueList>
+												<Value Platform="Windows">0</Value>
+											</ValueList>
+										</Property>
+										<Property Name="MaxSampleRate" Type="int32">
+											<ValueList>
+												<Value Platform="Windows">0</Value>
+											</ValueList>
+										</Property>
+										<Property Name="MinSampleRate" Type="int32">
+											<ValueList>
+												<Value Platform="Windows">0</Value>
+											</ValueList>
+										</Property>
+										<Property Name="SampleRate" Type="int32">
+											<ValueList>
+												<Value Platform="Windows">0</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ConversionPluginInfoList>
+										<ConversionPluginInfo Platform="Windows">
+											<ConversionPlugin Name="" ID="{30053F27-5AF8-477B-AF29-BB7830C10C22}" PluginName="PCM" CompanyID="0" PluginID="1"/>
+										</ConversionPluginInfo>
+									</ConversionPluginInfoList>
+								</Conversion>
+							</Custom>
 						</Reference>
 						<Reference Name="Effect0" PluginName="Wwise Peak Limiter" CompanyID="0" PluginID="110" PluginType="3">
 							<ObjectRef Name="Brick_Wall_Minus_1dB_Peak_Slow_Release" ID="{9FB8DC2B-7F1C-4E4E-8FA5-50872652D2DD}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
@@ -527,6 +311,9 @@
 						</Reference>
 						<Reference Name="UserAuxSend0">
 							<ObjectRef Name="Verb" ID="{37E486C9-9136-49F7-982C-B9AC74BAB40D}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
+						</Reference>
+						<Reference Name="UserAuxSend1">
+							<ObjectRef Name="Pitch" ID="{50ED605C-7A31-4F6D-8F67-A5BFF7E103BD}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -565,473 +352,6 @@
 								<ActiveSource Name="33 Synth Door Opens With A Squeak; Reverberant" ID="{640D43B0-A895-49EA-A866-5153A826947A}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
-						<SwitchContainer Name="Dog Switch" ID="{6707A54C-52CD-4B35-8F36-55BDFCA1CAAE}" ShortID="910471908">
-							<PropertyList>
-								<Property Name="SwitchBehavior" Type="int16" Value="1"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<RandomSequenceContainer Name="SmallDog" ID="{500BBBEE-555A-4DDA-AE6E-06DD791A7231}" ShortID="275445826">
-									<PropertyList>
-										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
-										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-3</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<Sound Name="pug pant slow-EQ37B_01-02" ID="{45D11283-C119-45A6-B0E0-8DAB44EBB829}" ShortID="273079932" Type="SoundFX">
-											<PropertyList>
-												<Property Name="Weight" Type="Real64">
-													<ValueList>
-														<Value>45</Value>
-													</ValueList>
-												</Property>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="pug pant slow-EQ37B_01-02" ID="{F3253429-3C21-429A-92BC-D596D28C4E54}" ShortID="336128239">
-													<Language>SFX</Language>
-													<AudioFile>pug pant slow-EQ37B_01-02.wav</AudioFile>
-													<ConvertedFileIDList>
-														<File ID="1050789380"/>
-													</ConvertedFileIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="pug pant slow-EQ37B_01-02" ID="{F3253429-3C21-429A-92BC-D596D28C4E54}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="pug pant fast-Dk_01-03" ID="{8B03D997-4009-4DCA-ADD0-0D1FA2A7885E}" ShortID="163545593" Type="SoundFX">
-											<PropertyList>
-												<Property Name="Weight" Type="Real64">
-													<ValueList>
-														<Value>60</Value>
-													</ValueList>
-												</Property>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="pug pant fast-Dk_01-03" ID="{416B6F69-DA9F-49E1-BB44-B5A0ECC7B9D2}" ShortID="884970006">
-													<Language>SFX</Language>
-													<AudioFile>pug pant fast-Dk_01-03.wav</AudioFile>
-													<ConvertedFileIDList>
-														<File ID="63387514"/>
-													</ConvertedFileIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="pug pant fast-Dk_01-03" ID="{416B6F69-DA9F-49E1-BB44-B5A0ECC7B9D2}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="pug sniff-D3CL_03-07" ID="{1BB91216-2287-49D8-8E67-43E528F70BF1}" ShortID="632340652" Type="SoundFX">
-											<PropertyList>
-												<Property Name="Weight" Type="Real64">
-													<ValueList>
-														<Value>60</Value>
-													</ValueList>
-												</Property>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="pug sniff-D3CL_03-07" ID="{ABF1839B-4BAE-4515-943C-F2A5240D1C17}" ShortID="708628455">
-													<Language>SFX</Language>
-													<AudioFile>pug sniff-D3CL_03-07.wav</AudioFile>
-													<ConvertedFileIDList>
-														<File ID="454419637"/>
-													</ConvertedFileIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="pug sniff-D3CL_03-07" ID="{ABF1839B-4BAE-4515-943C-F2A5240D1C17}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-									</ChildrenList>
-								</RandomSequenceContainer>
-								<RandomSequenceContainer Name="UpsideDog" ID="{A2A3C8F9-8D42-4B57-A3DC-9297A8166F56}" ShortID="174101208">
-									<PropertyList>
-										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
-										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-6</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<Sound Name="Soft Pant - Staffy" ID="{F943E3C2-B6B9-41DE-AA1B-334C0AD9CB8D}" ShortID="683792817" Type="SoundFX">
-											<PropertyList>
-												<Property Name="Pitch" Type="int32">
-													<ValueList>
-														<Value>-180</Value>
-													</ValueList>
-												</Property>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Soft Pant - Staffy" ID="{FED97ED3-18FA-4F09-B252-C9A6ED5222C0}" ShortID="811343078">
-													<Language>SFX</Language>
-													<AudioFile>Soft Pant - Staffy.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Soft Pant - Staffy" ID="{FED97ED3-18FA-4F09-B252-C9A6ED5222C0}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="Lab pant22" ID="{F6E69BD1-9686-4D24-9260-6AB844B6C6F5}" ShortID="939163972" Type="SoundFX">
-											<PropertyList>
-												<Property Name="PositioningType" Type="int16" Value="1"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
-												</Reference>
-												<Reference Name="Effect0" PluginName="Wwise Peak Limiter" CompanyID="0" PluginID="110" PluginType="3">
-													<ObjectRef Name="Brick_Wall_Minus_1dB_Peak_Slow_Release" ID="{9FB8DC2B-7F1C-4E4E-8FA5-50872652D2DD}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
-												</Reference>
-												<Reference Name="Effect1" CompanyID="4095" PluginID="65535" PluginType="15">
-													<ObjectRef Name="Fear_no_Evil" ID="{A1F17D99-0801-4F32-B74E-ADB2D9ACC556}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="RealSpace3D Bus" ID="{D6660470-B59B-45C8-9FA9-794761B4B9E4}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
-												</Reference>
-												<Reference Name="UserAuxSend0">
-													<ObjectRef Name="Verb" ID="{37E486C9-9136-49F7-982C-B9AC74BAB40D}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Lab pant22" ID="{CA8CE07C-F407-4412-8925-C9AC244B7339}" ShortID="690633852">
-													<Language>SFX</Language>
-													<AudioFile>Lab pant22.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Lab pant22" ID="{CA8CE07C-F407-4412-8925-C9AC244B7339}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="pug excited-EQ37B_02-03" ID="{F6365D8A-CA78-4267-98A4-B1F5EF658B82}" ShortID="1016484897" Type="SoundFX">
-											<PropertyList>
-												<Property Name="Pitch" Type="int32">
-													<ValueList>
-														<Value>-330</Value>
-													</ValueList>
-												</Property>
-												<Property Name="PositioningType" Type="int16" Value="1"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
-												</Reference>
-												<Reference Name="Effect0" PluginName="Wwise Peak Limiter" CompanyID="0" PluginID="110" PluginType="3">
-													<ObjectRef Name="Brick_Wall_Minus_1dB_Peak_Slow_Release" ID="{9FB8DC2B-7F1C-4E4E-8FA5-50872652D2DD}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
-												</Reference>
-												<Reference Name="Effect1" CompanyID="4095" PluginID="65535" PluginType="15">
-													<ObjectRef Name="Fear_no_Evil" ID="{A1F17D99-0801-4F32-B74E-ADB2D9ACC556}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="RealSpace3D Bus" ID="{D6660470-B59B-45C8-9FA9-794761B4B9E4}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
-												</Reference>
-												<Reference Name="UserAuxSend0">
-													<ObjectRef Name="Verb" ID="{37E486C9-9136-49F7-982C-B9AC74BAB40D}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="pug excited-EQ37B_02-03" ID="{06CD4EF3-32CD-48CB-8D6A-DEEF3D08BDBC}" ShortID="823854338">
-													<Language>SFX</Language>
-													<AudioFile>pug excited-EQ37B_02-03.wav</AudioFile>
-													<ConvertedFileIDList>
-														<File ID="897666406"/>
-													</ConvertedFileIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="pug excited-EQ37B_02-03" ID="{06CD4EF3-32CD-48CB-8D6A-DEEF3D08BDBC}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-									</ChildrenList>
-								</RandomSequenceContainer>
-								<RandomSequenceContainer Name="SmallestDog" ID="{3909F9C3-EC23-4F1E-83B2-904CD9A3590F}" ShortID="817898672">
-									<PropertyList>
-										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
-										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<Sound Name="chi pant" ID="{EB3B9C7C-9042-44E6-817A-AA9460717E4E}" ShortID="1053151327" Type="SoundFX">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="chi pant" ID="{90EAE64E-BEFB-4781-8842-25220F7E2F9E}" ShortID="398101412">
-													<Language>SFX</Language>
-													<AudioFile>chi pant.wav</AudioFile>
-													<ConvertedFileIDList>
-														<File ID="1039119964"/>
-													</ConvertedFileIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="chi pant" ID="{90EAE64E-BEFB-4781-8842-25220F7E2F9E}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="Sniff" ID="{0226BC0F-5E29-4421-AC86-69FFF101BB05}" ShortID="36197783" Type="SoundFX">
-											<PropertyList>
-												<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
-												<Property Name="Pitch" Type="int32">
-													<ValueList>
-														<Value>230</Value>
-													</ValueList>
-												</Property>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
-												</Reference>
-												<Reference Name="Effect0" CompanyID="4095" PluginID="65535" PluginType="15">
-													<ObjectRef Name="Octave_Down" ID="{062EC4B1-5372-4D1E-917B-C757293F2B42}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Sniff" ID="{9F19D6F8-8C8F-4173-BC38-6D0504667E9C}" ShortID="868353906">
-													<Language>SFX</Language>
-													<AudioFile>Sniff.wav</AudioFile>
-													<ConvertedFileIDList>
-														<File ID="179755947"/>
-													</ConvertedFileIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Sniff" ID="{9F19D6F8-8C8F-4173-BC38-6D0504667E9C}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="Lab Pant" ID="{C5C51619-1217-4EC3-8075-F425F05F780A}" ShortID="484808618" Type="SoundFX">
-											<PropertyList>
-												<Property Name="Pitch" Type="int32">
-													<ValueList>
-														<Value>610</Value>
-													</ValueList>
-												</Property>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Lab Pant" ID="{B6D1CD17-CE0A-4D2B-ABA0-0C9038F16538}" ShortID="684373203">
-													<Language>SFX</Language>
-													<AudioFile>Lab Pant.wav</AudioFile>
-													<ConvertedFileIDList>
-														<File ID="414661342"/>
-													</ConvertedFileIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Lab Pant" ID="{B6D1CD17-CE0A-4D2B-ABA0-0C9038F16538}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-									</ChildrenList>
-								</RandomSequenceContainer>
-								<RandomSequenceContainer Name="LargeDog" ID="{1349E4CA-5FCD-406C-A9CF-F772B18770E3}" ShortID="512451879">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<Sound Name="low pant" ID="{D5F7106D-ABAB-47A3-A44C-7D6A92A8CBCD}" ShortID="85714247" Type="SoundFX">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="low pant" ID="{FCCEFE1F-BA94-4986-AEC1-117450594B8F}" ShortID="1027748812">
-													<Language>SFX</Language>
-													<AudioFile>low pant.wav</AudioFile>
-													<ConvertedFileIDList>
-														<File ID="580475680"/>
-													</ConvertedFileIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="low pant" ID="{FCCEFE1F-BA94-4986-AEC1-117450594B8F}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="Lab Pant" ID="{EC131D8B-4B7A-46DB-9A04-D9AF6DF13D87}" ShortID="218950218" Type="SoundFX">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Lab Pant" ID="{9A939C2A-5CA5-414F-B2E2-455D351F916A}" ShortID="892032767">
-													<Language>SFX</Language>
-													<AudioFile>Lab Pant.wav</AudioFile>
-													<ConvertedFileIDList>
-														<File ID="414661342"/>
-													</ConvertedFileIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Lab Pant" ID="{9A939C2A-5CA5-414F-B2E2-455D351F916A}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="Sniff" ID="{C1AA56FE-C7DC-458F-88D9-95B7B4F94A99}" ShortID="438304594" Type="SoundFX">
-											<PropertyList>
-												<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
-												<Property Name="Pitch" Type="int32">
-													<ValueList>
-														<Value>-530</Value>
-													</ValueList>
-												</Property>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
-												</Reference>
-												<Reference Name="Effect0" CompanyID="4095" PluginID="65535" PluginType="15">
-													<ObjectRef Name="Octave_Down" ID="{062EC4B1-5372-4D1E-917B-C757293F2B42}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Sniff" ID="{77B44C52-1A67-4106-942A-A44FC12EBC2E}" ShortID="852424317">
-													<Language>SFX</Language>
-													<AudioFile>Sniff.wav</AudioFile>
-													<ConvertedFileIDList>
-														<File ID="179755947"/>
-													</ConvertedFileIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Sniff" ID="{77B44C52-1A67-4106-942A-A44FC12EBC2E}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-									</ChildrenList>
-								</RandomSequenceContainer>
-							</ChildrenList>
-							<GroupingInfo>
-								<GroupRef Name="DistanceDog" ID="{A58494D7-B841-4652-BFAE-AD932DA92E8D}"/>
-								<DefaultSwitchRef Name="Far" ID="{B54B2733-1F3C-42E1-A0DC-B8852654CFDB}"/>
-								<GroupingBehaviorList>
-									<GroupingBehavior>
-										<ItemRef Name="SmallestDog" ID="{3909F9C3-EC23-4F1E-83B2-904CD9A3590F}"/>
-									</GroupingBehavior>
-									<GroupingBehavior>
-										<ItemRef Name="LargeDog" ID="{1349E4CA-5FCD-406C-A9CF-F772B18770E3}"/>
-									</GroupingBehavior>
-									<GroupingBehavior>
-										<ItemRef Name="SmallDog" ID="{500BBBEE-555A-4DDA-AE6E-06DD791A7231}"/>
-									</GroupingBehavior>
-									<GroupingBehavior>
-										<ItemRef Name="UpsideDog" ID="{A2A3C8F9-8D42-4B57-A3DC-9297A8166F56}"/>
-									</GroupingBehavior>
-								</GroupingBehaviorList>
-								<GroupingList>
-									<Grouping>
-										<SwitchRef Name="Far" ID="{B54B2733-1F3C-42E1-A0DC-B8852654CFDB}"/>
-										<ItemList>
-											<ItemRef Name="UpsideDog" ID="{A2A3C8F9-8D42-4B57-A3DC-9297A8166F56}"/>
-										</ItemList>
-									</Grouping>
-									<Grouping>
-										<SwitchRef Name="Near" ID="{388A7E6F-8FAA-4481-A3DA-B84669CD40E5}"/>
-										<ItemList>
-											<ItemRef Name="SmallDog" ID="{500BBBEE-555A-4DDA-AE6E-06DD791A7231}"/>
-										</ItemList>
-									</Grouping>
-									<Grouping>
-										<SwitchRef Name="VNear" ID="{1C312DB8-6182-4528-AC42-2FB18EAD5157}"/>
-										<ItemList>
-											<ItemRef Name="SmallestDog" ID="{3909F9C3-EC23-4F1E-83B2-904CD9A3590F}"/>
-										</ItemList>
-									</Grouping>
-								</GroupingList>
-							</GroupingInfo>
-						</SwitchContainer>
 						<Sound Name="okum__dog-5" ID="{9C1244B6-D58F-4F09-8AE7-3A40F2E7A9A5}" ShortID="964513142" Type="SoundFX">
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -1127,38 +447,14 @@
 								<ActiveSource Name="327813__robinhood76__06071-ratter-dogs-barking-looping (1)" ID="{9A8B0574-6305-4316-9F00-3B2BD1CAA877}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
-						<Sound Name="245588__hifijohn__abstract-background-music" ID="{F9C53EF2-3B6F-4379-BF81-ED35888355D6}" ShortID="282602596" Type="SoundFX">
-							<PropertyList>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-13</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="245588__hifijohn__abstract-background-music" ID="{04D0456F-FCD2-44E7-A141-7D11BED4B948}" ShortID="729289645">
-									<Language>SFX</Language>
-									<AudioFile>245588__hifijohn__abstract-background-music.wav</AudioFile>
-									<ConvertedFileIDList>
-										<File ID="916400007"/>
-									</ConvertedFileIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="245588__hifijohn__abstract-background-music" ID="{04D0456F-FCD2-44E7-A141-7D11BED4B948}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
 						<Sound Name="273205__shadydave__cloudy-day-loop" ID="{8EE92596-B11C-4D2A-9805-01B201F785DC}" ShortID="667109112" Type="SoundFX">
 							<PropertyList>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-15</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -1179,6 +475,13 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="External_Ambience_STEREO" ID="{C24D182B-0529-4253-AA31-26FB485D0622}" ShortID="675475388" Type="SoundFX">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>2</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
@@ -1310,6 +613,619 @@
 								</Sound>
 							</ChildrenList>
 						</Folder>
+						<RandomSequenceContainer Name="UpsideDog" ID="{A2A3C8F9-8D42-4B57-A3DC-9297A8166F56}" ShortID="174101208">
+							<PropertyList>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="PositioningType" Type="int16" Value="1"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-2</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<Custom CreatedFrom="{6D1B890C-9826-4384-BF07-C15223E9FB56}">
+										<Conversion Name="Default Conversion Settings (Custom)" ID="{92F65D27-7E14-4A4C-B699-8607376B5B8F}">
+											<PropertyList>
+												<Property Name="Channels" Type="int32">
+													<ValueList>
+														<Value Platform="Windows">4</Value>
+													</ValueList>
+												</Property>
+												<Property Name="LRMix" Type="Real64">
+													<ValueList>
+														<Value Platform="Windows">0</Value>
+													</ValueList>
+												</Property>
+												<Property Name="MaxSampleRate" Type="int32">
+													<ValueList>
+														<Value Platform="Windows">0</Value>
+													</ValueList>
+												</Property>
+												<Property Name="MinSampleRate" Type="int32">
+													<ValueList>
+														<Value Platform="Windows">0</Value>
+													</ValueList>
+												</Property>
+												<Property Name="SampleRate" Type="int32">
+													<ValueList>
+														<Value Platform="Windows">0</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ConversionPluginInfoList>
+												<ConversionPluginInfo Platform="Windows">
+													<ConversionPlugin Name="" ID="{F48CDA65-3268-49E5-9AB5-5F2E12A0678B}" PluginName="PCM" CompanyID="0" PluginID="1"/>
+												</ConversionPluginInfo>
+											</ConversionPluginInfoList>
+										</Conversion>
+									</Custom>
+								</Reference>
+								<Reference Name="Effect0" PluginName="Wwise Peak Limiter" CompanyID="0" PluginID="110" PluginType="3">
+									<ObjectRef Name="Brick_Wall_Minus_1dB_Peak_Slow_Release" ID="{9FB8DC2B-7F1C-4E4E-8FA5-50872652D2DD}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								</Reference>
+								<Reference Name="Effect1" CompanyID="4095" PluginID="65535" PluginType="15">
+									<ObjectRef Name="Fear_no_Evil" ID="{A1F17D99-0801-4F32-B74E-ADB2D9ACC556}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="RealSpace3D Bus" ID="{D6660470-B59B-45C8-9FA9-794761B4B9E4}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
+								</Reference>
+								<Reference Name="UserAuxSend0">
+									<ObjectRef Name="Verb" ID="{37E486C9-9136-49F7-982C-B9AC74BAB40D}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
+								</Reference>
+								<Reference Name="UserAuxSend1">
+									<ObjectRef Name="Pitch" ID="{50ED605C-7A31-4F6D-8F67-A5BFF7E103BD}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Soft Pant - Staffy" ID="{F943E3C2-B6B9-41DE-AA1B-334C0AD9CB8D}" ShortID="683792817" Type="SoundFX">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-180</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Soft Pant - Staffy" ID="{FED97ED3-18FA-4F09-B252-C9A6ED5222C0}" ShortID="811343078">
+											<Language>SFX</Language>
+											<AudioFile>Soft Pant - Staffy.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Soft Pant - Staffy" ID="{FED97ED3-18FA-4F09-B252-C9A6ED5222C0}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Lab pant22" ID="{F6E69BD1-9686-4D24-9260-6AB844B6C6F5}" ShortID="939163972" Type="SoundFX">
+									<PropertyList>
+										<Property Name="PositioningType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
+										</Reference>
+										<Reference Name="Effect0" PluginName="Wwise Peak Limiter" CompanyID="0" PluginID="110" PluginType="3">
+											<ObjectRef Name="Brick_Wall_Minus_1dB_Peak_Slow_Release" ID="{9FB8DC2B-7F1C-4E4E-8FA5-50872652D2DD}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+										</Reference>
+										<Reference Name="Effect1" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="Fear_no_Evil" ID="{A1F17D99-0801-4F32-B74E-ADB2D9ACC556}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="RealSpace3D Bus" ID="{D6660470-B59B-45C8-9FA9-794761B4B9E4}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
+										</Reference>
+										<Reference Name="UserAuxSend0">
+											<ObjectRef Name="Verb" ID="{37E486C9-9136-49F7-982C-B9AC74BAB40D}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Lab pant22" ID="{CA8CE07C-F407-4412-8925-C9AC244B7339}" ShortID="690633852">
+											<Language>SFX</Language>
+											<AudioFile>Lab pant22.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Lab pant22" ID="{CA8CE07C-F407-4412-8925-C9AC244B7339}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="pug excited-EQ37B_02-03" ID="{F6365D8A-CA78-4267-98A4-B1F5EF658B82}" ShortID="1016484897" Type="SoundFX">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-330</Value>
+											</ValueList>
+										</Property>
+										<Property Name="PositioningType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
+										</Reference>
+										<Reference Name="Effect0" PluginName="Wwise Peak Limiter" CompanyID="0" PluginID="110" PluginType="3">
+											<ObjectRef Name="Brick_Wall_Minus_1dB_Peak_Slow_Release" ID="{9FB8DC2B-7F1C-4E4E-8FA5-50872652D2DD}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+										</Reference>
+										<Reference Name="Effect1" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="Fear_no_Evil" ID="{A1F17D99-0801-4F32-B74E-ADB2D9ACC556}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="RealSpace3D Bus" ID="{D6660470-B59B-45C8-9FA9-794761B4B9E4}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
+										</Reference>
+										<Reference Name="UserAuxSend0">
+											<ObjectRef Name="Verb" ID="{37E486C9-9136-49F7-982C-B9AC74BAB40D}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="pug excited-EQ37B_02-03" ID="{06CD4EF3-32CD-48CB-8D6A-DEEF3D08BDBC}" ShortID="823854338">
+											<Language>SFX</Language>
+											<AudioFile>pug excited-EQ37B_02-03.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="897666406"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="pug excited-EQ37B_02-03" ID="{06CD4EF3-32CD-48CB-8D6A-DEEF3D08BDBC}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="SmallestDog" ID="{3909F9C3-EC23-4F1E-83B2-904CD9A3590F}" ShortID="817898672">
+							<PropertyList>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="PositioningType" Type="int16" Value="1"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-2</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<Custom CreatedFrom="{6D1B890C-9826-4384-BF07-C15223E9FB56}">
+										<Conversion Name="Default Conversion Settings (Custom)" ID="{4040BC81-2CFB-4B73-99AC-2D911A72EA84}">
+											<PropertyList>
+												<Property Name="Channels" Type="int32">
+													<ValueList>
+														<Value Platform="Windows">4</Value>
+													</ValueList>
+												</Property>
+												<Property Name="LRMix" Type="Real64">
+													<ValueList>
+														<Value Platform="Windows">0</Value>
+													</ValueList>
+												</Property>
+												<Property Name="MaxSampleRate" Type="int32">
+													<ValueList>
+														<Value Platform="Windows">0</Value>
+													</ValueList>
+												</Property>
+												<Property Name="MinSampleRate" Type="int32">
+													<ValueList>
+														<Value Platform="Windows">0</Value>
+													</ValueList>
+												</Property>
+												<Property Name="SampleRate" Type="int32">
+													<ValueList>
+														<Value Platform="Windows">0</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ConversionPluginInfoList>
+												<ConversionPluginInfo Platform="Windows">
+													<ConversionPlugin Name="" ID="{FBEA7533-89A7-43E9-948F-4C320F91B359}" PluginName="PCM" CompanyID="0" PluginID="1"/>
+												</ConversionPluginInfo>
+											</ConversionPluginInfoList>
+										</Conversion>
+									</Custom>
+								</Reference>
+								<Reference Name="Effect0" PluginName="Wwise Peak Limiter" CompanyID="0" PluginID="110" PluginType="3">
+									<ObjectRef Name="Brick_Wall_Minus_1dB_Peak_Slow_Release" ID="{9FB8DC2B-7F1C-4E4E-8FA5-50872652D2DD}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								</Reference>
+								<Reference Name="Effect1" CompanyID="4095" PluginID="65535" PluginType="15">
+									<ObjectRef Name="Fear_no_Evil" ID="{A1F17D99-0801-4F32-B74E-ADB2D9ACC556}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="RealSpace3D Bus" ID="{D6660470-B59B-45C8-9FA9-794761B4B9E4}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
+								</Reference>
+								<Reference Name="UserAuxSend0">
+									<ObjectRef Name="Verb" ID="{37E486C9-9136-49F7-982C-B9AC74BAB40D}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
+								</Reference>
+								<Reference Name="UserAuxSend1">
+									<ObjectRef Name="Pitch" ID="{50ED605C-7A31-4F6D-8F67-A5BFF7E103BD}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="chi pant" ID="{EB3B9C7C-9042-44E6-817A-AA9460717E4E}" ShortID="1053151327" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="chi pant" ID="{90EAE64E-BEFB-4781-8842-25220F7E2F9E}" ShortID="398101412">
+											<Language>SFX</Language>
+											<AudioFile>chi pant.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="1039119964"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="chi pant" ID="{90EAE64E-BEFB-4781-8842-25220F7E2F9E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Sniff" ID="{0226BC0F-5E29-4421-AC86-69FFF101BB05}" ShortID="36197783" Type="SoundFX">
+									<PropertyList>
+										<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>230</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
+										</Reference>
+										<Reference Name="Effect0" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="Octave_Down" ID="{062EC4B1-5372-4D1E-917B-C757293F2B42}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Sniff" ID="{9F19D6F8-8C8F-4173-BC38-6D0504667E9C}" ShortID="868353906">
+											<Language>SFX</Language>
+											<AudioFile>Sniff.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="179755947"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Sniff" ID="{9F19D6F8-8C8F-4173-BC38-6D0504667E9C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Lab Pant" ID="{C5C51619-1217-4EC3-8075-F425F05F780A}" ShortID="484808618" Type="SoundFX">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>610</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Lab Pant" ID="{B6D1CD17-CE0A-4D2B-ABA0-0C9038F16538}" ShortID="684373203">
+											<Language>SFX</Language>
+											<AudioFile>Lab Pant.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="414661342"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Lab Pant" ID="{B6D1CD17-CE0A-4D2B-ABA0-0C9038F16538}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="SmallDog" ID="{500BBBEE-555A-4DDA-AE6E-06DD791A7231}" ShortID="275445826">
+							<PropertyList>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="PositioningType" Type="int16" Value="1"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-3</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<Custom CreatedFrom="{6D1B890C-9826-4384-BF07-C15223E9FB56}">
+										<Conversion Name="Default Conversion Settings (Custom)" ID="{9A525949-730C-4E67-8827-336660C9AC42}">
+											<PropertyList>
+												<Property Name="Channels" Type="int32">
+													<ValueList>
+														<Value Platform="Windows">4</Value>
+													</ValueList>
+												</Property>
+												<Property Name="LRMix" Type="Real64">
+													<ValueList>
+														<Value Platform="Windows">0</Value>
+													</ValueList>
+												</Property>
+												<Property Name="MaxSampleRate" Type="int32">
+													<ValueList>
+														<Value Platform="Windows">0</Value>
+													</ValueList>
+												</Property>
+												<Property Name="MinSampleRate" Type="int32">
+													<ValueList>
+														<Value Platform="Windows">0</Value>
+													</ValueList>
+												</Property>
+												<Property Name="SampleRate" Type="int32">
+													<ValueList>
+														<Value Platform="Windows">0</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ConversionPluginInfoList>
+												<ConversionPluginInfo Platform="Windows">
+													<ConversionPlugin Name="" ID="{A3FD08B2-EC29-4423-9F16-076646196355}" PluginName="PCM" CompanyID="0" PluginID="1"/>
+												</ConversionPluginInfo>
+											</ConversionPluginInfoList>
+										</Conversion>
+									</Custom>
+								</Reference>
+								<Reference Name="Effect0" PluginName="Wwise Peak Limiter" CompanyID="0" PluginID="110" PluginType="3">
+									<ObjectRef Name="Brick_Wall_Minus_1dB_Peak_Slow_Release" ID="{9FB8DC2B-7F1C-4E4E-8FA5-50872652D2DD}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								</Reference>
+								<Reference Name="Effect1" CompanyID="4095" PluginID="65535" PluginType="15">
+									<ObjectRef Name="Fear_no_Evil" ID="{A1F17D99-0801-4F32-B74E-ADB2D9ACC556}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="RealSpace3D Bus" ID="{D6660470-B59B-45C8-9FA9-794761B4B9E4}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
+								</Reference>
+								<Reference Name="UserAuxSend0">
+									<ObjectRef Name="Verb" ID="{37E486C9-9136-49F7-982C-B9AC74BAB40D}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
+								</Reference>
+								<Reference Name="UserAuxSend1">
+									<ObjectRef Name="Pitch" ID="{50ED605C-7A31-4F6D-8F67-A5BFF7E103BD}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="pug pant slow-EQ37B_01-02" ID="{45D11283-C119-45A6-B0E0-8DAB44EBB829}" ShortID="273079932" Type="SoundFX">
+									<PropertyList>
+										<Property Name="Weight" Type="Real64">
+											<ValueList>
+												<Value>45</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="pug pant slow-EQ37B_01-02" ID="{F3253429-3C21-429A-92BC-D596D28C4E54}" ShortID="336128239">
+											<Language>SFX</Language>
+											<AudioFile>pug pant slow-EQ37B_01-02.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="1050789380"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="pug pant slow-EQ37B_01-02" ID="{F3253429-3C21-429A-92BC-D596D28C4E54}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="pug pant fast-Dk_01-03" ID="{8B03D997-4009-4DCA-ADD0-0D1FA2A7885E}" ShortID="163545593" Type="SoundFX">
+									<PropertyList>
+										<Property Name="Weight" Type="Real64">
+											<ValueList>
+												<Value>60</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="pug pant fast-Dk_01-03" ID="{416B6F69-DA9F-49E1-BB44-B5A0ECC7B9D2}" ShortID="884970006">
+											<Language>SFX</Language>
+											<AudioFile>pug pant fast-Dk_01-03.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="63387514"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="pug pant fast-Dk_01-03" ID="{416B6F69-DA9F-49E1-BB44-B5A0ECC7B9D2}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="pug sniff-D3CL_03-07" ID="{1BB91216-2287-49D8-8E67-43E528F70BF1}" ShortID="632340652" Type="SoundFX">
+									<PropertyList>
+										<Property Name="Weight" Type="Real64">
+											<ValueList>
+												<Value>60</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="pug sniff-D3CL_03-07" ID="{ABF1839B-4BAE-4515-943C-F2A5240D1C17}" ShortID="708628455">
+											<Language>SFX</Language>
+											<AudioFile>pug sniff-D3CL_03-07.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="454419637"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="pug sniff-D3CL_03-07" ID="{ABF1839B-4BAE-4515-943C-F2A5240D1C17}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="LargeDog" ID="{1349E4CA-5FCD-406C-A9CF-F772B18770E3}" ShortID="512451879">
+							<PropertyList>
+								<Property Name="PositioningType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<Custom CreatedFrom="{6D1B890C-9826-4384-BF07-C15223E9FB56}">
+										<Conversion Name="Default Conversion Settings (Custom)" ID="{5BF93D4A-3A89-4BB7-84C0-27B819A4F88D}">
+											<PropertyList>
+												<Property Name="Channels" Type="int32">
+													<ValueList>
+														<Value Platform="Windows">4</Value>
+													</ValueList>
+												</Property>
+												<Property Name="LRMix" Type="Real64">
+													<ValueList>
+														<Value Platform="Windows">0</Value>
+													</ValueList>
+												</Property>
+												<Property Name="MaxSampleRate" Type="int32">
+													<ValueList>
+														<Value Platform="Windows">0</Value>
+													</ValueList>
+												</Property>
+												<Property Name="MinSampleRate" Type="int32">
+													<ValueList>
+														<Value Platform="Windows">0</Value>
+													</ValueList>
+												</Property>
+												<Property Name="SampleRate" Type="int32">
+													<ValueList>
+														<Value Platform="Windows">0</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ConversionPluginInfoList>
+												<ConversionPluginInfo Platform="Windows">
+													<ConversionPlugin Name="" ID="{67B75210-226C-43BE-94F0-5D63ACEF0282}" PluginName="PCM" CompanyID="0" PluginID="1"/>
+												</ConversionPluginInfo>
+											</ConversionPluginInfoList>
+										</Conversion>
+									</Custom>
+								</Reference>
+								<Reference Name="Effect0" PluginName="Wwise Peak Limiter" CompanyID="0" PluginID="110" PluginType="3">
+									<ObjectRef Name="Brick_Wall_Minus_1dB_Peak_Slow_Release" ID="{9FB8DC2B-7F1C-4E4E-8FA5-50872652D2DD}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								</Reference>
+								<Reference Name="Effect1" CompanyID="4095" PluginID="65535" PluginType="15">
+									<ObjectRef Name="Fear_no_Evil" ID="{A1F17D99-0801-4F32-B74E-ADB2D9ACC556}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="RealSpace3D Bus" ID="{D6660470-B59B-45C8-9FA9-794761B4B9E4}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
+								</Reference>
+								<Reference Name="UserAuxSend0">
+									<ObjectRef Name="Verb" ID="{37E486C9-9136-49F7-982C-B9AC74BAB40D}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
+								</Reference>
+								<Reference Name="UserAuxSend1">
+									<ObjectRef Name="Pitch" ID="{50ED605C-7A31-4F6D-8F67-A5BFF7E103BD}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="low pant" ID="{D5F7106D-ABAB-47A3-A44C-7D6A92A8CBCD}" ShortID="85714247" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="low pant" ID="{FCCEFE1F-BA94-4986-AEC1-117450594B8F}" ShortID="1027748812">
+											<Language>SFX</Language>
+											<AudioFile>low pant.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="580475680"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="low pant" ID="{FCCEFE1F-BA94-4986-AEC1-117450594B8F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Lab Pant" ID="{EC131D8B-4B7A-46DB-9A04-D9AF6DF13D87}" ShortID="218950218" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Lab Pant" ID="{9A939C2A-5CA5-414F-B2E2-455D351F916A}" ShortID="892032767">
+											<Language>SFX</Language>
+											<AudioFile>Lab Pant.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="414661342"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Lab Pant" ID="{9A939C2A-5CA5-414F-B2E2-455D351F916A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Sniff" ID="{C1AA56FE-C7DC-458F-88D9-95B7B4F94A99}" ShortID="438304594" Type="SoundFX">
+									<PropertyList>
+										<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-530</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
+										</Reference>
+										<Reference Name="Effect0" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="Octave_Down" ID="{062EC4B1-5372-4D1E-917B-C757293F2B42}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Sniff" ID="{77B44C52-1A67-4106-942A-A44FC12EBC2E}" ShortID="852424317">
+											<Language>SFX</Language>
+											<AudioFile>Sniff.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="179755947"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Sniff" ID="{77B44C52-1A67-4106-942A-A44FC12EBC2E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
 					</ChildrenList>
 					<StateInfo>
 						<StateGroupList>

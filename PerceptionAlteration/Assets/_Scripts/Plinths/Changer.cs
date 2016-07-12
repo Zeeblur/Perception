@@ -70,7 +70,7 @@ public class Changer : MonoBehaviour
     {
         // test sound
         AkSoundEngine.PostEvent("PlayMusic", GameObject.FindGameObjectWithTag("Props"));
-        AkSoundEngine.PostEvent("Play_Ambient", this.gameObject);
+        AkSoundEngine.PostEvent("Play_Ambient", GameObject.FindGameObjectWithTag("Room"));
 
         cameraParent = GameObject.FindGameObjectWithTag("PlayerParent");
         headCam = GameObject.FindGameObjectWithTag("Head");
@@ -265,7 +265,7 @@ public class Changer : MonoBehaviour
         plinthScript.SetState((int)scaleMode.shrinkingSmaller);
         Time.timeScale = 0.5f;
 
-        soundRoom.localScale = new Vector3(7f, 5f, 4f);
+        soundRoom.localScale = new Vector3(100f, 100f, 100f);
        // AkSoundEngine.SetRTPCValue("Elevation", 20f);
         spatializer.UpdateSize();
 
@@ -278,7 +278,7 @@ public class Changer : MonoBehaviour
         Time.timeScale = 1f;
 
 
-        soundRoom.localScale = new Vector3(60f, 60f, 60f);
+        soundRoom.localScale = new Vector3(10f, 10f, 10f);
         spatializer.UpdateSize();
         AkSoundEngine.SetRTPCValue("Elevation", 50f);
     }

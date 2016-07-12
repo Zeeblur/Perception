@@ -36,17 +36,6 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Pug" ID="{E47D36D1-422B-4D49-AC2F-94B03B7D0DB4}">
-					<ChildrenList>
-						<Action Name="Play" ID="{4BC7FD96-28EA-4F16-B32B-457B777CAFAF}" ShortID="801535970" Type="Play" Scope="One" Global="false">
-							<ElementList>
-								<Element ID="{94F7FF6D-E9B0-4304-8CB3-8DE424FADBED}" Global="false">
-									<ObjectRef Name="Dog Switch" ID="{6707A54C-52CD-4B35-8F36-55BDFCA1CAAE}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}"/>
-								</Element>
-							</ElementList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Event Name="Play_Dog_1" ID="{A9BA6D70-69CC-4268-98F4-D48BDAE2B68D}">
 					<ChildrenList>
 						<Action Name="Play" ID="{95551B39-EDB6-40A8-B07A-9EF00E8367D9}" ShortID="811642347" Type="Play" Scope="One" Global="false">
@@ -130,6 +119,94 @@
 							<ElementList>
 								<Element ID="{8388E6B7-4F74-4FBC-96CC-0C1D85B313E2}" Global="false">
 									<ObjectRef Name="flickerLong" ID="{EFEAA9C7-1F5B-4A5B-9BF0-A9311EDAEEBB}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Smallest" ID="{5058624E-47DA-4438-9E9E-2F1BCB545E09}">
+					<ChildrenList>
+						<Action Name="Play" ID="{F5E7B80B-D3FC-47AC-9F3A-6A1AE9A70364}" ShortID="204039219" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{463B1846-5216-4BD5-ADFB-ED0B1C93B865}" Global="false">
+									<ObjectRef Name="SmallestDog" ID="{3909F9C3-EC23-4F1E-83B2-904CD9A3590F}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Upside" ID="{9CC8859B-211F-46D2-964F-02F87BF8A76C}">
+					<ChildrenList>
+						<Action Name="Play" ID="{3011A7A3-49EF-441C-9B0E-649E19A3E9E9}" ShortID="676540267" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{A70776FD-E7FA-4B27-8D93-CF2C6E4726C5}" Global="false">
+									<ObjectRef Name="UpsideDog" ID="{A2A3C8F9-8D42-4B57-A3DC-9297A8166F56}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Small" ID="{8EDA09A3-B572-47C4-8D50-199C164E5379}">
+					<ChildrenList>
+						<Action Name="Play" ID="{EF992C21-01DC-4173-A8C3-0733D2A36D28}" ShortID="945995105" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{2593C356-283E-4726-A075-6495BA39C66C}" Global="false">
+									<ObjectRef Name="SmallDog" ID="{500BBBEE-555A-4DDA-AE6E-06DD791A7231}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Large" ID="{2F27474C-43DC-4BF8-8A5B-B7FCF53C89DB}">
+					<ChildrenList>
+						<Action Name="Play" ID="{5C870F84-CC70-47C5-B1DE-E3C2A2A44888}" ShortID="454859721" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{1D0B27C4-32A9-4B3C-BC07-453C12CD6C93}" Global="false">
+									<ObjectRef Name="LargeDog" ID="{1349E4CA-5FCD-406C-A9CF-F772B18770E3}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_Large" ID="{B1F562E9-6BAA-458E-B813-2172F20948D4}">
+					<ChildrenList>
+						<Action Name="Stop" ID="{90E5433B-D95E-48F8-A2A6-B38D52F7950E}" ShortID="973085007" Type="Stop" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{AE5B8D36-9BE4-4A4E-A3CB-D3069B57D38B}" Global="false">
+									<ObjectRef Name="LargeDog" ID="{1349E4CA-5FCD-406C-A9CF-F772B18770E3}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_Small" ID="{60A6269C-38BC-420D-BD03-307781F5B947}">
+					<ChildrenList>
+						<Action Name="Stop" ID="{C60D5A38-C8D2-4614-801A-4839D2AF95AF}" ShortID="947599559" Type="Stop" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{454B7FEE-DAC9-4C6B-937B-9317BADBD086}" Global="false">
+									<ObjectRef Name="SmallDog" ID="{500BBBEE-555A-4DDA-AE6E-06DD791A7231}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_Smallest" ID="{03D20267-9192-4F59-A202-E020C97A2E89}">
+					<ChildrenList>
+						<Action Name="Stop" ID="{967ADC57-F7EC-483D-A973-464DB3C580FB}" ShortID="713031205" Type="Stop" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{CB552897-FC42-4809-B6F4-1585EF649F1A}" Global="false">
+									<ObjectRef Name="SmallestDog" ID="{3909F9C3-EC23-4F1E-83B2-904CD9A3590F}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_Upside" ID="{1B6A6006-D45E-4072-BDFB-697FBA80DE30}">
+					<ChildrenList>
+						<Action Name="Stop" ID="{851B9102-D45B-4DD3-B4A2-4594BB64CCA6}" ShortID="812044157" Type="Stop" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{8EABB0DA-E613-4621-B86F-5AF4FDCA8DAA}" Global="false">
+									<ObjectRef Name="UpsideDog" ID="{A2A3C8F9-8D42-4B57-A3DC-9297A8166F56}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}"/>
 								</Element>
 							</ElementList>
 						</Action>

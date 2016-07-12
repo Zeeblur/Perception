@@ -82,7 +82,7 @@ public class SplineWalkerPlinth : MonoBehaviour
             transform.LookAt(position + chosenSpline.GetDirection(progress));
 
             // ensure flip dog is upside down
-            if (this.tag == "Perception-Changer-Flip")
+            if (this.tag == "Perception-Changer-flip")
             {
                 transform.Rotate(zAxis, angle);
             }

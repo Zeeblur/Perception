@@ -1018,7 +1018,7 @@
 										<Property Name="PreDelay" Type="Real32" Value="29"/>
 										<Property Name="Quality" Type="int32" Value="6"/>
 										<Property Name="ReverbLevel" Type="Real32" Value="-33"/>
-										<Property Name="RoomSize" Type="Real32" Value="60"/>
+										<Property Name="RoomSize" Type="Real32" Value="100"/>
 										<Property Name="StereoWidth" Type="Real32" Value="90"/>
 									</PropertyList>
 								</Effect>
@@ -2006,8 +2006,12 @@
 								</Effect>
 								<Effect Name="Voice_CenterOnly_Lowered" ID="{179558E7-E6DF-4021-9D38-A284DF53B7E5}" PluginName="Wwise Pitch Shifter" CompanyID="0" PluginID="136" PluginType="3">
 									<PropertyList>
+										<Property Name="DelayTime" Type="Real32" Value="60"/>
+										<Property Name="FilterType" Type="int32" Value="1"/>
 										<Property Name="Input" Type="int32" Value="1"/>
-										<Property Name="Pitch" Type="Real32" Value="-500"/>
+										<Property Name="Pitch" Type="Real32" Value="-2400"/>
+										<Property Name="SyncDry" Type="bool" Value="True"/>
+										<Property Name="WetLevel" Type="Real32" Value="24"/>
 									</PropertyList>
 								</Effect>
 							</ChildrenList>

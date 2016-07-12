@@ -22,9 +22,16 @@ namespace AK
         static const AkUniqueID PLAY_DOG_3 = 2935214690U;
         static const AkUniqueID PLAY_FLICKER = 1742085842U;
         static const AkUniqueID PLAY_FLICKERLONG = 2446439680U;
+        static const AkUniqueID PLAY_LARGE = 2773852235U;
         static const AkUniqueID PLAY_LIGHTHUM = 444602164U;
+        static const AkUniqueID PLAY_SMALL = 2605271991U;
+        static const AkUniqueID PLAY_SMALLEST = 1823826029U;
+        static const AkUniqueID PLAY_UPSIDE = 3734530640U;
         static const AkUniqueID PLAYMUSIC = 417627684U;
-        static const AkUniqueID PUG = 913787327U;
+        static const AkUniqueID STOP_LARGE = 1308652461U;
+        static const AkUniqueID STOP_SMALL = 3482721477U;
+        static const AkUniqueID STOP_SMALLEST = 1207459507U;
+        static const AkUniqueID STOP_UPSIDE = 1390453082U;
     } // namespace EVENTS
 
     namespace STATES
@@ -75,6 +82,14 @@ namespace AK
         static const AkUniqueID SS_AIR_TIMEOFDAY = 3203397129U;
         static const AkUniqueID SS_AIR_TURBULENCE = 4160247818U;
     } // namespace GAME_PARAMETERS
+
+    namespace TRIGGERS
+    {
+        static const AkUniqueID PANT_0 = 2960749043U;
+        static const AkUniqueID PANT_1 = 2960749042U;
+        static const AkUniqueID PANT_2 = 2960749041U;
+        static const AkUniqueID PANT_3 = 2960749040U;
+    } // namespace TRIGGERS
 
     namespace BANKS
     {

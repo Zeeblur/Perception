@@ -15,7 +15,7 @@ public class CollisionPick : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Perception-Changer-Big"))
+        if (other.CompareTag("Perception-Changer-large"))
         {
             playerScript.Grow();
             transform.parent.GetComponent<PickUp>().SetPicked(false);
@@ -24,7 +24,7 @@ public class CollisionPick : MonoBehaviour
             //     body.mass = 0.1f;
         }
 
-        if (other.CompareTag("Perception-Changer-Small"))
+        if (other.CompareTag("Perception-Changer-small"))
         { 
             playerScript.Shrink();
             transform.parent.GetComponent<PickUp>().SetPicked(false);
@@ -32,7 +32,7 @@ public class CollisionPick : MonoBehaviour
 
         }
 
-        if (other.CompareTag("Perception-Changer-Smallest"))
+        if (other.CompareTag("Perception-Changer-smallest"))
         {
             playerScript.ShrinkSmaller();
             transform.parent.GetComponent<PickUp>().SetPicked(false);
@@ -40,7 +40,7 @@ public class CollisionPick : MonoBehaviour
             AkSoundEngine.PostEvent("Play_Dog_" + (int)EnemyType.smallest, other.gameObject);
         }
 
-        if (other.CompareTag("Perception-Changer-Flip"))
+        if (other.CompareTag("Perception-Changer-upside"))
         {
             playerScript.Flip();
             transform.parent.GetComponent<PickUp>().SetPicked(false);

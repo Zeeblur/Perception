@@ -22,6 +22,13 @@
 								</Reference>
 							</ReferenceList>
 						</Bus>
+						<AuxBus Name="Pitch" ID="{50ED605C-7A31-4F6D-8F67-A5BFF7E103BD}">
+							<ReferenceList>
+								<Reference Name="Effect0" PluginName="Wwise Pitch Shifter" CompanyID="0" PluginID="136" PluginType="3">
+									<ObjectRef Name="Voice_CenterOnly_Lowered" ID="{179558E7-E6DF-4021-9D38-A284DF53B7E5}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								</Reference>
+							</ReferenceList>
+						</AuxBus>
 					</ChildrenList>
 				</Bus>
 				<Bus Name="Master Secondary Bus" ID="{D2E0BC7E-7B3F-4FFE-A670-FAE02761B631}"/>
