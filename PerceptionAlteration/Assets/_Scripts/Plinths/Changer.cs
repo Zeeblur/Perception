@@ -266,6 +266,7 @@ public class Changer : MonoBehaviour
         Time.timeScale = 0.5f;
 
         soundRoom.localScale = new Vector3(7f, 5f, 4f);
+       // AkSoundEngine.SetRTPCValue("Elevation", 20f);
         spatializer.UpdateSize();
 
     }
@@ -279,6 +280,7 @@ public class Changer : MonoBehaviour
 
         soundRoom.localScale = new Vector3(60f, 60f, 60f);
         spatializer.UpdateSize();
+        AkSoundEngine.SetRTPCValue("Elevation", 50f);
     }
 
 

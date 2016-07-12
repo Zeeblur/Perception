@@ -3,7 +3,7 @@
 	<UserProjectSettingsInfo>
 		<UserProjectSettings Name="" ID="{C816FC3D-24B9-4253-8BC8-6436E0E3931A}">
 			<PropertyList>
-				<Property Name="AudioFilesImporter\Path" Type="string" Value="C:\Users\40182161.NAPIER-MAIL\Downloads"/>
+				<Property Name="AudioFilesImporter\Path" Type="string" Value="E:\DogBarks\Audio Files"/>
 				<Property Name="ExternalSourcesInputPath" Type="string">
 					<ValueList>
 						<Value Platform="Windows"></Value>

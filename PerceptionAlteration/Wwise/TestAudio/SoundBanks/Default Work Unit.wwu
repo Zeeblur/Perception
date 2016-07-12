@@ -18,7 +18,7 @@
 						<ObjectRef Name="Ambient" ID="{C3C718AB-700A-46E6-98DE-8EF3D561CA6C}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="327813__robinhood76__06071-ratter-dogs-barking-looping (1)" ID="{172FDD28-4AE1-494C-B00C-8D2FE8A94591}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="flickerLong" ID="{EFEAA9C7-1F5B-4A5B-9BF0-A9311EDAEEBB}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="Pug Switch" ID="{6707A54C-52CD-4B35-8F36-55BDFCA1CAAE}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Dog Switch" ID="{6707A54C-52CD-4B35-8F36-55BDFCA1CAAE}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Dog_2" ID="{8072A785-CA9C-4B41-8B40-DB781AD65A13}" WorkUnitID="{AC7B16BF-1A24-41AC-9731-F3FF21E92BBD}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Lighthum" ID="{0E05CEF6-5F61-4C1A-BDDE-DC3FD8FD0020}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="346320__nielstii__dog-barking" ID="{127843F2-1AEE-4D4F-986B-944A4D65A609}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}" Filter="7" Origin="Manual"/>

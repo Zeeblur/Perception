@@ -41,7 +41,7 @@
 						<Action Name="Play" ID="{4BC7FD96-28EA-4F16-B32B-457B777CAFAF}" ShortID="801535970" Type="Play" Scope="One" Global="false">
 							<ElementList>
 								<Element ID="{94F7FF6D-E9B0-4304-8CB3-8DE424FADBED}" Global="false">
-									<ObjectRef Name="Pug Switch" ID="{6707A54C-52CD-4B35-8F36-55BDFCA1CAAE}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}"/>
+									<ObjectRef Name="Dog Switch" ID="{6707A54C-52CD-4B35-8F36-55BDFCA1CAAE}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}"/>
 								</Element>
 							</ElementList>
 						</Action>

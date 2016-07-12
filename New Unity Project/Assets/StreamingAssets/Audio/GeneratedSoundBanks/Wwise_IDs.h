@@ -92,6 +92,7 @@ namespace AK
 
     namespace AUX_BUSSES
     {
+        static const AkUniqueID PITCH = 1908158473U;
         static const AkUniqueID VERB = 3657263530U;
     } // namespace AUX_BUSSES
 
