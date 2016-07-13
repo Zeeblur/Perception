@@ -155,6 +155,9 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="okum__dog-5" ID="{9C1244B6-D58F-4F09-8AE7-3A40F2E7A9A5}" ShortID="964513142" Type="SoundFX">
+							<ExcludedPlatformList>
+								<Platform>Windows</Platform>
+							</ExcludedPlatformList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
@@ -177,6 +180,9 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="346320__nielstii__dog-barking" ID="{127843F2-1AEE-4D4F-986B-944A4D65A609}" ShortID="348404554" Type="SoundFX">
+							<ExcludedPlatformList>
+								<Platform>Windows</Platform>
+							</ExcludedPlatformList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
@@ -206,6 +212,9 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="199261__felix-blume__a-dog-barking-close-recording" ID="{4BAA8A51-5B21-4381-BC71-76354E308ECA}" ShortID="774204694" Type="SoundFX">
+							<ExcludedPlatformList>
+								<Platform>Windows</Platform>
+							</ExcludedPlatformList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
@@ -228,6 +237,9 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="327813__robinhood76__06071-ratter-dogs-barking-looping (1)" ID="{172FDD28-4AE1-494C-B00C-8D2FE8A94591}" ShortID="488980292" Type="SoundFX">
+							<ExcludedPlatformList>
+								<Platform>Windows</Platform>
+							</ExcludedPlatformList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
@@ -1007,6 +1019,102 @@
 								</Sound>
 							</ChildrenList>
 						</RandomSequenceContainer>
+						<Sound Name="chi growl noise" ID="{0CE6C121-0482-4140-8B81-11D456724A5F}" ShortID="173385043" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="chi growl noise" ID="{5C587193-4575-49AD-9BD8-F800FFA9DBD3}" ShortID="715672999">
+									<Language>SFX</Language>
+									<AudioFile>chi growl noise.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="chi growl noise" ID="{5C587193-4575-49AD-9BD8-F800FFA9DBD3}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Lab whine" ID="{91ADB607-B938-4A32-A3DB-276E140F2F07}" ShortID="324020588" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Lab whine" ID="{D35C25BB-53F2-435C-AA6E-DCAA60E7EF51}" ShortID="328842427">
+									<Language>SFX</Language>
+									<AudioFile>Lab whine.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Lab whine" ID="{D35C25BB-53F2-435C-AA6E-DCAA60E7EF51}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="staffy woof" ID="{9A09762E-A87A-42C1-9BB4-0E26D2A5C498}" ShortID="94436865" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="staffy woof" ID="{7532C1DB-924F-4032-B30B-716B48B807C6}" ShortID="463322304">
+									<Language>SFX</Language>
+									<AudioFile>staffy woof.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="staffy woof" ID="{7532C1DB-924F-4032-B30B-716B48B807C6}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="pug excited-EQ37B_01-02" ID="{EFDC171B-F124-405D-BC9C-64F112392FB0}" ShortID="45278149" Type="SoundFX">
+							<PropertyList>
+								<Property Name="OverrideEffect" Type="bool" Value="True"/>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>660</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
+								</Reference>
+								<Reference Name="Effect0">
+									<Custom>
+										<Effect Name="Wwise Time Stretch (Custom)" ID="{2DD8D5C1-9A6B-4780-986F-D7CCEDD0EDF9}" ShortID="347503462" PluginName="Wwise Time Stretch" CompanyID="0" PluginID="130" PluginType="3">
+											<PropertyList>
+												<Property Name="TimeStretch" Type="Real32" Value="45"/>
+											</PropertyList>
+										</Effect>
+									</Custom>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="pug excited-EQ37B_01-02" ID="{89BAAEFF-242E-45D3-AEB3-946D5AB53E7B}" ShortID="140723297">
+									<Language>SFX</Language>
+									<AudioFile>pug excited-EQ37B_01-02.wav</AudioFile>
+									<ConvertedFileIDList>
+										<File ID="271005733"/>
+									</ConvertedFileIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="pug excited-EQ37B_01-02" ID="{89BAAEFF-242E-45D3-AEB3-946D5AB53E7B}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 					<StateInfo>
 						<StateGroupList>
@@ -1151,29 +1259,26 @@
 				</Folder>
 				<Folder Name="Pug Sounds" ID="{15322650-3B62-4658-8A21-E083FC4D76DB}" ShortID="580062791">
 					<ChildrenList>
-						<Sound Name="pug excited-EQ37B_01-02" ID="{D6CDF68C-0C1C-4130-8FE3-7CE6EDFB6B29}" ShortID="800923503" Type="SoundFX">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="pug excited-EQ37B_01-02" ID="{F82EBEA5-4DFD-48B4-93B0-6EB322F2F410}" ShortID="271005733">
-									<Language>SFX</Language>
-									<AudioFile>pug excited-EQ37B_01-02.wav</AudioFile>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="pug excited-EQ37B_01-02" ID="{F82EBEA5-4DFD-48B4-93B0-6EB322F2F410}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
 						<Sound Name="pug excited-EQ37B_02-03" ID="{120263F7-7142-45EF-9AA9-709683D8A040}" ShortID="15243473" Type="SoundFX">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>760</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
+								</Reference>
+								<Reference Name="Effect0">
+									<Custom>
+										<Effect Name="Wwise Time Stretch (Custom)" ID="{D5CCD4DB-A6A8-4783-8943-900E5696C6C0}" ShortID="975999481" PluginName="Wwise Time Stretch" CompanyID="0" PluginID="130" PluginType="3">
+											<PropertyList>
+												<Property Name="TimeStretch" Type="Real32" Value="191"/>
+											</PropertyList>
+										</Effect>
+									</Custom>
 								</Reference>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
@@ -1247,9 +1352,25 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="pug pant slow-EQ37B_01-02" ID="{0A3B7132-7FAB-4A12-97B1-B7891756867E}" ShortID="48069661" Type="SoundFX">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>600</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
+								</Reference>
+								<Reference Name="Effect0">
+									<Custom>
+										<Effect Name="Wwise Time Stretch (Custom)" ID="{4BE03FEA-8AA0-450D-A335-4B833F953115}" ShortID="1025234075" PluginName="Wwise Time Stretch" CompanyID="0" PluginID="130" PluginType="3">
+											<PropertyList>
+												<Property Name="TimeStretch" Type="Real32" Value="184"/>
+											</PropertyList>
+										</Effect>
+									</Custom>
 								</Reference>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
@@ -1301,6 +1422,44 @@
 							</ChildrenList>
 							<ActiveSourceList>
 								<ActiveSource Name="pug whine ix-EQ37B_01-06" ID="{EB9FEF06-8DA1-4A02-94FB-653CE34B1322}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="pug excited-EQ37B_01-02" ID="{BA72A682-3DA8-4B16-A5E4-E1A76842584B}" ShortID="359086978" Type="SoundFX">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>660</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
+								</Reference>
+								<Reference Name="Effect0">
+									<Custom>
+										<Effect Name="Wwise Time Stretch (Custom)" ID="{CF9660EE-78E5-47A8-B859-83DC2EB11533}" ShortID="705536054" PluginName="Wwise Time Stretch" CompanyID="0" PluginID="130" PluginType="3">
+											<PropertyList>
+												<Property Name="TimeStretch" Type="Real32" Value="45"/>
+											</PropertyList>
+										</Effect>
+									</Custom>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="pug excited-EQ37B_01-02" ID="{C635CFEC-71D7-41A0-892D-8C9BF1B49DDD}" ShortID="456769561">
+									<Language>SFX</Language>
+									<AudioFile>pug excited-EQ37B_01-02.wav</AudioFile>
+									<ConvertedFileIDList>
+										<File ID="271005733"/>
+									</ConvertedFileIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="pug excited-EQ37B_01-02" ID="{C635CFEC-71D7-41A0-892D-8C9BF1B49DDD}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>
@@ -1406,25 +1565,6 @@
 				</Folder>
 				<Folder Name="TempDog" ID="{C49E36AE-051D-405A-8633-7190ABDB9C21}" ShortID="301628962">
 					<ChildrenList>
-						<Sound Name="chi growl noise" ID="{0CE6C121-0482-4140-8B81-11D456724A5F}" ShortID="173385043" Type="SoundFX">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="chi growl noise" ID="{5C587193-4575-49AD-9BD8-F800FFA9DBD3}" ShortID="715672999">
-									<Language>SFX</Language>
-									<AudioFile>chi growl noise.wav</AudioFile>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="chi growl noise" ID="{5C587193-4575-49AD-9BD8-F800FFA9DBD3}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
 						<Sound Name="chi noises" ID="{A86817F7-7179-43F0-A1B9-A81B885EBF67}" ShortID="274493333" Type="SoundFX">
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -1558,29 +1698,19 @@
 								<ActiveSource Name="Lab pant2" ID="{C1DA0C7C-64E9-44CF-9D42-E70ED1C88F09}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
-						<Sound Name="Lab whine" ID="{91ADB607-B938-4A32-A3DB-276E140F2F07}" ShortID="324020588" Type="SoundFX">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Lab whine" ID="{D35C25BB-53F2-435C-AA6E-DCAA60E7EF51}" ShortID="328842427">
-									<Language>SFX</Language>
-									<AudioFile>Lab whine.wav</AudioFile>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="Lab whine" ID="{D35C25BB-53F2-435C-AA6E-DCAA60E7EF51}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
 						<Sound Name="low pant" ID="{5392DB8C-AABC-4868-8188-9C94C1302670}" ShortID="232491878" Type="SoundFX">
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
+								</Reference>
+								<Reference Name="Effect0">
+									<Custom>
+										<Effect Name="Wwise Time Stretch (Custom)" ID="{C84FACF3-76F7-4C60-83F5-9590DF70EBAC}" ShortID="526600579" PluginName="Wwise Time Stretch" CompanyID="0" PluginID="130" PluginType="3">
+											<PropertyList>
+												<Property Name="TimeStretch" Type="Real32" Value="229"/>
+											</PropertyList>
+										</Effect>
+									</Custom>
 								</Reference>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
@@ -1924,11 +2054,6 @@
 						<Sound Name="External_Ambience_STEREO" ID="{D5305CB1-3F32-47E6-AF03-31E8D03026A2}" ShortID="503730868" Type="SoundFX">
 							<PropertyList>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>6</Value>
-									</ValueList>
-								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -2048,6 +2173,159 @@
 						</BlendTrack>
 					</BlendTrackList>
 				</BlendContainer>
+				<RandomSequenceContainer Name="SmallestDog" ID="{75B1BA2E-C25A-4BD7-8B3C-D1B7CBE98B2A}" ShortID="647459200">
+					<PropertyList>
+						<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+						<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+						<Property Name="PositioningType" Type="int16" Value="1"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-6</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<Custom CreatedFrom="{6D1B890C-9826-4384-BF07-C15223E9FB56}">
+								<Conversion Name="Default Conversion Settings (Custom)" ID="{385A7BB6-BFF0-49E7-B4C8-43A6F4960EB4}">
+									<PropertyList>
+										<Property Name="Channels" Type="int32">
+											<ValueList>
+												<Value Platform="Windows">4</Value>
+											</ValueList>
+										</Property>
+										<Property Name="LRMix" Type="Real64">
+											<ValueList>
+												<Value Platform="Windows">0</Value>
+											</ValueList>
+										</Property>
+										<Property Name="MaxSampleRate" Type="int32">
+											<ValueList>
+												<Value Platform="Windows">0</Value>
+											</ValueList>
+										</Property>
+										<Property Name="MinSampleRate" Type="int32">
+											<ValueList>
+												<Value Platform="Windows">0</Value>
+											</ValueList>
+										</Property>
+										<Property Name="SampleRate" Type="int32">
+											<ValueList>
+												<Value Platform="Windows">0</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ConversionPluginInfoList>
+										<ConversionPluginInfo Platform="Windows">
+											<ConversionPlugin Name="" ID="{0C6A65D8-FE1E-46F9-A5C3-A4F8B60BD026}" PluginName="PCM" CompanyID="0" PluginID="1"/>
+										</ConversionPluginInfo>
+									</ConversionPluginInfoList>
+								</Conversion>
+							</Custom>
+						</Reference>
+						<Reference Name="Effect0" PluginName="Wwise Peak Limiter" CompanyID="0" PluginID="110" PluginType="3">
+							<ObjectRef Name="Brick_Wall_Minus_1dB_Peak_Slow_Release" ID="{9FB8DC2B-7F1C-4E4E-8FA5-50872652D2DD}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+						</Reference>
+						<Reference Name="Effect1" CompanyID="4095" PluginID="65535" PluginType="15">
+							<ObjectRef Name="Fear_no_Evil" ID="{A1F17D99-0801-4F32-B74E-ADB2D9ACC556}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="RealSpace3D Bus" ID="{D6660470-B59B-45C8-9FA9-794761B4B9E4}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
+						</Reference>
+						<Reference Name="UserAuxSend0">
+							<ObjectRef Name="Verb" ID="{37E486C9-9136-49F7-982C-B9AC74BAB40D}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
+						</Reference>
+						<Reference Name="UserAuxSend1">
+							<ObjectRef Name="Pitch" ID="{50ED605C-7A31-4F6D-8F67-A5BFF7E103BD}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="chi pant" ID="{9DA54B7A-3BF3-452E-8963-0A67B9DF3D08}" ShortID="399361841" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="chi pant" ID="{4203A07D-16C1-4267-AF00-8AAD0EFE7C5E}" ShortID="220808566">
+									<Language>SFX</Language>
+									<AudioFile>chi pant.wav</AudioFile>
+									<ConvertedFileIDList>
+										<File ID="1039119964"/>
+									</ConvertedFileIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="chi pant" ID="{4203A07D-16C1-4267-AF00-8AAD0EFE7C5E}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Sniff" ID="{DDCBAB69-51D4-4CD0-8B98-3CB03EFB1791}" ShortID="590654762" Type="SoundFX">
+							<PropertyList>
+								<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>230</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
+								</Reference>
+								<Reference Name="Effect0" CompanyID="4095" PluginID="65535" PluginType="15">
+									<ObjectRef Name="Octave_Down" ID="{062EC4B1-5372-4D1E-917B-C757293F2B42}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Sniff" ID="{F6F5ED9B-0A0D-4453-8E13-1BE6ECDD019D}" ShortID="205983749">
+									<Language>SFX</Language>
+									<AudioFile>Sniff.wav</AudioFile>
+									<ConvertedFileIDList>
+										<File ID="179755947"/>
+									</ConvertedFileIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Sniff" ID="{F6F5ED9B-0A0D-4453-8E13-1BE6ECDD019D}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Lab Pant" ID="{F0D87750-4969-4A53-A9BA-9F7F1D9223BA}" ShortID="415738924" Type="SoundFX">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>610</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Lab Pant" ID="{78757FA3-1746-44AF-A018-227CF76BD007}" ShortID="536845317">
+									<Language>SFX</Language>
+									<AudioFile>Lab Pant.wav</AudioFile>
+									<ConvertedFileIDList>
+										<File ID="414661342"/>
+									</ConvertedFileIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Lab Pant" ID="{78757FA3-1746-44AF-A018-227CF76BD007}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

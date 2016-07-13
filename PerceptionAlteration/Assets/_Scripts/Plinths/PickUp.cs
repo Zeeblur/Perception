@@ -11,7 +11,7 @@ public class PickUp : MonoBehaviour
 
     private Changer playerScript;
 
-    private float verb = 0;
+    private float verb = 50f;
 
 	// Use this for initialization
 	void Start ()
@@ -66,14 +66,14 @@ public class PickUp : MonoBehaviour
         if (controller.GetTouchDown(SteamVR_Controller.ButtonMask.Touchpad))
         {
             verb += (1000f * Time.deltaTime);
-          //  AkSoundEngine.SetRTPCValue("Room_Size", verb);// AkSoundEngine.AK_INVALID_GAME_OBJECT);
+            AkSoundEngine.SetRTPCValue("Elevation", verb);// AkSoundEngine.AK_INVALID_GAME_OBJECT);
         }
 
 
         if (controller.GetTouchDown(SteamVR_Controller.ButtonMask.Trigger))
         {
-            verb -= (1000f * Time.deltaTime);
-        //    AkSoundEngine.SetRTPCValue("Room_Size", verb);// AkSoundEngine.AK_INVALID_GAME_OBJECT);
+           verb -= (1000f * Time.deltaTime);
+           AkSoundEngine.SetRTPCValue("Elevation", verb);// AkSoundEngine.AK_INVALID_GAME_OBJECT);
         }
 
         if (controller.GetTouchDown(SteamVR_Controller.ButtonMask.ApplicationMenu))

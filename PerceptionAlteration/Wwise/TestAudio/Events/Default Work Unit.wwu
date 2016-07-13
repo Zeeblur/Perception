@@ -41,7 +41,7 @@
 						<Action Name="Play" ID="{95551B39-EDB6-40A8-B07A-9EF00E8367D9}" ShortID="811642347" Type="Play" Scope="One" Global="false">
 							<ElementList>
 								<Element ID="{4F22AC63-9A00-4206-A15B-719A61F12700}" Global="false">
-									<ObjectRef Name="okum__dog-5" ID="{9C1244B6-D58F-4F09-8AE7-3A40F2E7A9A5}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}"/>
+									<ObjectRef Name="chi growl noise" ID="{0CE6C121-0482-4140-8B81-11D456724A5F}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}"/>
 								</Element>
 							</ElementList>
 						</Action>
@@ -52,7 +52,7 @@
 						<Action Name="Play" ID="{ACD73DE2-4FA5-42AC-83CC-3118727E1B4A}" ShortID="339488358" Type="Play" Scope="One" Global="false">
 							<ElementList>
 								<Element ID="{24C1C00A-7656-48A7-881D-2B099FEB8E52}" Global="false">
-									<ObjectRef Name="199261__felix-blume__a-dog-barking-close-recording" ID="{4BAA8A51-5B21-4381-BC71-76354E308ECA}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}"/>
+									<ObjectRef Name="Lab whine" ID="{91ADB607-B938-4A32-A3DB-276E140F2F07}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}"/>
 								</Element>
 							</ElementList>
 						</Action>
@@ -63,7 +63,7 @@
 						<Action Name="Play" ID="{ECDAC08C-6BB3-4FFB-8A14-A0E1ED99BE4C}" ShortID="765208563" Type="Play" Scope="One" Global="false">
 							<ElementList>
 								<Element ID="{DFACBEC6-2E47-40C6-9AAA-85113AA07CD2}" Global="false">
-									<ObjectRef Name="346320__nielstii__dog-barking" ID="{000CCBE1-A3A1-4F1F-B08C-232CE78C34B4}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}"/>
+									<ObjectRef Name="staffy woof" ID="{9A09762E-A87A-42C1-9BB4-0E26D2A5C498}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}"/>
 								</Element>
 							</ElementList>
 						</Action>
@@ -74,7 +74,7 @@
 						<Action Name="Play" ID="{0C61F1EA-D242-4BDD-A700-8F42020B26DC}" ShortID="1019134570" Type="Play" Scope="One" Global="false">
 							<ElementList>
 								<Element ID="{604B48B5-4383-44A4-9D95-C1EE680B725F}" Global="false">
-									<ObjectRef Name="327813__robinhood76__06071-ratter-dogs-barking-looping (1)" ID="{15A44BFD-E333-4B01-9730-69D7E99DB853}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}"/>
+									<ObjectRef Name="pug excited-EQ37B_01-02" ID="{EFDC171B-F124-405D-BC9C-64F112392FB0}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}"/>
 								</Element>
 							</ElementList>
 						</Action>
