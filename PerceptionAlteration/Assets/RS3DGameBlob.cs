@@ -65,6 +65,9 @@ public class RS3DGameBlob : MonoBehaviour {
         public float refl_percent_floor;
         public float refl_percent_ceil;
 
+        // add for all
+        public float all_refl;
+
         public RS3DGameDataRoom(int _room_ID, int _order_early_reflection, int _order_late_reflection, float _reverb_length_ms,
                          Vector3 _center, Vector3 _dimensions,
                                 float _refl_percent_left,
@@ -72,7 +75,8 @@ public class RS3DGameBlob : MonoBehaviour {
                                 float _refl_percent_front,
                                 float _refl_percent_back,
                                 float _refl_percent_floor,
-                                float _refl_percent_ceil)
+                                float _refl_percent_ceil,
+                                float _all_refl)
         {
             room_ID = _room_ID;
             order_early_reflection = _order_early_reflection;
@@ -80,12 +84,29 @@ public class RS3DGameBlob : MonoBehaviour {
             reverb_length_ms = _reverb_length_ms;
             center = _center;
             dimensions = _dimensions;
-            refl_percent_left = _refl_percent_left;
-            refl_percent_right = _refl_percent_right;
-            refl_percent_front = _refl_percent_front;
-            refl_percent_back = _refl_percent_back;
-            refl_percent_floor = _refl_percent_floor;
-            refl_percent_ceil = _refl_percent_ceil;
+            all_refl = _all_refl;
+
+            if (all_refl == -1)
+            {
+                refl_percent_left = _refl_percent_left;
+                refl_percent_right = _refl_percent_right;
+                refl_percent_front = _refl_percent_front;
+                refl_percent_back = _refl_percent_back;
+                refl_percent_floor = _refl_percent_floor;
+                refl_percent_ceil = _refl_percent_ceil;
+            }
+            else
+            {
+                refl_percent_left = all_refl;
+                refl_percent_right = all_refl;
+                refl_percent_front = all_refl;
+                refl_percent_back = all_refl;
+                refl_percent_floor = all_refl;
+                refl_percent_ceil = all_refl;
+            }
+
+
+
         }
     };
 
@@ -159,7 +180,7 @@ public class RS3DGameBlob : MonoBehaviour {
         foreach (RS3DRoom room in RS3D_room_list) {
             addRoom(new RS3DGameDataRoom(room.GetInstanceID(), room.order_early_reflection, room.order_late_reflection, room.reverb_length_ms,
                     room.transform.position, room.transform.localScale, 
-                    room.refl_percent_left, room.refl_percent_right, room.refl_percent_front, room.refl_percent_back, room.refl_percent_floor, room.refl_percent_ceil));
+                    room.refl_percent_left, room.refl_percent_right, room.refl_percent_front, room.refl_percent_back, room.refl_percent_floor, room.refl_percent_ceil, room.all_refl));
         }
     }
 
@@ -258,4 +279,5 @@ public class RS3DGameBlob : MonoBehaviour {
         setOccludersToFindableRS3DOccluders();
         sendData();
     }
+
 }

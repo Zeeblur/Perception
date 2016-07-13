@@ -16,16 +16,25 @@ public class RS3DRoom : MonoBehaviour {
     public float refl_percent_back = 75.0f;
     public float refl_percent_floor = 75.0f;
     public float refl_percent_ceil = 75.0f;
-
+    public float all_refl = -1f;
 
     // Use this for initialization
-    void Start () {
+    void Start() {
 
     }
 
     // Update is called once per frame
-    void Update () {
-    }
+    void Update() {
+        if (all_refl != -1)
+        {
+            refl_percent_left = all_refl;
+            refl_percent_right =all_refl;
+            refl_percent_front =all_refl;
+            refl_percent_back = all_refl;
+            refl_percent_floor =all_refl;
+            refl_percent_ceil = all_refl;
+        }
+}
 
     void drawWall(Vector3 center, Vector3 size, Color colorRGB, float refl_percent)
     {
@@ -99,6 +108,9 @@ public class RS3DRoomEditor : Editor
         myTarget.refl_percent_back = EditorGUILayout.FloatField("Back", myTarget.refl_percent_back);
         myTarget.refl_percent_floor = EditorGUILayout.FloatField("Floor", myTarget.refl_percent_floor);
         myTarget.refl_percent_ceil = EditorGUILayout.FloatField("Ceiling", myTarget.refl_percent_ceil);
+
+        // add all
+        myTarget.all_refl = EditorGUILayout.FloatField("All", myTarget.all_refl);
         EditorGUI.indentLevel--;
 
         EditorGUILayout.EndVertical();
