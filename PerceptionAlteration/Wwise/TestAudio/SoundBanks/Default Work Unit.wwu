@@ -8,10 +8,10 @@
 						<ObjectRef Name="LargeDog" ID="{1349E4CA-5FCD-406C-A9CF-F772B18770E3}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="New Actor-Mixer" ID="{EC852A19-C59F-4075-8F0F-BF81D4792A19}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="flicker" ID="{75C3B508-9ADB-419C-8863-7AB0F464483E}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="External_Ambience_STEREO" ID="{C24D182B-0529-4253-AA31-26FB485D0622}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Dog_1" ID="{A9BA6D70-69CC-4268-98F4-D48BDAE2B68D}" WorkUnitID="{AC7B16BF-1A24-41AC-9731-F3FF21E92BBD}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="199261__felix-blume__a-dog-barking-close-recording" ID="{4BAA8A51-5B21-4381-BC71-76354E308ECA}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Dog_3" ID="{9711F422-587D-44A4-A03F-0B7F84F0B043}" WorkUnitID="{AC7B16BF-1A24-41AC-9731-F3FF21E92BBD}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Ambience" ID="{9340A9F6-E4BA-45C1-A4AA-8DCFAC8A6C86}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="RealSpace3D Bus" ID="{D6660470-B59B-45C8-9FA9-794761B4B9E4}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="33 Synth Door Opens With A Squeak; Reverberant" ID="{7943AF66-9E51-4629-8F5C-09396B410188}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Dog_0" ID="{C08A4D87-179B-46CA-9C03-202DA35D0147}" WorkUnitID="{AC7B16BF-1A24-41AC-9731-F3FF21E92BBD}" Filter="7" Origin="Manual"/>

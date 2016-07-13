@@ -30,7 +30,7 @@
 						<Action Name="Play" ID="{4E3DCB5C-59EF-4D63-89C7-69F0F07CB22F}" ShortID="642657390" Type="Play" Scope="One" Global="false">
 							<ElementList>
 								<Element ID="{A8F08133-2745-4F35-A25E-D389C83330E9}" Global="false">
-									<ObjectRef Name="External_Ambience_STEREO" ID="{C24D182B-0529-4253-AA31-26FB485D0622}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}"/>
+									<ObjectRef Name="Ambience" ID="{9340A9F6-E4BA-45C1-A4AA-8DCFAC8A6C86}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}"/>
 								</Element>
 							</ElementList>
 						</Action>

@@ -3,204 +3,6 @@
 	<AudioObjects>
 		<WorkUnit Name="Default Work Unit" ID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}" PersistMode="Standalone">
 			<ChildrenList>
-				<BlendContainer Name="Ambient" ID="{C3C718AB-700A-46E6-98DE-8EF3D561CA6C}" ShortID="611708382">
-					<ReferenceList>
-						<Reference Name="Attenuation">
-							<Custom>
-								<Attenuation Name="Attenuation (Custom)" ID="{6909B530-E48C-419F-BBFE-E886187DF5B2}" ShortID="820534258">
-									<CurveUsageInfoList>
-										<VolumeDryUsage>
-											<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
-												<Curve Name="VolumeDry" ID="{0FBD706B-A64B-46D5-807B-650D0870FA97}">
-													<PropertyList>
-														<Property Name="Flags" Type="int32" Value="3"/>
-													</PropertyList>
-													<PointList>
-														<Point>
-															<XPos>0</XPos>
-															<YPos>0</YPos>
-															<Flags>5</Flags>
-														</Point>
-														<Point>
-															<XPos>100</XPos>
-															<YPos>-200</YPos>
-															<Flags>37</Flags>
-														</Point>
-													</PointList>
-												</Curve>
-											</CurveUsageInfo>
-										</VolumeDryUsage>
-										<VolumeWetGameUsage>
-											<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
-										</VolumeWetGameUsage>
-										<VolumeWetUserUsage>
-											<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
-										</VolumeWetUserUsage>
-										<LowPassFilterUsage>
-											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
-										</LowPassFilterUsage>
-										<HighPassFilterUsage>
-											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
-										</HighPassFilterUsage>
-										<SpreadUsage>
-											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
-										</SpreadUsage>
-										<FocusUsage>
-											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
-										</FocusUsage>
-									</CurveUsageInfoList>
-								</Attenuation>
-							</Custom>
-						</Reference>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<Sound Name="96 Synth Spaceship Interior #1_ Reverberant, Low Frequency Rumble" ID="{41C6573C-6B23-43EC-942B-994D196C3EA9}" ShortID="469477928" Type="SoundFX">
-							<PropertyList>
-								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-								<Property Name="Lowpass" Type="int16">
-									<ValueList>
-										<Value>42</Value>
-									</ValueList>
-								</Property>
-								<Property Name="OverrideEffect" Type="bool" Value="True"/>
-								<Property Name="PositioningType" Type="int16" Value="1"/>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-7</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
-								</Reference>
-								<Reference Name="Effect0">
-									<Custom>
-										<Effect Name="Wwise Time Stretch (Custom)" ID="{BCF3FDCD-A0FB-439E-AC71-5B5773F9132B}" ShortID="774432364" PluginName="Wwise Time Stretch" CompanyID="0" PluginID="130" PluginType="3">
-											<PropertyList>
-												<Property Name="TimeStretch" Type="Real32" Value="138"/>
-											</PropertyList>
-										</Effect>
-									</Custom>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="96 Synth Spaceship Interior #1_ Reverberant, Low Frequency Rumble" ID="{4DC9EBFC-EFBE-4D4C-9323-94B8D8BB4DD0}" ShortID="1030613146">
-									<Language>SFX</Language>
-									<AudioFile>96 Synth Spaceship Interior #1_ Reverberant, Low Frequency Rumble.wav</AudioFile>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="96 Synth Spaceship Interior #1_ Reverberant, Low Frequency Rumble" ID="{4DC9EBFC-EFBE-4D4C-9323-94B8D8BB4DD0}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="22-15 German U-Boat, Electric Motors, Constant Run Submerged" ID="{7C1212A2-85BF-43D7-81DC-B62CB71F90BB}" ShortID="322853755" Type="SoundFX">
-							<PropertyList>
-								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-9</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="22-15 German U-Boat, Electric Motors, Constant Run Submerged" ID="{0586CB81-3F9A-4F9A-AD8E-80D7D3D11BF3}" ShortID="177209559">
-									<Language>SFX</Language>
-									<AudioFile>22-15 German U-Boat, Electric Motors, Constant Run Submerged.wav</AudioFile>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="22-15 German U-Boat, Electric Motors, Constant Run Submerged" ID="{0586CB81-3F9A-4F9A-AD8E-80D7D3D11BF3}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="11 Machine Hum With Very Low Frequency" ID="{973C45FB-E5A4-4DDC-8E37-26AEBF2251AE}" ShortID="470238779" Type="SoundFX">
-							<PropertyList>
-								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-8</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="11 Machine Hum With Very Low Frequency" ID="{3C12EB05-AEF5-49E3-A548-C4801C462999}" ShortID="826620250">
-									<Language>SFX</Language>
-									<AudioFile>11 Machine Hum With Very Low Frequency.wav</AudioFile>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="11 Machine Hum With Very Low Frequency" ID="{3C12EB05-AEF5-49E3-A548-C4801C462999}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-					</ChildrenList>
-					<BlendTrackList>
-						<BlendTrack Name="MainAmb" ID="{6317C293-6048-4AB6-996B-F50E6E9C8139}" ShortID="240546172">
-							<PropertyList>
-								<Property Name="EnableCrossFading" Type="bool" Value="True"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="LayerCrossFadeControlInput">
-									<ObjectRef Name="Elevation" ID="{E697E70F-71B3-44EA-9311-295D91309BC8}" WorkUnitID="{0AEBADB4-CF30-41C8-B323-F726CF4DA516}"/>
-								</Reference>
-							</ReferenceList>
-							<BlendTrackAssocList>
-								<BlendTrackAssoc>
-									<ItemRef Name="11 Machine Hum With Very Low Frequency" ID="{973C45FB-E5A4-4DDC-8E37-26AEBF2251AE}"/>
-									<CrossfadingInfo>
-										<LeftEdgePos>0</LeftEdgePos>
-										<LeftFadingMode>Automatic</LeftFadingMode>
-										<RightEdgePos>41.0931174089069</RightEdgePos>
-										<RightFadingMode>Automatic</RightFadingMode>
-									</CrossfadingInfo>
-								</BlendTrackAssoc>
-								<BlendTrackAssoc>
-									<ItemRef Name="96 Synth Spaceship Interior #1_ Reverberant, Low Frequency Rumble" ID="{41C6573C-6B23-43EC-942B-994D196C3EA9}"/>
-									<CrossfadingInfo>
-										<LeftEdgePos>14.9802570850202</LeftEdgePos>
-										<LeftFadingMode>Automatic</LeftFadingMode>
-										<LeftFadingSegmentShape>InvertedSCurve</LeftFadingSegmentShape>
-										<RightEdgePos>99.9995</RightEdgePos>
-										<RightFadingMode>Automatic</RightFadingMode>
-									</CrossfadingInfo>
-								</BlendTrackAssoc>
-								<BlendTrackAssoc>
-									<ItemRef Name="22-15 German U-Boat, Electric Motors, Constant Run Submerged" ID="{7C1212A2-85BF-43D7-81DC-B62CB71F90BB}"/>
-									<CrossfadingInfo>
-										<LeftEdgePos>54.9795070850202</LeftEdgePos>
-										<LeftFadingMode>Automatic</LeftFadingMode>
-										<RightEdgePos>100</RightEdgePos>
-										<RightFadingMode>Automatic</RightFadingMode>
-									</CrossfadingInfo>
-								</BlendTrackAssoc>
-							</BlendTrackAssocList>
-						</BlendTrack>
-					</BlendTrackList>
-				</BlendContainer>
 				<ActorMixer Name="New Actor-Mixer" ID="{EC852A19-C59F-4075-8F0F-BF81D4792A19}" ShortID="360056942">
 					<PropertyList>
 						<Property Name="BypassEffect1" Type="bool">
@@ -472,32 +274,6 @@
 							</ChildrenList>
 							<ActiveSourceList>
 								<ActiveSource Name="273205__shadydave__cloudy-day-loop" ID="{D5500A63-8E58-45B2-8346-B8313B859327}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="External_Ambience_STEREO" ID="{C24D182B-0529-4253-AA31-26FB485D0622}" ShortID="675475388" Type="SoundFX">
-							<PropertyList>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>2</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="External_Ambience_STEREO" ID="{482FA053-C4D7-454D-AC4E-A95A9247CA34}" ShortID="246221276">
-									<Language>SFX</Language>
-									<AudioFile>External_Ambience_STEREO.wav</AudioFile>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="External_Ambience_STEREO" ID="{482FA053-C4D7-454D-AC4E-A95A9247CA34}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 						<Folder Name="Lights" ID="{E982A33E-6F55-455B-92EF-B8F6A09E6CAD}" ShortID="1072756736">
@@ -2088,6 +1864,190 @@
 						</Sound>
 					</ChildrenList>
 				</Folder>
+				<BlendContainer Name="Ambience" ID="{9340A9F6-E4BA-45C1-A4AA-8DCFAC8A6C86}" ShortID="830668305">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<Custom CreatedFrom="{6D1B890C-9826-4384-BF07-C15223E9FB56}">
+								<Conversion Name="Default Conversion Settings (Custom)" ID="{F509E1C5-802B-491C-A738-696FF32714C0}">
+									<PropertyList>
+										<Property Name="Channels" Type="int32">
+											<ValueList>
+												<Value Platform="Windows">4</Value>
+											</ValueList>
+										</Property>
+										<Property Name="LRMix" Type="Real64">
+											<ValueList>
+												<Value Platform="Windows">0</Value>
+											</ValueList>
+										</Property>
+										<Property Name="MaxSampleRate" Type="int32">
+											<ValueList>
+												<Value Platform="Windows">0</Value>
+											</ValueList>
+										</Property>
+										<Property Name="MinSampleRate" Type="int32">
+											<ValueList>
+												<Value Platform="Windows">0</Value>
+											</ValueList>
+										</Property>
+										<Property Name="SampleRate" Type="int32">
+											<ValueList>
+												<Value Platform="Windows">0</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ConversionPluginInfoList>
+										<ConversionPluginInfo Platform="Windows">
+											<ConversionPlugin Name="" ID="{669D0EC6-37BD-4E8C-9FAE-872EF16D3ADB}" PluginName="PCM" CompanyID="0" PluginID="1"/>
+										</ConversionPluginInfo>
+									</ConversionPluginInfoList>
+								</Conversion>
+							</Custom>
+						</Reference>
+						<Reference Name="Effect0" PluginName="Wwise Peak Limiter" CompanyID="0" PluginID="110" PluginType="3">
+							<ObjectRef Name="Brick_Wall_Minus_1dB_Peak_Slow_Release" ID="{9FB8DC2B-7F1C-4E4E-8FA5-50872652D2DD}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+						</Reference>
+						<Reference Name="Effect1" CompanyID="4095" PluginID="65535" PluginType="15">
+							<ObjectRef Name="Fear_no_Evil" ID="{A1F17D99-0801-4F32-B74E-ADB2D9ACC556}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="RealSpace3D Bus" ID="{D6660470-B59B-45C8-9FA9-794761B4B9E4}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
+						</Reference>
+						<Reference Name="UserAuxSend0">
+							<ObjectRef Name="Verb" ID="{37E486C9-9136-49F7-982C-B9AC74BAB40D}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
+						</Reference>
+						<Reference Name="UserAuxSend1">
+							<ObjectRef Name="Pitch" ID="{50ED605C-7A31-4F6D-8F67-A5BFF7E103BD}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="External_Ambience_STEREO" ID="{D5305CB1-3F32-47E6-AF03-31E8D03026A2}" ShortID="503730868" Type="SoundFX">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="External_Ambience_STEREO" ID="{1E48293C-4C7E-48DC-997C-CC6A3A07EFB7}" ShortID="447330385">
+									<Language>SFX</Language>
+									<AudioFile>External_Ambience_STEREO.wav</AudioFile>
+									<ConvertedFileIDList>
+										<File ID="246221276"/>
+									</ConvertedFileIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="External_Ambience_STEREO" ID="{1E48293C-4C7E-48DC-997C-CC6A3A07EFB7}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Fan_Ambience" ID="{61C7E9B9-956A-4774-91DD-F3082660620C}" ShortID="410553304" Type="SoundFX">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-14</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Fan_Ambience" ID="{0EE33935-DA0E-4ACD-B428-538C6F949643}" ShortID="535481789">
+									<Language>SFX</Language>
+									<AudioFile>Fan_Ambience.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Fan_Ambience" ID="{0EE33935-DA0E-4ACD-B428-538C6F949643}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Middle_Ambience" ID="{3EB51845-4281-4499-9688-81FF3C0800AA}" ShortID="198489967" Type="SoundFX">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-13</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Middle_Ambience" ID="{AA545701-0F66-4774-99FE-03FBD760A81E}" ShortID="288687452">
+									<Language>SFX</Language>
+									<AudioFile>Middle_Ambience.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Middle_Ambience" ID="{AA545701-0F66-4774-99FE-03FBD760A81E}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+					<BlendTrackList>
+						<BlendTrack Name="MainAmb" ID="{AC1A0764-CE9B-42AA-B215-79ED2F97DC62}" ShortID="180617400">
+							<PropertyList>
+								<Property Name="EnableCrossFading" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="LayerCrossFadeControlInput">
+									<ObjectRef Name="Elevation" ID="{E697E70F-71B3-44EA-9311-295D91309BC8}" WorkUnitID="{0AEBADB4-CF30-41C8-B323-F726CF4DA516}"/>
+								</Reference>
+							</ReferenceList>
+							<BlendTrackAssocList>
+								<BlendTrackAssoc>
+									<ItemRef Name="External_Ambience_STEREO" ID="{D5305CB1-3F32-47E6-AF03-31E8D03026A2}"/>
+									<CrossfadingInfo>
+										<LeftEdgePos>0</LeftEdgePos>
+										<LeftFadingMode>Automatic</LeftFadingMode>
+										<RightEdgePos>50.00025</RightEdgePos>
+										<RightFadingMode>Automatic</RightFadingMode>
+									</CrossfadingInfo>
+								</BlendTrackAssoc>
+								<BlendTrackAssoc>
+									<ItemRef Name="Middle_Ambience" ID="{3EB51845-4281-4499-9688-81FF3C0800AA}"/>
+									<CrossfadingInfo>
+										<LeftEdgePos>24.133861691023</LeftEdgePos>
+										<LeftFadingMode>Automatic</LeftFadingMode>
+										<RightEdgePos>60.00025</RightEdgePos>
+										<RightFadingMode>Automatic</RightFadingMode>
+									</CrossfadingInfo>
+								</BlendTrackAssoc>
+								<BlendTrackAssoc>
+									<ItemRef Name="Fan_Ambience" ID="{61C7E9B9-956A-4774-91DD-F3082660620C}"/>
+									<CrossfadingInfo>
+										<LeftEdgePos>50.00025</LeftEdgePos>
+										<LeftFadingMode>Automatic</LeftFadingMode>
+										<RightEdgePos>100</RightEdgePos>
+										<RightFadingMode>Automatic</RightFadingMode>
+									</CrossfadingInfo>
+								</BlendTrackAssoc>
+							</BlendTrackAssocList>
+						</BlendTrack>
+					</BlendTrackList>
+				</BlendContainer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>
