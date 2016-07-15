@@ -45,6 +45,8 @@ public class Changer : MonoBehaviour
 
     private Vector3 origin = new Vector3(0f, 0f, 0f);
 
+    // for smoothstep t
+    private float startTime = 0f;
 
     private Transform soundRoom;
     private RS3DGameBlob spatializer;
@@ -100,6 +102,21 @@ public class Changer : MonoBehaviour
         
     }
 
+    private Vector3 SmoothStep(Vector3 min, Vector3 max, float duration)
+    {
+
+        Vector3 result = new Vector3(0f, 0f, 0f);
+
+        float t = (Time.time - startTime) / duration;
+
+        result.x = Mathf.SmoothStep(min.x, max.x, t);
+        result.y = Mathf.SmoothStep(min.y, max.y, t);
+        result.z = Mathf.SmoothStep(min.z, max.z, t);
+
+        return result;
+
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -112,11 +129,12 @@ public class Changer : MonoBehaviour
             // smallllllest
             case scaleMode.shrinkingSmaller:
 
-                cameraParent.transform.localScale = Vector3.Slerp(cameraParent.transform.localScale, smallestScale, speed * Time.deltaTime);
+                cameraParent.transform.localScale = SmoothStep(new Vector3(1f, 1f, 1f), smallestScale, speed);
+                    //Vector3.Slerp(cameraParent.transform.localScale, smallestScale, speed * Time.deltaTime);
 
                 offset.y = Mathf.Lerp(offset.y, smallestOffsetTarget, speed * Time.deltaTime);
 
-                cameraParent.transform.localPosition = Vector3.Slerp(cameraParent.transform.localPosition, smallestScale, speed * Time.deltaTime);
+                //cameraParent.transform.localPosition = Vector3.Slerp(cameraParent.transform.localPosition, smallestScale, speed * Time.deltaTime);
 
                 if (cameraParent.transform.localScale.x <= (smallestScale.x + epsilon))
                 {
@@ -268,6 +286,8 @@ public class Changer : MonoBehaviour
         soundRoom.localScale = new Vector3(100f, 100f, 100f);
        // AkSoundEngine.SetRTPCValue("Elevation", 20f);
         spatializer.UpdateSize();
+
+        startTime = Time.time;
 
     }
 
