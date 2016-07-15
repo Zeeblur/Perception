@@ -58,8 +58,7 @@ public class SplineWalkerPlinth : MonoBehaviour
 
     private void Start()
     {
-        if (splineNum == 0)
-            AkSoundEngine.PostEvent(chosenDog, this.gameObject);
+        AkSoundEngine.PostEvent(chosenDog, this.gameObject);
     }
 
     private void Update()
@@ -83,7 +82,7 @@ public class SplineWalkerPlinth : MonoBehaviour
             transform.LookAt(position + chosenSpline.GetDirection(progress));
 
             // ensure flip dog is upside down
-            if (this.tag == "Perception-Changer-flip")
+            if (this.tag == "Perception-Changer-upside")
             {
                 transform.Rotate(zAxis, angle);
             }

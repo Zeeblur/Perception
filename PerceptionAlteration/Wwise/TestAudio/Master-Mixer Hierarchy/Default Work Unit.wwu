@@ -22,10 +22,10 @@
 								</Reference>
 							</ReferenceList>
 						</Bus>
-						<AuxBus Name="Pitch" ID="{50ED605C-7A31-4F6D-8F67-A5BFF7E103BD}">
+						<AuxBus Name="Pitch" ID="{309F0F65-60AE-469C-A916-123A0FF99381}">
 							<ReferenceList>
-								<Reference Name="Effect0" PluginName="Wwise Pitch Shifter" CompanyID="0" PluginID="136" PluginType="3">
-									<ObjectRef Name="Voice_CenterOnly_Lowered" ID="{179558E7-E6DF-4021-9D38-A284DF53B7E5}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								<Reference Name="Effect0" CompanyID="4095" PluginID="65535" PluginType="15">
+									<ObjectRef Name="Monsterize" ID="{99F80B38-1C45-42CE-9BCD-E94F3885DCAA}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
 								</Reference>
 							</ReferenceList>
 						</AuxBus>

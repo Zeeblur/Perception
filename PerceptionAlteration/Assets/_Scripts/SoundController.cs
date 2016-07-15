@@ -28,7 +28,7 @@ public class SoundController : MonoBehaviour
 
 
         // start play of ambient
-        //AkSoundEngine.PostEvent("Play_Ambient", this.gameObject);
+      //  AkSoundEngine.PostEvent("Play_Ambient", this.gameObject);
     }
 
     private void Update()

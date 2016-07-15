@@ -5,34 +5,39 @@
 			<ChildrenList>
 				<SoundBank Name="DogRoom" ID="{94F7E711-4EAD-43E4-A179-9A88D1508FFD}">
 					<ObjectInclusionList>
+						<ObjectRef Name="VR_Middle_Ambience_Stereo" ID="{60ABAE2F-124A-4063-9814-4A7DEA825C55}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="LargeDog" ID="{1349E4CA-5FCD-406C-A9CF-F772B18770E3}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="New Actor-Mixer" ID="{EC852A19-C59F-4075-8F0F-BF81D4792A19}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="flicker" ID="{75C3B508-9ADB-419C-8863-7AB0F464483E}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Dog_1" ID="{A9BA6D70-69CC-4268-98F4-D48BDAE2B68D}" WorkUnitID="{AC7B16BF-1A24-41AC-9731-F3FF21E92BBD}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="199261__felix-blume__a-dog-barking-close-recording" ID="{4BAA8A51-5B21-4381-BC71-76354E308ECA}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="VR_DogBig_Breathing" ID="{0F881EDD-C533-435D-BC27-C2DE5BE3C4DF}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="VR_High_Ambience_Stereo" ID="{01F9ADEB-EC68-445E-BA83-EAA1A6260FE5}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Dog_3" ID="{9711F422-587D-44A4-A03F-0B7F84F0B043}" WorkUnitID="{AC7B16BF-1A24-41AC-9731-F3FF21E92BBD}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Ambience" ID="{9340A9F6-E4BA-45C1-A4AA-8DCFAC8A6C86}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="RealSpace3D Bus" ID="{D6660470-B59B-45C8-9FA9-794761B4B9E4}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="VR_DogMed_Entry" ID="{0916F39C-943C-4614-A50E-869AA1DC21EA}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="33 Synth Door Opens With A Squeak; Reverberant" ID="{7943AF66-9E51-4629-8F5C-09396B410188}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Dog_0" ID="{C08A4D87-179B-46CA-9C03-202DA35D0147}" WorkUnitID="{AC7B16BF-1A24-41AC-9731-F3FF21E92BBD}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="327813__robinhood76__06071-ratter-dogs-barking-looping (1)" ID="{172FDD28-4AE1-494C-B00C-8D2FE8A94591}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="VR_DogSmall_Entry" ID="{6F99EF0E-DE88-470D-A2EB-6462CBD37C24}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="VR_Cube_Synth" ID="{762F8E8E-EFB7-4907-8CBA-4FBD7EA84B80}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="flickerLong" ID="{EFEAA9C7-1F5B-4A5B-9BF0-A9311EDAEEBB}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="VR_DogMed_Breathing" ID="{758A4D79-BB53-4A67-9772-EFE3155693CB}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="VR_DogBig_Entry" ID="{96C340C4-18B6-4A8A-9DE1-D90B8B93B225}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="VR_DogSmall_Breathing" ID="{BB4F34B3-345C-4AAC-AA93-12F73EBCDF9F}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="VR_DogInvert_Entry" ID="{43660F6E-9AA1-4B25-9A02-C2EF3C7F22C9}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Dog_2" ID="{8072A785-CA9C-4B41-8B40-DB781AD65A13}" WorkUnitID="{AC7B16BF-1A24-41AC-9731-F3FF21E92BBD}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="UpsideDog" ID="{A2A3C8F9-8D42-4B57-A3DC-9297A8166F56}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="VR_Low_Ambience_Stereo" ID="{0C66D946-B766-4BBC-9FDB-D458A9F635FE}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Lighthum" ID="{0E05CEF6-5F61-4C1A-BDDE-DC3FD8FD0020}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="346320__nielstii__dog-barking" ID="{127843F2-1AEE-4D4F-986B-944A4D65A609}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="SmallDog" ID="{500BBBEE-555A-4DDA-AE6E-06DD791A7231}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="PlayMusic" ID="{4A6ABA14-7CD3-4EB7-BCF5-8854795030C3}" WorkUnitID="{AC7B16BF-1A24-41AC-9731-F3FF21E92BBD}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="okum__dog-5" ID="{9C1244B6-D58F-4F09-8AE7-3A40F2E7A9A5}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="SmallestDog" ID="{3909F9C3-EC23-4F1E-83B2-904CD9A3590F}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}" Filter="7" Origin="Manual"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
 				</SoundBank>
 				<SoundBank Name="Walkway" ID="{AE2DEE5E-83CC-4D43-9BD6-B6225E9AAF08}">
-					<ObjectInclusionList>
-						<ObjectRef Name="48 Processed Air Release #2_ Shorter Than Fx 47_[Note_ This Effect Has A Lot Of Out Of Phase Signal In It_]" ID="{C40A5B5D-2823-4195-BE68-FD5E0B246F36}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}" Filter="7" Origin="Manual"/>
-					</ObjectInclusionList>
+					<ObjectInclusionList/>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
 				</SoundBank>

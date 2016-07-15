@@ -3,10 +3,16 @@ using System.Collections;
 
 public class PlayerCollision : MonoBehaviour
 {
-    bool silent = true;
+    private bool silent = true;
+    private bool large = false;
 
-	// Use this for initialization
-	void Start () {
+    public bool Large
+    {
+        set { large = value; }
+    }
+
+    // Use this for initialization
+    void Start () {
 	
 	}
 	
@@ -18,6 +24,9 @@ public class PlayerCollision : MonoBehaviour
     // collision detection
     void OnTriggerStay(Collider other)
     {
+        if (large)
+            return;
+
         // if other collider is plinth
         if (other.CompareTag("DogZone"))
         {
@@ -28,6 +37,9 @@ public class PlayerCollision : MonoBehaviour
 
     void OnTriggerExit(Collider other)
     {
+        if (large)
+            return;
+
         if (other.CompareTag("DogZone"))
         {
             Debug.Log("AwayfromDog");
@@ -42,7 +54,7 @@ public class PlayerCollision : MonoBehaviour
         if (dog && silent)
         {
             silent = false;
-            AkSoundEngine.PostEvent("Play_" + (EnemyType)chosenDog, dog);
+            AkSoundEngine.PostEvent("Play_Breathing_" + (EnemyType)chosenDog, dog);
         }
 
     }
@@ -54,7 +66,7 @@ public class PlayerCollision : MonoBehaviour
         if (dog && !silent)
         {
             silent = true;
-            AkSoundEngine.PostEvent("Stop_" + (EnemyType)chosenDog, dog);
+            AkSoundEngine.PostEvent("Stop_Breathing_" + (EnemyType)chosenDog, dog);
         }
 
     }

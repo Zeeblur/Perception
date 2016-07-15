@@ -41,7 +41,7 @@
 						<Action Name="Play" ID="{95551B39-EDB6-40A8-B07A-9EF00E8367D9}" ShortID="811642347" Type="Play" Scope="One" Global="false">
 							<ElementList>
 								<Element ID="{4F22AC63-9A00-4206-A15B-719A61F12700}" Global="false">
-									<ObjectRef Name="chi growl noise" ID="{0CE6C121-0482-4140-8B81-11D456724A5F}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}"/>
+									<ObjectRef Name="VR_DogMed_Entry" ID="{0916F39C-943C-4614-A50E-869AA1DC21EA}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}"/>
 								</Element>
 							</ElementList>
 						</Action>
@@ -52,7 +52,7 @@
 						<Action Name="Play" ID="{ACD73DE2-4FA5-42AC-83CC-3118727E1B4A}" ShortID="339488358" Type="Play" Scope="One" Global="false">
 							<ElementList>
 								<Element ID="{24C1C00A-7656-48A7-881D-2B099FEB8E52}" Global="false">
-									<ObjectRef Name="Lab whine" ID="{91ADB607-B938-4A32-A3DB-276E140F2F07}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}"/>
+									<ObjectRef Name="VR_DogInvert_Entry" ID="{43660F6E-9AA1-4B25-9A02-C2EF3C7F22C9}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}"/>
 								</Element>
 							</ElementList>
 						</Action>
@@ -63,7 +63,7 @@
 						<Action Name="Play" ID="{ECDAC08C-6BB3-4FFB-8A14-A0E1ED99BE4C}" ShortID="765208563" Type="Play" Scope="One" Global="false">
 							<ElementList>
 								<Element ID="{DFACBEC6-2E47-40C6-9AAA-85113AA07CD2}" Global="false">
-									<ObjectRef Name="staffy woof" ID="{9A09762E-A87A-42C1-9BB4-0E26D2A5C498}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}"/>
+									<ObjectRef Name="VR_DogBig_Entry" ID="{96C340C4-18B6-4A8A-9DE1-D90B8B93B225}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}"/>
 								</Element>
 							</ElementList>
 						</Action>
@@ -74,7 +74,7 @@
 						<Action Name="Play" ID="{0C61F1EA-D242-4BDD-A700-8F42020B26DC}" ShortID="1019134570" Type="Play" Scope="One" Global="false">
 							<ElementList>
 								<Element ID="{604B48B5-4383-44A4-9D95-C1EE680B725F}" Global="false">
-									<ObjectRef Name="pug excited-EQ37B_01-02" ID="{EFDC171B-F124-405D-BC9C-64F112392FB0}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}"/>
+									<ObjectRef Name="VR_DogSmall_Entry" ID="{6F99EF0E-DE88-470D-A2EB-6462CBD37C24}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}"/>
 								</Element>
 							</ElementList>
 						</Action>
@@ -207,6 +207,105 @@
 							<ElementList>
 								<Element ID="{8EABB0DA-E613-4621-B86F-5AF4FDCA8DAA}" Global="false">
 									<ObjectRef Name="UpsideDog" ID="{A2A3C8F9-8D42-4B57-A3DC-9297A8166F56}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Breathing_Large" ID="{3DE1F038-99F0-4C0E-B218-01F527A1D5E2}">
+					<ChildrenList>
+						<Action Name="Play" ID="{B2D264DC-2EF8-4555-8D67-CA13A655CAA6}" ShortID="379091975" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{5473C483-710D-4A5C-9C1F-68E0EE5109F1}" Global="false">
+									<ObjectRef Name="VR_DogBig_Breathing" ID="{0F881EDD-C533-435D-BC27-C2DE5BE3C4DF}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Breathing_Small" ID="{44A39B66-DBEE-4967-881B-D8669B6161D9}">
+					<ChildrenList>
+						<Action Name="Play" ID="{A67D2B03-1410-4E5D-965E-BEF37C235CA6}" ShortID="880130750" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{6321269F-7EC8-498F-B0DF-34F777E19378}" Global="false">
+									<ObjectRef Name="VR_DogMed_Breathing" ID="{758A4D79-BB53-4A67-9772-EFE3155693CB}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Breathing_Smallest" ID="{ADBF0D3F-BB18-4D4E-927B-B1CCE495853F}">
+					<ChildrenList>
+						<Action Name="Play" ID="{BFD21A51-9CF1-4133-ADCD-7956CDF30A64}" ShortID="494700203" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{1F6F3E23-D299-484C-877B-E13A62B0F4EF}" Global="false">
+									<ObjectRef Name="VR_DogSmall_Breathing" ID="{BB4F34B3-345C-4AAC-AA93-12F73EBCDF9F}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_Breathing_Large" ID="{8C699F38-B434-444A-986B-91101B9B660E}">
+					<ChildrenList>
+						<Action Name="Stop" ID="{A89F88F2-5A20-48C9-ADF9-4B07E9822908}" ShortID="834154752" Type="Stop" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{3D3F9FE8-C5E4-4A4C-B6E7-8AC5093779C8}" Global="false">
+									<ObjectRef Name="VR_DogBig_Breathing" ID="{0F881EDD-C533-435D-BC27-C2DE5BE3C4DF}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_Breathing_Small" ID="{8513BAB2-535E-4EA0-AB0F-7451E89FB5A0}">
+					<ChildrenList>
+						<Action Name="Stop" ID="{D353FCFF-AB8C-4157-99D9-04DA199ED818}" ShortID="678639413" Type="Stop" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{107AB90D-ADD8-463F-8D84-9A1F1905113C}" Global="false">
+									<ObjectRef Name="VR_DogMed_Breathing" ID="{758A4D79-BB53-4A67-9772-EFE3155693CB}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_Breathing_Smallest" ID="{97EB80D0-3B63-4119-AEA5-C50E73F87693}">
+					<ChildrenList>
+						<Action Name="Stop" ID="{0FFF4A89-D1A8-4652-AA00-B8160A9AEBDF}" ShortID="24078513" Type="Stop" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{72477E38-BFA7-4D0D-ADBA-B77F9CB667D9}" Global="false">
+									<ObjectRef Name="VR_DogSmall_Breathing" ID="{BB4F34B3-345C-4AAC-AA93-12F73EBCDF9F}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Breathing_Upside" ID="{89084854-2ADC-4C79-A358-9EAD5EF07E11}">
+					<ChildrenList>
+						<Action Name="Play" ID="{51B0693C-012D-430C-AFCE-F823D696BA8F}" ShortID="687019752" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{F1A1F536-9F33-4EF3-9A79-C60C27284FAD}" Global="false">
+									<ObjectRef Name="VR_DogMed_Breathing" ID="{758A4D79-BB53-4A67-9772-EFE3155693CB}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_Breathing_Upside" ID="{6C690A4F-53A2-4159-9173-0B2296FB1E01}">
+					<ChildrenList>
+						<Action Name="Stop" ID="{A1755216-67A7-4513-8DD3-7F8679A0FC46}" ShortID="931557420" Type="Stop" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{3661AFA9-EC17-4DEF-AB72-C888DF425AAA}" Global="false">
+									<ObjectRef Name="VR_DogMed_Breathing" ID="{758A4D79-BB53-4A67-9772-EFE3155693CB}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Cube" ID="{186CE2C6-1F11-41AD-AC79-CFF47F141882}">
+					<ChildrenList>
+						<Action Name="Play" ID="{1AEFCC69-E24D-432B-8399-8CD10299A114}" ShortID="393481178" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{B77B0876-43B3-49C4-8008-7FFDED13CF88}" Global="false">
+									<ObjectRef Name="VR_Cube_Synth" ID="{762F8E8E-EFB7-4907-8CBA-4FBD7EA84B80}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}"/>
 								</Element>
 							</ElementList>
 						</Action>

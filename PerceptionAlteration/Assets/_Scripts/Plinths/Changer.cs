@@ -129,7 +129,7 @@ public class Changer : MonoBehaviour
             // smallllllest
             case scaleMode.shrinkingSmaller:
 
-                cameraParent.transform.localScale = SmoothStep(new Vector3(1f, 1f, 1f), smallestScale, speed);
+                cameraParent.transform.localScale = SmoothStep(new Vector3(1f, 1f, 1f), smallestScale, 0.5f);
                     //Vector3.Slerp(cameraParent.transform.localScale, smallestScale, speed * Time.deltaTime);
 
                 offset.y = Mathf.Lerp(offset.y, smallestOffsetTarget, speed * Time.deltaTime);
@@ -261,6 +261,8 @@ public class Changer : MonoBehaviour
         soundRoom.localScale = new Vector3(7f, 5f, 4f);
         spatializer.UpdateSize();
 
+        this.GetComponent<PlayerCollision>().Large = true;
+
     }
 
     public void Shrink()
@@ -301,6 +303,8 @@ public class Changer : MonoBehaviour
         soundRoom.localScale = new Vector3(10f, 10f, 10f);
         spatializer.UpdateSize();
         AkSoundEngine.SetRTPCValue("Elevation", 50f);
+
+        this.GetComponent<PlayerCollision>().Large = false;
     }
 
 
