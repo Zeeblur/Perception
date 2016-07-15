@@ -10,6 +10,9 @@
 								<Reference Name="Effect0" CompanyID="4095" PluginID="65535" PluginType="15">
 									<ObjectRef Name="Not_A_Yellow_Submarine" ID="{B5719071-C58D-49FA-8766-B1D986D017EC}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
 								</Reference>
+								<Reference Name="Effect1" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+									<ObjectRef Name="BigRoom" ID="{AB23844F-1B59-4B73-A946-E35C4A66291B}" WorkUnitID="{E5E5A188-6752-4CFE-80D8-E956C7989134}"/>
+								</Reference>
 							</ReferenceList>
 						</AuxBus>
 						<Bus Name="RealSpace3D Bus" ID="{D6660470-B59B-45C8-9FA9-794761B4B9E4}">
@@ -17,6 +20,20 @@
 								<Property Name="EnablePositioning" Type="bool" Value="True"/>
 							</PropertyList>
 							<ReferenceList>
+								<Reference Name="Effect0">
+									<Custom CreatedFrom="{AB23844F-1B59-4B73-A946-E35C4A66291B}">
+										<Effect Name="BigRoom (Custom)" ID="{2A790CC4-C9BD-4733-90E4-EB51D819A103}" ShortID="595215868" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+											<PropertyList>
+												<Property Name="FrequencyBand2" Type="Real32" Value="419"/>
+												<Property Name="FrequencyBand3" Type="Real32" Value="5234"/>
+												<Property Name="GainBand2" Type="Real32" Value="24"/>
+												<Property Name="OnOffBand1" Type="bool" Value="False"/>
+												<Property Name="OnOffBand3" Type="bool" Value="False"/>
+												<Property Name="QFactorBand2" Type="Real32" Value="28.3"/>
+											</PropertyList>
+										</Effect>
+									</Custom>
+								</Reference>
 								<Reference Name="Mixer" PluginName="VisiSonics RealSpace3D" CompanyID="0" PluginID="146" PluginType="6">
 									<ObjectRef Name="New_VisiSonics_RealSpace3D" ID="{3466F0B0-DF96-4F40-8069-BBB5042E2C1E}" WorkUnitID="{E5E5A188-6752-4CFE-80D8-E956C7989134}"/>
 								</Reference>

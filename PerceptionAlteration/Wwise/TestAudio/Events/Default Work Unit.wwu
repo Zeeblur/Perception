@@ -14,17 +14,6 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="OpenDoor" ID="{171D57EA-76ED-4ADC-A525-2EADE21EF2CF}">
-					<ChildrenList>
-						<Action Name="Play" ID="{63548060-CF14-41D0-BFB4-73BBA5F1B145}" ShortID="675170532" Type="Play" Scope="One" Global="false">
-							<ElementList>
-								<Element ID="{3FFE9649-F15E-41C4-8513-00DEBDD70763}" Global="false">
-									<ObjectRef Name="48 Processed Air Release #2_ Shorter Than Fx 47_[Note_ This Effect Has A Lot Of Out Of Phase Signal In It_]" ID="{C40A5B5D-2823-4195-BE68-FD5E0B246F36}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}"/>
-								</Element>
-							</ElementList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Event Name="Play_Ambient" ID="{D2FEE14C-A0D1-4718-B806-141F02F62A07}">
 					<ChildrenList>
 						<Action Name="Play" ID="{4E3DCB5C-59EF-4D63-89C7-69F0F07CB22F}" ShortID="642657390" Type="Play" Scope="One" Global="false">
@@ -124,7 +113,7 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_Smallest" ID="{5058624E-47DA-4438-9E9E-2F1BCB545E09}">
+				<Event Name="Play_Rand_0" ID="{5058624E-47DA-4438-9E9E-2F1BCB545E09}">
 					<ChildrenList>
 						<Action Name="Play" ID="{F5E7B80B-D3FC-47AC-9F3A-6A1AE9A70364}" ShortID="204039219" Type="Play" Scope="One" Global="false">
 							<ElementList>
@@ -135,7 +124,7 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_Upside" ID="{9CC8859B-211F-46D2-964F-02F87BF8A76C}">
+				<Event Name="Play_Rand_3" ID="{9CC8859B-211F-46D2-964F-02F87BF8A76C}">
 					<ChildrenList>
 						<Action Name="Play" ID="{3011A7A3-49EF-441C-9B0E-649E19A3E9E9}" ShortID="676540267" Type="Play" Scope="One" Global="false">
 							<ElementList>
@@ -146,7 +135,7 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_Small" ID="{8EDA09A3-B572-47C4-8D50-199C164E5379}">
+				<Event Name="Play_Rand_1" ID="{8EDA09A3-B572-47C4-8D50-199C164E5379}">
 					<ChildrenList>
 						<Action Name="Play" ID="{EF992C21-01DC-4173-A8C3-0733D2A36D28}" ShortID="945995105" Type="Play" Scope="One" Global="false">
 							<ElementList>
@@ -157,7 +146,7 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_Large" ID="{2F27474C-43DC-4BF8-8A5B-B7FCF53C89DB}">
+				<Event Name="Play_Rand_4" ID="{2F27474C-43DC-4BF8-8A5B-B7FCF53C89DB}">
 					<ChildrenList>
 						<Action Name="Play" ID="{5C870F84-CC70-47C5-B1DE-E3C2A2A44888}" ShortID="454859721" Type="Play" Scope="One" Global="false">
 							<ElementList>

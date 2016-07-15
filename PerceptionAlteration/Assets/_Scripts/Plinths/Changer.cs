@@ -285,9 +285,8 @@ public class Changer : MonoBehaviour
         plinthScript.SetState((int)scaleMode.shrinkingSmaller);
         Time.timeScale = 0.5f;
 
-        soundRoom.localScale = new Vector3(100f, 100f, 100f);
-       // AkSoundEngine.SetRTPCValue("Elevation", 20f);
-        spatializer.UpdateSize();
+        // AkSoundEngine.SetRTPCValue("Elevation", 20f);
+       // spatializer.UpdateSize();
 
         startTime = Time.time;
 
@@ -304,7 +303,7 @@ public class Changer : MonoBehaviour
         spatializer.UpdateSize();
         AkSoundEngine.SetRTPCValue("Elevation", 50f);
 
-        this.GetComponent<PlayerCollision>().Large = false;
+        this.GetComponent<PlayerCollision>().Large = false;  // when large breathing is off. 
     }
 
 

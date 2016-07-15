@@ -20,8 +20,7 @@ public class CollisionPick : MonoBehaviour
             playerScript.Grow();
             transform.parent.GetComponent<PickUp>().SetPicked(false);
             AkSoundEngine.PostEvent("Play_Dog_" + (int)EnemyType.large, other.gameObject);
-
-            //     body.mass = 0.1f;
+            other.gameObject.GetComponent<SplineWalkerPlinth>().DogState = true;
         }
 
         if (other.CompareTag("Perception-Changer-small"))
@@ -29,7 +28,7 @@ public class CollisionPick : MonoBehaviour
             playerScript.Shrink();
             transform.parent.GetComponent<PickUp>().SetPicked(false);
             AkSoundEngine.PostEvent("Play_Dog_" + (int)EnemyType.small, other.gameObject);
-
+            other.gameObject.GetComponent<SplineWalkerPlinth>().DogState = true;
         }
 
         if (other.CompareTag("Perception-Changer-smallest"))
@@ -38,6 +37,8 @@ public class CollisionPick : MonoBehaviour
             transform.parent.GetComponent<PickUp>().SetPicked(false);
 
             AkSoundEngine.PostEvent("Play_Dog_" + (int)EnemyType.smallest, other.gameObject);
+            other.gameObject.GetComponent<SplineWalkerPlinth>().DogState = true;
+            other.gameObject.GetComponent<SplineWalkerPlinth>().SoundTimer = Time.time + 3f;
         }
 
         if (other.CompareTag("Perception-Changer-upside"))
@@ -45,6 +46,7 @@ public class CollisionPick : MonoBehaviour
             playerScript.Flip();
             transform.parent.GetComponent<PickUp>().SetPicked(false);
             AkSoundEngine.PostEvent("Play_Dog_" + (int)EnemyType.upside, other.gameObject);
+            other.gameObject.GetComponent<SplineWalkerPlinth>().DogState = true;
         }
     }
 }

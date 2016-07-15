@@ -29,6 +29,10 @@ public class RS3DGameBlob : MonoBehaviour {
     // Update is called once per frame
     void Update ()
     {
+
+        setRoomsToFindableRS3DRooms();
+        setOccludersToFindableRS3DOccluders();
+        sendData();
     }
 
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

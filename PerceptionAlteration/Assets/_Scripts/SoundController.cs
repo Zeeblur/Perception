@@ -70,6 +70,5 @@ public class SoundController : MonoBehaviour
 
         currentVal = Mathf.Lerp(currentVal, lerpTarget, speed * Time.deltaTime);
         AkSoundEngine.SetRTPCValue("Elevation", currentVal);
-
     }
 }

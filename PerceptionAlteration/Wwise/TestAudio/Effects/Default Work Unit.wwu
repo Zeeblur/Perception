@@ -3,7 +3,164 @@
 	<Effects>
 		<WorkUnit Name="Default Work Unit" ID="{E5E5A188-6752-4CFE-80D8-E956C7989134}" PersistMode="Standalone">
 			<ChildrenList>
-				<Effect Name="New_VisiSonics_RealSpace3D" ID="{3466F0B0-DF96-4F40-8069-BBB5042E2C1E}" PluginName="VisiSonics RealSpace3D" CompanyID="0" PluginID="146" PluginType="6"/>
+				<Effect Name="New_VisiSonics_RealSpace3D" ID="{3466F0B0-DF96-4F40-8069-BBB5042E2C1E}" PluginName="VisiSonics RealSpace3D" CompanyID="0" PluginID="146" PluginType="6">
+					<ChildrenList>
+						<PluginMediaSource Name="lic_key" ID="{E32D5F40-BF53-43BD-A584-3F70C06853D8}" ShortID="67709042">
+							<ParentPluginID>9568262</ParentPluginID>
+							<PropertyList>
+								<Property Name="DataFileName" Type="string" Value="lic_key.txt"/>
+							</PropertyList>
+						</PluginMediaSource>
+						<PluginMediaSource Name="hrtf-cp048-r2" ID="{6929BBD1-AF53-4540-8341-179088AD1198}" ShortID="381420872">
+							<ParentPluginID>9568262</ParentPluginID>
+							<PropertyList>
+								<Property Name="DataFileName" Type="string" Value="hrtf-cp048-r2.icb"/>
+							</PropertyList>
+							<ConvertedFileIDList>
+								<File ID="96005466"/>
+							</ConvertedFileIDList>
+						</PluginMediaSource>
+						<PluginMediaSource Name="hrtf-cp021-r2" ID="{35527B6C-8791-4D2D-9425-580994F49390}" ShortID="177711257">
+							<ParentPluginID>9568262</ParentPluginID>
+							<PropertyList>
+								<Property Name="DataFileName" Type="string" Value="hrtf-cp021-r2.icb"/>
+							</PropertyList>
+						</PluginMediaSource>
+						<PluginMediaSource Name="hrtf-cp165-r2" ID="{559F8BAA-7716-455E-B379-6477E658BEAB}" ShortID="206325007">
+							<ParentPluginID>9568262</ParentPluginID>
+							<PropertyList>
+								<Property Name="DataFileName" Type="string" Value="hrtf-cp165-r2.icb"/>
+							</PropertyList>
+						</PluginMediaSource>
+						<PluginMediaSource Name="hrtf-andre-r1" ID="{2E162597-1D0C-444C-9285-2F637221310D}" ShortID="464577070">
+							<ParentPluginID>9568262</ParentPluginID>
+							<PropertyList>
+								<Property Name="DataFileName" Type="string" Value="hrtf-andre-r1.icb"/>
+							</PropertyList>
+							<ConvertedFileIDList>
+								<File ID="300030528"/>
+							</ConvertedFileIDList>
+						</PluginMediaSource>
+						<PluginMediaSource Name="hrtf-virgn-r1" ID="{240BDAE2-4317-4001-8A23-4ACEC0E1F8A5}" ShortID="384464037">
+							<ParentPluginID>9568262</ParentPluginID>
+							<PropertyList>
+								<Property Name="DataFileName" Type="string" Value="hrtf-virgn-r1.icb"/>
+							</PropertyList>
+						</PluginMediaSource>
+						<PluginMediaSource Name="hrtf-custom-r1" ID="{126875F6-14C4-4949-9588-BAB458F96851}" ShortID="235513787">
+							<ParentPluginID>9568262</ParentPluginID>
+							<PropertyList>
+								<Property Name="DataFileName" Type="string" Value="hrtf-custom-r1.icb"/>
+							</PropertyList>
+						</PluginMediaSource>
+						<PluginMediaSource Name="BACCH_filters_stereo_front" ID="{A12FFB2C-EEA0-4E30-A190-5694F0B2D84C}" ShortID="202971745">
+							<ParentPluginID>9568262</ParentPluginID>
+							<PropertyList>
+								<Property Name="DataFileName" Type="string" Value="BACCH_filters_stereo_front.bin"/>
+							</PropertyList>
+						</PluginMediaSource>
+						<PluginMediaSource Name="BACCH_filters_stereo_back" ID="{AB449125-228B-48C6-B24E-5C0B0A8C4628}" ShortID="387543422">
+							<ParentPluginID>9568262</ParentPluginID>
+							<PropertyList>
+								<Property Name="DataFileName" Type="string" Value="BACCH_filters_stereo_back.bin"/>
+							</PropertyList>
+						</PluginMediaSource>
+						<PluginMediaSource Name="lic_key" ID="{A998D53B-4553-4D0C-88B2-CDB3D9BE2B75}" ShortID="154523406">
+							<ParentPluginID>9568262</ParentPluginID>
+							<PropertyList>
+								<Property Name="DataFileName" Type="string" Value="lic_key.txt"/>
+							</PropertyList>
+							<ConvertedFileIDList>
+								<File ID="67709042"/>
+							</ConvertedFileIDList>
+						</PluginMediaSource>
+						<PluginMediaSource Name="hrtf-cp048-r2" ID="{E469E6F6-E3CF-4695-A4A6-35C96FB007A3}" ShortID="96005466">
+							<ParentPluginID>9568262</ParentPluginID>
+							<PropertyList>
+								<Property Name="DataFileName" Type="string" Value="hrtf-cp048-r2.icb"/>
+							</PropertyList>
+						</PluginMediaSource>
+						<PluginMediaSource Name="hrtf-cp021-r2" ID="{F1D3C061-9D4D-4E29-B862-A94ADB6B5758}" ShortID="341876453">
+							<ParentPluginID>9568262</ParentPluginID>
+							<PropertyList>
+								<Property Name="DataFileName" Type="string" Value="hrtf-cp021-r2.icb"/>
+							</PropertyList>
+							<ConvertedFileIDList>
+								<File ID="177711257"/>
+							</ConvertedFileIDList>
+						</PluginMediaSource>
+						<PluginMediaSource Name="hrtf-cp165-r2" ID="{21E87E71-79E5-4829-B978-61541E0B48AA}" ShortID="1013306464">
+							<ParentPluginID>9568262</ParentPluginID>
+							<PropertyList>
+								<Property Name="DataFileName" Type="string" Value="hrtf-cp165-r2.icb"/>
+							</PropertyList>
+							<ConvertedFileIDList>
+								<File ID="206325007"/>
+							</ConvertedFileIDList>
+						</PluginMediaSource>
+						<PluginMediaSource Name="hrtf-andre-r1" ID="{B24168D9-A3C8-4597-867C-299AA8A75DCE}" ShortID="300030528">
+							<ParentPluginID>9568262</ParentPluginID>
+							<PropertyList>
+								<Property Name="DataFileName" Type="string" Value="hrtf-andre-r1.icb"/>
+							</PropertyList>
+						</PluginMediaSource>
+						<PluginMediaSource Name="hrtf-virgn-r1" ID="{65A83AAF-FF14-45A3-9DF3-4D4A2B841204}" ShortID="428530958">
+							<ParentPluginID>9568262</ParentPluginID>
+							<PropertyList>
+								<Property Name="DataFileName" Type="string" Value="hrtf-virgn-r1.icb"/>
+							</PropertyList>
+							<ConvertedFileIDList>
+								<File ID="384464037"/>
+							</ConvertedFileIDList>
+						</PluginMediaSource>
+						<PluginMediaSource Name="hrtf-custom-r1" ID="{E6FCBE41-21FF-41CE-ADB3-2FE93936FDBF}" ShortID="919824376">
+							<ParentPluginID>9568262</ParentPluginID>
+							<PropertyList>
+								<Property Name="DataFileName" Type="string" Value="hrtf-custom-r1.icb"/>
+							</PropertyList>
+							<ConvertedFileIDList>
+								<File ID="235513787"/>
+							</ConvertedFileIDList>
+						</PluginMediaSource>
+						<PluginMediaSource Name="BACCH_filters_stereo_front" ID="{B88FF977-E75B-4A81-AB02-B30640A7C818}" ShortID="950645865">
+							<ParentPluginID>9568262</ParentPluginID>
+							<PropertyList>
+								<Property Name="DataFileName" Type="string" Value="BACCH_filters_stereo_front.bin"/>
+							</PropertyList>
+							<ConvertedFileIDList>
+								<File ID="202971745"/>
+							</ConvertedFileIDList>
+						</PluginMediaSource>
+						<PluginMediaSource Name="BACCH_filters_stereo_back" ID="{B8555B43-D5AB-4A52-AEC6-44FD7EFFD07E}" ShortID="460058104">
+							<ParentPluginID>9568262</ParentPluginID>
+							<PropertyList>
+								<Property Name="DataFileName" Type="string" Value="BACCH_filters_stereo_back.bin"/>
+							</PropertyList>
+							<ConvertedFileIDList>
+								<File ID="387543422"/>
+							</ConvertedFileIDList>
+						</PluginMediaSource>
+					</ChildrenList>
+				</Effect>
+				<Effect Name="New_Wwise_Parametric_EQ" ID="{D8C2F089-4E5B-4396-B537-7C092BD79676}" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+					<PropertyList>
+						<Property Name="FilterTypeBand1" Type="int32" Value="6"/>
+						<Property Name="FrequencyBand1" Type="Real32" Value="261"/>
+						<Property Name="GainBand1" Type="Real32" Value="2.5"/>
+						<Property Name="OnOffBand2" Type="bool" Value="False"/>
+						<Property Name="OnOffBand3" Type="bool" Value="False"/>
+						<Property Name="QFactorBand1" Type="Real32" Value="6.3"/>
+					</PropertyList>
+				</Effect>
+				<Effect Name="BigRoom" ID="{AB23844F-1B59-4B73-A946-E35C4A66291B}" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+					<PropertyList>
+						<Property Name="FrequencyBand2" Type="Real32" Value="289"/>
+						<Property Name="FrequencyBand3" Type="Real32" Value="9684"/>
+						<Property Name="GainBand2" Type="Real32" Value="9.5"/>
+						<Property Name="OnOffBand1" Type="bool" Value="False"/>
+						<Property Name="QFactorBand2" Type="Real32" Value="33"/>
+					</PropertyList>
+				</Effect>
 			</ChildrenList>
 		</WorkUnit>
 	</Effects>

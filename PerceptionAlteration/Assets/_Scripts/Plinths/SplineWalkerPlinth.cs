@@ -29,6 +29,14 @@ public class SplineWalkerPlinth : MonoBehaviour
     private Vector3 zAxis = new Vector3(0f, 0f, 1f);
 
     private GameObject player;
+    private Changer playerScript;
+
+    private bool dogState = false;
+
+    public bool DogState
+    {
+        set { dogState = value; }
+    }
 
     public void ChooseDog(int num)
     {
@@ -36,9 +44,17 @@ public class SplineWalkerPlinth : MonoBehaviour
         splineNum = num;
     }
 
+    public float SoundTimer
+    {
+        set { soundTimer = value; }
+    }
+
+
     private void Awake()
     {
         player = GameObject.FindGameObjectWithTag("Player");
+
+        playerScript = player.GetComponent<Changer>();
 
         // default
         splineGO = GameObject.FindGameObjectsWithTag("Shoot");
@@ -63,14 +79,28 @@ public class SplineWalkerPlinth : MonoBehaviour
 
     private void Update()
     {
-        if (progress > 1)
-            return;
+        if (progress < 1)
+        {
 
-        progress += Time.deltaTime / duration;
-  
-        // tell which spline to move dog along
-        Move(splines[splineNum]);
+            progress += Time.deltaTime / duration;
 
+            // tell which spline to move dog along
+            Move(splines[splineNum]);
+        }
+
+        // woof IF CHANGEEED
+        if (dogState && Time.time >= soundTimer)
+        {
+            Debug.Log("Woof!");
+
+            AkSoundEngine.PostEvent("Play_Rand_" + splineNum, this.gameObject);
+            soundTimer = Time.time + Random.Range(3f, 10f);
+        }
+
+        if(playerScript.CurrentScale == scaleMode.resetting)
+        {
+            dogState = false;
+        }
     }
 
     private void Move(Spline chosenSpline)
