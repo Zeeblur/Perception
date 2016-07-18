@@ -7,6 +7,8 @@ public class Flicker : MonoBehaviour {
     // https://freesound.org/people/mmaruska/sounds/232447/
 
     private Light spot;
+    private Renderer emissive;
+    private Color baseColour;
 
     private bool flicker = false;
 
@@ -20,6 +22,7 @@ public class Flicker : MonoBehaviour {
     void Awake ()
     {
         spot = GetComponent<Light>();
+        emissive = gameObject.GetComponentInChildren<Renderer>();
     }
 
     void Start ()
@@ -28,6 +31,9 @@ public class Flicker : MonoBehaviour {
         flashTime = Time.time + flashTimeInt;
 
         AkSoundEngine.PostEvent("Play_Lighthum", this.gameObject);
+
+        emissive.material.EnableKeyword("_EMISSION");
+        baseColour = emissive.material.GetColor("_Color");
     }
 
     // Update is called once per frame
@@ -54,6 +60,9 @@ public class Flicker : MonoBehaviour {
         {
             spot.intensity = Random.Range(spot.intensity-1, spot.intensity+0.5f);
 
+            Color emissiveCol = baseColour * Mathf.LinearToGammaSpace(spot.intensity);
+            emissive.material.SetColor("_EmissionColor", emissiveCol);
+
             // flashTimer
             if (Time.time >= flashTime)
             {
@@ -68,6 +77,7 @@ public class Flicker : MonoBehaviour {
         {
             // reset
             spot.intensity = 2.2f;
+            emissive.material.SetColor("_EmissionColor", baseColour);
         }
         
 	}

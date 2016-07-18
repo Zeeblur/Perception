@@ -79,6 +79,9 @@ public class PickUp : MonoBehaviour
         if (controller.GetTouchDown(SteamVR_Controller.ButtonMask.ApplicationMenu))
             playerScript.PrintLook();
 
+        if (controller.GetPress(SteamVR_Controller.ButtonMask.Touchpad))
+            pickedObj.transform.position = new Vector3(0.5f, 0.5f, 0.5f);
+
     }
 
     void OnTriggerStay(Collider other)

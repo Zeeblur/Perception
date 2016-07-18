@@ -67,6 +67,9 @@ public class Changer : MonoBehaviour
 
     private Vector3 largeTest;
 
+    private Vector3 initialSize = new Vector3(1f, 1f, 1f);
+    private Vector3 currentSize;
+
     // Use this for initialization
     void Start()
     {
@@ -129,8 +132,7 @@ public class Changer : MonoBehaviour
             // smallllllest
             case scaleMode.shrinkingSmaller:
 
-                cameraParent.transform.localScale = SmoothStep(new Vector3(1f, 1f, 1f), smallestScale, 0.5f);
-                    //Vector3.Slerp(cameraParent.transform.localScale, smallestScale, speed * Time.deltaTime);
+                cameraParent.transform.localScale = SmoothStep(initialSize, smallestScale, speed);
 
                 offset.y = Mathf.Lerp(offset.y, smallestOffsetTarget, speed * Time.deltaTime);
 
@@ -149,7 +151,7 @@ public class Changer : MonoBehaviour
 
                 // Debug.Log("Growing switch");
 
-                cameraParent.transform.localScale = Vector3.Slerp(cameraParent.transform.localScale, smallScale, speed * Time.deltaTime);
+                cameraParent.transform.localScale = SmoothStep(initialSize, smallScale, speed);
 
                 offset.y = Mathf.Lerp(offset.y, smallOffsetTarget, speed * Time.deltaTime);
 
@@ -166,7 +168,7 @@ public class Changer : MonoBehaviour
 
                 Debug.Log("Shrinking switch");
 
-                cameraParent.transform.localScale = Vector3.Slerp(cameraParent.transform.localScale, bigScale, speed * Time.deltaTime);
+                cameraParent.transform.localScale = SmoothStep(initialSize, bigScale, speed);
 
                 //offset.y = Mathf.Lerp(offset.y, largeOffsetTarget, speed * Time.deltaTime);
 
@@ -205,7 +207,7 @@ public class Changer : MonoBehaviour
 
                 Debug.Log("Resetting switch");
 
-                cameraParent.transform.localScale = Vector3.Slerp(cameraParent.transform.localScale, new Vector3(1f, 1f, 1f), speed * Time.deltaTime);
+                cameraParent.transform.localScale = SmoothStep(currentSize, initialSize, speed);
 
                 cameraParent.transform.localPosition = Vector3.Slerp(cameraParent.transform.localPosition, origin, speed * Time.deltaTime);
 
@@ -263,6 +265,7 @@ public class Changer : MonoBehaviour
 
         this.GetComponent<PlayerCollision>().Large = true;
 
+        startTime = Time.time;
     }
 
     public void Shrink()
@@ -272,6 +275,8 @@ public class Changer : MonoBehaviour
         currentScale = scaleMode.shrinking;
         plinthScript.SetState((int)scaleMode.shrinking);
         Time.timeScale = 0.75f;
+
+        startTime = Time.time;
     }
 
     public void ShrinkSmaller()
@@ -295,6 +300,7 @@ public class Changer : MonoBehaviour
     public void Reset()
     {     
         currentScale = scaleMode.resetting;
+        currentSize = cameraParent.transform.localScale;
         plinthScript.SetState((int)scaleMode.resetting);
         Time.timeScale = 1f;
 
@@ -302,6 +308,8 @@ public class Changer : MonoBehaviour
         soundRoom.localScale = new Vector3(10f, 10f, 10f);
         spatializer.UpdateSize();
         AkSoundEngine.SetRTPCValue("Elevation", 50f);
+
+        startTime = Time.time; // for slerp
 
         this.GetComponent<PlayerCollision>().Large = false;  // when large breathing is off. 
     }
