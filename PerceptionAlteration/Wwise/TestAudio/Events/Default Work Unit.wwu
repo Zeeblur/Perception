@@ -332,7 +332,7 @@
 						<Action Name="Play" ID="{EEDB2798-BCF7-4128-AD58-1FA50E814AF6}" ShortID="335199856" Type="Play" Scope="One" Global="false">
 							<ElementList>
 								<Element ID="{1ECF22EB-959F-4830-B31D-6B9943023265}" Global="false">
-									<ObjectRef Name="252681__chocobaggy__magic-sound-1 (1)" ID="{F1385DE1-88F0-43DE-882A-E7BC6DA5DB20}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}"/>
+									<ObjectRef Name="55815__sergenious__air (1)" ID="{0579A62F-1BC4-4516-8BAF-4F43EF16D064}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}"/>
 								</Element>
 							</ElementList>
 						</Action>

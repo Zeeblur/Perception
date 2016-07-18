@@ -5,6 +5,84 @@
 			<ChildrenList>
 				<Effect Name="New_VisiSonics_RealSpace3D" ID="{3466F0B0-DF96-4F40-8069-BBB5042E2C1E}" PluginName="VisiSonics RealSpace3D" CompanyID="0" PluginID="146" PluginType="6">
 					<ChildrenList>
+						<PluginMediaSource Name="lic_key" ID="{FEF6F5F7-969B-4BB6-A5AD-2DE39A19B276}" ShortID="625009760">
+							<ParentPluginID>9568262</ParentPluginID>
+							<PropertyList>
+								<Property Name="DataFileName" Type="string" Value="lic_key.txt"/>
+							</PropertyList>
+							<ConvertedFileIDList>
+								<File ID="67709042"/>
+							</ConvertedFileIDList>
+						</PluginMediaSource>
+						<PluginMediaSource Name="hrtf-cp048-r2" ID="{F034CA3C-E79C-41B2-86B0-5F1E182BFEF5}" ShortID="491111429">
+							<ParentPluginID>9568262</ParentPluginID>
+							<PropertyList>
+								<Property Name="DataFileName" Type="string" Value="hrtf-cp048-r2.icb"/>
+							</PropertyList>
+							<ConvertedFileIDList>
+								<File ID="96005466"/>
+							</ConvertedFileIDList>
+						</PluginMediaSource>
+						<PluginMediaSource Name="hrtf-cp021-r2" ID="{D4194C4B-7E02-4216-B50E-510EF42FA638}" ShortID="361487405">
+							<ParentPluginID>9568262</ParentPluginID>
+							<PropertyList>
+								<Property Name="DataFileName" Type="string" Value="hrtf-cp021-r2.icb"/>
+							</PropertyList>
+							<ConvertedFileIDList>
+								<File ID="156072767"/>
+							</ConvertedFileIDList>
+						</PluginMediaSource>
+						<PluginMediaSource Name="hrtf-cp165-r2" ID="{A859CC9F-749E-4CF5-AE2B-F7D5F821EBD3}" ShortID="919161146">
+							<ParentPluginID>9568262</ParentPluginID>
+							<PropertyList>
+								<Property Name="DataFileName" Type="string" Value="hrtf-cp165-r2.icb"/>
+							</PropertyList>
+							<ConvertedFileIDList>
+								<File ID="206325007"/>
+							</ConvertedFileIDList>
+						</PluginMediaSource>
+						<PluginMediaSource Name="hrtf-andre-r1" ID="{DD60E8F8-C1CF-4DAB-BD71-E111260930FF}" ShortID="778676813">
+							<ParentPluginID>9568262</ParentPluginID>
+							<PropertyList>
+								<Property Name="DataFileName" Type="string" Value="hrtf-andre-r1.icb"/>
+							</PropertyList>
+							<ConvertedFileIDList>
+								<File ID="300030528"/>
+							</ConvertedFileIDList>
+						</PluginMediaSource>
+						<PluginMediaSource Name="hrtf-virgn-r1" ID="{8144446A-DD89-4D31-943F-16F5D8F33CDA}" ShortID="839068934">
+							<ParentPluginID>9568262</ParentPluginID>
+							<PropertyList>
+								<Property Name="DataFileName" Type="string" Value="hrtf-virgn-r1.icb"/>
+							</PropertyList>
+							<ConvertedFileIDList>
+								<File ID="93284641"/>
+							</ConvertedFileIDList>
+						</PluginMediaSource>
+						<PluginMediaSource Name="hrtf-custom-r1" ID="{1611914E-792E-47D5-AE41-81682552734A}" ShortID="254003904">
+							<ParentPluginID>9568262</ParentPluginID>
+							<PropertyList>
+								<Property Name="DataFileName" Type="string" Value="hrtf-custom-r1.icb"/>
+							</PropertyList>
+							<ConvertedFileIDList>
+								<File ID="217877962"/>
+							</ConvertedFileIDList>
+						</PluginMediaSource>
+						<PluginMediaSource Name="BACCH_filters_stereo_front" ID="{4EBA6312-4F59-46A6-AEEE-82E439CCAAE0}" ShortID="152637930">
+							<ParentPluginID>9568262</ParentPluginID>
+							<PropertyList>
+								<Property Name="DataFileName" Type="string" Value="BACCH_filters_stereo_front.bin"/>
+							</PropertyList>
+						</PluginMediaSource>
+						<PluginMediaSource Name="BACCH_filters_stereo_back" ID="{2A88E9BA-5A9F-43BB-9140-942752BAEB5F}" ShortID="925193670">
+							<ParentPluginID>9568262</ParentPluginID>
+							<PropertyList>
+								<Property Name="DataFileName" Type="string" Value="BACCH_filters_stereo_back.bin"/>
+							</PropertyList>
+							<ConvertedFileIDList>
+								<File ID="387543422"/>
+							</ConvertedFileIDList>
+						</PluginMediaSource>
 						<PluginMediaSource Name="lic_key" ID="{2DDA22E3-C672-4389-A0DE-D7989D833E9E}" ShortID="492747357">
 							<ParentPluginID>9568262</ParentPluginID>
 							<PropertyList>
@@ -65,7 +143,7 @@
 								<Property Name="DataFileName" Type="string" Value="BACCH_filters_stereo_front.bin"/>
 							</PropertyList>
 							<ConvertedFileIDList>
-								<File ID="202971745"/>
+								<File ID="152637930"/>
 							</ConvertedFileIDList>
 						</PluginMediaSource>
 						<PluginMediaSource Name="BACCH_filters_stereo_back" ID="{1FB99F26-277C-4B84-ABA7-0FDDA232E50D}" ShortID="958355213">
@@ -139,6 +217,9 @@
 							<PropertyList>
 								<Property Name="DataFileName" Type="string" Value="BACCH_filters_stereo_front.bin"/>
 							</PropertyList>
+							<ConvertedFileIDList>
+								<File ID="152637930"/>
+							</ConvertedFileIDList>
 						</PluginMediaSource>
 						<PluginMediaSource Name="BACCH_filters_stereo_back" ID="{AB449125-228B-48C6-B24E-5C0B0A8C4628}" ShortID="387543422">
 							<ParentPluginID>9568262</ParentPluginID>
@@ -209,7 +290,7 @@
 								<Property Name="DataFileName" Type="string" Value="BACCH_filters_stereo_front.bin"/>
 							</PropertyList>
 							<ConvertedFileIDList>
-								<File ID="202971745"/>
+								<File ID="152637930"/>
 							</ConvertedFileIDList>
 						</PluginMediaSource>
 						<PluginMediaSource Name="BACCH_filters_stereo_back" ID="{B8555B43-D5AB-4A52-AEC6-44FD7EFFD07E}" ShortID="460058104">
