@@ -3,14 +3,14 @@
 	<Platform GUID="{2BE09E15-C860-49C4-87DB-8F1AE5482309}">
 		<Banks>
 			<Language ID="0">
-				<File Name="DogRoom" Hash="450245418" Timestamp="131130750353534660"/>
-				<File Name="Init" Hash="2272929987" Timestamp="131130684635874660"/>
+				<File Name="DogRoom" Hash="4149529862" Timestamp="131133235395661622"/>
+				<File Name="Init" Hash="2447441642" Timestamp="131133206027205070"/>
 				<File Name="Walkway" Hash="3973181190" Timestamp="131130588278444544"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="3747708201" Timestamp="131130750353674660"/>
+				<File Name="" Hash="2143135356" Timestamp="131133235395811637"/>
 			</Language>
 		</XMLInfo>
 	</Platform>

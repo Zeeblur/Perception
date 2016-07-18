@@ -21,7 +21,7 @@ public class Changer : MonoBehaviour
     public float speed;
 
     // for inequalities
-    private float epsilon = 0.005f;
+    private float epsilon = 0.0005f;
 
     // TODO: need to still see about translation when scaling.
     Vector3 playerPosition;
@@ -132,7 +132,7 @@ public class Changer : MonoBehaviour
             // smallllllest
             case scaleMode.shrinkingSmaller:
 
-                cameraParent.transform.localScale = SmoothStep(initialSize, smallestScale, speed);
+                cameraParent.transform.localScale = SmoothStep(initialSize, smallestScale, speed*Time.timeScale);
 
                 offset.y = Mathf.Lerp(offset.y, smallestOffsetTarget, speed * Time.deltaTime);
 
@@ -151,7 +151,7 @@ public class Changer : MonoBehaviour
 
                 // Debug.Log("Growing switch");
 
-                cameraParent.transform.localScale = SmoothStep(initialSize, smallScale, speed);
+                cameraParent.transform.localScale = SmoothStep(initialSize, smallScale, speed*Time.timeScale);
 
                 offset.y = Mathf.Lerp(offset.y, smallOffsetTarget, speed * Time.deltaTime);
 
@@ -168,7 +168,7 @@ public class Changer : MonoBehaviour
 
                 Debug.Log("Shrinking switch");
 
-                cameraParent.transform.localScale = SmoothStep(initialSize, bigScale, speed);
+                cameraParent.transform.localScale = SmoothStep(initialSize, bigScale, speed*Time.timeScale);
 
                 //offset.y = Mathf.Lerp(offset.y, largeOffsetTarget, speed * Time.deltaTime);
 
@@ -207,7 +207,7 @@ public class Changer : MonoBehaviour
 
                 Debug.Log("Resetting switch");
 
-                cameraParent.transform.localScale = SmoothStep(currentSize, initialSize, speed);
+                cameraParent.transform.localScale = SmoothStep(currentSize, initialSize, speed* Time.timeScale);
 
                 cameraParent.transform.localPosition = Vector3.Slerp(cameraParent.transform.localPosition, origin, speed * Time.deltaTime);
 
@@ -260,9 +260,7 @@ public class Changer : MonoBehaviour
         plinthScript.SetState((int)scaleMode.growing);
         Time.timeScale = 1f;
 
-        soundRoom.localScale = new Vector3(7f, 5f, 4f);
-        spatializer.UpdateSize();
-
+        UpdateSound(new Vector3(7f, 5f, 4f), 20f);
         this.GetComponent<PlayerCollision>().Large = true;
 
         startTime = Time.time;
@@ -275,8 +273,7 @@ public class Changer : MonoBehaviour
         currentScale = scaleMode.shrinking;
         plinthScript.SetState((int)scaleMode.shrinking);
         Time.timeScale = 0.75f;
-
-        startTime = Time.time;
+        UpdateSound(new Vector3(17f, 17f, 17f), 60f);
     }
 
     public void ShrinkSmaller()
@@ -290,26 +287,20 @@ public class Changer : MonoBehaviour
         plinthScript.SetState((int)scaleMode.shrinkingSmaller);
         Time.timeScale = 0.5f;
 
-        // AkSoundEngine.SetRTPCValue("Elevation", 20f);
-       // spatializer.UpdateSize();
-
-        startTime = Time.time;
-
+        //AkSoundEngine.SetRTPCValue("Elevation", 20f);
+        UpdateSound(new Vector3(30f, 30f, 30f), 80f);
     }
 
     public void Reset()
-    {     
+    {
+        AkSoundEngine.PostEvent("Magic", this.gameObject);
         currentScale = scaleMode.resetting;
         currentSize = cameraParent.transform.localScale;
         plinthScript.SetState((int)scaleMode.resetting);
         Time.timeScale = 1f;
 
-
-        soundRoom.localScale = new Vector3(10f, 10f, 10f);
-        spatializer.UpdateSize();
+        UpdateSound(new Vector3(10f, 10f, 10f), 50f);
         AkSoundEngine.SetRTPCValue("Elevation", 50f);
-
-        startTime = Time.time; // for slerp
 
         this.GetComponent<PlayerCollision>().Large = false;  // when large breathing is off. 
     }
@@ -345,4 +336,12 @@ public class Changer : MonoBehaviour
 
     }
 
+    private void UpdateSound(Vector3 scale, float refl)
+    {
+        soundRoom.localScale = scale;
+        soundRoom.GetComponent<RS3DRoom>().all_refl = refl;
+        spatializer.UpdateSize();
+
+        startTime = Time.time;
+    }
 }

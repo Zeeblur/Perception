@@ -18,35 +18,35 @@ public class CollisionPick : MonoBehaviour
         if (other.CompareTag("Perception-Changer-large"))
         {
             playerScript.Grow();
-            transform.parent.GetComponent<PickUp>().SetPicked(false);
-            AkSoundEngine.PostEvent("Play_Dog_" + (int)EnemyType.large, other.gameObject);
-            other.gameObject.GetComponent<SplineWalkerPlinth>().DogState = true;
+            Selected((int)EnemyType.large, other.gameObject);
         }
 
         if (other.CompareTag("Perception-Changer-small"))
         { 
             playerScript.Shrink();
-            transform.parent.GetComponent<PickUp>().SetPicked(false);
-            AkSoundEngine.PostEvent("Play_Dog_" + (int)EnemyType.small, other.gameObject);
-            other.gameObject.GetComponent<SplineWalkerPlinth>().DogState = true;
+            Selected((int)EnemyType.small, other.gameObject);
         }
 
         if (other.CompareTag("Perception-Changer-smallest"))
         {
             playerScript.ShrinkSmaller();
-            transform.parent.GetComponent<PickUp>().SetPicked(false);
-
-            AkSoundEngine.PostEvent("Play_Dog_" + (int)EnemyType.smallest, other.gameObject);
-            other.gameObject.GetComponent<SplineWalkerPlinth>().DogState = true;
-            other.gameObject.GetComponent<SplineWalkerPlinth>().SoundTimer = Time.time + 3f;
+            Selected((int)EnemyType.smallest, other.gameObject);
         }
 
         if (other.CompareTag("Perception-Changer-upside"))
         {
             playerScript.Flip();
-            transform.parent.GetComponent<PickUp>().SetPicked(false);
-            AkSoundEngine.PostEvent("Play_Dog_" + (int)EnemyType.upside, other.gameObject);
-            other.gameObject.GetComponent<SplineWalkerPlinth>().DogState = true;
+            Selected((int)EnemyType.upside, other.gameObject);
         }
+    }
+
+    private void Selected(int chosenDog, GameObject GO)
+    {
+        transform.parent.GetComponent<PickUp>().SetPicked(false);
+        AkSoundEngine.PostEvent("Play_Dog_" + chosenDog, GO);
+        GO.gameObject.GetComponent<SplineWalkerPlinth>().DogState = true;
+        GO.gameObject.GetComponent<SplineWalkerPlinth>().SoundTimer = Time.time + 3f;
+
+        AkSoundEngine.PostEvent("Magic", this.gameObject);
     }
 }

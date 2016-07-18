@@ -14,6 +14,7 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID HATCHOPEN = 829215693U;
+        static const AkUniqueID MAGIC = 1880439950U;
         static const AkUniqueID PLAY_AMBIENT = 1562304622U;
         static const AkUniqueID PLAY_BREATHING_LARGE = 2750153476U;
         static const AkUniqueID PLAY_BREATHING_SMALL = 4236009996U;
@@ -26,11 +27,12 @@ namespace AK
         static const AkUniqueID PLAY_DOG_3 = 2935214690U;
         static const AkUniqueID PLAY_FLICKER = 1742085842U;
         static const AkUniqueID PLAY_FLICKERLONG = 2446439680U;
-        static const AkUniqueID PLAY_LARGE = 2773852235U;
         static const AkUniqueID PLAY_LIGHTHUM = 444602164U;
-        static const AkUniqueID PLAY_SMALL = 2605271991U;
-        static const AkUniqueID PLAY_SMALLEST = 1823826029U;
-        static const AkUniqueID PLAY_UPSIDE = 3734530640U;
+        static const AkUniqueID PLAY_PILLAR = 2100944690U;
+        static const AkUniqueID PLAY_RAND_0 = 916330150U;
+        static const AkUniqueID PLAY_RAND_1 = 916330151U;
+        static const AkUniqueID PLAY_RAND_3 = 916330149U;
+        static const AkUniqueID PLAY_RAND_4 = 916330146U;
         static const AkUniqueID PLAYMUSIC = 417627684U;
         static const AkUniqueID STOP_BREATHING_LARGE = 2454218274U;
         static const AkUniqueID STOP_BREATHING_SMALL = 2194808814U;

@@ -9,6 +9,8 @@ public class PickUp : MonoBehaviour
     private bool insideObj;
     private GameObject pickedObj;
 
+    public GameObject cube;
+
     private Changer playerScript;
 
     private float verb = 50f;
@@ -80,7 +82,7 @@ public class PickUp : MonoBehaviour
             playerScript.PrintLook();
 
         if (controller.GetPress(SteamVR_Controller.ButtonMask.Touchpad))
-            pickedObj.transform.position = new Vector3(0.5f, 0.5f, 0.5f);
+            cube.transform.position = new Vector3(0.5f, 0.5f, 0.5f);
 
     }
 

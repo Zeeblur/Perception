@@ -116,6 +116,10 @@
 				<Event Name="Play_Rand_0" ID="{5058624E-47DA-4438-9E9E-2F1BCB545E09}">
 					<ChildrenList>
 						<Action Name="Play" ID="{F5E7B80B-D3FC-47AC-9F3A-6A1AE9A70364}" ShortID="204039219" Type="Play" Scope="One" Global="false">
+							<PropertyList>
+								<Property Name="FadeCurve" Type="int16" Value="1"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.2"/>
+							</PropertyList>
 							<ElementList>
 								<Element ID="{463B1846-5216-4BD5-ADFB-ED0B1C93B865}" Global="false">
 									<ObjectRef Name="SmallestDog" ID="{3909F9C3-EC23-4F1E-83B2-904CD9A3590F}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}"/>
@@ -127,6 +131,10 @@
 				<Event Name="Play_Rand_3" ID="{9CC8859B-211F-46D2-964F-02F87BF8A76C}">
 					<ChildrenList>
 						<Action Name="Play" ID="{3011A7A3-49EF-441C-9B0E-649E19A3E9E9}" ShortID="676540267" Type="Play" Scope="One" Global="false">
+							<PropertyList>
+								<Property Name="FadeCurve" Type="int16" Value="1"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.2"/>
+							</PropertyList>
 							<ElementList>
 								<Element ID="{A70776FD-E7FA-4B27-8D93-CF2C6E4726C5}" Global="false">
 									<ObjectRef Name="UpsideDog" ID="{A2A3C8F9-8D42-4B57-A3DC-9297A8166F56}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}"/>
@@ -138,6 +146,10 @@
 				<Event Name="Play_Rand_1" ID="{8EDA09A3-B572-47C4-8D50-199C164E5379}">
 					<ChildrenList>
 						<Action Name="Play" ID="{EF992C21-01DC-4173-A8C3-0733D2A36D28}" ShortID="945995105" Type="Play" Scope="One" Global="false">
+							<PropertyList>
+								<Property Name="FadeCurve" Type="int16" Value="1"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.2"/>
+							</PropertyList>
 							<ElementList>
 								<Element ID="{2593C356-283E-4726-A075-6495BA39C66C}" Global="false">
 									<ObjectRef Name="SmallDog" ID="{500BBBEE-555A-4DDA-AE6E-06DD791A7231}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}"/>
@@ -149,6 +161,10 @@
 				<Event Name="Play_Rand_4" ID="{2F27474C-43DC-4BF8-8A5B-B7FCF53C89DB}">
 					<ChildrenList>
 						<Action Name="Play" ID="{5C870F84-CC70-47C5-B1DE-E3C2A2A44888}" ShortID="454859721" Type="Play" Scope="One" Global="false">
+							<PropertyList>
+								<Property Name="FadeCurve" Type="int16" Value="1"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.2"/>
+							</PropertyList>
 							<ElementList>
 								<Element ID="{1D0B27C4-32A9-4B3C-BC07-453C12CD6C93}" Global="false">
 									<ObjectRef Name="LargeDog" ID="{1349E4CA-5FCD-406C-A9CF-F772B18770E3}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}"/>
@@ -295,6 +311,28 @@
 							<ElementList>
 								<Element ID="{B77B0876-43B3-49C4-8008-7FFDED13CF88}" Global="false">
 									<ObjectRef Name="VR_Cube_Synth" ID="{762F8E8E-EFB7-4907-8CBA-4FBD7EA84B80}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Pillar" ID="{ADDB3E2E-1C53-4328-856B-30FF6912E6CE}">
+					<ChildrenList>
+						<Action Name="Play" ID="{21A406E6-C635-4865-B64E-DD9A9BD8852B}" ShortID="463830176" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{A75A4E5C-DFFB-48ED-B021-CF1231C8117D}" Global="false">
+									<ObjectRef Name="VR_Pillar_Impact_48k" ID="{2F73E1A4-542E-40E9-B2E2-B2FA5775A413}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Magic" ID="{22006337-F905-457B-A756-AF6A918E18A6}">
+					<ChildrenList>
+						<Action Name="Play" ID="{EEDB2798-BCF7-4128-AD58-1FA50E814AF6}" ShortID="335199856" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{1ECF22EB-959F-4830-B31D-6B9943023265}" Global="false">
+									<ObjectRef Name="252681__chocobaggy__magic-sound-1 (1)" ID="{F1385DE1-88F0-43DE-882A-E7BC6DA5DB20}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}"/>
 								</Element>
 							</ElementList>
 						</Action>
