@@ -70,6 +70,8 @@ public class Changer : MonoBehaviour
     private Vector3 initialSize = new Vector3(1f, 1f, 1f);
     private Vector3 currentSize;
 
+    private bool click = false; // to play woosh only once
+
     // Use this for initialization
     void Start()
     {
@@ -168,7 +170,7 @@ public class Changer : MonoBehaviour
 
                 Debug.Log("Shrinking switch");
 
-                cameraParent.transform.localScale = SmoothStep(initialSize, bigScale, speed*Time.timeScale);
+                cameraParent.transform.localScale = SmoothStep(initialSize, bigScale, 1.2f*speed*Time.timeScale);
 
                 //offset.y = Mathf.Lerp(offset.y, largeOffsetTarget, speed * Time.deltaTime);
 
@@ -183,7 +185,7 @@ public class Changer : MonoBehaviour
                 tiltShiftEff.blurArea = Mathf.Lerp(tiltShiftEff.blurArea, maxTiltBlurArea, speed * Time.deltaTime);
                 tiltShiftEff.maxBlurSize = Mathf.Lerp(tiltShiftEff.maxBlurSize, maxBlurSize, speed * Time.deltaTime);
 
-                if (cameraParent.transform.localScale.y >= (bigScale.y + epsilon))
+                if (cameraParent.transform.localScale.y >= (bigScale.y - epsilon))
                 {
                     currentScale = scaleMode.stopped;
                 }
@@ -195,9 +197,9 @@ public class Changer : MonoBehaviour
 
                 Debug.Log("turning");
 
-                cameraParent.transform.localRotation = Quaternion.Slerp(cameraParent.transform.localRotation, new Quaternion(Mathf.Sin(theta), 0, 0, Mathf.Cos(theta)), speed * Time.deltaTime);
+                cameraParent.transform.localRotation = Quaternion.Slerp(cameraParent.transform.localRotation, new Quaternion(Mathf.Sin(theta), 0, 0, Mathf.Cos(theta)), 3* speed * Time.deltaTime);
 
-                cameraParent.transform.localPosition = Vector3.Slerp(cameraParent.transform.localPosition, elevation, speed * Time.deltaTime);
+                cameraParent.transform.localPosition = Vector3.Slerp(cameraParent.transform.localPosition, elevation, 3* speed * Time.deltaTime);
 
                 if (cameraParent.transform.localPosition.y >= elevation.y - epsilon && cameraParent.transform.localRotation.w <= epsilon)
                 {
@@ -212,14 +214,14 @@ public class Changer : MonoBehaviour
 
                 Debug.Log("Resetting switch");
 
-                cameraParent.transform.localScale = SmoothStep(currentSize, initialSize, speed* Time.timeScale);
+                cameraParent.transform.localScale = SmoothStep(currentSize, initialSize, 2*speed* Time.timeScale);
 
                 cameraParent.transform.localPosition = Vector3.Slerp(cameraParent.transform.localPosition, origin, speed * Time.deltaTime);
 
                 if (!upright)
                 {
-                    cameraParent.transform.localRotation = Quaternion.Slerp(cameraParent.transform.localRotation, new Quaternion(0, 0, 0, Mathf.Cos(0)), speed * Time.deltaTime);
-                    cameraParent.transform.localPosition = Vector3.Slerp(cameraParent.transform.localPosition, origin, speed * Time.deltaTime);
+                    cameraParent.transform.localRotation = Quaternion.Slerp(cameraParent.transform.localRotation, new Quaternion(0, 0, 0, Mathf.Cos(0)), 3* speed * Time.deltaTime);
+                    cameraParent.transform.localPosition = Vector3.Slerp(cameraParent.transform.localPosition, origin, 3 *speed * Time.deltaTime);
                 }
 
                 upright = cameraParent.transform.localPosition.y <= epsilon ? true : false;
@@ -236,25 +238,35 @@ public class Changer : MonoBehaviour
                     return;
                 }
 
+                if (click)
+                {
+                    AkSoundEngine.PostEvent("Magic", this.gameObject);
+                    click = false;
+                }
+
                 break;
         }
     }
 
     public void Flip()
     {
+        if (currentScale != scaleMode.stopped)
+            return;
+
         // User is inside large ball
         Debug.Log("Flip touch");
 
         currentScale = scaleMode.turning;
 
         elevation = new Vector3(0f, ceiling.transform.position.y, 0f);
-
-        Debug.Log("Elevation " + elevation);
         Time.timeScale = 1f;
     }
 
     public void Grow()
     {
+        if (currentScale != scaleMode.stopped)
+            return;
+
         // User is inside large ball
         Debug.Log("Large touch");
 
@@ -263,6 +275,7 @@ public class Changer : MonoBehaviour
         currentScale = scaleMode.growing;
 
         plinthScript.SetState((int)scaleMode.growing);
+        plinthScript.SetPickable(true);                     // can pick up objects
         Time.timeScale = 1f;
 
         UpdateSound(new Vector3(7f, 5f, 4f), 20f);
@@ -285,16 +298,23 @@ public class Changer : MonoBehaviour
 
     public void Shrink()
     {
+        if (currentScale != scaleMode.stopped)
+            return;
+
         Debug.Log("Small touch");
 
         currentScale = scaleMode.shrinking;
         plinthScript.SetState((int)scaleMode.shrinking);
+        plinthScript.SetPickable(false);
         Time.timeScale = 0.75f;
         UpdateSound(new Vector3(17f, 17f, 17f), 60f);
     }
 
     public void ShrinkSmaller()
     {
+        if (currentScale != scaleMode.stopped)
+            return;
+
         // User is inside enemy
         Debug.Log("Smallest touch");
 
@@ -302,22 +322,25 @@ public class Changer : MonoBehaviour
 
         playerPosition =  headCam.transform.localPosition;
         plinthScript.SetState((int)scaleMode.shrinkingSmaller);
+        plinthScript.SetPickable(false);
         Time.timeScale = 0.5f;
-
-        //AkSoundEngine.SetRTPCValue("Elevation", 20f);
+        
         UpdateSound(new Vector3(30f, 30f, 30f), 80f);
     }
 
     public void Reset()
     {
-        AkSoundEngine.PostEvent("Magic", this.gameObject);
+        if (currentScale != scaleMode.stopped)
+            return;
+
+        click = true;
         currentScale = scaleMode.resetting;
         currentSize = cameraParent.transform.localScale;
         plinthScript.SetState((int)scaleMode.resetting);
+        plinthScript.SetPickable(false);
         Time.timeScale = 1f;
 
         UpdateSound(new Vector3(10f, 10f, 10f), 50f);
-        AkSoundEngine.SetRTPCValue("Elevation", 50f);
 
         this.GetComponent<PlayerCollision>().Large = false;  // when large breathing is off. 
     }

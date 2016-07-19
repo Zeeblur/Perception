@@ -13,6 +13,41 @@ public class CollisionPick : MonoBehaviour
         body = GetComponent<Rigidbody>();
     }
 
+    void Update ()
+    {
+
+        if (Input.GetKey("1"))
+        {
+            playerScript.ShrinkSmaller();
+            Selected((int)EnemyType.smallest, GameObject.FindGameObjectWithTag("Perception-Changer-smallest"));
+        }
+
+        if (Input.GetKey("2"))
+        {
+            playerScript.Shrink();
+            Selected((int)EnemyType.small, GameObject.FindGameObjectWithTag("Perception-Changer-small"));
+        }
+
+
+        if (Input.GetKey("3"))
+        {
+            playerScript.Grow();
+            Selected((int)EnemyType.large, GameObject.FindGameObjectWithTag("Perception-Changer-large"));
+        }
+        
+        if (Input.GetKey("4"))
+        {
+            playerScript.Flip();
+            Selected((int)EnemyType.upside, GameObject.FindGameObjectWithTag("Perception-Changer-upside"));
+        }
+
+        if (Input.GetKey("5"))
+        {
+            playerScript.Reset();
+        }
+
+    }
+
     void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Perception-Changer-large"))
@@ -42,11 +77,26 @@ public class CollisionPick : MonoBehaviour
 
     private void Selected(int chosenDog, GameObject GO)
     {
-        transform.parent.GetComponent<PickUp>().SetPicked(false);
+        if (transform.parent)
+            transform.parent.GetComponent<PickUp>().SetPicked(false);
+
+
         AkSoundEngine.PostEvent("Play_Dog_" + chosenDog, GO);
         GO.gameObject.GetComponent<SplineWalkerPlinth>().DogState = true;
         GO.gameObject.GetComponent<SplineWalkerPlinth>().SoundTimer = Time.time + 3f;
 
         AkSoundEngine.PostEvent("Magic", this.gameObject);
+    }
+
+    void OnCollisionEnter(Collision other)
+    {
+        if (Time.time < 3f)
+            return;
+
+        // bang when colliding with anything but player
+        if (!other.gameObject.CompareTag("Player") && !other.gameObject.CompareTag("GameController"))
+        {
+            AkSoundEngine.PostEvent("Play_Cube_Col", this.gameObject);
+        }
     }
 }

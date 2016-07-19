@@ -321,7 +321,7 @@
 						<Action Name="Play" ID="{21A406E6-C635-4865-B64E-DD9A9BD8852B}" ShortID="463830176" Type="Play" Scope="One" Global="false">
 							<ElementList>
 								<Element ID="{A75A4E5C-DFFB-48ED-B021-CF1231C8117D}" Global="false">
-									<ObjectRef Name="VR_Pillar_Impact_48k" ID="{2F73E1A4-542E-40E9-B2E2-B2FA5775A413}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}"/>
+									<ObjectRef Name="VR_Pillar_Impact_48k" ID="{8001D2CA-412E-4D6C-A82A-E4BBA8D15687}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}"/>
 								</Element>
 							</ElementList>
 						</Action>
@@ -333,6 +333,21 @@
 							<ElementList>
 								<Element ID="{1ECF22EB-959F-4830-B31D-6B9943023265}" Global="false">
 									<ObjectRef Name="55815__sergenious__air (1)" ID="{0579A62F-1BC4-4516-8BAF-4F43EF16D064}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Cube_Col" ID="{F996E5D1-38B6-4F83-965B-863641AB8F00}">
+					<ChildrenList>
+						<Action Name="Play" ID="{1005FB81-9449-4890-A92B-BC7B47108C44}" ShortID="443563187" Type="Play" Scope="One" Global="false">
+							<PropertyList>
+								<Property Name="FadeCurve" Type="int16" Value="1"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.2"/>
+							</PropertyList>
+							<ElementList>
+								<Element ID="{345BB8AC-94B2-486C-83F8-1C660354FEB8}" Global="false">
+									<ObjectRef Name="VR_Cube_Impact" ID="{2F73E1A4-542E-40E9-B2E2-B2FA5775A413}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}"/>
 								</Element>
 							</ElementList>
 						</Action>

@@ -4,12 +4,14 @@ using System.Collections;
 public class FallSound : MonoBehaviour {
 
     private Rigidbody rb;
+    private float timer;
+    private float interval = 0.2f;
 
 	// Use this for initialization
 	void Awake ()
     {
         rb = gameObject.GetComponent<Rigidbody>();
-        rb.Sleep();
+        timer = Time.time + interval;
     }
 	
 	// Update is called once per frame
@@ -19,9 +21,10 @@ public class FallSound : MonoBehaviour {
 
     void OnCollisionEnter(Collision other)
     {
-        if (!rb.IsSleeping() && Time.time > 3f)
+        if (!rb.IsSleeping() && Time.time > timer)
         {
             AkSoundEngine.PostEvent("Play_Pillar", this.gameObject);
+            timer = Time.time + interval;
         }
     }
 }

@@ -14,22 +14,22 @@ public class PlinthPhys : MonoBehaviour
     public float newTime = 1f;
 
     // Use this for initialization
-    void Start ()
+    void Start()
     {
         plinthBodies = gameObject.GetComponentsInChildren<Rigidbody>();
-        
+
         foreach (Rigidbody rb in plinthBodies)
         {
             rb.centerOfMass = new Vector3(0, -0.3f, 0);
         }
     }
 
-	// Update is called once per frame
-	void Update ()
+    // Update is called once per frame
+    void Update()
     {
         if (!dirty)
             return;
-        
+
         // change mass
         foreach (Rigidbody rb in plinthBodies)
         {
@@ -42,9 +42,19 @@ public class PlinthPhys : MonoBehaviour
 
     public void SetState(int choice)
     {
-        currentMass = masses[choice-1];
+        currentMass = masses[choice - 1];
         dirty = true;
     }
 
+    public void SetPickable(bool big)
+    {
+        if (big)
+        {
+            foreach (Rigidbody rb in plinthBodies)
+            {
+                rb.gameObject.GetComponent<CapsuleCollider>().enabled = big;
+            }
+        }
+    }
 
 }

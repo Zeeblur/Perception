@@ -5,6 +5,44 @@
 			<ChildrenList>
 				<ActorMixer Name="New Actor-Mixer" ID="{EC852A19-C59F-4075-8F0F-BF81D4792A19}" ShortID="360056942">
 					<PropertyList>
+						<Property Name="Highpass" Type="int16">
+							<RTPCList>
+								<RTPC Name="" ID="{3793C0B9-EA5F-46A7-84F8-14BE6100A851}" ShortID="633180099">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="Elevation" ID="{E697E70F-71B3-44EA-9311-295D91309BC8}" WorkUnitID="{0AEBADB4-CF30-41C8-B323-F726CF4DA516}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{7FD04EB7-BDB5-45B1-A7B1-894DF98FA9AA}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="65537"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>3</YPos>
+												<Flags>5</Flags>
+											</Point>
+											<Point>
+												<XPos>50.15707</XPos>
+												<YPos>1</YPos>
+												<Flags>0</Flags>
+											</Point>
+											<Point>
+												<XPos>69.94764</XPos>
+												<YPos>36</YPos>
+												<Flags>0</Flags>
+											</Point>
+											<Point>
+												<XPos>100</XPos>
+												<YPos>44</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
 						<Property Name="Lowpass" Type="int16">
 							<RTPCList>
 								<RTPC Name="" ID="{55B0E9ED-2FBE-4C5F-BE54-EE264C69F6B2}" ShortID="654823163">
@@ -31,6 +69,56 @@
 											<Point>
 												<XPos>100</XPos>
 												<YPos>-100</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
+						<Property Name="Pitch" Type="int32">
+							<RTPCList>
+								<RTPC Name="" ID="{912B9672-3A12-4844-A6E2-FD3DB888D4C7}" ShortID="403610301">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="Elevation" ID="{E697E70F-71B3-44EA-9311-295D91309BC8}" WorkUnitID="{0AEBADB4-CF30-41C8-B323-F726CF4DA516}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{E419CFA5-C7B5-4C07-8385-8FBCF1786BE6}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="65537"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>-1519</YPos>
+												<Flags>5</Flags>
+											</Point>
+											<Point>
+												<XPos>10</XPos>
+												<YPos>-1200</YPos>
+												<Flags>0</Flags>
+												<SegmentShape>Exp1</SegmentShape>
+											</Point>
+											<Point>
+												<XPos>35</XPos>
+												<YPos>-659</YPos>
+												<Flags>0</Flags>
+												<SegmentShape>Exp1</SegmentShape>
+											</Point>
+											<Point>
+												<XPos>49.58115</XPos>
+												<YPos>64</YPos>
+												<Flags>0</Flags>
+											</Point>
+											<Point>
+												<XPos>70.07853</XPos>
+												<YPos>30</YPos>
+												<Flags>0</Flags>
+											</Point>
+											<Point>
+												<XPos>100</XPos>
+												<YPos>0</YPos>
 												<Flags>37</Flags>
 											</Point>
 										</PointList>
@@ -195,6 +283,11 @@
 									</ModifierList>
 								</Property>
 								<Property Name="PositioningType" Type="int16" Value="1"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -1522,56 +1615,6 @@
 						<Sound Name="VR_Cube_Synth" ID="{762F8E8E-EFB7-4907-8CBA-4FBD7EA84B80}" ShortID="339750823" Type="SoundFX">
 							<PropertyList>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-								<Property Name="Pitch" Type="int32">
-									<RTPCList>
-										<RTPC Name="" ID="{1B405561-FBF6-4B32-9554-FAC26AC32420}" ShortID="212040985">
-											<ReferenceList>
-												<Reference Name="ControlInput">
-													<ObjectRef Name="Elevation" ID="{E697E70F-71B3-44EA-9311-295D91309BC8}" WorkUnitID="{0AEBADB4-CF30-41C8-B323-F726CF4DA516}"/>
-												</Reference>
-											</ReferenceList>
-											<Curve Name="" ID="{C1EAB2E3-1F30-4AA5-9CAB-3DCCF569A17C}">
-												<PropertyList>
-													<Property Name="Flags" Type="int32" Value="65537"/>
-												</PropertyList>
-												<PointList>
-													<Point>
-														<XPos>0</XPos>
-														<YPos>-1519</YPos>
-														<Flags>5</Flags>
-													</Point>
-													<Point>
-														<XPos>10</XPos>
-														<YPos>-1200</YPos>
-														<Flags>0</Flags>
-														<SegmentShape>Exp1</SegmentShape>
-													</Point>
-													<Point>
-														<XPos>35</XPos>
-														<YPos>-659</YPos>
-														<Flags>0</Flags>
-														<SegmentShape>Exp1</SegmentShape>
-													</Point>
-													<Point>
-														<XPos>50</XPos>
-														<YPos>11</YPos>
-														<Flags>0</Flags>
-													</Point>
-													<Point>
-														<XPos>75</XPos>
-														<YPos>5</YPos>
-														<Flags>0</Flags>
-													</Point>
-													<Point>
-														<XPos>100</XPos>
-														<YPos>0</YPos>
-														<Flags>37</Flags>
-													</Point>
-												</PointList>
-											</Curve>
-										</RTPC>
-									</RTPCList>
-								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
 										<Value>-6</Value>
@@ -1596,7 +1639,99 @@
 								<ActiveSource Name="VR_Cube_Synth" ID="{BC2D7B79-3581-47FD-86EB-39770D97BAA1}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
-						<Sound Name="VR_Pillar_Impact_48k" ID="{2F73E1A4-542E-40E9-B2E2-B2FA5775A413}" ShortID="735488297" Type="SoundFX">
+						<Sound Name="VR_Pillar_Impact_48k" ID="{8001D2CA-412E-4D6C-A82A-E4BBA8D15687}" ShortID="848178730" Type="SoundFX">
+							<PropertyList>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>-610</Value>
+									</ValueList>
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{D479D3A1-8F2F-4D66-A3CC-8D42959EA3AC}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="50"/>
+													<Property Name="Min" Type="Real64" Value="-50"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="PositioningType" Type="int16" Value="1"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-22</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<Custom CreatedFrom="{6D1B890C-9826-4384-BF07-C15223E9FB56}">
+										<Conversion Name="Default Conversion Settings (Custom)" ID="{03AFB38D-DC39-45B8-9BBF-0B584A62DF05}">
+											<PropertyList>
+												<Property Name="Channels" Type="int32">
+													<ValueList>
+														<Value Platform="Windows">4</Value>
+													</ValueList>
+												</Property>
+												<Property Name="LRMix" Type="Real64">
+													<ValueList>
+														<Value Platform="Windows">0</Value>
+													</ValueList>
+												</Property>
+												<Property Name="MaxSampleRate" Type="int32">
+													<ValueList>
+														<Value Platform="Windows">0</Value>
+													</ValueList>
+												</Property>
+												<Property Name="MinSampleRate" Type="int32">
+													<ValueList>
+														<Value Platform="Windows">0</Value>
+													</ValueList>
+												</Property>
+												<Property Name="SampleRate" Type="int32">
+													<ValueList>
+														<Value Platform="Windows">0</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ConversionPluginInfoList>
+												<ConversionPluginInfo Platform="Windows">
+													<ConversionPlugin Name="" ID="{EEBD4EC2-6B64-478B-82E5-ECEFEA03E2E7}" PluginName="PCM" CompanyID="0" PluginID="1"/>
+												</ConversionPluginInfo>
+											</ConversionPluginInfoList>
+										</Conversion>
+									</Custom>
+								</Reference>
+								<Reference Name="Effect0" PluginName="Wwise Peak Limiter" CompanyID="0" PluginID="110" PluginType="3">
+									<ObjectRef Name="Brick_Wall_Minus_1dB_Peak_Slow_Release" ID="{9FB8DC2B-7F1C-4E4E-8FA5-50872652D2DD}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="RealSpace3D Bus" ID="{D6660470-B59B-45C8-9FA9-794761B4B9E4}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
+								</Reference>
+								<Reference Name="UserAuxSend0">
+									<ObjectRef Name="Verb" ID="{37E486C9-9136-49F7-982C-B9AC74BAB40D}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="VR_Pillar_Impact_48k" ID="{8466D36F-F8D5-41D5-8370-11965CBDDB56}" ShortID="940646119">
+									<Language>SFX</Language>
+									<AudioFile>VR_Pillar_Impact_48k.wav</AudioFile>
+									<ConvertedFileIDList>
+										<File ID="58669202"/>
+									</ConvertedFileIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="VR_Pillar_Impact_48k" ID="{8466D36F-F8D5-41D5-8370-11965CBDDB56}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="VR_Cube_Impact" ID="{2F73E1A4-542E-40E9-B2E2-B2FA5775A413}" ShortID="735488297" Type="SoundFX">
 							<PropertyList>
 								<Property Name="Pitch" Type="int32">
 									<ModifierList>
@@ -1604,20 +1739,67 @@
 											<Modifier Name="" ID="{6BFA5BAA-AECB-4B35-A091-F7DDF022B105}">
 												<PropertyList>
 													<Property Name="Enabled" Type="bool" Value="True"/>
-													<Property Name="Max" Type="Real64" Value="600"/>
-													<Property Name="Min" Type="Real64" Value="-600"/>
+													<Property Name="Max" Type="Real64" Value="50"/>
+													<Property Name="Min" Type="Real64" Value="-50"/>
 												</PropertyList>
 											</Modifier>
 										</ModifierInfo>
 									</ModifierList>
 								</Property>
+								<Property Name="PositioningType" Type="int16" Value="1"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-20</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
+									<Custom CreatedFrom="{6D1B890C-9826-4384-BF07-C15223E9FB56}">
+										<Conversion Name="Default Conversion Settings (Custom)" ID="{E3BE6A1B-24B3-40D9-9BF1-6579B3F458A8}">
+											<PropertyList>
+												<Property Name="Channels" Type="int32">
+													<ValueList>
+														<Value Platform="Windows">4</Value>
+													</ValueList>
+												</Property>
+												<Property Name="LRMix" Type="Real64">
+													<ValueList>
+														<Value Platform="Windows">0</Value>
+													</ValueList>
+												</Property>
+												<Property Name="MaxSampleRate" Type="int32">
+													<ValueList>
+														<Value Platform="Windows">0</Value>
+													</ValueList>
+												</Property>
+												<Property Name="MinSampleRate" Type="int32">
+													<ValueList>
+														<Value Platform="Windows">0</Value>
+													</ValueList>
+												</Property>
+												<Property Name="SampleRate" Type="int32">
+													<ValueList>
+														<Value Platform="Windows">0</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ConversionPluginInfoList>
+												<ConversionPluginInfo Platform="Windows">
+													<ConversionPlugin Name="" ID="{B6A46DA5-DAC1-486E-B33A-9CAE6C35AEE6}" PluginName="PCM" CompanyID="0" PluginID="1"/>
+												</ConversionPluginInfo>
+											</ConversionPluginInfoList>
+										</Conversion>
+									</Custom>
+								</Reference>
+								<Reference Name="Effect0" PluginName="Wwise Peak Limiter" CompanyID="0" PluginID="110" PluginType="3">
+									<ObjectRef Name="Brick_Wall_Minus_1dB_Peak_Slow_Release" ID="{9FB8DC2B-7F1C-4E4E-8FA5-50872652D2DD}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
+									<ObjectRef Name="RealSpace3D Bus" ID="{D6660470-B59B-45C8-9FA9-794761B4B9E4}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
+								</Reference>
+								<Reference Name="UserAuxSend0">
+									<ObjectRef Name="Verb" ID="{37E486C9-9136-49F7-982C-B9AC74BAB40D}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -1639,105 +1821,6 @@
 						</StateGroupList>
 					</StateInfo>
 				</ActorMixer>
-				<Folder Name="CCDogs" ID="{D163A887-8DF3-496E-9537-44248448C9E9}" ShortID="127366240">
-					<ChildrenList>
-						<Sound Name="199261__felix-blume__a-dog-barking-close-recording" ID="{CABD337A-346A-4A87-BDF1-3E6925F88E7E}" ShortID="464105340" Type="SoundFX">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="199261__felix-blume__a-dog-barking-close-recording" ID="{F464075E-DA14-43CB-B375-CD03E0ED3601}" ShortID="836214214">
-									<Language>SFX</Language>
-									<AudioFile>199261__felix-blume__a-dog-barking-close-recording.wav</AudioFile>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="199261__felix-blume__a-dog-barking-close-recording" ID="{F464075E-DA14-43CB-B375-CD03E0ED3601}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="327813__robinhood76__06071-ratter-dogs-barking-looping (1)" ID="{15A44BFD-E333-4B01-9730-69D7E99DB853}" ShortID="262354074" Type="SoundFX">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="327813__robinhood76__06071-ratter-dogs-barking-looping (1)" ID="{90DCB4C7-FCD6-4A02-B39E-D3C45AB4236F}" ShortID="1040297828">
-									<Language>SFX</Language>
-									<AudioFile>327813__robinhood76__06071-ratter-dogs-barking-looping (1).wav</AudioFile>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="327813__robinhood76__06071-ratter-dogs-barking-looping (1)" ID="{90DCB4C7-FCD6-4A02-B39E-D3C45AB4236F}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="346320__nielstii__dog-barking" ID="{000CCBE1-A3A1-4F1F-B08C-232CE78C34B4}" ShortID="253422864" Type="SoundFX">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="346320__nielstii__dog-barking" ID="{86C98977-D002-4EE7-8411-627014F5AC64}" ShortID="624343162">
-									<Language>SFX</Language>
-									<AudioFile>346320__nielstii__dog-barking.wav</AudioFile>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="346320__nielstii__dog-barking" ID="{86C98977-D002-4EE7-8411-627014F5AC64}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="89213__smokum__dog-5" ID="{DA86478B-EBAB-448C-9CF2-71C98BE66824}" ShortID="1060210540" Type="SoundFX">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="89213__smokum__dog-5" ID="{6A4D8F59-0450-4CCC-AD9C-C12316BA14AE}" ShortID="416289413">
-									<Language>SFX</Language>
-									<AudioFile>89213__smokum__dog-5.wav</AudioFile>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="89213__smokum__dog-5" ID="{6A4D8F59-0450-4CCC-AD9C-C12316BA14AE}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="245588__hifijohn__abstract-background-music" ID="{3F1667A5-1012-477C-ADBC-8EBE6A79F830}" ShortID="214940346" Type="SoundFX">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EE6243B2-8177-4CD8-8B38-D4B0A233470F}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="245588__hifijohn__abstract-background-music" ID="{C05F085A-1947-4C41-95FF-C23517928800}" ShortID="916400007">
-									<Language>SFX</Language>
-									<AudioFile>245588__hifijohn__abstract-background-music.wav</AudioFile>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="245588__hifijohn__abstract-background-music" ID="{C05F085A-1947-4C41-95FF-C23517928800}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-					</ChildrenList>
-				</Folder>
 				<BlendContainer Name="Ambience" ID="{9340A9F6-E4BA-45C1-A4AA-8DCFAC8A6C86}" ShortID="830668305">
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -1785,7 +1868,7 @@
 							<ObjectRef Name="Fear_no_Evil" ID="{A1F17D99-0801-4F32-B74E-ADB2D9ACC556}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="RealSpace3D Bus" ID="{D6660470-B59B-45C8-9FA9-794761B4B9E4}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
+							<ObjectRef Name="Master Secondary Bus" ID="{D2E0BC7E-7B3F-4FFE-A670-FAE02761B631}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
 						</Reference>
 						<Reference Name="UserAuxSend0">
 							<ObjectRef Name="Verb" ID="{37E486C9-9136-49F7-982C-B9AC74BAB40D}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
@@ -1955,7 +2038,7 @@
 							<ObjectRef Name="Brick_Wall_Minus_1dB_Peak_Slow_Release" ID="{9FB8DC2B-7F1C-4E4E-8FA5-50872652D2DD}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="RealSpace3D Bus" ID="{D6660470-B59B-45C8-9FA9-794761B4B9E4}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
+							<ObjectRef Name="Master Secondary Bus" ID="{D2E0BC7E-7B3F-4FFE-A670-FAE02761B631}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>
 						</Reference>
 						<Reference Name="UserAuxSend0">
 							<ObjectRef Name="Verb" ID="{37E486C9-9136-49F7-982C-B9AC74BAB40D}" WorkUnitID="{EBC184BC-6AA1-4E40-AEA4-859EDCA5EBF0}"/>

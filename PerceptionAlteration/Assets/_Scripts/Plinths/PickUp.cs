@@ -65,19 +65,6 @@ public class PickUp : MonoBehaviour
         // get reference to current controller
         var controller = SteamVR_Controller.Input((int)trackObj.index); 
 
-        if (controller.GetTouchDown(SteamVR_Controller.ButtonMask.Touchpad))
-        {
-            verb += (1000f * Time.deltaTime);
-            AkSoundEngine.SetRTPCValue("Elevation", verb);// AkSoundEngine.AK_INVALID_GAME_OBJECT);
-        }
-
-
-        if (controller.GetTouchDown(SteamVR_Controller.ButtonMask.Trigger))
-        {
-           verb -= (1000f * Time.deltaTime);
-           AkSoundEngine.SetRTPCValue("Elevation", verb);// AkSoundEngine.AK_INVALID_GAME_OBJECT);
-        }
-
         if (controller.GetTouchDown(SteamVR_Controller.ButtonMask.ApplicationMenu))
             playerScript.PrintLook();
 
@@ -117,13 +104,5 @@ public class PickUp : MonoBehaviour
         pickedObj.GetComponent<Rigidbody>().useGravity = !holding;
         pickedObj.GetComponent<Rigidbody>().isKinematic = holding;
         joint = holding;
-    }
-
-    void OnColliderEnter(Collider other)
-    {
-        if (other.CompareTag("Floor"))
-        {
-            AkSoundEngine.PostEvent("Play_Pillar", this.gameObject);
-        }
     }
 }
