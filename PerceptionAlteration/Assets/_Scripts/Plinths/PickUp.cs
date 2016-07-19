@@ -118,4 +118,12 @@ public class PickUp : MonoBehaviour
         pickedObj.GetComponent<Rigidbody>().isKinematic = holding;
         joint = holding;
     }
+
+    void OnColliderEnter(Collider other)
+    {
+        if (other.CompareTag("Floor"))
+        {
+            AkSoundEngine.PostEvent("Play_Pillar", this.gameObject);
+        }
+    }
 }

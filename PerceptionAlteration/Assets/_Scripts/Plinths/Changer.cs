@@ -174,6 +174,11 @@ public class Changer : MonoBehaviour
 
                 offset = Vector3.Slerp(offset, largeTest, speed * Time.deltaTime);
 
+                //float newY = Mathf.Lerp(cameraParent.transform.localScale.y, bigScale.y, speed * Time.deltaTime);
+                //cameraParent.transform.localScale = new Vector3(cameraParent.transform.localScale.x, newY, cameraParent.transform.localScale.z);
+
+                //cameraParent.transform.localPosition = Vector3.Slerp(cameraParent.transform.localPosition, playerPosition, speed * Time.deltaTime);
+
 
                 tiltShiftEff.blurArea = Mathf.Lerp(tiltShiftEff.blurArea, maxTiltBlurArea, speed * Time.deltaTime);
                 tiltShiftEff.maxBlurSize = Mathf.Lerp(tiltShiftEff.maxBlurSize, maxBlurSize, speed * Time.deltaTime);
@@ -264,6 +269,18 @@ public class Changer : MonoBehaviour
         this.GetComponent<PlayerCollision>().Large = true;
 
         startTime = Time.time;
+
+
+        //////////////////
+        //Vector3 newPlayerPos = origin;
+        //newPlayerPos.x = headCam.transform.localPosition.x;
+        //newPlayerPos.z = headCam.transform.localPosition.z;
+
+        //newPlayerPos *= bigScale.x;
+
+        //playerPosition = -newPlayerPos;
+
+        //playerPosition =
     }
 
     public void Shrink()

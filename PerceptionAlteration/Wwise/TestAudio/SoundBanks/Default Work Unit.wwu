@@ -37,6 +37,7 @@
 						<ObjectRef Name="VR_DogSmall_Action_03" ID="{EA056D60-061B-4B5C-929B-008778A4396B}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="VR_DogBig_Action_01" ID="{49E44808-FD5A-4B65-BF1C-3FC8F3822DBE}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="VR_Low_Ambience_Stereo" ID="{0C66D946-B766-4BBC-9FDB-D458A9F635FE}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Rand_2" ID="{2F27474C-43DC-4BF8-8A5B-B7FCF53C89DB}" WorkUnitID="{AC7B16BF-1A24-41AC-9731-F3FF21E92BBD}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Lighthum" ID="{0E05CEF6-5F61-4C1A-BDDE-DC3FD8FD0020}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="VR_DogMed_Action_01" ID="{140CD94A-FAA9-4D14-A5F1-1E738A56212B}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="SmallDog" ID="{500BBBEE-555A-4DDA-AE6E-06DD791A7231}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}" Filter="7" Origin="Manual"/>
