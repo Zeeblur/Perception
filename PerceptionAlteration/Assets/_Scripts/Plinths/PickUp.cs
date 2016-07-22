@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using VRTK;
 
 public class PickUp : MonoBehaviour
 {
@@ -22,6 +23,8 @@ public class PickUp : MonoBehaviour
         trackObj = GetComponent<SteamVR_TrackedObject>();
         playerScript = GameObject.FindGameObjectWithTag("Player").GetComponent<Changer>();
 
+        //Initially don't show tool tips
+        gameObject.GetComponentInChildren<VRTK_ControllerTooltips>().ShowTips(false);
     }
 	
 	// Fixed as using Rigidbody
@@ -63,13 +66,17 @@ public class PickUp : MonoBehaviour
     void Update()
     {
         // get reference to current controller
-        var controller = SteamVR_Controller.Input((int)trackObj.index); 
+        var controller = SteamVR_Controller.Input((int)trackObj.index);
 
         if (controller.GetTouchDown(SteamVR_Controller.ButtonMask.ApplicationMenu))
-            playerScript.PrintLook();
+        {
+            gameObject.GetComponentInChildren<VRTK_ControllerTooltips>().ShowTips(true);
+        }
 
         if (controller.GetPress(SteamVR_Controller.ButtonMask.Touchpad))
             cube.transform.position = new Vector3(0.5f, 0.5f, 0.5f);
+
+
 
     }
 

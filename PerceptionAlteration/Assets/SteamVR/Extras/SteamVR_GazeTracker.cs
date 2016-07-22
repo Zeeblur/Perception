@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using VRTK;
 
 public struct GazeEventArgs
 {
@@ -16,14 +17,24 @@ public class SteamVR_GazeTracker : MonoBehaviour
     public float gazeInCutoff = 0.15f;
     public float gazeOutCutoff = 0.4f;
 
+    public GameObject GO;
+    private GameObject cont;
+    private VRTK_ControllerTooltips currentControllerTips;
+
+    private float gazeTimer;
+    public float gazeInterval;
+    private bool shownTips = false;
+    private bool firstLook = true;
+
     // Contains a HMD tracked object that we can use to find the user's gaze
     Transform hmdTrackedObject = null;
 
 	// Use this for initialization
-	void Start ()
+	void Awake ()
     {
-	
-	}
+        cont = GameObject.FindGameObjectWithTag("ToolTipMan");
+        currentControllerTips = cont.GetComponent<VRTK_ControllerTooltips>();
+    }
 
     public virtual void OnGazeOn(GazeEventArgs e)
     {
@@ -82,6 +93,35 @@ public class SteamVR_GazeTracker : MonoBehaviour
                 }
             }
 
+
+
+            if (isInGaze)
+            {
+                if (firstLook)
+                {
+                    gazeTimer = Time.time + gazeInterval;
+                    firstLook = false;
+                    Debug.Log("Start Timer");
+                }
+
+                if (Time.time > gazeTimer)
+                {
+                    GO.SetActive(true);
+                    Debug.Log("Looking at cube");
+
+                    // show tool tips
+                    currentControllerTips.ShowTips(true);
+                }
+
+            }
+
+            if (!isInGaze)
+            {
+                firstLook = true;
+                currentControllerTips.ShowTips(false);
+                Debug.Log("Turned off");
+            }
+            
         }
 
     }
