@@ -76,7 +76,6 @@ public class Changer : MonoBehaviour
     void Start()
     {
         // test sound
-        AkSoundEngine.PostEvent("PlayMusic", GameObject.FindGameObjectWithTag("Props"));
         AkSoundEngine.PostEvent("Play_Ambient", GameObject.FindGameObjectWithTag("Room"));
 
         cameraParent = GameObject.FindGameObjectWithTag("PlayerParent");
