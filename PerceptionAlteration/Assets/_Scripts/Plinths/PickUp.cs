@@ -4,6 +4,9 @@ using VRTK;
 
 public class PickUp : MonoBehaviour
 {
+    private UIControl scriptUI;
+    private bool firstTime = true;
+
     private SteamVR_TrackedObject trackObj;
     private bool joint = false;
 
@@ -15,6 +18,15 @@ public class PickUp : MonoBehaviour
     private Changer playerScript;
 
     private float verb = 50f;
+
+    private bool show;
+    private float timer;
+    private float timerInt = 5;
+
+    void Awake()
+    {
+        scriptUI = GameObject.FindGameObjectWithTag("ToolTipMan").GetComponent<UIControl>();
+    }
 
 	// Use this for initialization
 	void Start ()
@@ -59,7 +71,23 @@ public class PickUp : MonoBehaviour
         }
 
         if (controller.GetTouchDown(SteamVR_Controller.ButtonMask.Grip))
+        {
             playerScript.Reset();
+
+            if (firstTime)
+            {
+                // after 5 sec show pad
+                show = true;
+                timer = Time.time + timerInt;
+                firstTime = false;
+            }
+        }
+
+        if (show && Time.time > timer)
+        {
+            scriptUI.ShowPad();
+            show = false;
+        }
       
     }
 
@@ -111,5 +139,17 @@ public class PickUp : MonoBehaviour
         pickedObj.GetComponent<Rigidbody>().useGravity = !holding;
         pickedObj.GetComponent<Rigidbody>().isKinematic = holding;
         joint = holding;
+
+        // remove tooltip
+        if (holding)
+        {
+            GameObject toolTip = GameObject.Find("TriggerTooltip");
+
+            if (toolTip)
+            {
+                toolTip.SetActive(false);
+            }
+        }
+
     }
 }

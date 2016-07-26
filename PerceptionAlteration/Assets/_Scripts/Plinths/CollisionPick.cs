@@ -3,14 +3,20 @@ using System.Collections;
 
 public class CollisionPick : MonoBehaviour
 {
+    private UIControl scriptUI;
     private Changer playerScript;
     private Rigidbody body;
+    private bool firstTime = true;
+    private float toolTimer;
+    public float interval;
+    private bool showUI = false;
 
-	void Start ()
+	void Awake ()
     {
         // get reference to script on player
         playerScript = GameObject.FindGameObjectWithTag("Player").GetComponent<Changer>();
         body = GetComponent<Rigidbody>();
+        scriptUI = GameObject.FindGameObjectWithTag("ToolTipMan").GetComponent<UIControl>();
     }
 
     void Update ()
@@ -46,6 +52,14 @@ public class CollisionPick : MonoBehaviour
             playerScript.Reset();
         }
 
+        if (Time.time > toolTimer && showUI)
+        {
+            scriptUI.ShowGrip();
+            showUI = false;
+            Debug.Log("showgrip ");
+        }
+
+
     }
 
     void OnTriggerEnter(Collider other)
@@ -53,24 +67,28 @@ public class CollisionPick : MonoBehaviour
         if (other.CompareTag("Perception-Changer-large"))
         {
             playerScript.Grow();
+            interval = 5;
             Selected((int)EnemyType.large, other.gameObject);
         }
 
         if (other.CompareTag("Perception-Changer-small"))
         { 
             playerScript.Shrink();
+            interval = 3;
             Selected((int)EnemyType.small, other.gameObject);
         }
 
         if (other.CompareTag("Perception-Changer-smallest"))
         {
             playerScript.ShrinkSmaller();
+            interval = 2;
             Selected((int)EnemyType.smallest, other.gameObject);
         }
 
         if (other.CompareTag("Perception-Changer-upside"))
         {
             playerScript.Flip();
+            interval = 5;
             Selected((int)EnemyType.upside, other.gameObject);
         }
     }
@@ -80,6 +98,13 @@ public class CollisionPick : MonoBehaviour
         if (transform.parent)
             transform.parent.GetComponent<PickUp>().SetPicked(false);
 
+        if (firstTime)
+        {
+            // set off timer to display prompt
+            showUI = true;
+            toolTimer = Time.time + interval;
+            firstTime = false;
+        }
 
         AkSoundEngine.PostEvent("Play_Dog_" + chosenDog, GO);
         GO.gameObject.GetComponent<SplineWalkerPlinth>().DogState = true;

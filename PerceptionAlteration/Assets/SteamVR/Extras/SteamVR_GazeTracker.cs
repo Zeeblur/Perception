@@ -14,12 +14,14 @@ public class SteamVR_GazeTracker : MonoBehaviour
     public bool isInGaze = false;
     public event GazeEventHandler GazeOn;
     public event GazeEventHandler GazeOff;
-    public float gazeInCutoff = 0.15f;
+    public float gazeInCutoff = 0.35f;
     public float gazeOutCutoff = 0.4f;
 
-    public GameObject GO;
+    public GameObject triggerGO;
     private GameObject cont;
-    private VRTK_ControllerTooltips currentControllerTips;
+
+    private float toolTipTimer;
+    public float toolTipLength;
 
     private float gazeTimer;
     public float gazeInterval;
@@ -33,7 +35,7 @@ public class SteamVR_GazeTracker : MonoBehaviour
 	void Awake ()
     {
         cont = GameObject.FindGameObjectWithTag("ToolTipMan");
-        currentControllerTips = cont.GetComponent<VRTK_ControllerTooltips>();
+        triggerGO = GameObject.FindGameObjectWithTag("TriggerToolTip");
     }
 
     public virtual void OnGazeOn(GazeEventArgs e)
@@ -51,6 +53,12 @@ public class SteamVR_GazeTracker : MonoBehaviour
     // Update is called once per frame
 	void Update ()
     {
+        if (cont == null)
+        {
+            cont = GameObject.FindGameObjectWithTag("ToolTipMan");
+            triggerGO = GameObject.FindGameObjectWithTag("TriggerToolTip");
+        }
+
         // If we haven't set up hmdTrackedObject find what the user is looking at
         if (hmdTrackedObject == null)
         {
@@ -104,22 +112,26 @@ public class SteamVR_GazeTracker : MonoBehaviour
                     Debug.Log("Start Timer");
                 }
 
-                if (Time.time > gazeTimer)
+                if (!shownTips && Time.time > gazeTimer)
                 {
-                    GO.SetActive(true);
+                    triggerGO.SetActive(true);
+
                     Debug.Log("Looking at cube");
 
                     // show tool tips
-                    currentControllerTips.ShowTips(true);
+                    cont.GetComponent<VRTK_ControllerTooltips>().ShowTips(true);
+                    toolTipTimer = Time.time + toolTipLength;
+                    shownTips = true;
                 }
 
             }
 
-            if (!isInGaze)
+            if (cont && Time.time > toolTipTimer && !isInGaze)
             {
                 firstLook = true;
-                currentControllerTips.ShowTips(false);
-                Debug.Log("Turned off");
+                triggerGO.SetActive(false);
+                
+               // Debug.Log("Turned off");
             }
             
         }
