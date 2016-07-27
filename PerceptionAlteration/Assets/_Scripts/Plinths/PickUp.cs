@@ -120,7 +120,7 @@ public class PickUp : MonoBehaviour
 
     void OnTriggerExit(Collider other)
     {
-        if (other.CompareTag("Pick-up"))
+        if (other.CompareTag("Pick-up") && pickedObj.transform.parent == null)
         {
             insideObj = false;
             pickedObj = null;
