@@ -48,12 +48,10 @@ public class PlinthPhys : MonoBehaviour
 
     public void SetPickable(bool big)
     {
-        if (big)
+
+        foreach (Rigidbody rb in plinthBodies)
         {
-            foreach (Rigidbody rb in plinthBodies)
-            {
-                rb.gameObject.GetComponent<CapsuleCollider>().enabled = big;
-            }
+            rb.gameObject.GetComponent<CapsuleCollider>().enabled = big;
         }
     }
 

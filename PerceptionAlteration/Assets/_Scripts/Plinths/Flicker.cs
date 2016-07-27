@@ -6,7 +6,7 @@ public class Flicker : MonoBehaviour {
     // sound
     // https://freesound.org/people/mmaruska/sounds/232447/
 
-    private Light spot;
+    private Light[] spot;
     private Renderer[] emissive;
     private Color baseColour;
 
@@ -21,7 +21,7 @@ public class Flicker : MonoBehaviour {
     // Use this for initialization
     void Awake ()
     {
-        spot = GetComponent<Light>();
+        spot = GetComponentsInChildren<Light>();
         emissive = gameObject.GetComponentsInChildren<Renderer>();
     }
 
@@ -61,9 +61,15 @@ public class Flicker : MonoBehaviour {
 
         if (flicker)
         {
-            spot.intensity = Random.Range(spot.intensity-1, spot.intensity+0.5f);
+            float newIntensity =  Random.Range(spot[0].intensity - 1, spot[0].intensity + 0.5f);
 
-            Color emissiveCol = baseColour * Mathf.LinearToGammaSpace(spot.intensity);
+            foreach (Light s in spot)
+            {
+                s.intensity = newIntensity;
+            }
+            
+
+            Color emissiveCol = baseColour * Mathf.LinearToGammaSpace(spot[0].intensity);
 
             foreach (Renderer r in emissive)
             {
@@ -83,7 +89,10 @@ public class Flicker : MonoBehaviour {
         else
         {
             // reset
-            spot.intensity = 2.2f;
+            foreach (Light s in spot)
+            {
+                s.intensity = 1f;
+            }
 
             foreach (Renderer r in emissive)
             {
