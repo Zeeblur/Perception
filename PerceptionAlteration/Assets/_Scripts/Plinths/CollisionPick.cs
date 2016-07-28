@@ -21,6 +21,14 @@ public class CollisionPick : MonoBehaviour
 
     void Update ()
     {
+        if (transform.position.y < 0)
+        {
+            body.isKinematic = true;
+            transform.position = new Vector3(0.5f, 0.5f, 0.5f);
+            body.isKinematic = false;
+            transform.parent.GetComponent<PickUp>().SetPicked(false);
+        }
+
 
         if (Input.GetKey("1"))
         {
