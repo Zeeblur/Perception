@@ -86,7 +86,6 @@ public class SplineWalker : MonoBehaviour
         if (Time.time >= soundTimer)
         {
             // timer for sound play
-   //         AkSoundEngine.PostEvent(chosenDog, this.gameObject);
             soundTimer = Time.time + timeInterval;
         }
     }

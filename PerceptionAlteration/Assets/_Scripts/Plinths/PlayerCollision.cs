@@ -11,16 +11,6 @@ public class PlayerCollision : MonoBehaviour
         set { large = value; }
     }
 
-    // Use this for initialization
-    void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
-
     // collision detection
     void OnTriggerStay(Collider other)
     {

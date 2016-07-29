@@ -99,10 +99,9 @@ public class PickUp : MonoBehaviour
             gameObject.GetComponentInChildren<VRTK_ControllerTooltips>().ShowTips(true);
         }
 
+        // reset cube
         if (controller.GetPress(SteamVR_Controller.ButtonMask.Touchpad))
             cube.transform.position = new Vector3(0.5f, 0.5f, 0.5f);
-
-
 
     }
 
