@@ -21,13 +21,6 @@ public class SplineWalker : MonoBehaviour
     private float timeInterval = 3f;
     private float soundTimer = 0f;
 
-    private string chosenDog = "Play_Dog_0";
-
-    public void ChooseDog(int num)
-    {
-        chosenDog = "Play_Dog_" + num;
-    }
-
     private void Awake()
     {
         // default

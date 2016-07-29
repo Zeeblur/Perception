@@ -8,7 +8,6 @@ public class SoundController : MonoBehaviour
     private Changer playerScript;
 
     public float speed = 1.5f;
-    private float ep = 0.5f;
 
     private scaleMode soundMode;
 

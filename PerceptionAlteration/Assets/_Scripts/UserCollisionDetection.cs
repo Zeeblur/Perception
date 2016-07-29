@@ -7,10 +7,7 @@ public enum scaleMode { stopped, shrinking, growing, resetting, shrinkingSmaller
 
 public class UserCollisionDetection : MonoBehaviour {
 
-    //public SceneFader fader;
-
     private GameObject cameraParent;
-    private GameObject headCam;
     private GameObject ceiling;
 
     // scale factor
@@ -29,7 +26,6 @@ public class UserCollisionDetection : MonoBehaviour {
     public GameObject propParent;
 
     // TODO: need to still see about translation when scaling.
-    Vector3 playerPosition;
     Vector3 newPos;
 
     private Vector3 elevation;
@@ -57,7 +53,6 @@ public class UserCollisionDetection : MonoBehaviour {
 	void Start ()
     {
         cameraParent = GameObject.FindGameObjectWithTag("MainCamera");
-        headCam = GameObject.FindGameObjectWithTag("Head");
 
         ceiling = GameObject.FindGameObjectWithTag("Ceiling");
     }
@@ -219,30 +214,12 @@ public class UserCollisionDetection : MonoBehaviour {
             // User is inside large ball
             Debug.Log("Enemy touch");
 
-
-            // change scale of room
-          // if (propParent.transform.localScale.x < bigScale.x)
-            {
-                playerPosition = headCam.transform.localPosition;
-                currentScale = scaleMode.growing;
-
-               // newPos = new Vector3(playerPosition.x + 10f, playerPosition.y, playerPosition.z - 10f);
-            }
+            currentScale = scaleMode.growing;
 
             // change to red
             other.gameObject.GetComponent<Renderer>().material.SetColor("_Color", Color.red);
 
         }
-    }
-
-    // Handler for user out of collision
-    void OnTriggerExit(Collider other)
-    {
-        {
-            // User is back outside enemy
-            Debug.Log("User free");
-        }
-
     }
 
     Transform reference
@@ -252,11 +229,6 @@ public class UserCollisionDetection : MonoBehaviour {
             var top = SteamVR_Render.Top();
             return (top != null) ? top.origin : null;
         }
-    }
-
-    public void Teleport()
-    {
-        //cameraParent.transform.position = ray.origin + ray.direction * (float)Vector3.Magnitude(teleTarget.transform.localPosition) - new Vector3(t.GetChild(0).localPosition.x, 0f, t.GetChild(0).localPosition.z) - headPosOnGround;
     }
 
     void LateUpdate()

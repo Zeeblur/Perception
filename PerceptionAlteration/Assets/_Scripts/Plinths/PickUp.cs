@@ -17,8 +17,6 @@ public class PickUp : MonoBehaviour
 
     private Changer playerScript;
 
-    private float verb = 50f;
-
     private bool show;
     private float timer;
     private float timerInt = 5;

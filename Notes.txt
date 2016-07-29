@@ -1,11 +1,7 @@
-pick up cube
-
-big
-pick up pillar 
-
-
-Write a guide for it
-
+1. Look at cube, pick up cube throw around
+2. Give cube to dog.
+3. Grip to reset size
+4. Pad to reset cube location
 
 Get used to the room.
 Look for a red cube on the floor

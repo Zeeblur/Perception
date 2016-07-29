@@ -23,18 +23,10 @@ public class Changer : MonoBehaviour
     // for inequalities
     private float epsilon = 0.0005f;
 
-    // TODO: need to still see about translation when scaling.
-    Vector3 playerPosition;
-
-    // vars for arm rotation
-    private Quaternion armsRot;
-    private GameObject armsParent;
-
     private Vector3 headTrans;
     public Vector3 offset = new Vector3(0f, -0.27f, 0f);
 
     // shadow dims
-    private float largeOffsetTarget;
     private float smallOffsetTarget;
     private float normalOffset;
     private float smallestOffsetTarget;
@@ -94,12 +86,8 @@ public class Changer : MonoBehaviour
         normalOffset = offset.y;
 
         largeTest = offset * 3;
-        largeOffsetTarget = offset.y * 3;
         smallOffsetTarget = offset.y * smallScale.y;
         smallestOffsetTarget = offset.y * smallestScale.y;
-
-        armsParent = GameObject.FindGameObjectWithTag("ArmParent");
-
 
         soundRoom = GameObject.FindGameObjectWithTag("Room").transform;
         spatializer = GameObject.FindGameObjectWithTag("Ear").GetComponent<RS3DGameBlob>();
@@ -319,7 +307,6 @@ public class Changer : MonoBehaviour
 
         currentScale = scaleMode.shrinkingSmaller;
 
-        playerPosition =  headCam.transform.localPosition;
         plinthScript.SetState((int)scaleMode.shrinkingSmaller);
         plinthScript.SetPickable(false);
         Time.timeScale = 0.5f;
@@ -344,16 +331,8 @@ public class Changer : MonoBehaviour
         this.GetComponent<PlayerCollision>().Large = false;  // when large breathing is off. 
     }
 
-
-    public void PrintLook()
-    {
-        Vector3 look = headCam.GetComponent<Camera>().transform.forward;
-        Debug.Log("LookAt " + look);
-    }
-
     void LateUpdate()
     {
-        Vector3 lookAt = headCam.transform.forward;
         Vector3 up = headCam.transform.up;
         
         offset.x = (-up.x / offsetScale);
@@ -361,10 +340,6 @@ public class Changer : MonoBehaviour
 
         headTrans = headCam.transform.position;
         transform.position = headTrans + offset;
-
-        armsRot = new Quaternion(0, Mathf.Sin(-up.z), 0, Mathf.Cos(-up.z));
-
-        //armsParent.transform.localRotation = armsRot;
 
         //update shadow
         Vector3 shadowSize = this.transform.localScale;
