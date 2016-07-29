@@ -53,7 +53,7 @@
 				<Property Name="ProjectExplorer\x64_Expanded_19_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_1_1" Type="string" Value="2KQUFaYdKkGhfnXKDCFJ87yEweuhakBOrqSFntyl6/B+vODSP3v+T6Zw+uAnYbYx"/>
 				<Property Name="ProjectExplorer\x64_Expanded_20_1" Type="string" Value=""/>
-				<Property Name="ProjectExplorer\x64_Expanded_2_1" Type="string" Value="GSqF7J/FdUCPD7+B1HkqGTjK9wJjjDVPilsKVBF+YBo="/>
+				<Property Name="ProjectExplorer\x64_Expanded_2_1" Type="string" Value="yuRJE81fbECpz/dysYdw4xkqheyfxXVAjw+/gdR5KhnDzIckPSYtQ7jWMp1P2bxePqOC6VVvW0WS77j2oJ5srfapQJO65MFFpKqNz6yKbIbV8ckR1RLhSZ8uxIjYWhOY+cijokKNV0uj3JKXqBZvVu67C1BaVdpNrm4G3XkacjHD+Qk5I+weT4OykEzZo1kPOMr3AmOMNU+KWwpUEX5gGg=="/>
 				<Property Name="ProjectExplorer\x64_Expanded_3_1" Type="string" Value="vxZ7rCQarEGXMfP/IekrvQ=="/>
 				<Property Name="ProjectExplorer\x64_Expanded_4_1" Type="string" Value="UjB15D+Rs0Sq+VaAkVeGideUhKVBuFJGv66tky2pLo0="/>
 				<Property Name="ProjectExplorer\x64_Expanded_5_1" Type="string" Value="yT8gQvukDUumZZLqEmAywg=="/>
@@ -68,7 +68,7 @@
 				<Property Name="RTPC\GameParameterSimValue\{A2AE79DC-CA3A-46BA-9652-9986C322A87B}" Type="Real64" Value="50"/>
 				<Property Name="RTPC\GameParameterSimValue\{A34890AB-B9D5-4526-A64D-5290C43EF2DC}" Type="Real64" Value="50"/>
 				<Property Name="RTPC\GameParameterSimValue\{E3B7811A-7B2F-490F-B44F-5FE51B468041}" Type="Real64" Value="75"/>
-				<Property Name="RTPC\GameParameterSimValue\{E697E70F-71B3-44EA-9311-295D91309BC8}" Type="Real64" Value="58.0104712041885"/>
+				<Property Name="RTPC\GameParameterSimValue\{E697E70F-71B3-44EA-9311-295D91309BC8}" Type="Real64" Value="58"/>
 				<Property Name="RTPC\GameParameterSimValue\{E93F8CDB-06D1-4737-ACAF-7CD44BBED783}" Type="Real64" Value="75"/>
 				<Property Name="RTPC\GameParameterSimValue\{EDA87B19-73AA-40A0-9F19-2073606DB710}" Type="Real64" Value="6"/>
 				<Property Name="RTPC\GameParameterSimValue\{F72E0659-4346-4E1C-A1B1-DAB46A05101E}" Type="Real64" Value="50"/>

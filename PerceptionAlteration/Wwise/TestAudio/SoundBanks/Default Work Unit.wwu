@@ -42,7 +42,6 @@
 						<ObjectRef Name="VR_DogMed_Action_01" ID="{140CD94A-FAA9-4D14-A5F1-1E738A56212B}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="SmallDog" ID="{500BBBEE-555A-4DDA-AE6E-06DD791A7231}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="VR_DogMed_Action_02" ID="{07D4E3CD-4841-4E21-8CAC-643F4298BD1F}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="PlayMusic" ID="{4A6ABA14-7CD3-4EB7-BCF5-8854795030C3}" WorkUnitID="{AC7B16BF-1A24-41AC-9731-F3FF21E92BBD}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="SmallestDog" ID="{3909F9C3-EC23-4F1E-83B2-904CD9A3590F}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="VR_DogMed_Action_03" ID="{76D96267-9F96-4F8E-AE7B-5868C873FCAF}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="VR_DogSmall_Action_01" ID="{79AA33E0-86A0-4F94-829F-EC235B7088D8}" WorkUnitID="{02F7CA38-8C63-4F35-8A5B-0A54117E601A}" Filter="7" Origin="Manual"/>

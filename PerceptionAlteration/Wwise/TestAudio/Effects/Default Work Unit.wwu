@@ -5,6 +5,87 @@
 			<ChildrenList>
 				<Effect Name="New_VisiSonics_RealSpace3D" ID="{3466F0B0-DF96-4F40-8069-BBB5042E2C1E}" PluginName="VisiSonics RealSpace3D" CompanyID="0" PluginID="146" PluginType="6">
 					<ChildrenList>
+						<PluginMediaSource Name="lic_key" ID="{0C9DF8F3-90E8-45B7-AAE3-12BD316531AC}" ShortID="309248428">
+							<ParentPluginID>9568262</ParentPluginID>
+							<PropertyList>
+								<Property Name="DataFileName" Type="string" Value="lic_key.txt"/>
+							</PropertyList>
+							<ConvertedFileIDList>
+								<File ID="67709042"/>
+							</ConvertedFileIDList>
+						</PluginMediaSource>
+						<PluginMediaSource Name="hrtf-cp048-r2" ID="{B7DAD974-7B1A-4E61-8AB4-47A6F802B699}" ShortID="262124342">
+							<ParentPluginID>9568262</ParentPluginID>
+							<PropertyList>
+								<Property Name="DataFileName" Type="string" Value="hrtf-cp048-r2.icb"/>
+							</PropertyList>
+							<ConvertedFileIDList>
+								<File ID="27429020"/>
+							</ConvertedFileIDList>
+						</PluginMediaSource>
+						<PluginMediaSource Name="hrtf-cp021-r2" ID="{6AF192DE-9BA5-4E85-8A22-15831BDE8A12}" ShortID="963141915">
+							<ParentPluginID>9568262</ParentPluginID>
+							<PropertyList>
+								<Property Name="DataFileName" Type="string" Value="hrtf-cp021-r2.icb"/>
+							</PropertyList>
+							<ConvertedFileIDList>
+								<File ID="156072767"/>
+							</ConvertedFileIDList>
+						</PluginMediaSource>
+						<PluginMediaSource Name="hrtf-cp165-r2" ID="{8E6AE27B-E157-451C-8336-4AE672DFE55C}" ShortID="752673178">
+							<ParentPluginID>9568262</ParentPluginID>
+							<PropertyList>
+								<Property Name="DataFileName" Type="string" Value="hrtf-cp165-r2.icb"/>
+							</PropertyList>
+							<ConvertedFileIDList>
+								<File ID="61623943"/>
+							</ConvertedFileIDList>
+						</PluginMediaSource>
+						<PluginMediaSource Name="hrtf-andre-r1" ID="{68F16054-4ACC-40B1-878B-636EA8A68C53}" ShortID="554550911">
+							<ParentPluginID>9568262</ParentPluginID>
+							<PropertyList>
+								<Property Name="DataFileName" Type="string" Value="hrtf-andre-r1.icb"/>
+							</PropertyList>
+							<ConvertedFileIDList>
+								<File ID="300030528"/>
+							</ConvertedFileIDList>
+						</PluginMediaSource>
+						<PluginMediaSource Name="hrtf-virgn-r1" ID="{214F5ED1-0071-4065-A8FE-AC8D87761B46}" ShortID="876978576">
+							<ParentPluginID>9568262</ParentPluginID>
+							<PropertyList>
+								<Property Name="DataFileName" Type="string" Value="hrtf-virgn-r1.icb"/>
+							</PropertyList>
+							<ConvertedFileIDList>
+								<File ID="93284641"/>
+							</ConvertedFileIDList>
+						</PluginMediaSource>
+						<PluginMediaSource Name="hrtf-custom-r1" ID="{CE19248A-6DB4-41A2-A68B-79BDC7CA1EDE}" ShortID="267680000">
+							<ParentPluginID>9568262</ParentPluginID>
+							<PropertyList>
+								<Property Name="DataFileName" Type="string" Value="hrtf-custom-r1.icb"/>
+							</PropertyList>
+							<ConvertedFileIDList>
+								<File ID="4037239"/>
+							</ConvertedFileIDList>
+						</PluginMediaSource>
+						<PluginMediaSource Name="BACCH_filters_stereo_front" ID="{48DF3A3A-BEDF-429D-9990-1929B5116F5C}" ShortID="392579497">
+							<ParentPluginID>9568262</ParentPluginID>
+							<PropertyList>
+								<Property Name="DataFileName" Type="string" Value="BACCH_filters_stereo_front.bin"/>
+							</PropertyList>
+							<ConvertedFileIDList>
+								<File ID="120781064"/>
+							</ConvertedFileIDList>
+						</PluginMediaSource>
+						<PluginMediaSource Name="BACCH_filters_stereo_back" ID="{C55F584F-3CB7-4B49-9284-1283A86546E7}" ShortID="130761951">
+							<ParentPluginID>9568262</ParentPluginID>
+							<PropertyList>
+								<Property Name="DataFileName" Type="string" Value="BACCH_filters_stereo_back.bin"/>
+							</PropertyList>
+							<ConvertedFileIDList>
+								<File ID="14012068"/>
+							</ConvertedFileIDList>
+						</PluginMediaSource>
 						<PluginMediaSource Name="lic_key" ID="{EDBCF4C4-E78C-4884-916E-D35429D59441}" ShortID="887217948">
 							<ParentPluginID>9568262</ParentPluginID>
 							<PropertyList>
